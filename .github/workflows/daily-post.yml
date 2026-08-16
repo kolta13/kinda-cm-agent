@@ -1,0 +1,87 @@
+name: Kinda CM Agent — Post Diario
+
+on:
+  schedule:
+    # 22:00 UTC = 19:00 Chile invierno (UTC-3). En verano queda a las 18:00.
+    - cron: '0 22 * * *'
+  workflow_dispatch:  # permite disparar manualmente desde la UI de GitHub
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # Cachear Chrome descargado por Puppeteer (~300 MB)
+      - name: Cache Puppeteer Chrome
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-chrome-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: puppeteer-chrome-${{ runner.os }}-
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Instalar Chrome para Puppeteer
+        run: npx puppeteer browsers install chrome
+
+      # Generar config.js en runtime desde GitHub Secrets (nunca en el repo)
+      - name: Crear config.js desde secrets
+        env:
+          GOOGLE_API_KEY:    ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_CSE_ID:     ${{ secrets.GOOGLE_CSE_ID }}
+          SERPER_API_KEY:    ${{ secrets.SERPER_API_KEY }}
+          PEXELS_API_KEY:    ${{ secrets.PEXELS_API_KEY }}
+          GEMINI_API_KEY:    ${{ secrets.GEMINI_API_KEY }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_IG_USER_ID:   ${{ secrets.META_IG_USER_ID }}
+          FTP_HOST:          ${{ secrets.FTP_HOST }}
+          FTP_USER:          ${{ secrets.FTP_USER }}
+          FTP_PASS:          ${{ secrets.FTP_PASS }}
+          AGENT_BASE_URL:    ${{ secrets.AGENT_BASE_URL }}
+        run: |
+          node -e "
+          const cfg = {
+            agentKey:        'github-actions',
+            googleApiKey:    process.env.GOOGLE_API_KEY    || '',
+            googleCseId:     process.env.GOOGLE_CSE_ID     || '',
+            serperApiKey:    process.env.SERPER_API_KEY    || '',
+            pexelsApiKey:    process.env.PEXELS_API_KEY    || '',
+            geminiApiKey:    process.env.GEMINI_API_KEY    || '',
+            metaAccessToken: process.env.META_ACCESS_TOKEN || '',
+            metaIgUserId:    process.env.META_IG_USER_ID   || '',
+            ftpHost:         process.env.FTP_HOST          || '',
+            ftpUser:         process.env.FTP_USER          || '',
+            ftpPass:         process.env.FTP_PASS          || '',
+            ftpOutputPath:   '/output',
+            agentBaseUrl:    process.env.AGENT_BASE_URL    || 'https://kindagrowth.cl/asistente',
+            tiktokAccessToken: '',
+            screenshotApiKey:  '',
+          };
+          require('fs').writeFileSync('config.js', 'module.exports = ' + JSON.stringify(cfg, null, 2) + ';');
+          console.log('config.js generado desde secrets');
+          "
+
+      - name: Correr agente
+        run: node agent.js
+
+      # Guardar backlog actualizado en el repo para que persista entre runs
+      - name: Commit backlog actualizado
+        run: |
+          git config user.name  "Kinda CM Agent"
+          git config user.email "agent@kindaclub.com"
+          git add data/backlog.json
+          git diff --staged --quiet || git commit -m "chore: backlog post $(date -u +%Y-%m-%d)"
+          git push

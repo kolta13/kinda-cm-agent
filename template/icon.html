@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 512px;
+    height: 512px;
+    overflow: hidden;
+    background: #0a0a0a;
+    font-family: 'Arial Black', 'Arial', sans-serif;
+  }
+  .wrap {
+    width: 512px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #0a0a0a;
+  }
+  /* Gradiente de fondo sutil */
+  .bg-grad {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 30%, rgba(65,0,245,0.35) 0%, transparent 60%),
+                radial-gradient(ellipse at 75% 75%, rgba(255,36,0,0.25) 0%, transparent 55%);
+  }
+  /* Borde redondeado interior con accent */
+  .border-ring {
+    position: absolute;
+    inset: 24px;
+    border-radius: 80px;
+    border: 2px solid rgba(255,255,255,0.07);
+  }
+  /* Barra superior */
+  .top-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #4100f5, #ff2400);
+    border-radius: 0 0 0 0;
+  }
+  /* Logo */
+  .logo {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .logo img {
+    width: 280px;
+    height: auto;
+    filter: invert(1);
+    display: block;
+  }
+  .tagline {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.38);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bg-grad"></div>
+  <div class="top-bar"></div>
+  <div class="border-ring"></div>
+  <div class="logo">
+    <img id="logo-img" src="" alt="Kinda Club">
+    <div class="tagline">CM Publisher</div>
+  </div>
+</div>
+</body>
+</html>

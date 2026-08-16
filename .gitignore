@@ -1,0 +1,16 @@
+node_modules/
+config.js
+output/
+
+# Data generada en cada ciclo (no necesita persistir en git)
+data/research_latest.json
+data/carousel_latest.json
+data/render_latest.json
+data/publish_latest.json
+data/agent_latest.json
+data/agent.lock
+data/agent.log
+data/agent-scheduler.log
+
+# El backlog SÍ persiste en git (lo commitea el workflow tras cada publicación)
+# data/backlog.json  ← NO ignorar

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --accent:      #4100f5;
+    --accent-soft: #8a75f7;
+    --ember:       #ff2400;
+    --ember-cta:   #e01e00;
+    --bg:          #0a0a0a;
+    --ink:         #fafafa;
+    --muted:       #aaaaaa;
+    --font:        'Plus Jakarta Sans', 'Arial', sans-serif;
+    --w:           1080px;
+    --h:           1350px;
+  }
+
+  html, body {
+    width: var(--w);
+    height: var(--h);
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+  }
+
+  /* ── Base slide ─────────────────────────────────────────── */
+  .slide {
+    width: var(--w);
+    height: var(--h);
+    display: none;
+    position: relative;
+    padding: 64px;
+    flex-direction: column;
+  }
+  .slide.active { display: flex; }
+
+  /* ── Fondo de imagen (todos los slides) ─────────────────── */
+  .cover-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .cover-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ── Logo watermark — siempre absoluto ──────────────────── */
+  .logo {
+    position: absolute;
+    bottom: 48px;
+    left: 64px;
+    z-index: 2;
+  }
+  .logo img {
+    height: 22px;
+    width: auto;
+    filter: invert(1) opacity(0.4);
+    display: block;
+  }
+
+  /* ── Slide number ────────────────────────────────────────── */
+  .slide-num {
+    position: absolute;
+    top: 48px;
+    right: 64px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255,255,255,.5);
+    letter-spacing: .06em;
+    z-index: 2;
+  }
+
+  /* ════════════════════════════════════════════════════════════
+     PORTADA
+  ════════════════════════════════════════════════════════════ */
+  .slide-portada {
+    justify-content: flex-end;
+    padding-bottom: 110px;
+  }
+  .slide-portada .cover-bg .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0,0,0,0.20) 0%,
+      rgba(0,0,0,0.60) 50%,
+      rgba(0,0,0,0.88) 100%
+    );
+  }
+  .slide-portada .accent-bar {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 6px;
+    background: linear-gradient(90deg, var(--accent), var(--ember));
+    z-index: 2;
+  }
+  .slide-portada .blob {
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 420px; height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(65,0,245,.25) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .slide-portada h1 {
+    position: relative; z-index: 2;
+    font-size: 108px;
+    font-weight: 800;
+    line-height: .92;
+    text-transform: uppercase;
+    letter-spacing: -.03em;
+    color: var(--ink);
+    max-width: 980px;
+  }
+  .slide-portada .sub {
+    position: relative; z-index: 2;
+    margin-top: 32px;
+    font-size: 40px;
+    font-weight: 400;
+    color: rgba(255,255,255,.88);
+    max-width: 860px;
+    line-height: 1.35;
+  }
+
+  /* ════════════════════════════════════════════════════════════
+     CONTENIDO
+  ════════════════════════════════════════════════════════════ */
+  .slide-contenido {
+    justify-content: center;
+  }
+  .slide-contenido .cover-bg .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.84);
+  }
+  .slide-contenido .number {
+    position: relative; z-index: 2;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--accent-soft);
+    margin-bottom: 16px;
+  }
+  .slide-contenido h2 {
+    position: relative; z-index: 2;
+    font-size: 82px;
+    font-weight: 800;
+    line-height: .96;
+    text-transform: uppercase;
+    letter-spacing: -.03em;
+    color: var(--ink);
+    max-width: 960px;
+    margin-bottom: 36px;
+  }
+  .slide-contenido .divider {
+    position: relative; z-index: 2;
+    width: 56px; height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin-bottom: 32px;
+  }
+  .slide-contenido .body {
+    position: relative; z-index: 2;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(250,250,250,.92);
+    max-width: 960px;
+  }
+  .slide-contenido .body strong {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  /* ════════════════════════════════════════════════════════════
+     CTA
+  ════════════════════════════════════════════════════════════ */
+  .slide-cta {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .slide-cta .cover-bg .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+      rgba(65,0,245,0.88) 0%,
+      rgba(224,30,0,0.88) 100%
+    );
+  }
+  .slide-cta .cta-logo {
+    position: absolute;
+    top: 56px; left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .slide-cta .cta-logo img {
+    height: 26px;
+    width: auto;
+    filter: invert(1) opacity(0.65);
+    display: block;
+  }
+  .slide-cta h2 {
+    position: relative; z-index: 2;
+    font-size: 90px;
+    font-weight: 800;
+    line-height: .96;
+    text-transform: uppercase;
+    letter-spacing: -.03em;
+    color: white;
+    max-width: 900px;
+    margin-bottom: 32px;
+  }
+  .slide-cta .cta-body {
+    position: relative; z-index: 2;
+    font-size: 38px;
+    font-weight: 400;
+    color: rgba(255,255,255,.92);
+    line-height: 1.45;
+    max-width: 820px;
+  }
+  .slide-cta .cta-url {
+    position: relative; z-index: 2;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.55);
+  }
+  .slide-cta .logo img {
+    filter: invert(1) opacity(0.3);
+  }
+</style>
+</head>
+<body>
+
+<!-- ── PORTADA ──────────────────────────────────────────────── -->
+<div class="slide slide-portada" id="slide-portada">
+  <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
+  <div class="accent-bar"></div>
+  <div class="blob"></div>
+  <h1 id="titulo-portada">Título del carrusel</h1>
+  <p class="sub" id="subtitulo-portada"></p>
+  <div class="logo"><img id="logo-wm" src="" alt="Kinda Club"></div>
+</div>
+
+<!-- ── SLIDES DE CONTENIDO (2-6) ───────────────────────────── -->
+<div class="slide slide-contenido" id="slide-1">
+  <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
+  <div class="slide-num" id="num-1">01 / 05</div>
+  <div class="number" id="label-1">Punto 1</div>
+  <h2 id="titulo-1">Título del punto</h2>
+  <div class="divider"></div>
+  <p class="body" id="body-1">Cuerpo del slide.</p>
+  <div class="logo"><img id="logo-wm" src="" alt="Kinda Club"></div>
+</div>
+
+<div class="slide slide-contenido" id="slide-2">
+  <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
+  <div class="slide-num" id="num-2">02 / 05</div>
+  <div class="number" id="label-2">Punto 2</div>
+  <h2 id="titulo-2">Título del punto</h2>
+  <div class="divider"></div>
+  <p class="body" id="body-2">Cuerpo del slide.</p>
+  <div class="logo"><img id="logo-wm" src="" alt="Kinda Club"></div>
+</div>
+
+<div class="slide slide-contenido" id="slide-3">
+  <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
+  <div class="slide-num" id="num-3">03 / 05</div>
+  <div class="number" id="label-3">Punto 3</div>
+  <h2 id="titulo-3">Título del punto</h2>
+  <div class="divider"></div>
+  <p class="body" id="body-3">Cuerpo del slide.</p>
+  <div class="logo"><img id="logo-wm" src="" alt="Kinda Club"></div>
+</div>
+
+<div class="slide slide-contenido" id="slide-4">
+  <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
+  <div class="slide-num" id="num-4">04 / 05</div>
+  <div class="number" id="label-4">Punto 4</div>
+  <h2 id="titulo-4">Título del punto</h2>
+  <div class="divider"></div>
+  <p class="body" id="body-4">Cuerpo del slide.</p>
+  <div class="logo"><img id="logo-wm" src="" alt="Kinda Club"></div>
+</div>
+
+<div class="slide slide-contenido" id="slide-5">
+  <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
+  <div class="slide-num" id="num-5">05 / 05</div>
+  <div class="number" id="label-5">Punto 5</div>
+  <h2 id="titulo-5">Título del punto</h2>
+  <div class="divider"></div>
+  <p class="body" id="body-5">Cuerpo del slide.</p>
+  <div class="logo"><img id="logo-wm" src="" alt="Kinda Club"></div>
+</div>
+
+<!-- ── CTA ─────────────────────────────────────────────────── -->
+<div class="slide slide-cta" id="slide-cta">
+  <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
+  <div class="cta-logo"><img id="logo-cta" src="" alt="Kinda Club"></div>
+  <h2 id="titulo-cta">¿Eres músico independiente?</h2>
+  <p class="cta-body" id="body-cta">Conecta con artistas, managers y productores de LATAM.</p>
+  <div class="cta-url">kindaclub.com</div>
+  <div class="logo"><img id="logo-wm" src="" alt="Kinda Club"></div>
+</div>
+
+<script>
+window.showSlide = function(id) {
+  document.querySelectorAll('.slide').forEach(function(s) { s.classList.remove('active'); });
+  var el = document.getElementById(id);
+  if (el) el.classList.add('active');
+};
+
+window.fillSlide = function(data) {
+  function set(id, val) {
+    var el = document.getElementById(id);
+    if (el && val != null) el.textContent = val;
+  }
+  set('titulo-portada', data.portada?.titulo);
+  set('subtitulo-portada', data.portada?.subtitulo || '');
+
+  (data.contenidos || []).forEach(function(c, i) {
+    var n = i + 1;
+    var total = data.contenidos.length;
+    set('num-' + n, String(n).padStart(2,'0') + ' / ' + String(total).padStart(2,'0'));
+    set('label-' + n, c.label || '');
+    set('titulo-' + n, c.titulo);
+    set('body-' + n, c.body);
+  });
+
+  set('titulo-cta', data.cta?.titulo);
+  set('body-cta', data.cta?.body);
+};
+</script>
+</body>
+</html>

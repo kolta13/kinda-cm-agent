@@ -1,0 +1,11 @@
+# Bloquear acceso directo a config y scripts internos
+<FilesMatch "^config\.php$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# Solo research, generate, render, publish y agent pueden recibir requests
+<FilesMatch "\.(json|log)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
