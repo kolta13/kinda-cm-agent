@@ -58,6 +58,30 @@ async function callGemini(prompt) {
   return text.replace(/^```json\s*/i, '').replace(/\s*```$/, '').trim();
 }
 
+// Parsea JSON de Gemini tolerando caracteres de control sin escapar dentro de strings
+function safeJsonParse(raw) {
+  try {
+    return JSON.parse(raw);
+  } catch (_) {
+    // Escapar caracteres de control que estén dentro de strings JSON
+    let inString = false, escaped = false, result = '';
+    for (let i = 0; i < raw.length; i++) {
+      const ch = raw[i];
+      if (escaped)           { result += ch; escaped = false; continue; }
+      if (ch === '\\' && inString) { escaped = true; result += ch; continue; }
+      if (ch === '"')        { inString = !inString; result += ch; continue; }
+      if (inString) {
+        if      (ch === '\n') { result += '\\n'; continue; }
+        else if (ch === '\r') { result += '\\r'; continue; }
+        else if (ch === '\t') { result += '\\t'; continue; }
+        else if (ch.charCodeAt(0) < 32) { continue; } // descartar resto de control chars
+      }
+      result += ch;
+    }
+    return JSON.parse(result);
+  }
+}
+
 // ── Fase 2a: Scoring ──────────────────────────────────────────────────────
 
 async function scoreIdeas(ideas) {
@@ -101,7 +125,7 @@ Responde SOLO con JSON válido:
 }`;
 
   const raw    = await callGemini(prompt);
-  const result = JSON.parse(raw);
+  const result = safeJsonParse(raw);
   return result.scores;
 }
 
@@ -193,7 +217,7 @@ Responde SOLO con JSON válido:
 }`;
 
   const raw      = await callGemini(prompt);
-  const carousel = JSON.parse(raw);
+  const carousel = safeJsonParse(raw);
   return neutralizeSpanish(carousel);
 }
 
