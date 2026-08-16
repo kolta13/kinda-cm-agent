@@ -67,24 +67,31 @@ async function scoreIdeas(ideas) {
     `${i + 1}. "${idea.title}" — ${idea.description.slice(0, 120)}`
   ).join('\n');
 
-  const prompt = `Eres el community manager de Kinda Club (kindaclub.com), una plataforma tipo LinkedIn para la industria musical de latinoamérica. Tu audiencia son músicos independientes que quieren crecer profesionalmente.
+  const prompt = `Eres el editor de contenido de Kinda Club (kindaclub.com), plataforma para la industria musical de latinoamérica.
 
-Tienes estas ${ideas.length} ideas de contenido basadas en tendencias reales de búsqueda y redes sociales:
+Distribución de audiencia objetivo:
+- 80% del contenido: ARTISTAS INDEPENDIENTES (lanzamientos, presupuesto, equipo, procesos, feedback)
+- 20% del contenido: PROFESIONALES DE LA MÚSICA (conseguir clientes, portafolio, tarifas)
+
+Tienes estas ${ideas.length} ideas de contenido basadas en tendencias reales:
 
 ${ideasList}
 
-Puntúa cada idea del 1 al 10 según estos criterios para un CARRUSEL de Instagram/TikTok:
-- Relevancia para músicos independientes latam (1-10)
-- Potencial de engagement (guardar, compartir, comentar) (1-10)
-- Ángulo diferenciador (¿dice algo que la mayoría no dice?) (1-10)
-- Aplicabilidad inmediata (¿el músico puede aplicarlo hoy?) (1-10)
+Para cada idea:
+1. Clasifica la audiencia: "artista" o "profesional"
+2. Puntúa del 1 al 10 según:
+   - Relevancia para esa audiencia en LATAM (1-10)
+   - Potencial de engagement (guardar, compartir) (1-10)
+   - Ángulo diferenciador — ¿dice algo que la mayoría no dice? (1-10)
+   - Aplicabilidad inmediata — ¿se puede aplicar hoy? (1-10)
 
-Responde SOLO con JSON válido, sin texto adicional:
+Responde SOLO con JSON válido:
 {
   "scores": [
     {
       "index": 1,
       "title": "título original",
+      "audience_type": "artista",
       "score_total": 8.5,
       "scores": {"relevancia": 9, "engagement": 8, "diferenciador": 8, "aplicabilidad": 9},
       "angulo": "El ángulo específico del carrusel en 1 oración",
@@ -103,79 +110,86 @@ Responde SOLO con JSON válido, sin texto adicional:
 async function generateCarousel(winner) {
   console.log(`[generate] Generando carrusel para: "${winner.title}"`);
 
-  const prompt = `Eres el community manager de Kinda Club (kindaclub.com), plataforma para músicos independientes de latinoamérica. Tu estilo es directo, práctico y cercano — como un colega de la industria que comparte lo que realmente funciona. Sin jerga académica, sin frases motivacionales vacías.
+  const prompt = `Eres el creador de contenido de Kinda Club (kindaclub.com). Tu tono es técnico, minimalista, directo y de colega a colega. Hablas como un productor o creativo independiente experimentado, nunca como una agencia de marketing.
 
 El tema del carrusel es: "${winner.title}"
 Ángulo: ${winner.angulo}
 Por qué funciona: ${winner.por_que}
+Audiencia: ${winner.audience_type === 'profesional' ? 'PROFESIONALES DE LA MÚSICA (productores, mezcladores, managers — cómo conseguir clientes, mostrar portafolio, definir tarifas)' : 'ARTISTAS INDEPENDIENTES (lanzamientos, presupuesto, encontrar equipo, procesos, feedback)'}
 
-Genera el copy completo para un carrusel de Instagram/TikTok de 7 slides. El formato es educativo/informativo, estilo "lista de tips" o "guía práctica".
+═══ REGLAS EDITORIALES (OBLIGATORIAS) ═══
 
-Reglas:
-- Slide 1 (portada): titular de MÁXIMO 7 palabras, que detenga el scroll. Muy directo.
-- Slides 2-6: cada uno con un punto concreto. Título corto (máx 5 palabras) + body de 2-3 líneas explicando el punto con especificidad (números, ejemplos reales, datos si los tienes).
-- Slide 7 (CTA): invitar a conectar con otros músicos en Kinda Club. Frase natural, no corporativa.
-- Todo en español latino neutro. Sin chilenismos, sin voseo argentino (usar "tú/tienes/conecta", nunca "vos/tenés/conectás").
-- Sin signos de exclamación (¡ !) en ningún slide. Cero. El tono es directo y seguro, no exclamativo.
-- El tono es: colega de industria, no profesor ni coach.
+CANTIDAD DE SLIDES: Entre 3 y 8 slides en total (portada + contenido + cta). Sin relleno. Solo los slides que el tema justifica.
+
+PORTADA (slide 1):
+- Declaración contundente, contradicción de la industria o dato/cifra de impacto.
+- Máximo 8-10 palabras. Sin preguntas retóricas.
+- PROHIBIDO empezar con: "¿Sabías", "¿Quieres", "¿Buscas", "Descubre", "Potencia".
+
+SLIDES DE CONTENIDO:
+- 2 niveles de lectura obligatorios:
+  1. "titulo": 3 a 6 palabras. Ancla la atención.
+  2. "body": 12 a 18 palabras exactas. Instrucción técnica directa, dato concreto o paso accionable. Nada más.
+- Límite total por slide: 25 palabras entre titulo + body.
+- Formato preferido: checklist, paso a paso, comparativa Antes/Después.
+- PROHIBIDO: explicaciones teóricas densas, frases de relleno.
+
+SLIDE FINAL / CTA:
+- Llamado ultradirecto, transaccional, sin rodeos.
+- Máximo 10-12 palabras en titulo.
+- Si es para ARTISTAS: dirigir a subir proyecto, buscar equipo en el catálogo o postular canción a playlists de Spotify en kindaclub.com.
+- Si es para PROFESIONALES: dirigir a crear perfil, subir portafolio y definir tarifas en kindaclub.com.
+- body del CTA: null (solo el titulo basta).
+
+LISTA NEGRA — NUNCA USAR:
+- Palabras: "Descubre", "Potencia", "Revoluciona", "El secreto para", "En el dinámico mundo de la música".
+- Signos de exclamación (¡ !). Cero.
+- Voseo argentino: "vos/tenés/conectás/hacés". Usar siempre "tú/tienes/conecta/haces".
+- Chilenismos ni jerga regional.
+
+CAPTION DE INSTAGRAM:
+- Tono: músico experimentado hablando con un colega. Sin hype.
+- Máximo 3 líneas + línea en blanco + exactamente 4 hashtags.
+- Hashtags: 1 amplio LATAM (#Musicos o #MusicaLatina) + 2 de nicho del tema + #KindaClub.
+- Sin exclamaciones. Emojis: máximo 2, solo si suman.
 
 Responde SOLO con JSON válido:
 {
   "tema": "tema del carrusel",
   "angulo": "ángulo elegido",
+  "audience_type": "artista",
   "slides": [
     {
       "numero": 1,
       "tipo": "portada",
-      "titulo": "El titular que detiene el scroll",
-      "subtitulo": "Subtítulo opcional de apoyo (max 10 palabras) o null",
+      "titulo": "Declaración contundente, max 10 palabras",
+      "subtitulo": null,
       "body": null
     },
     {
       "numero": 2,
       "tipo": "contenido",
-      "titulo": "Punto 1 en 5 palabras",
+      "titulo": "3-6 palabras que anclan",
       "subtitulo": null,
-      "body": "Explicación específica de 2-3 líneas con datos o ejemplos concretos."
+      "body": "12 a 18 palabras de instrucción técnica directa o dato concreto accionable."
     },
     {
       "numero": 3,
       "tipo": "contenido",
-      "titulo": "Punto 2 en 5 palabras",
+      "titulo": "Otro punto clave",
       "subtitulo": null,
-      "body": "Explicación específica de 2-3 líneas."
+      "body": "12 a 18 palabras exactas. Sin relleno."
     },
     {
       "numero": 4,
-      "tipo": "contenido",
-      "titulo": "Punto 3 en 5 palabras",
-      "subtitulo": null,
-      "body": "Explicación específica de 2-3 líneas."
-    },
-    {
-      "numero": 5,
-      "tipo": "contenido",
-      "titulo": "Punto 4 en 5 palabras",
-      "subtitulo": null,
-      "body": "Explicación específica de 2-3 líneas."
-    },
-    {
-      "numero": 6,
-      "tipo": "contenido",
-      "titulo": "Punto 5 en 5 palabras",
-      "subtitulo": null,
-      "body": "Explicación específica de 2-3 líneas."
-    },
-    {
-      "numero": 7,
       "tipo": "cta",
-      "titulo": "¿Eres músico independiente?",
+      "titulo": "CTA ultradirecto max 12 palabras hacia kindaclub.com",
       "subtitulo": null,
-      "body": "Kinda Club es la red donde conectas con otros artistas, managers y productores de LATAM. Únete gratis en kindaclub.com"
+      "body": null
     }
   ],
-  "caption_instagram": "Caption para Instagram. Tono directo y humano — como si lo escribiera un músico que sabe del tema, no un community manager corporativo. Sin signos de exclamación. Sin 'Atención X', sin frases motivacionales vacías, sin exageración. Máximo 3 líneas de texto + 1 línea en blanco + exactamente 4 hashtags: 1 amplio con alto volumen LATAM (ej: #Musicos, #MusicaLatina), 2 de nicho relacionados con el tema exacto del carrusel que usa la comunidad de músicos independientes, 1 de marca (#KindaClub). Emojis opcionales y sobrios.",
-  "hashtags": ["#musica", "#artista", "..."]
+  "caption_instagram": "Caption directo sin hype. Máximo 3 líneas.\n\n#HashtagAmplio #NichoTema1 #NichoTema2 #KindaClub",
+  "hashtags": ["#HashtagAmplio", "#NichoTema1", "#NichoTema2", "#KindaClub"]
 }`;
 
   const raw      = await callGemini(prompt);
@@ -277,12 +291,27 @@ async function generate() {
 
   console.log('\n[generate] Top 5 ideas:');
   sorted.slice(0, 5).forEach((s, i) => {
-    console.log(`  ${i + 1}. [${s.score_total}] ${s.title}`);
+    console.log(`  ${i + 1}. [${s.score_total}] [${s.audience_type || 'artista'}] ${s.title}`);
   });
 
-  const winner = sorted[0];
+  // Respetar ratio 80/20: cada 5 posts, 1 es para profesionales
+  const bl        = backlog.load();
+  const published = bl.ideas.filter(i => i.status === 'published');
+  const lastFive  = published.slice(-5);
+  const profCount = lastFive.filter(i => i.audience_type === 'profesional').length;
+  const needProf  = profCount === 0 && lastFive.length >= 4; // forzar uno profesional cada ~5
+
+  let winner;
+  if (needProf) {
+    winner = sorted.find(s => s.audience_type === 'profesional') || sorted[0];
+    console.log('[generate] Turno de contenido para PROFESIONALES (ratio 80/20)');
+  } else {
+    winner = sorted.find(s => s.audience_type !== 'profesional') || sorted[0];
+  }
+
   const winnerId = backlog.ideaId(winner.title);
-  console.log(`\n[generate] Ganador: "${winner.title}" (score: ${winner.score_total}, topic: ${pending.find(p => backlog.ideaId(p.title) === winnerId)?.topic_tag || '?'})`);
+  console.log(`\n[generate] Ganador: "${winner.title}"`);
+  console.log(`  Score: ${winner.score_total} | Audiencia: ${winner.audience_type || 'artista'} | Topic: ${pending.find(p => backlog.ideaId(p.title) === winnerId)?.topic_tag || '?'}`);
 
   // Generar copy del carrusel
   const carousel = await generateCarousel(winner);

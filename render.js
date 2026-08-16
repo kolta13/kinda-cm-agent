@@ -125,8 +125,9 @@ async function renderSlides(carousel, week, data = {}) {
   const outDir    = path.join(OUT_BASE, `semana-${week}`);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-  // Buscar una foto distinta por slide desde Pexels (7 slides total)
-  const coverImages = await fetchCoverImages(carousel.tema, 7);
+  // Buscar una foto distinta por slide desde Pexels (cantidad dinámica)
+  const totalSlides = slideData.contenidos.length + 2; // portada + contenidos + cta
+  const coverImages = await fetchCoverImages(carousel.tema, totalSlides);
 
   console.log('[render] Iniciando Puppeteer...');
   const browser = await puppeteer.launch({
@@ -161,15 +162,16 @@ async function renderSlides(carousel, week, data = {}) {
   // Inyectar datos en el template
   await page.evaluate((data) => { window.fillSlide(data); }, slideData);
 
-  // Definir qué slides renderizar y en qué orden
+  // Definir qué slides renderizar según los slides generados (dinámico 3-8)
+  const contenidosCount = slideData.contenidos.length; // 1-6
   const slideDefs = [
-    { id: 'slide-portada', label: 'Portada',    file: 'slide-01.png' },
-    { id: 'slide-1',       label: 'Punto 1',    file: 'slide-02.png' },
-    { id: 'slide-2',       label: 'Punto 2',    file: 'slide-03.png' },
-    { id: 'slide-3',       label: 'Punto 3',    file: 'slide-04.png' },
-    { id: 'slide-4',       label: 'Punto 4',    file: 'slide-05.png' },
-    { id: 'slide-5',       label: 'Punto 5',    file: 'slide-06.png' },
-    { id: 'slide-cta',     label: 'CTA',        file: 'slide-07.png' },
+    { id: 'slide-portada', label: 'Portada', file: 'slide-01.png' },
+    ...slideData.contenidos.map((_, i) => ({
+      id:    `slide-${i + 1}`,
+      label: `Punto ${i + 1}`,
+      file:  `slide-${String(i + 2).padStart(2, '0')}.png`,
+    })),
+    { id: 'slide-cta', label: 'CTA', file: `slide-${String(contenidosCount + 2).padStart(2, '0')}.png` },
   ];
 
   const paths = [];
