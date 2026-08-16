@@ -11,6 +11,8 @@ data/agent_latest.json
 data/agent.lock
 data/agent.log
 data/agent-scheduler.log
+data/tiktok_token.json
+data/publish_tiktok_latest.json
 
 # El backlog SÍ persiste en git (lo commitea el workflow tras cada publicación)
 # data/backlog.json  ← NO ignorar

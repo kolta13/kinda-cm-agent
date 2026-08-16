@@ -43,35 +43,40 @@ jobs:
       # Generar config.js en runtime desde GitHub Secrets (nunca en el repo)
       - name: Crear config.js desde secrets
         env:
-          GOOGLE_API_KEY:    ${{ secrets.GOOGLE_API_KEY }}
-          GOOGLE_CSE_ID:     ${{ secrets.GOOGLE_CSE_ID }}
-          SERPER_API_KEY:    ${{ secrets.SERPER_API_KEY }}
-          PEXELS_API_KEY:    ${{ secrets.PEXELS_API_KEY }}
-          GEMINI_API_KEY:    ${{ secrets.GEMINI_API_KEY }}
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
-          META_IG_USER_ID:   ${{ secrets.META_IG_USER_ID }}
-          FTP_HOST:          ${{ secrets.FTP_HOST }}
-          FTP_USER:          ${{ secrets.FTP_USER }}
-          FTP_PASS:          ${{ secrets.FTP_PASS }}
-          AGENT_BASE_URL:    ${{ secrets.AGENT_BASE_URL }}
+          GOOGLE_API_KEY:         ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_CSE_ID:          ${{ secrets.GOOGLE_CSE_ID }}
+          SERPER_API_KEY:         ${{ secrets.SERPER_API_KEY }}
+          PEXELS_API_KEY:         ${{ secrets.PEXELS_API_KEY }}
+          GEMINI_API_KEY:         ${{ secrets.GEMINI_API_KEY }}
+          META_ACCESS_TOKEN:      ${{ secrets.META_ACCESS_TOKEN }}
+          META_IG_USER_ID:        ${{ secrets.META_IG_USER_ID }}
+          FTP_HOST:               ${{ secrets.FTP_HOST }}
+          FTP_USER:               ${{ secrets.FTP_USER }}
+          FTP_PASS:               ${{ secrets.FTP_PASS }}
+          AGENT_BASE_URL:         ${{ secrets.AGENT_BASE_URL }}
+          TIKTOK_CLIENT_KEY:      ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET:   ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_REFRESH_TOKEN:   ${{ secrets.TIKTOK_REFRESH_TOKEN }}
         run: |
           node -e "
           const cfg = {
-            agentKey:        'github-actions',
-            googleApiKey:    process.env.GOOGLE_API_KEY    || '',
-            googleCseId:     process.env.GOOGLE_CSE_ID     || '',
-            serperApiKey:    process.env.SERPER_API_KEY    || '',
-            pexelsApiKey:    process.env.PEXELS_API_KEY    || '',
-            geminiApiKey:    process.env.GEMINI_API_KEY    || '',
-            metaAccessToken: process.env.META_ACCESS_TOKEN || '',
-            metaIgUserId:    process.env.META_IG_USER_ID   || '',
-            ftpHost:         process.env.FTP_HOST          || '',
-            ftpUser:         process.env.FTP_USER          || '',
-            ftpPass:         process.env.FTP_PASS          || '',
-            ftpOutputPath:   '/output',
-            agentBaseUrl:    process.env.AGENT_BASE_URL    || 'https://kindagrowth.cl/asistente',
-            tiktokAccessToken: '',
-            screenshotApiKey:  '',
+            agentKey:            'github-actions',
+            googleApiKey:        process.env.GOOGLE_API_KEY       || '',
+            googleCseId:         process.env.GOOGLE_CSE_ID        || '',
+            serperApiKey:        process.env.SERPER_API_KEY       || '',
+            pexelsApiKey:        process.env.PEXELS_API_KEY       || '',
+            geminiApiKey:        process.env.GEMINI_API_KEY       || '',
+            metaAccessToken:     process.env.META_ACCESS_TOKEN    || '',
+            metaIgUserId:        process.env.META_IG_USER_ID      || '',
+            ftpHost:             process.env.FTP_HOST             || '',
+            ftpUser:             process.env.FTP_USER             || '',
+            ftpPass:             process.env.FTP_PASS             || '',
+            ftpOutputPath:       '/output',
+            agentBaseUrl:        process.env.AGENT_BASE_URL       || 'https://kindagrowth.cl/asistente',
+            tiktokClientKey:     process.env.TIKTOK_CLIENT_KEY    || '',
+            tiktokClientSecret:  process.env.TIKTOK_CLIENT_SECRET || '',
+            tiktokRefreshToken:  process.env.TIKTOK_REFRESH_TOKEN || '',
+            screenshotApiKey:    '',
           };
           require('fs').writeFileSync('config.js', 'module.exports = ' + JSON.stringify(cfg, null, 2) + ';');
           console.log('config.js generado desde secrets');
@@ -79,6 +84,22 @@ jobs:
 
       - name: Correr agente
         run: node agent.js
+
+      # Rotar refresh token de TikTok en GitHub Secrets (si el agente generó uno nuevo)
+      # Requiere KINDA_GITHUB_PAT con scope "repo" para poder escribir secrets
+      - name: Rotar refresh token de TikTok
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.KINDA_GITHUB_PAT }}
+        run: |
+          if [ -f data/tiktok_token.json ] && [ -n "$GH_TOKEN" ]; then
+            NEW_TOKEN=$(node -e "process.stdout.write(require('./data/tiktok_token.json').refresh_token || '')")
+            if [ -n "$NEW_TOKEN" ]; then
+              echo "$NEW_TOKEN" | gh secret set TIKTOK_REFRESH_TOKEN --repo ${{ github.repository }}
+              echo "✓ TIKTOK_REFRESH_TOKEN rotado en GitHub Secrets"
+              rm data/tiktok_token.json
+            fi
+          fi
 
       # Guardar backlog actualizado en el repo para que persista entre runs
       - name: Commit backlog actualizado

@@ -11,11 +11,13 @@
 const fs   = require('fs');
 const path = require('path');
 
-const { research } = require('./research');
-const { generate } = require('./generate');
-const { render }   = require('./render');
-const { publish }  = require('./publish');
-const backlog      = require('./backlog');
+const { research }     = require('./research');
+const { generate }     = require('./generate');
+const { render }       = require('./render');
+const { publish }      = require('./publish');
+const { publishTikTok } = require('./publish-tiktok');
+const backlog          = require('./backlog');
+const config           = require('./config');
 
 const DATA_DIR  = path.join(__dirname, 'data');
 const LOCK_FILE = path.join(DATA_DIR, 'agent.lock');
@@ -84,30 +86,49 @@ async function run() {
     const renderResult = await render();
     log(`[agent] ✓ Render: ${renderResult.slides.length} slides generados`);
 
-    // ── Fase 4: Publish ─────────────────────────────────────────────────
-    log('[agent] Fase 4: Publish...');
+    // ── Fase 4: Publish (Instagram) ─────────────────────────────────────
+    log('[agent] Fase 4: Publish (Instagram)...');
     const publishResult = await publish();
-    log(`[agent] ✓ Publish: Post ID ${publishResult.post_id}`);
+    log(`[agent] ✓ Publish Instagram: Post ID ${publishResult.post_id}`);
+
+    // ── Fase 4b: Publish (TikTok) — soft-fail ───────────────────────────
+    let tiktokPostId = null;
+    if (config.tiktokRefreshToken) {
+      log('[agent] Fase 4b: Publish (TikTok)...');
+      try {
+        const tiktokResult = await publishTikTok();
+        if (tiktokResult) {
+          tiktokPostId = tiktokResult.post_id;
+          log(`[agent] ✓ Publish TikTok: Post ID ${tiktokPostId}`);
+        }
+      } catch (tiktokErr) {
+        log(`[agent] ⚠ TikTok falló (Instagram ya publicado): ${tiktokErr.message}`);
+      }
+    } else {
+      log('[agent] Fase 4b: TikTok no configurado — saltando');
+    }
 
     // ── Resumen ──────────────────────────────────────────────────────────
     const elapsed = Math.round((Date.now() - startTime) / 1000);
     log('[agent] ════════════════════════════════════════');
     log(`[agent] ✅ Ciclo completo en ${elapsed}s`);
-    log(`[agent]    Tema:    ${generateResult.carousel.tema}`);
-    log(`[agent]    Post ID: ${publishResult.post_id}`);
+    log(`[agent]    Tema:         ${generateResult.carousel.tema}`);
+    log(`[agent]    Instagram ID: ${publishResult.post_id}`);
+    if (tiktokPostId) log(`[agent]    TikTok ID:    ${tiktokPostId}`);
     log('[agent] ════════════════════════════════════════');
 
     // Guardar resumen del último ciclo
     fs.writeFileSync(
       path.join(DATA_DIR, 'agent_latest.json'),
       JSON.stringify({
-        completed_at:  new Date().toISOString(),
-        elapsed_sec:   elapsed,
-        week:          publishResult.week,
-        tema:          generateResult.carousel.tema,
-        winner_score:  generateResult.winner_score,
-        slides:        renderResult.slides.length,
-        post_id:       publishResult.post_id,
+        completed_at:   new Date().toISOString(),
+        elapsed_sec:    elapsed,
+        week:           publishResult.week,
+        tema:           generateResult.carousel.tema,
+        winner_score:   generateResult.winner_score,
+        slides:         renderResult.slides.length,
+        post_id:        publishResult.post_id,
+        tiktok_post_id: tiktokPostId || null,
       }, null, 2),
       'utf8'
     );
