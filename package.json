@@ -12,6 +12,7 @@
   "type": "commonjs",
   "dependencies": {
     "basic-ftp": "^6.2.0",
+    "nodemailer": "^9.0.5",
     "puppeteer": "^25.7.0"
   }
 }

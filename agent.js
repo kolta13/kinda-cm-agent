@@ -18,6 +18,7 @@ const { publish }      = require('./publish');
 const { publishTikTok } = require('./publish-tiktok');
 const backlog          = require('./backlog');
 const config           = require('./config');
+const { notifyFailure, notifySuccess } = require('./notify');
 
 const DATA_DIR  = path.join(__dirname, 'data');
 const LOCK_FILE = path.join(DATA_DIR, 'agent.lock');
@@ -63,6 +64,7 @@ async function run() {
 
   acquireLock();
   const startTime = Date.now();
+  let currentPhase = 'Inicio';
 
   try {
     log('[agent] ════════════════════════════════════════');
@@ -72,21 +74,25 @@ async function run() {
     log('[agent] ════════════════════════════════════════');
 
     // ── Fase 1: Research ────────────────────────────────────────────────
+    currentPhase = 'Fase 1: Research';
     log('[agent] Fase 1: Research...');
     const researchResult = await research();
     log(`[agent] ✓ Research: ${researchResult.ideas.length} ideas encontradas (semana ${researchResult.week})`);
 
     // ── Fase 2: Generate ────────────────────────────────────────────────
+    currentPhase = 'Fase 2: Generate';
     log('[agent] Fase 2: Generate...');
     const generateResult = await generate();
     log(`[agent] ✓ Generate: "${generateResult.carousel.tema}" (score ${generateResult.winner_score})`);
 
     // ── Fase 3: Render ──────────────────────────────────────────────────
+    currentPhase = 'Fase 3: Render';
     log('[agent] Fase 3: Render...');
     const renderResult = await render();
     log(`[agent] ✓ Render: ${renderResult.slides.length} slides generados`);
 
     // ── Fase 4: Publish (Instagram) ─────────────────────────────────────
+    currentPhase = 'Fase 4: Publish Instagram';
     log('[agent] Fase 4: Publish (Instagram)...');
     const publishResult = await publish();
     log(`[agent] ✓ Publish Instagram: Post ID ${publishResult.post_id}`);
@@ -133,10 +139,19 @@ async function run() {
       'utf8'
     );
 
+    await notifySuccess({
+      tema:           generateResult.carousel.tema,
+      postId:         publishResult.post_id,
+      tiktokPostId,
+      elapsedSec:     elapsed,
+      backlogPending: backlog.stats().pending,
+    });
+
   } catch (err) {
     const elapsed = Math.round((Date.now() - startTime) / 1000);
-    log(`[agent] ❌ Error en ciclo (${elapsed}s): ${err.message}`);
+    log(`[agent] ❌ Error en ciclo (${elapsed}s) durante ${currentPhase}: ${err.message}`);
     log(`[agent]    Stack: ${err.stack?.split('\n')[1]?.trim() || '—'}`);
+    await notifyFailure(currentPhase, err, elapsed);
     releaseLock();
     process.exit(1);
   }

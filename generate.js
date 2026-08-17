@@ -312,7 +312,7 @@ async function generate() {
     week:         today,
     winner_score: winner.score_total,
     backlog_id:   winnerId,
-    all_scores:   sorted,
+    top_10:       sorted.slice(0, 10), // preview de las candidatas mejor puntuadas, no el backlog completo
     carousel,
   };
 

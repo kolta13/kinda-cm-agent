@@ -57,6 +57,9 @@ jobs:
           TIKTOK_CLIENT_KEY:      ${{ secrets.TIKTOK_CLIENT_KEY }}
           TIKTOK_CLIENT_SECRET:   ${{ secrets.TIKTOK_CLIENT_SECRET }}
           TIKTOK_REFRESH_TOKEN:   ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+          GMAIL_USER:             ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD:     ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL_TO:        ${{ secrets.NOTIFY_EMAIL_TO }}
         run: |
           node -e "
           const cfg = {
@@ -76,6 +79,9 @@ jobs:
             tiktokClientKey:     process.env.TIKTOK_CLIENT_KEY    || '',
             tiktokClientSecret:  process.env.TIKTOK_CLIENT_SECRET || '',
             tiktokRefreshToken:  process.env.TIKTOK_REFRESH_TOKEN || '',
+            gmailUser:           process.env.GMAIL_USER           || '',
+            gmailAppPassword:    process.env.GMAIL_APP_PASSWORD   || '',
+            notifyEmailTo:       process.env.NOTIFY_EMAIL_TO      || 'kindamusic.mkt@gmail.com',
             screenshotApiKey:    '',
           };
           require('fs').writeFileSync('config.js', 'module.exports = ' + JSON.stringify(cfg, null, 2) + ';');
@@ -84,6 +90,37 @@ jobs:
 
       - name: Correr agente
         run: node agent.js
+
+      # Cubre SOLO fallos ANTERIORES a agent.js (npm ci, instalación de Chrome, etc).
+      # Si config.js existe, agent.js llegó a correr y ya mandó su propia notificación
+      # via notify.js — este step se salta para no duplicar el aviso.
+      - name: Notificar fallo de infraestructura (fuera del agente)
+        if: failure()
+        env:
+          GMAIL_USER:         ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL_TO:    ${{ secrets.NOTIFY_EMAIL_TO }}
+          RUN_URL:            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -f config.js ]; then
+            echo "config.js existe — agent.js ya corrió y notificó por su cuenta. Sin duplicar."
+            exit 0
+          fi
+          if [ -n "$GMAIL_USER" ] && [ -n "$GMAIL_APP_PASSWORD" ]; then
+            node -e "
+            const nodemailer = require('nodemailer');
+            const transport = nodemailer.createTransport({
+              host: 'smtp.gmail.com', port: 465, secure: true,
+              auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
+            });
+            transport.sendMail({
+              from: '\"Kinda CM Agent\" <' + process.env.GMAIL_USER + '>',
+              to: process.env.NOTIFY_EMAIL_TO || 'kindamusic.mkt@gmail.com',
+              subject: '❌ Kinda CM Agent — Falló antes de correr el agente',
+              html: '<p>El workflow falló en setup (npm ci, Puppeteer, etc).</p><p><a href=\"' + process.env.RUN_URL + '\">Ver el run en GitHub Actions</a></p>',
+            }).then(() => console.log('Email de fallo enviado')).catch(e => console.warn('No se pudo enviar email:', e.message));
+            " || true
+          fi
 
       # Rotar refresh token de TikTok en GitHub Secrets (si el agente generó uno nuevo)
       # Requiere KINDA_GITHUB_PAT con scope "repo" para poder escribir secrets
