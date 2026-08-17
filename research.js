@@ -16,6 +16,7 @@ const path    = require('path');
 const https   = require('https');
 const config  = require('./config');
 const backlog = require('./backlog');
+const { scoreNewIdeas } = require('./score');
 
 // ── Queries por categoría ─────────────────────────────────────────────────
 // Se rotan diariamente para cubrir distintos ángulos sin repetirse.
@@ -294,6 +295,10 @@ async function research() {
   const added = backlog.addIdeas(allIdeas);
   const st    = backlog.stats();
   console.log(`\n[research] +${added} ideas nuevas en backlog (${st.pending} pendientes / ${st.published} publicadas)`);
+
+  // Puntuar todas las ideas sin score (incluye las recién agregadas y las manuales)
+  console.log('[research] Puntuando ideas sin score...');
+  await scoreNewIdeas();
 
   // Guardar research_latest.json (compatibilidad con versiones anteriores)
   const today  = new Date().toISOString().slice(0, 10); // YYYY-MM-DD

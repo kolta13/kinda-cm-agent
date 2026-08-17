@@ -82,51 +82,30 @@ function safeJsonParse(raw) {
   }
 }
 
-// ── Fase 2a: Scoring ──────────────────────────────────────────────────────
+// ── Fase 2a: Selección del ganador ───────────────────────────────────────
+// Las ideas ya vienen puntuadas desde research.js (score.js).
+// Solo ordenamos por score y aplicamos las reglas de ratio.
 
-async function scoreIdeas(ideas) {
-  console.log(`[generate] Puntuando ${ideas.length} ideas con Gemini...`);
+function selectWinner(pending) {
+  // Ordenar por score_total desc; ideas sin score van al final (score 0)
+  const sorted = [...pending].sort((a, b) => (b.score_total || 0) - (a.score_total || 0));
 
-  const ideasList = ideas.map((idea, i) =>
-    `${i + 1}. "${idea.title}" — ${idea.description.slice(0, 120)}`
-  ).join('\n');
+  // Ratio 80/20: si los últimos 5 publicados no tienen ningún "profesional", forzar uno
+  const bl        = backlog.load();
+  const published = bl.ideas.filter(i => i.status === 'published');
+  const lastFive  = published.slice(-5);
+  const profCount = lastFive.filter(i => i.audience_type === 'profesional').length;
+  const needProf  = profCount === 0 && lastFive.length >= 4;
 
-  const prompt = `Eres el editor de contenido de Kinda Club (kindaclub.com), plataforma para la industria musical de latinoamérica.
+  let winner;
+  if (needProf) {
+    winner = sorted.find(s => s.audience_type === 'profesional') || sorted[0];
+    console.log('[generate] Turno de contenido para PROFESIONALES (ratio 80/20)');
+  } else {
+    winner = sorted.find(s => s.audience_type !== 'profesional') || sorted[0];
+  }
 
-Distribución de audiencia objetivo:
-- 80% del contenido: ARTISTAS INDEPENDIENTES (lanzamientos, presupuesto, equipo, procesos, feedback)
-- 20% del contenido: PROFESIONALES DE LA MÚSICA (conseguir clientes, portafolio, tarifas)
-
-Tienes estas ${ideas.length} ideas de contenido basadas en tendencias reales:
-
-${ideasList}
-
-Para cada idea:
-1. Clasifica la audiencia: "artista" o "profesional"
-2. Puntúa del 1 al 10 según:
-   - Relevancia para esa audiencia en LATAM (1-10)
-   - Potencial de engagement (guardar, compartir) (1-10)
-   - Ángulo diferenciador — ¿dice algo que la mayoría no dice? (1-10)
-   - Aplicabilidad inmediata — ¿se puede aplicar hoy? (1-10)
-
-Responde SOLO con JSON válido:
-{
-  "scores": [
-    {
-      "index": 1,
-      "title": "título original",
-      "audience_type": "artista",
-      "score_total": 8.5,
-      "scores": {"relevancia": 9, "engagement": 8, "diferenciador": 8, "aplicabilidad": 9},
-      "angulo": "El ángulo específico del carrusel en 1 oración",
-      "por_que": "Por qué este tema funciona para esta audiencia en 1-2 oraciones"
-    }
-  ]
-}`;
-
-  const raw    = await callGemini(prompt);
-  const result = safeJsonParse(raw);
-  return result.scores;
+  return { winner, sorted };
 }
 
 // ── Fase 2b: Generación de copy ───────────────────────────────────────────
@@ -306,43 +285,20 @@ async function generate() {
     }
   }
 
-  console.log(`[generate] ${pending.length} ideas pendientes en backlog`);
+  const scoredCount = pending.filter(p => p.score_total !== null).length;
+  console.log(`[generate] ${pending.length} ideas pendientes (${scoredCount} con score, ${pending.length - scoredCount} sin score)`);
 
-  // Limitar a 20 para no gastar demasiado en scoring
-  const toScore = pending.slice(0, 20);
-
-  // Puntuar con Gemini
-  const scores = await scoreIdeas(toScore);
-  const sorted = scores
-    .filter(s => s && s.score_total)
-    .sort((a, b) => b.score_total - a.score_total);
-
-  // Actualizar scores en el backlog
-  backlog.updateScores(sorted);
+  // Seleccionar ganador por score (ya calculado en research.js via score.js)
+  const { winner, sorted } = selectWinner(pending);
 
   console.log('\n[generate] Top 5 ideas:');
   sorted.slice(0, 5).forEach((s, i) => {
-    console.log(`  ${i + 1}. [${s.score_total}] [${s.audience_type || 'artista'}] ${s.title}`);
+    console.log(`  ${i + 1}. [${s.score_total ?? 'sin score'}] [${s.audience_type || '?'}] ${s.title}`);
   });
-
-  // Respetar ratio 80/20: cada 5 posts, 1 es para profesionales
-  const bl        = backlog.load();
-  const published = bl.ideas.filter(i => i.status === 'published');
-  const lastFive  = published.slice(-5);
-  const profCount = lastFive.filter(i => i.audience_type === 'profesional').length;
-  const needProf  = profCount === 0 && lastFive.length >= 4; // forzar uno profesional cada ~5
-
-  let winner;
-  if (needProf) {
-    winner = sorted.find(s => s.audience_type === 'profesional') || sorted[0];
-    console.log('[generate] Turno de contenido para PROFESIONALES (ratio 80/20)');
-  } else {
-    winner = sorted.find(s => s.audience_type !== 'profesional') || sorted[0];
-  }
 
   const winnerId = backlog.ideaId(winner.title);
   console.log(`\n[generate] Ganador: "${winner.title}"`);
-  console.log(`  Score: ${winner.score_total} | Audiencia: ${winner.audience_type || 'artista'} | Topic: ${pending.find(p => backlog.ideaId(p.title) === winnerId)?.topic_tag || '?'}`);
+  console.log(`  Score: ${winner.score_total} | Audiencia: ${winner.audience_type || 'artista'} | Topic: ${winner.topic_tag || '?'}`);
 
   // Generar copy del carrusel
   const carousel = await generateCarousel(winner);

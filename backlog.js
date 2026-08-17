@@ -124,10 +124,11 @@ function updateScores(scores) {
     const id   = ideaId(s.title);
     const idea = backlog.ideas.find(i => i.id === id);
     if (idea) {
-      idea.score_total = s.score_total;
-      idea.scores      = s.scores;
-      idea.angulo      = s.angulo;
-      idea.por_que     = s.por_que;
+      idea.score_total   = s.score_total;
+      idea.scores        = s.scores;
+      idea.angulo        = s.angulo;
+      idea.por_que       = s.por_que;
+      idea.audience_type = s.audience_type || idea.audience_type || 'artista';
     }
   }
   save(backlog);
