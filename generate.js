@@ -145,10 +145,17 @@ Audiencia: ${winner.audience_type === 'profesional' ? 'PROFESIONALES DE LA MÚSI
 
 CANTIDAD DE SLIDES: Entre 3 y 8 slides en total (portada + contenido + cta). Sin relleno. Solo los slides que el tema justifica.
 
-PORTADA (slide 1):
-- Declaración contundente, contradicción de la industria o dato/cifra de impacto.
-- Máximo 8-10 palabras. Sin preguntas retóricas.
-- PROHIBIDO empezar con: "¿Sabías", "¿Quieres", "¿Buscas", "Descubre", "Potencia".
+PORTADA (slide 1) — EL GANCHO:
+- Objetivo único: DETENER el scroll Y crear un GAP DE CURIOSIDAD que solo se cierra swipeando.
+- Máximo 6 palabras. DURO. Sin excepción.
+- La portada NO explica el tema — lo insinúa. El lector necesita swipear para entender.
+- FORMATOS que funcionan:
+  · Provocación: "Spotify no paga lo que crees."
+  · Contradicción: "El 90% lo hace al revés."
+  · Consecuencia sin causa: "Tu demo llegó y nadie la escuchó."
+  · Número + tensión: "3 errores que cuestan tu placement."
+  · Verdad incómoda: "Publicar sin estrategia es regalar música."
+- PROHIBIDO: títulos descriptivos ("Estrategia de lanzamiento musical"), subtítulos explicativos, gerundios, cualquier frase que RESUMA o DESCRIBA el contenido del carrusel. Si la portada ya responde la pregunta, nadie swipea.
 
 SLIDES DE CONTENIDO:
 - 2 niveles de lectura obligatorios:

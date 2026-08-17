@@ -44,37 +44,76 @@ function httpGet(url, headers) {
   });
 }
 
+// Estilos visuales que rotan día a día para máxima variedad entre posts
+const PEXELS_QUERY_STYLES = [
+  'music producer studio headphones dark moody',
+  'concert stage performance lights crowd',
+  'urban street hip-hop culture graffiti',
+  'recording studio microphone professional',
+  'musician portrait dark dramatic lighting',
+  'music festival outdoor performance energy',
+  'dj producer nightclub performance dark',
+];
+
+// IDs de fotos usadas recientemente (persiste entre runs via git)
+const PEXELS_USED_PATH = path.join(path.join(__dirname, 'data'), 'pexels_used.json');
+
+function loadUsedPhotoIds() {
+  try {
+    if (fs.existsSync(PEXELS_USED_PATH)) {
+      return new Set(JSON.parse(fs.readFileSync(PEXELS_USED_PATH, 'utf8')));
+    }
+  } catch (_) {}
+  return new Set();
+}
+
+function saveUsedPhotoIds(usedSet, newIds) {
+  const merged = [...usedSet, ...newIds].slice(-150); // conservar últimas 150 IDs (~3-4 semanas)
+  try { fs.writeFileSync(PEXELS_USED_PATH, JSON.stringify(merged), 'utf8'); } catch (_) {}
+}
+
 async function fetchCoverImages(tema, count) {
   if (!config.pexelsApiKey) return [];
 
-  const keywords = tema
-    .replace(/[¡!¿?.,"]/g, ' ')
-    .split(' ')
-    .filter(w => w.length > 3)
-    .slice(0, 2)
-    .join(' ');
+  const usedIds = loadUsedPhotoIds();
 
-  // Estética urbana/trap/r&b como base del query
-  const query  = encodeURIComponent(`urban hip-hop r&b music artist ${keywords}`);
-  const apiUrl = `https://api.pexels.com/v1/search?query=${query}&orientation=portrait&size=large&per_page=${count}`;
+  // Rotar estilo visual según el día (evita que posts consecutivos tengan la misma estética)
+  const dayIndex   = Math.floor(Date.now() / 86400000);
+  const styleQuery = PEXELS_QUERY_STYLES[dayIndex % PEXELS_QUERY_STYLES.length];
+
+  // Página aleatoria determinista por día (1-4) para obtener fotos distintas cada vez
+  const page = (dayIndex % 4) + 1;
+
+  // Pedir 3x más fotos de las necesarias para tener opciones al filtrar usadas
+  const perPage = Math.min(count * 3, 30);
+  const query   = encodeURIComponent(styleQuery);
+  const apiUrl  = `https://api.pexels.com/v1/search?query=${query}&orientation=portrait&size=large&per_page=${perPage}&page=${page}`;
 
   try {
     const raw  = await httpGet(apiUrl, { Authorization: config.pexelsApiKey });
     const data = JSON.parse(raw.toString());
     if (!data.photos || data.photos.length === 0) return [];
 
-    console.log(`[render] ${data.photos.length} fotos Pexels obtenidas`);
+    // Filtrar fotos ya usadas; si no hay suficientes sin usar, usar las disponibles
+    const fresh   = data.photos.filter(p => !usedIds.has(String(p.id)));
+    const toUse   = (fresh.length >= count ? fresh : data.photos).slice(0, count);
 
-    // Descargar todas en paralelo
+    console.log(`[render] Pexels: ${data.photos.length} fotos, ${fresh.length} nuevas, usando ${toUse.length} (estilo: "${styleQuery}", pág ${page})`);
+
+    // Descargar en paralelo
     const results = await Promise.all(
-      data.photos.slice(0, count).map(async (photo, i) => {
+      toUse.map(async (photo, i) => {
         const imgUrl = photo.src.large2x || photo.src.large;
-        console.log(`  foto ${i + 1}: "${photo.photographer}" → ${photo.src.medium}`);
+        console.log(`  foto ${i + 1}: "${photo.photographer}" — id ${photo.id}`);
         const buf = await httpGet(imgUrl, {});
-        return 'data:image/jpeg;base64,' + buf.toString('base64');
+        return { base64: 'data:image/jpeg;base64,' + buf.toString('base64'), id: photo.id };
       })
     );
-    return results;
+
+    // Guardar IDs usados para evitarlos en futuras runs
+    saveUsedPhotoIds(usedIds, results.map(r => String(r.id)));
+
+    return results.map(r => r.base64);
   } catch (e) {
     console.warn('[render] Pexels falló, slides sin imagen:', e.message);
     return [];
