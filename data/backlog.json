@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T04:42:26.463Z",
+  "updated_at": "2026-08-17T22:20:04.976Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -407,14 +407,20 @@
       "source": "youtube_viral",
       "source_url": "/goto?url=CAESYwHuR6pNGipnPC0sWS9-L6wDPi3MnkL5jMiZHBgktGoP7BApBqy5FyuItUvvfNuuAPzF-FAe9Dnp2SnBmZPBYIkfs2a_YOv6Kokhc7ov7Dk6tgg7H3ewpRlMLwTHG00nqNCAdA==",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Enfocarse en singles y EPs como estrategia inicial para artistas emergentes en lugar de álbumes completos.",
+      "por_que": "Aborda un error común de los artistas emergentes, ofreciendo una guía práctica y estratégica para optimizar sus lanzamientos iniciales.",
       "status": "pending",
       "discovered_at": "2026-08-16T05:37:39.538Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "mnqs1u",
@@ -423,14 +429,20 @@
       "source": "youtube_viral",
       "source_url": "/goto?url=CAESYwHuR6pNQhWpLZDSVxMQxp9jldR_t7hMydzyiNByWFT8In7y9oWKgCdcJBbGKKBvKe4qj6gTZtA9gj_-yZVx0Pi4x2QWGpTGdBgOctFKfS9dvA1s0gLy0gntx5algsS5roOoow==",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Se dirige a artistas que buscan mejorar su estrategia de promoción y visibilidad, sugiriendo un enfoque más selectivo.",
+      "por_que": "Genera interés al prometer una oportunidad exclusiva para trabajar con profesionales, apelando al deseo de los artistas de mejorar su carrera.",
       "status": "pending",
       "discovered_at": "2026-08-16T05:37:39.538Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "qfhtpt",
@@ -481,14 +493,20 @@
       "source": "google",
       "source_url": "https://www.tiktok.com/@cristianpoow/video/7639909740964891924",
       "topic_tag": "marketing",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Presenta una estrategia de marketing de contenido única y efectiva para artistas independientes.",
+      "por_que": "Ofrece una solución clara y directa a un problema común (cómo hacer marketing efectivo), posicionándose como una fuente de conocimiento valioso.",
       "status": "pending",
       "discovered_at": "2026-08-16T22:15:19.526Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "swly1l",
@@ -497,14 +515,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/reel/DU9UnNKkTjz/",
       "topic_tag": "marketing",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Diferencia entre comunicar y vender en el marketing musical para artistas independientes, ofreciendo una guía descargable.",
+      "por_que": "Aborda una confusión común en el marketing musical y ofrece un recurso práctico (PDF) para profundizar, incentivando la interacción.",
       "status": "pending",
       "discovered_at": "2026-08-16T22:15:19.526Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "54tpj1",
@@ -555,14 +579,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
-      "status": "pending",
+      "score_total": 9.5,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 10,
+        "aplicabilidad": 9
+      },
+      "angulo": "Elimina el dolor de buscar equipo musical a través de DMs ineficientes, presentando una solución directa.",
+      "por_que": "Resuelve un problema muy específico y frustrante para los artistas, ofreciendo una alternativa clara y eficiente a través de Kindaclub.com.",
+      "status": "published",
       "discovered_at": "2026-08-17T04:42:26.450Z",
-      "published_at": null,
-      "post_id": null
+      "published_at": "2026-08-17T22:20:04.976Z",
+      "post_id": "18125949934776893",
+      "audience_type": "artista"
     },
     {
       "id": "fgel8x",
@@ -571,14 +601,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9.5,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 10,
+        "aplicabilidad": 9
+      },
+      "angulo": "Ataca el problema de los altos costos en servicios musicales, prometiendo tarifas transparentes.",
+      "por_que": "Aborda directamente la preocupación económica de los artistas independientes, ofreciendo transparencia y acceso a servicios a precios justos.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "vcofo7",
@@ -587,14 +623,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Empodera a los artistas independientes al mostrar que pueden acceder a equipo profesional sin necesidad de un sello discográfico.",
+      "por_que": "Rompe una barrera percibida para los artistas, demostrando que Kindaclub.com facilita el acceso a profesionales de manera autónoma.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "fxstk1",
@@ -603,14 +645,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Declara obsoleta la práctica de enviar demos sin un proceso estructurado, presentando una nueva forma de conectar.",
+      "por_que": "Se dirige a una práctica ineficiente y a menudo infructuosa de los artistas, ofreciendo una solución moderna para la presentación de su trabajo.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "tzny9y",
@@ -619,14 +667,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Posiciona a Kindaclub.com como un elemento clave para la profesionalización, al verificar portafolios y tarifas.",
+      "por_que": "Aborda la necesidad de calidad y confiabilidad en la industria independiente, ofreciendo una plataforma que actúa como un sello de calidad.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "5hx2ih",
@@ -635,14 +689,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9.5,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 10,
+        "aplicabilidad": 9
+      },
+      "angulo": "Destaca el beneficio directo de encontrar productores con precios transparentes y credenciales comprobadas.",
+      "por_que": "Ofrece una solución concreta y transparente a la búsqueda de productores, eliminando la incertidumbre sobre costos y calidad.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "es8p5n",
@@ -651,14 +711,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Presenta un catálogo de ingenieros de mezcla verificados, listos para trabajar en lanzamientos.",
+      "por_que": "Facilita la búsqueda de un servicio técnico crucial para cualquier lanzamiento musical, asegurando calidad y disponibilidad.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "okd03h",
@@ -667,14 +733,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Promueve la conexión directa entre artistas y profesionales para colaboraciones, eliminando intermediarios.",
+      "por_que": "Aborda el deseo de los artistas de establecer conexiones auténticas y eficientes, simplificando el proceso de colaboración.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "g5pdwu",
@@ -683,14 +755,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Posiciona a Kindaclub.com como la solución integral para las necesidades técnicas y de equipo de una carrera musical.",
+      "por_que": "Presenta la plataforma como un recurso fundamental para el desarrollo profesional, cubriendo aspectos técnicos clave.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "1qkvwr",
@@ -699,14 +777,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9.5,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 10,
+        "aplicabilidad": 9
+      },
+      "angulo": "Anuncia el lanzamiento de Kindaclub.com como la plataforma para conectar artistas directamente con profesionales.",
+      "por_que": "Es un anuncio directo y claro del propósito principal de la plataforma, resolviendo la necesidad de acceso a talento profesional.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "4dibhp",
@@ -715,14 +799,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9.5,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 10,
+        "aplicabilidad": 9
+      },
+      "angulo": "Declara que Kindaclub.com es el punto de partida para que los artistas independientes suenen y operen profesionalmente.",
+      "por_que": "Apela directamente al deseo de profesionalización de los artistas, posicionando la plataforma como el ecosistema esencial para lograrlo.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "hj98yr",
@@ -731,14 +821,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Enfatiza que la calidad del sonido y la percepción profesional dependen del equipo técnico, no solo del talento.",
+      "por_que": "Aborda una verdad incómoda pero necesaria para los artistas, conectando la calidad de su música con la necesidad de profesionales.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "7jop7r",
@@ -747,14 +843,20 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Apela a la calidad y el valor de la música de un artista, argumentando que merece un equipo profesional de alto nivel.",
+      "por_que": "Genera un sentido de valor propio en el artista, vinculando la calidad de su música con la necesidad de invertir en profesionales.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "5ukp4s",
@@ -763,14 +865,416 @@
       "source": "manual",
       "source_url": "",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9.5,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 10,
+        "aplicabilidad": 9
+      },
+      "angulo": "Posiciona a Kindaclub.com como la plataforma integral y central para toda la industria musical independiente en Latinoamérica.",
+      "por_que": "Busca el posicionamiento de marca como el recurso indispensable, abarcando todos los aspectos clave para artistas y profesionales.",
       "status": "pending",
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "iae94e",
+      "title": "Servicios de YouTube de Symphonic – Soporte al Cliente",
+      "description": "Cómo funciona: Tu música aparece como pistas oficiales (Art Tracks) y genera ingresos por streaming similares a Spotify o Apple Music. Ejemplo: Tu álbum se ...",
+      "source": "google",
+      "source_url": "https://support.symdistro.com/hc/es-us/articles/360028696231-Servicios-de-YouTube-de-Symphonic",
+      "topic_tag": "monetizacion",
+      "score_total": 6,
+      "scores": {
+        "relevancia": 5,
+        "engagement": 6,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Explica cómo los servicios de YouTube de Symphonic benefician a los artistas en la gestión de sus pistas oficiales y generación de ingresos.",
+      "por_que": "Es un contenido más técnico y específico de un servicio, útil para profesionales que buscan entender opciones de distribución y monetización.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "q6qaay",
+      "title": "El streaming es una ventana global, pero no lo es todo en la ...",
+      "description": "Puedes generar ingresos creando música para licencias, sincronizaciones, catálogos, playlists, YouTube, publicidad y otros usos comerciales. Sin giras. Sin ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DY4wmYhsD5i/",
+      "topic_tag": "monetizacion",
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Sugiere que el streaming no es la única vía de ingresos, explorando otras oportunidades como licencias y sincronizaciones.",
+      "por_que": "Amplía la perspectiva de los artistas sobre las fuentes de ingresos, presentando alternativas al streaming y fomentando la diversificación.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "8b85ww",
+      "title": "Cómo Ganar Dinero Con Tu Música (De Verdad)",
+      "description": "Este video explica cómo funciona el mundo del sync licensing, una de las formas más importantes de monetizar música fuera del streaming.",
+      "source": "google",
+      "source_url": "https://blog.symphoniclatino.com/2026/04/05/como-ganar-dinero-con-tu-musica-de-verdad-una-watchlist-esencial/",
+      "topic_tag": "monetizacion",
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Explica el sync licensing de forma práctica y con enfoque en la monetización real para artistas independientes.",
+      "por_que": "El sync licensing es una fuente de ingresos crucial y a menudo poco comprendida por artistas independientes. Ofrecer una guía clara y aplicable puede generar mucho interés.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "pjv7uh",
+      "title": "Cómo lanzar tu musica en Tidal y monetizar tus ...",
+      "description": "Lanza tu musica en Tidal rápido y cobra por tus Reproducciones. LANDR Distribución es la forma más rápida de lanzar tu musica en Tidal y en todas las ...",
+      "source": "google",
+      "source_url": "https://www.landr.com/es/get-your-music-on-tidal",
+      "topic_tag": "monetizacion",
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía paso a paso para el lanzamiento en Tidal y la monetización a través de LANDR Distribución.",
+      "por_que": "Plataformas como Tidal ofrecen oportunidades de monetización específicas. Una guía práctica sobre cómo usarlas, especialmente con herramientas como LANDR, es útil para artistas.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "j6fa7j",
+      "title": "FaroLatino on Instagram: \" 30 años impulsando la música en ...",
+      "description": "Más de 105 millones de personas consumen música latina en Estados Unidos. Cerca del 98% de los ingresos provienen del streaming. El mercado sigue ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DWfFmVEjxvd/",
+      "topic_tag": "monetizacion",
+      "score_total": 7.25,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 8
+      },
+      "angulo": "Destaca el crecimiento del consumo de música latina en EE.UU. y el rol de FaroLatino en su impulso.",
+      "por_que": "Ofrece contexto sobre el mercado internacional para la música latina y presenta a un actor clave en la industria, lo que puede inspirar y educar a los artistas.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "3z87qt",
+      "title": "DISTRIBUCIÓN MUSICAL | ¿Quién controla la música en ...",
+      "description": "DISTRIBUCIÓN MUSICAL | ¿Quién controla la música en el 2026? Presentado por Destra Entertainment Lawyers y Ditto Music Esta charla abrió una conversación ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/p/DVy49nKifB4/",
+      "topic_tag": "distribucion",
+      "score_total": 8,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Análisis prospectivo sobre el control y la evolución de la distribución musical para 2026, presentado por expertos legales.",
+      "por_que": "Ofrece una visión estratégica y legal sobre el futuro de la distribución, fundamental para profesionales y artistas que buscan entender el panorama.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "q34tpl",
+      "title": "La musica de latinoamerica ha conquistado mercados ...",
+      "description": "AFINIDADES MUSICALES: Pop 68%, Hip Hop / Rap 52%, Rock 38%, Música Latina 34%, Indie 28% ¿Qué señales deja el streaming? 01 Regiones y ciudades, 02 Edades y ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DW_ncdzuux5/?hl=en",
+      "topic_tag": "general",
+      "score_total": 7.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 9
+      },
+      "angulo": "Análisis de afinidades musicales y tendencias de consumo que señalan el potencial de la música latinoamericana.",
+      "por_que": "Proporciona datos valiosos sobre las preferencias del público y el alcance de géneros latinoamericanos, útil para la planificación estratégica de artistas.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "bl46zz",
+      "title": "Mejor contrato para artista independiente: qué evitar en ...",
+      "description": "Antes de firmar cualquier contrato de distribución musical, lee, pregunta y consulta con un music business para proteger tus derechos y tus ingresos. ¿Quieres ...",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/@elandreoften/video/7664407615656545554",
+      "topic_tag": "monetizacion",
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Consejos clave y advertencias sobre qué cláusulas evitar en contratos de distribución musical para proteger al artista independiente.",
+      "por_que": "Los contratos son puntos críticos para los artistas independientes. Ofrecer orientación sobre cómo navegar y evitar trampas es de altísimo valor y aplicabilidad.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "mwxxol",
+      "title": "Cómo atraer y monetizar la atención en producción musical",
+      "description": "... me gusta,Vídeo de TikTok de Maxi | Productor Musical ( ... independiente, guías de PROHUB, foco en contenido musical, estrategia para ...",
+      "source": "youtube_viral",
+      "source_url": "/goto?url=CAESdwHuR6pNmnu_2AlBxgtsb2QUV8xHupxi9NwaJNJvDYu35FbUMnNR4vvMum6TjeMYBS44t4I_shG67WMhwqm3Yjuf76lsqTnxnsUP-jquR14q1YuKlZVTSy7njMC04-G52eWLtAed20TkjQxgqPzDsQ6yV1BvuZBv",
+      "topic_tag": "monetizacion",
+      "score_total": 8.25,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 10
+      },
+      "angulo": "Estrategias prácticas para que productores musicales y artistas independientes atraigan y monetizen la atención en sus creaciones.",
+      "por_que": "La monetización de la producción y la atracción de audiencia son desafíos constantes. Este tema ofrece soluciones directas y aplicables para ambos perfiles.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "iwojpc",
+      "title": "Cómo se hace el contenido como #artistaindependiente sin ...",
+      "description": "Utiliza los hashtags correctos y comparte tus videos no solo en TikTok, sino también en otras plataformas de redes sociales para alcanzar a una audiencia más ...",
+      "source": "youtube_viral",
+      "source_url": "/goto?url=CAESdgHuR6pNYE2TI0_adGaNGIkOsj7f7PO033ozcXoPq_y6SOiXbuf8d_OArQPmlEB8EwpcL2k8CvxqQMJhlaM6r0Jc1eGTHDwsWHg2NNNW8LExwmQJKhwKSWorQh5LfD8cMPILxTj3Qiz99mBWjXdIO4Yv0Mckmf4=",
+      "topic_tag": "distribucion",
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía sobre la creación de contenido efectivo para artistas independientes, enfatizando el uso de hashtags y la distribución multiplataforma.",
+      "por_que": "La creación de contenido es vital para la visibilidad. Ofrecer tácticas concretas y eficientes para artistas independientes, incluyendo el uso de redes sociales, es muy relevante.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "hbxvo5",
+      "title": "Cómo trabajar en la industria musical como artista independiente",
+      "description": "AI Video Summary: Este video explica cómo un artista independiente puede trabajar en la industria musical, compartiendo experiencias reales sobre cómo navegar ...",
+      "source": "youtube_viral",
+      "source_url": "/goto?url=CAESdgHuR6pNFgZbrIEQV4ac0VP-yuwM3IXNYy58x29b0yErEy9kDNwlDNkZvbDfWRay0sypW3hCciViqEmcECgdvjkUAs-NvyAUxRI68pjD60vL08OnSPsg8koy-RzSCKhpj9l4SZJb2nIxi72xnXOzKjcxrOoxGj8=",
+      "topic_tag": "video_viral",
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Explora las vías y estrategias para que un artista independiente pueda integrarse y prosperar dentro de la industria musical actual.",
+      "por_que": "Aborda directamente una de las principales aspiraciones de los artistas independientes: cómo construir una carrera sostenible en la industria.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "uqmujm",
+      "title": "SoundExchange: regalías que todo artista independiente debe ...",
+      "description": "44 Likes, TikTok video from SAMALLY | Music Business 101 (@simplementesamally): “Descubre qué es SoundExchange y cómo reclamar regalías que podrías estar ...",
+      "source": "youtube_viral",
+      "source_url": "/goto?url=CAESfAHuR6pNZLnz2PASm2XOEhvmV7vhDuIV8bkJToEwW6i0H8OijnSdulw0k1vUcQCH6XucsG4EpwN_cAZlb5J9zNE2llk3f_w0D0xn-g8uLmE5waxMIDxBzmm8nHLzZiMGJzdWYrf9HypJEXnLML-Sf_Qb6jYOZ3y3BSUcCJI=",
+      "topic_tag": "video_viral",
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Explicación clara sobre SoundExchange y las regalías que los artistas independientes deben conocer y reclamar.",
+      "por_que": "Las regalías son una fuente de ingresos fundamental. Detallar qué es SoundExchange y cómo acceder a estas regalías es información práctica y de alto valor para artistas.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "4yz6zv",
+      "title": "Lista de los 10 videos en tendencia hoy en YouTube Argentina",
+      "description": "Nuevos artistas y canciones han entrado en el top de los clips más vistos en la plataforma de videos más famosa del mundo.",
+      "source": "noticia",
+      "source_url": "https://www.google.com/goto?url=CAESngEB7keqTWxacDKke3lBQkPiO-g7yOJ2WT5FQTLoDkbxK4McMMbPawO21HO0MzfsgAvQ19wDjhS4asgKfJOsGuof6S9SuU812D8YoGCswGGGdJwJ5vBBgjoRX8_LNTGUxuzU5ONN_2RTcVzrfgkEbytdW52nsvCZaaFVSvM0rBV92Xs2QiYoxZV1cUWjO8a4ctaFfFWKdWsxhWqltpS9lA==",
+      "topic_tag": "noticias",
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 5,
+        "aplicabilidad": 8
+      },
+      "angulo": "Presenta los 10 videos musicales más populares en YouTube Argentina en un momento dado.",
+      "por_que": "Puede servir de inspiración o para entender tendencias locales, pero su aplicabilidad directa y diferenciación son limitadas al ser una lista de actualidad.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "kka1pt",
+      "title": "Carlos Santana y Becky G homenajean a migrantes en video de \"Mi gran amor\"",
+      "description": "El video, en el que Becky G aparece vestida con una toga de graduación y Santana con su guitarra, muestra a inmigrantes realizando diferentes trabajos.",
+      "source": "noticia",
+      "source_url": "https://www.google.com/goto?url=CAESqwEB7keqTZpYhgwqu_SDlv7Ekk8iNS7xuDy4yVrHWubg6hxUQR4RRwIyEW-axQL0V9k1-XYzBIXpL5wdTd21M1KAHkgVmhimqq_3lUStyqM_jkPbcdjKtoyHgYLZMVpaI0xPebSNo66hU3KJNzeUEQ7xOFmXzIWD84gd8qqXoAccPZ8fZLgRmj-hzfbUJ_q3YR3FMPbuJIejubtdTCBJWc8md9yVdiTTTCuU5Y0=",
+      "topic_tag": "noticias",
+      "score_total": 5.5,
+      "scores": {
+        "relevancia": 5,
+        "engagement": 6,
+        "diferenciador": 4,
+        "aplicabilidad": 7
+      },
+      "angulo": "Análisis del videoclip 'Mi gran amor' de Carlos Santana y Becky G, destacando su homenaje a migrantes.",
+      "por_que": "Es un contenido de interés noticioso y cultural, pero con baja aplicabilidad directa o diferenciación para la mayoría de los artistas independientes en su día a día.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "1md5mq",
+      "title": "«Open Stage»: Una plataforma para creadores de música emergente en Europa",
+      "description": "En el centro de esta alianza, TikTok y Coca-Cola han anunciado el lanzamiento de «Open Stage by Coca-Cola», un programa innovador que fusiona la música,...",
+      "source": "noticia",
+      "source_url": "https://www.google.com/goto?url=CAESygEB7keqTa8f6fDKWrajPDEvQv5hNhmHwNYSAQ6y5hbiC-Ja_CS9a2_3vYMVu0DkrSVgHfLOEY61c5WcASu4QLiKgW2EcYRK7zYPtKNYDr-YaijF-3KSbrdJl_dpeLsJ5qnrTv5-FKSja84G48Cw3mb2ntk7NeV5Mn36Nx0cILIueON4Y_RMTgkbhsCC6u8EhI8eY1UXBxQ9zLphwMGxxG0wpj1S4cOqGt8LNgG3ZgJ1xD51vLCkW02GkyojdxCjslVPn0CzEBeIWtKv",
+      "topic_tag": "noticias",
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 10
+      },
+      "angulo": "Presentación de 'Open Stage', una iniciativa de TikTok y Coca-Cola para impulsar a creadores de música emergente en Europa.",
+      "por_que": "Aunque enfocado en Europa, muestra cómo grandes marcas apoyan a emergentes, lo cual puede inspirar y dar ideas sobre posibles colaboraciones o plataformas similares en LATAM.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "fig5mr",
+      "title": "olivia rodrigo supporting small artists!!!",
+      "description": "artists support artists!! olivia & her team nailed this album's creative direction, some of the best lyric videos ever. this really shows ...",
+      "source": "youtube",
+      "source_url": "https://youtube.com/watch?v=3z3OMSA43Vc",
+      "topic_tag": "video_viral",
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 8
+      },
+      "angulo": "Ejemplo de cómo artistas consolidados como Olivia Rodrigo apoyan a artistas emergentes, destacando la dirección creativa de su álbum.",
+      "por_que": "Muestra un modelo de apoyo entre artistas que puede ser aspiracional y educativo. Sirve para ilustrar la importancia del networking y el apoyo mutuo en la industria.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "n62isd",
+      "title": "Cómo lanzar música en 2026",
+      "description": "Ser descubiertos por su audiencia ideal es uno de los mayores retos para artistas emergentes. Lanzar música ha cambiado: hoy ...",
+      "source": "youtube",
+      "source_url": "https://youtube.com/watch?v=Ps-Z13Bz0iA",
+      "topic_tag": "distribucion",
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategias actualizadas y prospectivas para el lanzamiento exitoso de música por parte de artistas emergentes en el año 2026.",
+      "por_que": "Ofrece una visión de futuro sobre los lanzamientos musicales, un tema central para artistas. Abordar tendencias y estrategias para 2026 lo hace relevante y prospectivo.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "nt95vk",
+      "title": "Esto SÍ funciona en 2026 — 5 estrategias clave para artistas emergentes",
+      "description": "Hace unas semanas publicamos un programa donde hablamos de 5 estrategias que YA NO funcionan en 2026 para impulsar la ...",
+      "source": "youtube",
+      "source_url": "https://youtube.com/watch?v=EcKuP065tiE",
+      "topic_tag": "general",
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Presenta 5 estrategias efectivas y actualizadas para artistas emergentes en 2026, contrastando con métodos que ya no funcionan.",
+      "por_que": "Proporciona información práctica y de vanguardia sobre qué estrategias son realmente efectivas. El enfoque en 'lo que sí funciona' y la perspectiva a futuro lo hacen muy valioso.",
+      "status": "pending",
+      "discovered_at": "2026-08-17T22:18:40.756Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }
