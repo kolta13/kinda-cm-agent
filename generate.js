@@ -11,6 +11,7 @@ const path    = require('path');
 const https   = require('https');
 const config  = require('./config');
 const backlog = require('./backlog');
+const { withRetry } = require('./retry');
 
 // ── HTTP helper ───────────────────────────────────────────────────────────
 
@@ -42,20 +43,22 @@ function httpPost(url, body, headers = {}) {
 }
 
 async function callGemini(prompt) {
-  const model = 'gemini-2.5-flash-lite';
-  const url   = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${config.geminiApiKey}`;
+  return withRetry(async () => {
+    const model = 'gemini-2.5-flash-lite';
+    const url   = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${config.geminiApiKey}`;
 
-  const body = JSON.stringify({
-    contents: [{ parts: [{ text: prompt }] }],
-    generationConfig: { responseMimeType: 'application/json', temperature: 0.7, maxOutputTokens: 8192 },
-  });
+    const body = JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: { responseMimeType: 'application/json', temperature: 0.7, maxOutputTokens: 8192 },
+    });
 
-  const raw  = await httpPost(url, body);
-  const data = JSON.parse(raw);
-  if (data.error) throw new Error(`Gemini error: ${data.error.message}`);
+    const raw  = await httpPost(url, body);
+    const data = JSON.parse(raw);
+    if (data.error) throw new Error(`Gemini error: ${data.error.message}`);
 
-  const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
-  return text.replace(/^```json\s*/i, '').replace(/\s*```$/, '').trim();
+    const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    return text.replace(/^```json\s*/i, '').replace(/\s*```$/, '').trim();
+  }, { label: 'Gemini (generate)' });
 }
 
 // Parsea JSON de Gemini tolerando caracteres de control sin escapar dentro de strings

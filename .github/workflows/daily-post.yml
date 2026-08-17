@@ -101,11 +101,36 @@ jobs:
             fi
           fi
 
-      # Guardar backlog actualizado en el repo para que persista entre runs
+      # Guardar backlog actualizado en el repo para que persista entre runs.
+      # if: always() — corre incluso si agent.js falló a mitad de camino (ej. Instagram
+      # publicó pero TikTok o el commit anterior fallaron): el backlog ya pudo haber
+      # marcado la idea como publicada y eso DEBE persistir para no republicarla mañana.
       - name: Commit backlog actualizado
+        if: always()
         run: |
           git config user.name  "Kinda CM Agent"
           git config user.email "agent@kindaclub.com"
-          git add data/backlog.json data/pexels_used.json
-          git diff --staged --quiet || git commit -m "chore: backlog + pexels post $(date -u +%Y-%m-%d)"
-          git push
+
+          git add data/backlog.json
+          [ -f data/pexels_used.json ] && git add data/pexels_used.json
+
+          if git diff --staged --quiet; then
+            echo "Sin cambios en backlog — nada que commitear."
+            exit 0
+          fi
+
+          git commit -m "chore: backlog + pexels post $(date -u +%Y-%m-%d)"
+
+          # Reintentar push con rebase por si el remoto avanzó entre el checkout y ahora
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "✓ Push exitoso (intento $i)"
+              exit 0
+            fi
+            echo "Push rechazado (intento $i/5) — haciendo pull --rebase y reintentando..."
+            git pull --rebase origin main
+            sleep 3
+          done
+
+          echo "❌ No se pudo pushear el backlog tras 5 intentos"
+          exit 1

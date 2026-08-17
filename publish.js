@@ -11,6 +11,7 @@ const ftp     = require('basic-ftp');
 const https   = require('https');
 const config  = require('./config');
 const backlog = require('./backlog');
+const { withRetry } = require('./retry');
 
 const DATA_DIR = path.join(__dirname, 'data');
 const META_API = 'graph.facebook.com';
@@ -56,7 +57,7 @@ async function uploadSlides(manifest) {
 
 // ── Meta Graph API helper ─────────────────────────────────────────────
 
-function metaPost(endpoint, params) {
+function metaPostOnce(endpoint, params) {
   return new Promise((resolve, reject) => {
     const body = JSON.stringify(params);
     const opts = {
@@ -83,6 +84,11 @@ function metaPost(endpoint, params) {
     req.write(body);
     req.end();
   });
+}
+
+// Con retry — seguro para creación de containers (idempotente: crear de más no publica nada)
+function metaPost(endpoint, params) {
+  return withRetry(() => metaPostOnce(endpoint, params), { label: `Meta API (${endpoint})` });
 }
 
 // ── Meta: crear containers individuales (uno por slide) ──────────────
@@ -154,7 +160,9 @@ async function publishCarousel(carouselContainerId) {
   await waitUntilReady(carouselContainerId);
 
   console.log('[publish] Publicando carrusel...');
-  const res = await metaPost(`${config.metaIgUserId}/media_publish`, {
+  // Sin retry: un timeout acá es ambiguo (pudo haber publicado igual).
+  // Reintentar arriesgaría duplicar el post en el feed.
+  const res = await metaPostOnce(`${config.metaIgUserId}/media_publish`, {
     creation_id:  carouselContainerId,
     access_token: config.metaAccessToken,
   });

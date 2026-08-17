@@ -7,6 +7,7 @@
 const https   = require('https');
 const config  = require('./config');
 const backlog = require('./backlog');
+const { withRetry } = require('./retry');
 
 const BATCH_SIZE = 20;
 
@@ -41,6 +42,10 @@ function httpPost(url, body) {
 }
 
 async function callGemini(prompt) {
+  return withRetry(() => callGeminiOnce(prompt), { label: 'Gemini (score)' });
+}
+
+async function callGeminiOnce(prompt) {
   const model = 'gemini-2.5-flash-lite';
   const url   = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${config.geminiApiKey}`;
   const body  = JSON.stringify({

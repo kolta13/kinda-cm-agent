@@ -13,21 +13,32 @@ const BACKLOG_PATH = path.join(__dirname, 'data', 'backlog.json');
 // ── Taxonomía de temas ────────────────────────────────────────────────────
 // Se usa para evitar repetir el mismo tema en días consecutivos.
 
+// Keywords cortas o ambiguas (2-4 letras) van con \b para exigir palabra completa;
+// evita falsos positivos como "ia" matcheando dentro de "estrategia" o "guía".
+const WORD_BOUNDARY_KEYWORDS = new Set(['ia', 'daw', 'show']);
+
 const TOPIC_KEYWORDS = {
-  monetizacion:  ['royalt', 'monetiz', 'gana', 'ingresos', 'sync', 'licenci', 'cobrar', 'dinero de', 'cuánto'],
+  monetizacion:  ['royalt', 'monetiz', 'ganancia', 'ganar dinero', 'ingresos', 'sync', 'licenci', 'cobrar', 'dinero de', 'cuánto'],
   distribucion:  ['spotify', 'playlist', 'distrib', 'distrokid', 'tunecore', 'lanzamiento', 'lanzar', 'plataform'],
   marketing:     ['marketing', 'fanbase', 'branding', 'seguidores', 'engagement', 'redes', 'comunidad', 'crecer'],
   video_viral:   ['tiktok', 'youtube', 'video', 'viral', 'shorts', 'reels', 'algoritmo'],
   shows:         ['concierto', 'show', 'booking', 'gira', 'evento', 'merch', 'festival', 'presentaci'],
   networking:    ['contrat', 'sello', 'manager', 'colabo', 'networking', 'negoci', 'agenci', 'label'],
-  tecnologia:    ['ia ', ' ia,', 'inteligencia artificial', 'producción', 'herramienta', 'daw', 'software', 'plugin', 'stem'],
+  tecnologia:    ['ia', 'inteligencia artificial', 'producción musical', 'herramienta', 'daw', 'software', 'plugin', 'stem'],
   noticias:      ['noticia', 'tendencia', 'lanzó', 'anunci', 'nueva ley', 'industria musical', 'acuerdo'],
 };
+
+function keywordMatches(text, kw) {
+  if (WORD_BOUNDARY_KEYWORDS.has(kw)) {
+    return new RegExp(`\\b${kw}\\b`, 'i').test(text);
+  }
+  return text.includes(kw);
+}
 
 function detectTopic(title, description = '') {
   const text = (title + ' ' + description).toLowerCase();
   for (const [tag, keywords] of Object.entries(TOPIC_KEYWORDS)) {
-    if (keywords.some(kw => text.includes(kw))) return tag;
+    if (keywords.some(kw => keywordMatches(text, kw))) return tag;
   }
   return 'general';
 }
