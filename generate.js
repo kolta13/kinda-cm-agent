@@ -159,13 +159,14 @@ LISTA NEGRA — NUNCA USAR:
 - Signos de exclamación (¡ !). Cero.
 - Voseo argentino: "vos/tenés/conectás/hacés". Usar siempre "tú/tienes/conecta/haces".
 - Chilenismos ni jerga regional.
-- NUNCA nombrar marcas, empresas, agencias, distribuidoras o herramientas de terceros
-  (ej. DistroKid, TuneCore, CD Baby, Symphonic Distribution, AWAL, SoundBetter, Fiverr,
-  Sarbide Music, o cualquier agencia/sello/plataforma específica). Kinda Club no regala
-  publicidad a negocios ajenos. Si el tema toca distribución o herramientas, habla en
-  términos genéricos: "tu distribuidora", "una plataforma de distribución", "un agregador
-  digital". Excepción: SÍ puedes mencionar Spotify, TikTok, YouTube e Instagram cuando el
-  contenido es genuinamente sobre esas plataformas (no son competencia de Kinda Club).
+- Marcas/distribuidoras/herramientas de terceros (DistroKid, TuneCore, CD Baby, Symphonic
+  Distribution, AWAL, etc.): SÍ puedes nombrarlas, pero SOLO como parte de una lista neutral
+  de 2 o más opciones existentes en el mercado ("DistroKid, TuneCore o CD Baby son algunas
+  opciones"). PROHIBIDO destacar, recomendar o mencionar una sola marca específica de forma
+  aislada — eso se lee como publicidad gratuita a un negocio ajeno y Kinda Club no hace eso.
+  Si no vas a nombrar 2+ opciones, usa términos genéricos: "tu distribuidora", "una plataforma
+  de distribución". Nunca nombres agencias de marketing o consultoras específicas (ej. Sarbide
+  Music) bajo ninguna circunstancia — no son "opciones intercambiables" como los distribuidores.
 
 CAPTION DE INSTAGRAM:
 - Tono: músico experimentado hablando con un colega. Sin hype.
@@ -220,24 +221,40 @@ Responde SOLO con JSON válido:
 }
 
 // ── Guardia de marcas de terceros ─────────────────────────────────────────
-// Última línea de defensa: si a pesar del prompt Gemini nombra un competidor
-// o herramienta ajena, se detiene ANTES de publicar en vez de dejarlo pasar
-// silenciosamente (pasó con "Sarbide Music" / "Symphonic Distribution").
+// Última línea de defensa contra publicidad involuntaria a un solo negocio.
+//
+// Distribuidoras (DISTRIBUTOR_BRANDS): son "opciones intercambiables" — está
+// bien nombrarlas SI aparecen 2 o más juntas como lista neutral. Si aparece
+// una sola, se lee como recomendación/promoción de esa marca → se bloquea.
+//
+// Agencias/consultoras (AGENCY_BRANDS): nunca son una "opción" genérica que
+// listar — nombrarlas siempre suena a publicidad de un negocio específico
+// (pasó con "Sarbide Music"). Se bloquean sin importar cuántas aparezcan.
 
-const COMPETITOR_BRANDS = [
+const DISTRIBUTOR_BRANDS = [
   'distrokid', 'tunecore', 'cd baby', 'cdbaby', 'symphonic', 'awal',
-  'soundbetter', 'fiverr', 'upwork', 'believe digital', 'unitedmasters',
-  'amuse', 'ditto music', 'record union', 'songtradr', 'groover',
-  'submithub', 'feature.fm', 'linkfire', 'toneden', 'sarbide',
-  'sarbide music', 'iMusician'.toLowerCase(), 'routenote',
+  'believe digital', 'unitedmasters', 'amuse', 'ditto music',
+  'record union', 'imusician', 'routenote',
+];
+
+const AGENCY_BRANDS = [
+  'sarbide', 'sarbide music', 'soundbetter', 'fiverr', 'upwork',
+  'songtradr', 'groover', 'submithub', 'feature.fm', 'linkfire', 'toneden',
 ];
 
 function assertNoBrandMentions(carousel) {
   const allText = JSON.stringify(carousel).toLowerCase();
-  const found = COMPETITOR_BRANDS.filter(brand => allText.includes(brand));
-  if (found.length > 0) {
-    throw new Error(`Carrusel menciona marca(s) de terceros prohibida(s): ${found.join(', ')} — regenera con otra idea o ajusta el prompt.`);
+
+  const agencyFound = AGENCY_BRANDS.filter(brand => allText.includes(brand));
+  if (agencyFound.length > 0) {
+    throw new Error(`Carrusel menciona agencia/consultora de terceros: ${agencyFound.join(', ')} — nunca se permite, sin importar el contexto.`);
   }
+
+  const distributorsFound = DISTRIBUTOR_BRANDS.filter(brand => allText.includes(brand));
+  if (distributorsFound.length === 1) {
+    throw new Error(`Carrusel menciona una sola distribuidora ("${distributorsFound[0]}") sin presentarla como parte de una lista de opciones — se lee como promoción de esa marca.`);
+  }
+  // 0 menciones: OK. 2+ menciones: OK, se asume lista neutral de opciones.
 }
 
 // ── Post-procesamiento ────────────────────────────────────────────────────
