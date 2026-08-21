@@ -44,7 +44,8 @@ function httpGet(url, headers) {
   });
 }
 
-// Estilos visuales que rotan día a día para máxima variedad entre posts
+// Estilos visuales genéricos — fallback cuando el texto del slide no matchea
+// ningún tema conocido. Rotan día a día para variedad entre posts.
 const PEXELS_QUERY_STYLES = [
   'music producer studio headphones dark moody',
   'concert stage performance lights crowd',
@@ -54,6 +55,30 @@ const PEXELS_QUERY_STYLES = [
   'music festival outdoor performance energy',
   'dj producer nightclub performance dark',
 ];
+
+// Mapea keywords del titulo/body de CADA slide a un query de Pexels específico,
+// para que la imagen se relacione con el contenido real de esa slide en vez de
+// ser genérica para todo el carrusel.
+const TOPIC_IMAGE_QUERIES = [
+  { keywords: ['estudio', 'grabaci', 'mezcla', 'masteriz', 'produc'],                  query: 'recording studio mixing console music production' },
+  { keywords: ['spotify', 'streaming', 'playlist', 'algoritmo'],                       query: 'music streaming app phone dark' },
+  { keywords: ['concierto', 'show', 'gira', 'festival', 'presentaci', 'escenario'],    query: 'live concert stage performance crowd' },
+  { keywords: ['contrato', 'sello', 'manager', 'negoci', 'acuerdo', 'label'],          query: 'business meeting contract signing music industry' },
+  { keywords: ['redes', 'contenido', 'fanbase', 'engagement', 'instagram', 'reel'],    query: 'social media content creator phone' },
+  { keywords: ['tiktok', 'video', 'viral', 'shorts'],                                  query: 'filming vertical video phone content creator' },
+  { keywords: ['dinero', 'royalt', 'ingres', 'gana', 'pago', 'cobr', 'tarifa', 'sync'], query: 'music royalties income finance dark' },
+  { keywords: ['micrófono', 'microfono', 'vocal', 'cantar', 'voz', 'cantante'],        query: 'singer vocalist microphone studio' },
+  { keywords: ['dj', 'beat', 'plugin', 'daw', 'software', 'herramienta'],              query: 'music producer studio equipment dark' },
+  { keywords: ['booking', 'evento', 'merch'],                                          query: 'concert booking event merchandise' },
+  { keywords: ['colabo', 'equipo', 'networking', 'profesional'],                       query: 'musicians collaborating studio session' },
+  { keywords: ['portafolio', 'demo', 'proyecto'],                                      query: 'music producer laptop portfolio work' },
+];
+
+function resolveQueryForSlide(titulo, body) {
+  const text = ((titulo || '') + ' ' + (body || '')).toLowerCase();
+  const match = TOPIC_IMAGE_QUERIES.find(({ keywords }) => keywords.some(kw => text.includes(kw)));
+  return match ? match.query : null;
+}
 
 // IDs de fotos usadas recientemente (persiste entre runs via git)
 const PEXELS_USED_PATH = path.join(path.join(__dirname, 'data'), 'pexels_used.json');
@@ -72,52 +97,67 @@ function saveUsedPhotoIds(usedSet, newIds) {
   try { fs.writeFileSync(PEXELS_USED_PATH, JSON.stringify(merged), 'utf8'); } catch (_) {}
 }
 
-async function fetchCoverImages(tema, count) {
+// Busca una imagen relevante POR SLIDE según su propio titulo/body.
+// slideTexts: [{titulo, body}, ...] en el mismo orden en que se inyectan a .cover-img.
+async function fetchSlideImages(slideTexts) {
   if (!config.pexelsApiKey) return [];
 
-  const usedIds = loadUsedPhotoIds();
+  const usedIds  = loadUsedPhotoIds();
+  const dayIndex = Math.floor(Date.now() / 86400000);
+  const dayStyle = PEXELS_QUERY_STYLES[dayIndex % PEXELS_QUERY_STYLES.length];
+  const page     = (dayIndex % 4) + 1;
 
-  // Rotar estilo visual según el día (evita que posts consecutivos tengan la misma estética)
-  const dayIndex   = Math.floor(Date.now() / 86400000);
-  const styleQuery = PEXELS_QUERY_STYLES[dayIndex % PEXELS_QUERY_STYLES.length];
+  const resolvedQueries = slideTexts.map(s => resolveQueryForSlide(s.titulo, s.body) || dayStyle);
 
-  // Página aleatoria determinista por día (1-4) para obtener fotos distintas cada vez
-  const page = (dayIndex % 4) + 1;
+  // Agrupar slides por query para minimizar llamadas a Pexels (una por query única)
+  const groups = new Map();
+  resolvedQueries.forEach((q, i) => {
+    if (!groups.has(q)) groups.set(q, []);
+    groups.get(q).push(i);
+  });
 
-  // Pedir 3x más fotos de las necesarias para tener opciones al filtrar usadas
-  const perPage = Math.min(count * 3, 30);
-  const query   = encodeURIComponent(styleQuery);
-  const apiUrl  = `https://api.pexels.com/v1/search?query=${query}&orientation=portrait&size=large&per_page=${perPage}&page=${page}`;
+  const images       = new Array(slideTexts.length).fill(null);
+  const newlyUsedIds = [];
 
-  try {
-    const raw  = await httpGet(apiUrl, { Authorization: config.pexelsApiKey });
-    const data = JSON.parse(raw.toString());
-    if (!data.photos || data.photos.length === 0) return [];
+  for (const [query, indices] of groups) {
+    const count   = indices.length;
+    const perPage = Math.min(count * 3, 30);
+    const apiUrl  = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&orientation=portrait&size=large&per_page=${perPage}&page=${page}`;
 
-    // Filtrar fotos ya usadas; si no hay suficientes sin usar, usar las disponibles
-    const fresh   = data.photos.filter(p => !usedIds.has(String(p.id)));
-    const toUse   = (fresh.length >= count ? fresh : data.photos).slice(0, count);
+    try {
+      const raw   = await httpGet(apiUrl, { Authorization: config.pexelsApiKey });
+      const data  = JSON.parse(raw.toString());
+      const photos = data.photos || [];
+      const fresh  = photos.filter(p => !usedIds.has(String(p.id)));
+      const toUse  = (fresh.length >= count ? fresh : photos).slice(0, count);
 
-    console.log(`[render] Pexels: ${data.photos.length} fotos, ${fresh.length} nuevas, usando ${toUse.length} (estilo: "${styleQuery}", pág ${page})`);
+      console.log(`[render] "${query}" → ${photos.length} fotos, usando ${toUse.length} para ${count} slide(s)`);
 
-    // Descargar en paralelo
-    const results = await Promise.all(
-      toUse.map(async (photo, i) => {
-        const imgUrl = photo.src.large2x || photo.src.large;
-        console.log(`  foto ${i + 1}: "${photo.photographer}" — id ${photo.id}`);
-        const buf = await httpGet(imgUrl, {});
-        return { base64: 'data:image/jpeg;base64,' + buf.toString('base64'), id: photo.id };
-      })
-    );
+      const downloaded = await Promise.all(
+        toUse.map(async (photo) => {
+          const imgUrl = photo.src.large2x || photo.src.large;
+          const buf    = await httpGet(imgUrl, {});
+          return { base64: 'data:image/jpeg;base64,' + buf.toString('base64'), id: photo.id };
+        })
+      );
 
-    // Guardar IDs usados para evitarlos en futuras runs
-    saveUsedPhotoIds(usedIds, results.map(r => String(r.id)));
-
-    return results.map(r => r.base64);
-  } catch (e) {
-    console.warn('[render] Pexels falló, slides sin imagen:', e.message);
-    return [];
+      downloaded.forEach((d, j) => {
+        const slideIndex = indices[j];
+        if (slideIndex !== undefined) {
+          images[slideIndex] = d.base64;
+          newlyUsedIds.push(String(d.id));
+        }
+      });
+    } catch (e) {
+      console.warn(`[render] Pexels falló para "${query}":`, e.message);
+    }
   }
+
+  saveUsedPhotoIds(usedIds, newlyUsedIds);
+
+  // Si alguna query específica no trajo resultado, usar la primera imagen exitosa como fallback
+  const fallback = images.find(Boolean) || '';
+  return images.map(img => img || fallback);
 }
 
 function logoBase64(file) {
@@ -164,9 +204,14 @@ async function renderSlides(carousel, week, data = {}) {
   const outDir    = path.join(OUT_BASE, `semana-${week}`);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-  // Buscar una foto distinta por slide desde Pexels (cantidad dinámica)
-  const totalSlides = slideData.contenidos.length + 2; // portada + contenidos + cta
-  const coverImages = await fetchCoverImages(carousel.tema, totalSlides);
+  // Buscar una foto RELEVANTE AL CONTENIDO de cada slide (mismo orden que
+  // los elementos .cover-img en el DOM: portada, contenidos..., cta).
+  const slideTextsInOrder = [
+    { titulo: slideData.portada.titulo, body: slideData.portada.subtitulo },
+    ...slideData.contenidos.map(c => ({ titulo: c.titulo, body: c.body })),
+    { titulo: slideData.cta.titulo, body: slideData.cta.body },
+  ];
+  const coverImages = await fetchSlideImages(slideTextsInOrder);
 
   console.log('[render] Iniciando Puppeteer...');
   const browser = await puppeteer.launch({
