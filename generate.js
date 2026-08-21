@@ -381,6 +381,7 @@ async function generate() {
     week:         today,
     winner_score: winner.score_total,
     backlog_id:   winnerId,
+    topic_tag:    winner.topic_tag || 'general', // para el badge de la portada en render.js
     top_10:       sorted.slice(0, 10), // preview de las candidatas mejor puntuadas, no el backlog completo
     carousel,
   };

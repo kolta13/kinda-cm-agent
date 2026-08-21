@@ -106,6 +106,22 @@
     pointer-events: none;
     z-index: 2;
   }
+  .slide-portada .badge {
+    position: relative; z-index: 2;
+    align-self: flex-start;
+    background: var(--ember);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    padding: 12px 28px;
+    border-radius: 999px;
+    margin-bottom: 28px;
+  }
+  .slide-portada .badge:empty {
+    display: none;
+  }
   .slide-portada h1 {
     position: relative; z-index: 2;
     font-size: 108px;
@@ -242,6 +258,7 @@
 <div class="slide slide-portada" id="slide-portada">
   <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
   <div class="blob"></div>
+  <div class="badge" id="badge-portada"></div>
   <h1 id="titulo-portada">Título del carrusel</h1>
   <p class="sub" id="subtitulo-portada"></p>
   <div class="logo"><img id="logo-wm" src="" alt="Kinda Club"></div>
@@ -322,6 +339,9 @@ window.fillSlide = function(data) {
   }
   set('titulo-portada', data.portada?.titulo);
   set('subtitulo-portada', data.portada?.subtitulo || '');
+  set('badge-portada', data.portada?.badge || '');
+  var badgeEl = document.getElementById('badge-portada');
+  if (badgeEl && data.portada?.badgeColor) badgeEl.style.background = data.portada.badgeColor;
 
   (data.contenidos || []).forEach(function(c, i) {
     var n = i + 1;

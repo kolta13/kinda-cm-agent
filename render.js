@@ -166,9 +166,36 @@ function logoBase64(file) {
   return 'data:image/png;base64,' + fs.readFileSync(p).toString('base64');
 }
 
+// ── Badge de la portada (categoría + color rotativo) ────────────────────
+
+const TOPIC_BADGE_LABELS = {
+  monetizacion: 'MONETIZACIÓN',
+  distribucion: 'DISTRIBUCIÓN',
+  marketing:    'MARKETING MUSICAL',
+  video_viral:  'REDES Y VIRAL',
+  shows:        'SHOWS Y GIRAS',
+  networking:   'KINDA CLUB',
+  tecnologia:   'HERRAMIENTAS',
+  noticias:     'INDUSTRIA MUSICAL',
+  general:      'KINDA CLUB',
+};
+
+// Naranjo (ember) y violeta (accent) de la paleta — alternan día por medio
+const BADGE_COLORS = ['#ff2400', '#4100f5'];
+
+function resolveBadgeLabel(topicTag, audienceType) {
+  return TOPIC_BADGE_LABELS[topicTag]
+    || (audienceType === 'profesional' ? 'PARA PROFESIONALES' : 'ARTISTAS INDEPENDIENTES');
+}
+
+function resolveBadgeColor() {
+  const dayIndex = Math.floor(Date.now() / 86400000);
+  return BADGE_COLORS[dayIndex % 2];
+}
+
 // ── Adaptar carousel JSON al formato del template ──────────────────────
 
-function buildSlideData(carousel) {
+function buildSlideData(carousel, meta = {}) {
   const slides    = carousel.slides;
   const portada   = slides.find(s => s.tipo === 'portada');
   const contenidos = slides.filter(s => s.tipo === 'contenido');
@@ -177,8 +204,10 @@ function buildSlideData(carousel) {
   return {
     kicker:    'Kinda Club · Para músicos',
     portada: {
-      titulo:    portada?.titulo   || '',
-      subtitulo: portada?.subtitulo || '',
+      titulo:      portada?.titulo   || '',
+      subtitulo:   portada?.subtitulo || '',
+      badge:       resolveBadgeLabel(meta.topic_tag, meta.audience_type),
+      badgeColor:  resolveBadgeColor(),
     },
     contenidos: contenidos.map((s, i) => ({
       label: `${i + 1}`,
@@ -200,7 +229,10 @@ function cleanTitle(t) {
 // ── Render ─────────────────────────────────────────────────────────────
 
 async function renderSlides(carousel, week, data = {}) {
-  const slideData = buildSlideData(carousel);
+  const slideData = buildSlideData(carousel, {
+    topic_tag:     data.topic_tag,
+    audience_type: carousel.audience_type,
+  });
   const outDir    = path.join(OUT_BASE, `semana-${week}`);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
