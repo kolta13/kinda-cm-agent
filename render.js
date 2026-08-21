@@ -141,7 +141,7 @@ function buildSlideData(carousel) {
       subtitulo: portada?.subtitulo || '',
     },
     contenidos: contenidos.map((s, i) => ({
-      label: `Punto ${i + 1}`,
+      label: `${i + 1}`,
       titulo: cleanTitle(s.titulo),
       body:   s.body || '',
     })),
@@ -207,7 +207,7 @@ async function renderSlides(carousel, week, data = {}) {
     { id: 'slide-portada', label: 'Portada', file: 'slide-01.png' },
     ...slideData.contenidos.map((_, i) => ({
       id:    `slide-${i + 1}`,
-      label: `Punto ${i + 1}`,
+      label: `${i + 1}`,
       file:  `slide-${String(i + 2).padStart(2, '0')}.png`,
     })),
     { id: 'slide-cta', label: 'CTA', file: `slide-${String(contenidosCount + 2).padStart(2, '0')}.png` },
