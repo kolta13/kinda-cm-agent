@@ -73,6 +73,14 @@ function save(backlog) {
   fs.writeFileSync(BACKLOG_PATH, JSON.stringify(backlog, null, 2), 'utf8');
 }
 
+// Limpia el sufijo de marca que Google agrega a títulos de artículos/blogs
+// (ej. "Marketing musical para independientes - Sarbide Music" → sin el sufijo).
+// Sin esto, ese texto se pasa directo a Gemini como "el tema del carrusel"
+// y termina promocionando negocios ajenos en el post.
+function stripBrandSuffix(title) {
+  return title.replace(/\s+[-–—|:]\s+[A-ZÁÉÍÓÚÑ][\wÁÉÍÓÚÑáéíóúñ.]*(\s+[A-ZÁÉÍÓÚÑ][\wÁÉÍÓÚÑáéíóúñ.]*){0,2}$/, '').trim();
+}
+
 // Añadir ideas nuevas al backlog (ignora duplicados por ID)
 function addIdeas(newIdeas) {
   const backlog    = load();
@@ -81,12 +89,14 @@ function addIdeas(newIdeas) {
 
   for (const idea of newIdeas) {
     if (!idea.title || idea.title.length < 5) continue;
-    const id = ideaId(idea.title);
+    const cleanTitle = stripBrandSuffix(idea.title);
+    if (cleanTitle.length < 5) continue; // el título quedó vacío tras limpiar, descartar
+    const id = ideaId(cleanTitle);
     if (existingIds.has(id)) continue;
     existingIds.add(id);
     backlog.ideas.push({
       id,
-      title:        idea.title,
+      title:        cleanTitle,
       description:  idea.description || '',
       source:       idea.source || 'unknown',
       source_url:   idea.url    || '',
@@ -158,6 +168,21 @@ function markPublished(id, postId) {
   return !!idea;
 }
 
+// Marcar una idea como descartada (ej. el generador tropieza con ella siempre:
+// menciona marcas de terceros, contenido irrelevante, etc.) — evita reintentarla
+// cada día indefinidamente.
+function markSkipped(id, reason) {
+  const backlog = load();
+  const idea    = backlog.ideas.find(i => i.id === id);
+  if (idea) {
+    idea.status        = 'skipped';
+    idea.skipped_at    = new Date().toISOString();
+    idea.skipped_reason = reason || null;
+  }
+  save(backlog);
+  return !!idea;
+}
+
 // Estadísticas del backlog (para logs)
 function stats() {
   const backlog = load();
@@ -166,4 +191,4 @@ function stats() {
   return { total: backlog.ideas.length, pending, published };
 }
 
-module.exports = { addIdeas, getPendingIdeas, getRecentTopics, updateScores, markPublished, ideaId, detectTopic, stats, load };
+module.exports = { addIdeas, getPendingIdeas, getRecentTopics, updateScores, markPublished, markSkipped, ideaId, detectTopic, stats, load };

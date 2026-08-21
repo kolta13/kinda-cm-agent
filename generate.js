@@ -159,6 +159,13 @@ LISTA NEGRA — NUNCA USAR:
 - Signos de exclamación (¡ !). Cero.
 - Voseo argentino: "vos/tenés/conectás/hacés". Usar siempre "tú/tienes/conecta/haces".
 - Chilenismos ni jerga regional.
+- NUNCA nombrar marcas, empresas, agencias, distribuidoras o herramientas de terceros
+  (ej. DistroKid, TuneCore, CD Baby, Symphonic Distribution, AWAL, SoundBetter, Fiverr,
+  Sarbide Music, o cualquier agencia/sello/plataforma específica). Kinda Club no regala
+  publicidad a negocios ajenos. Si el tema toca distribución o herramientas, habla en
+  términos genéricos: "tu distribuidora", "una plataforma de distribución", "un agregador
+  digital". Excepción: SÍ puedes mencionar Spotify, TikTok, YouTube e Instagram cuando el
+  contenido es genuinamente sobre esas plataformas (no son competencia de Kinda Club).
 
 CAPTION DE INSTAGRAM:
 - Tono: músico experimentado hablando con un colega. Sin hype.
@@ -207,7 +214,30 @@ Responde SOLO con JSON válido:
 
   const raw      = await callGemini(prompt);
   const carousel = safeJsonParse(raw);
-  return neutralizeSpanish(carousel);
+  const clean    = neutralizeSpanish(carousel);
+  assertNoBrandMentions(clean);
+  return clean;
+}
+
+// ── Guardia de marcas de terceros ─────────────────────────────────────────
+// Última línea de defensa: si a pesar del prompt Gemini nombra un competidor
+// o herramienta ajena, se detiene ANTES de publicar en vez de dejarlo pasar
+// silenciosamente (pasó con "Sarbide Music" / "Symphonic Distribution").
+
+const COMPETITOR_BRANDS = [
+  'distrokid', 'tunecore', 'cd baby', 'cdbaby', 'symphonic', 'awal',
+  'soundbetter', 'fiverr', 'upwork', 'believe digital', 'unitedmasters',
+  'amuse', 'ditto music', 'record union', 'songtradr', 'groover',
+  'submithub', 'feature.fm', 'linkfire', 'toneden', 'sarbide',
+  'sarbide music', 'iMusician'.toLowerCase(), 'routenote',
+];
+
+function assertNoBrandMentions(carousel) {
+  const allText = JSON.stringify(carousel).toLowerCase();
+  const found = COMPETITOR_BRANDS.filter(brand => allText.includes(brand));
+  if (found.length > 0) {
+    throw new Error(`Carrusel menciona marca(s) de terceros prohibida(s): ${found.join(', ')} — regenera con otra idea o ajusta el prompt.`);
+  }
 }
 
 // ── Post-procesamiento ────────────────────────────────────────────────────
@@ -304,7 +334,16 @@ async function generate() {
   console.log(`  Score: ${winner.score_total} | Audiencia: ${winner.audience_type || 'artista'} | Topic: ${winner.topic_tag || '?'}`);
 
   // Generar copy del carrusel
-  const carousel = await generateCarousel(winner);
+  let carousel;
+  try {
+    carousel = await generateCarousel(winner);
+  } catch (err) {
+    // Si el guard de marcas de terceros (u otro fallo de generación) tumba esta idea,
+    // descartarla del backlog para no reintentarla mañana con el mismo resultado.
+    backlog.markSkipped(winnerId, err.message);
+    console.error(`[generate] Idea "${winner.title}" descartada del backlog: ${err.message}`);
+    throw err;
+  }
 
   const today  = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
   const output = {
