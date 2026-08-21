@@ -139,7 +139,20 @@ PORTADA (slide 1) — EL GANCHO:
   · Verdad incómoda: "Publicar sin estrategia es regalar música."
 - PROHIBIDO: títulos descriptivos ("Estrategia de lanzamiento musical"), subtítulos explicativos, gerundios, cualquier frase que RESUMA o DESCRIBA el contenido del carrusel. Si la portada ya responde la pregunta, nadie swipea.
 
-SLIDES DE CONTENIDO:
+SLIDE 2 — LA REVELACIÓN (bisagra obligatoria entre portada y contenido):
+- La portada abre un gap de curiosidad sin decir de qué trata el carrusel. El SLIDE 2 tiene
+  la obligación de CERRAR ese gap: su "titulo" debe nombrar el tema explícitamente para que
+  portada + slide 2 juntos se entiendan como una idea completa.
+- PROHIBIDO que el titulo del slide 2 sea un marcador genérico sin contexto: "Paso 1",
+  "Primero", "Define tu plan", "El primer error" — el lector no sabe plan/error DE QUÉ.
+  El titulo debe incluir el sustantivo del tema (lanzamiento, mezcla, booking, tarifas, etc.).
+  Ejemplo MALO: portada "El 90% lo hace al revés." → slide 2 "Paso 1: Define tu plan"
+  (no dice plan de qué). Ejemplo BUENO: → slide 2 "Así se arma un lanzamiento" (nombra
+  el tema — lanzamiento — y recién ahí el body entra en la mecánica del paso 1).
+- A partir del slide 3, ya con el tema establecido, sí pueden ser pasos numerados directos
+  ("Paso 2", "Paso 3") sin repetir el contexto cada vez.
+
+SLIDES DE CONTENIDO (general):
 - 2 niveles de lectura obligatorios:
   1. "titulo": 3 a 6 palabras. Ancla la atención.
   2. "body": 12 a 18 palabras exactas. Instrucción técnica directa, dato concreto o paso accionable. Nada más.
@@ -190,7 +203,7 @@ Responde SOLO con JSON válido:
     {
       "numero": 2,
       "tipo": "contenido",
-      "titulo": "3-6 palabras que anclan",
+      "titulo": "Nombra el tema explícitamente (no 'Paso 1' genérico)",
       "subtitulo": null,
       "body": "12 a 18 palabras de instrucción técnica directa o dato concreto accionable."
     },
