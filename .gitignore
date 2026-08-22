@@ -15,5 +15,6 @@ data/tiktok_token.json
 data/publish_tiktok_latest.json
 
 # Estos SÍ persisten en git (los commitea el workflow tras cada publicación)
-# data/backlog.json     ← NO ignorar
-# data/pexels_used.json ← NO ignorar
+# data/backlog.json      ← NO ignorar
+# data/pexels_used.json  ← NO ignorar
+# data/post_history.json ← NO ignorar

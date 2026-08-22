@@ -11,6 +11,7 @@ const ftp     = require('basic-ftp');
 const https   = require('https');
 const config  = require('./config');
 const backlog = require('./backlog');
+const history = require('./history');
 const { withRetry } = require('./retry');
 
 const DATA_DIR = path.join(__dirname, 'data');
@@ -191,12 +192,13 @@ async function publish() {
   console.log(`[publish] Semana ${manifest.week}: "${manifest.tema}"`);
   console.log(`[publish] ${manifest.slides.length} slides a publicar`);
 
-  // Leer caption desde carousel_latest.json (regen-caption.js lo actualiza ahí,
-  // no en render_latest.json). Fallback al caption del manifiesto si no existe.
+  // Leer caption y metadata completa desde carousel_latest.json (regen-caption.js
+  // actualiza el caption ahí, no en render_latest.json). Fallback al manifiesto si no existe.
   const carouselPath = path.join(DATA_DIR, 'carousel_latest.json');
   let caption = manifest.caption || '';
+  let carouselData = null;
   if (fs.existsSync(carouselPath)) {
-    const carouselData = JSON.parse(fs.readFileSync(carouselPath, 'utf8'));
+    carouselData = JSON.parse(fs.readFileSync(carouselPath, 'utf8'));
     const freshCaption = carouselData.carousel?.caption_instagram;
     if (freshCaption) caption = freshCaption;
   }
@@ -223,6 +225,23 @@ async function publish() {
     const marked = backlog.markPublished(manifest.backlog_id, postId);
     if (marked) console.log(`[publish] Backlog actualizado → idea "${manifest.tema}" marcada como publicada`);
   }
+
+  // Archivar el post en el histórico permanente (para retro y mejora continua)
+  history.appendPost({
+    platform:      'instagram',
+    week:          manifest.week,
+    tema:          manifest.tema,
+    topic_tag:     carouselData?.topic_tag,
+    audience_type: carouselData?.carousel?.audience_type,
+    backlog_id:    manifest.backlog_id,
+    winner_score:  carouselData?.winner_score,
+    post_id:       postId,
+    caption,
+    hashtags:      carouselData?.carousel?.hashtags,
+    slides:        carouselData?.carousel?.slides,
+    image_urls:    imageUrls,
+  });
+  console.log('[publish] Post archivado en data/post_history.json');
 
   // Guardar resultado
   const result = {
