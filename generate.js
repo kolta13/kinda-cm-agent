@@ -146,9 +146,14 @@ SLIDE 2 — LA REVELACIÓN (bisagra obligatoria entre portada y contenido):
 - PROHIBIDO que el titulo del slide 2 sea un marcador genérico sin contexto: "Paso 1",
   "Primero", "Define tu plan", "El primer error" — el lector no sabe plan/error DE QUÉ.
   El titulo debe incluir el sustantivo del tema (lanzamiento, mezcla, booking, tarifas, etc.).
-  Ejemplo MALO: portada "El 90% lo hace al revés." → slide 2 "Paso 1: Define tu plan"
-  (no dice plan de qué). Ejemplo BUENO: → slide 2 "Así se arma un lanzamiento" (nombra
-  el tema — lanzamiento — y recién ahí el body entra en la mecánica del paso 1).
+  Ejemplo MALO (sin contexto): portada "El 90% lo hace al revés." → slide 2 "Paso 1: Define
+  tu plan" (no dice plan de qué). Ejemplo BUENO: → slide 2 "Así se arma un lanzamiento"
+  (nombra el tema — lanzamiento — y recién ahí el body entra en la mecánica del paso 1).
+- PROHIBIDO también que sea una LISTA de sub-puntos separados por comas o dos puntos
+  (ej. "Marketing: Marca, Audiencia y Comunidad" — eso es un índice, no un gancho). El
+  titulo del slide 2 es UNA sola frase corta y directa, no una enumeración de todo lo que
+  viene después. Ejemplo MALO (lista): "Marketing: Marca, Audiencia y Comunidad." Ejemplo
+  BUENO (frase única): "Así funciona el marketing real."
 - A partir del slide 3, ya con el tema establecido, sí pueden ser pasos numerados directos
   ("Paso 2", "Paso 3") sin repetir el contexto cada vez.
 

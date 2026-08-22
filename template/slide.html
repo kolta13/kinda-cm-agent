@@ -151,7 +151,11 @@
   .slide-contenido .cover-bg .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.84);
+    /* 92% (antes 84%): a 84% se alcanzaba a leer texto de fondo de la foto
+       (nombres de festivales, clubes, handles) en fotos de stock de conciertos.
+       Más opaco = la foto sigue dando textura/ambiente pero cualquier texto
+       queda ilegible. */
+    background: rgba(0,0,0,0.92);
   }
   .slide-contenido .number {
     position: relative; z-index: 2;

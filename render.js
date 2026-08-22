@@ -46,13 +46,17 @@ function httpGet(url, headers) {
 
 // Estilos visuales genéricos — fallback cuando el texto del slide no matchea
 // ningún tema conocido. Rotan día a día para variedad entre posts.
+// Evitar keywords como "crowd"/"festival" en queries: traen fotos con pancartas,
+// carteles o señalética real de eventos/clubes que se alcanza a leer bajo el
+// overlay (ej. nombre de un festival o discoteca real quedando visible en el post).
+// Se prefieren planos más cerrados: siluetas, luces de escenario, primeros planos.
 const PEXELS_QUERY_STYLES = [
   'music producer studio headphones dark moody',
-  'concert stage performance lights crowd',
+  'concert stage lights silhouette dark',
   'urban street hip-hop culture graffiti',
   'recording studio microphone professional',
   'musician portrait dark dramatic lighting',
-  'music festival outdoor performance energy',
+  'stage lights smoke silhouette night',
   'dj producer nightclub performance dark',
 ];
 
@@ -62,7 +66,7 @@ const PEXELS_QUERY_STYLES = [
 const TOPIC_IMAGE_QUERIES = [
   { keywords: ['estudio', 'grabaci', 'mezcla', 'masteriz', 'produc'],                  query: 'recording studio mixing console music production' },
   { keywords: ['spotify', 'streaming', 'playlist', 'algoritmo'],                       query: 'music streaming app phone dark' },
-  { keywords: ['concierto', 'show', 'gira', 'festival', 'presentaci', 'escenario'],    query: 'live concert stage performance crowd' },
+  { keywords: ['concierto', 'show', 'gira', 'festival', 'presentaci', 'escenario'],    query: 'live concert stage lights silhouette' },
   { keywords: ['contrato', 'sello', 'manager', 'negoci', 'acuerdo', 'label'],          query: 'business meeting contract signing music industry' },
   { keywords: ['redes', 'contenido', 'fanbase', 'engagement', 'instagram', 'reel'],    query: 'social media content creator phone' },
   { keywords: ['tiktok', 'video', 'viral', 'shorts'],                                  query: 'filming vertical video phone content creator' },
