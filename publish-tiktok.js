@@ -108,10 +108,46 @@ function saveNewRefreshToken(refreshToken) {
   console.log('  ✓ Nuevo refresh token guardado en data/tiktok_token.json');
 }
 
+// ── TikTok: consultar info del creador + niveles de privacidad permitidos ──
+// Paso obligatorio según la doc de TikTok antes de publicar (Content Posting API
+// Sandbox Requirements): mientras la app no esté auditada/aprobada, TikTok solo
+// permite privacy_level: 'SELF_ONLY' (post privado, visible solo para el creador
+// de prueba agregado al Sandbox). Una vez aprobada la app, PUBLIC_TO_EVERYONE
+// aparece disponible automáticamente en creator_info_options — por eso este
+// código NO hardcodea el nivel, lo resuelve en cada corrida.
+
+async function queryCreatorInfo(accessToken) {
+  console.log('[tiktok] Consultando creator_info (requerido antes de publicar)...');
+  const res = await httpsPost(
+    TIKTOK_HOST,
+    '/v2/post/publish/creator_info/query/',
+    {},
+    { Authorization: `Bearer ${accessToken}` }
+  );
+
+  if (res.error && res.error.code !== 'ok') {
+    throw new Error(`TikTok creator_info: ${res.error.message} (${res.error.code})`);
+  }
+
+  const info = res.data || {};
+  console.log(`  ✓ Creador: @${info.creator_username || '?'} (${info.creator_nickname || '?'})`);
+  console.log(`  ✓ Niveles de privacidad permitidos: ${(info.privacy_level_options || []).join(', ') || '(ninguno devuelto)'}`);
+  return info;
+}
+
+// Elige el nivel de privacidad más abierto que la app tenga permitido en este momento.
+// PUBLIC_TO_EVERYONE si ya está aprobada; si no, cae a SELF_ONLY (obligatorio en Sandbox).
+function resolvePrivacyLevel(creatorInfo) {
+  const options = creatorInfo.privacy_level_options || [];
+  if (options.includes('PUBLIC_TO_EVERYONE')) return 'PUBLIC_TO_EVERYONE';
+  if (options.includes('SELF_ONLY'))          return 'SELF_ONLY';
+  return options[0] || 'SELF_ONLY';
+}
+
 // ── TikTok: iniciar publicación de fotos ──────────────────────────────────
 
-async function initPhotoPost(accessToken, imageUrls, caption) {
-  console.log(`[tiktok] Iniciando publicación de ${imageUrls.length} fotos...`);
+async function initPhotoPost(accessToken, imageUrls, caption, privacyLevel) {
+  console.log(`[tiktok] Iniciando publicación de ${imageUrls.length} fotos (privacy_level: ${privacyLevel})...`);
 
   // TikTok caption max 2200 chars; no acepta algunas URLs directamente en el título
   const title = caption.slice(0, 2200);
@@ -122,7 +158,7 @@ async function initPhotoPost(accessToken, imageUrls, caption) {
     {
       post_info: {
         title,
-        privacy_level:         'PUBLIC_TO_EVERYONE',
+        privacy_level:         privacyLevel,
         disable_duet:          false,
         disable_comment:       false,
         disable_stitch:        false,
@@ -214,19 +250,28 @@ async function publishTikTok() {
   const { access_token, refresh_token } = await refreshAccessToken();
   saveNewRefreshToken(refresh_token);
 
-  // 2. Iniciar publicación
-  const publishId = await initPhotoPost(access_token, imageUrls, caption);
+  // 2. Consultar qué privacy_level tenemos permitido (SELF_ONLY mientras la app
+  //    no esté aprobada; PUBLIC_TO_EVERYONE en cuanto TikTok la audite)
+  const creatorInfo  = await queryCreatorInfo(access_token);
+  const privacyLevel = resolvePrivacyLevel(creatorInfo);
+  if (privacyLevel !== 'PUBLIC_TO_EVERYONE') {
+    console.log(`[tiktok] ⚠ App aún no aprobada — publicando como ${privacyLevel} (solo visible para la cuenta de prueba del Sandbox)`);
+  }
 
-  // 3. Esperar confirmación
+  // 3. Iniciar publicación
+  const publishId = await initPhotoPost(access_token, imageUrls, caption, privacyLevel);
+
+  // 4. Esperar confirmación
   const postId = await waitForPublish(access_token, publishId);
 
   const result = {
-    published_at: new Date().toISOString(),
-    week:         publishData.week,
-    tema:         publishData.tema,
-    post_id:      postId,
-    publish_id:   publishId,
-    image_count:  imageUrls.length,
+    published_at:  new Date().toISOString(),
+    week:          publishData.week,
+    tema:          publishData.tema,
+    post_id:       postId,
+    publish_id:    publishId,
+    privacy_level: privacyLevel,
+    image_count:   imageUrls.length,
   };
 
   fs.writeFileSync(
@@ -247,4 +292,11 @@ if (require.main === module) {
   });
 }
 
-module.exports = { publishTikTok };
+module.exports = {
+  publishTikTok,
+  refreshAccessToken,
+  queryCreatorInfo,
+  resolvePrivacyLevel,
+  initPhotoPost,
+  waitForPublish,
+};
