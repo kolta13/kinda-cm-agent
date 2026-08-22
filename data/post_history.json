@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T16:18:54.139Z",
+  "updated_at": "2026-08-22T22:18:00.544Z",
   "posts": [
     {
       "platform": "instagram",
@@ -119,6 +119,71 @@
       "image_urls": [],
       "metrics": null,
       "note": "Backfill reconstruido desde backlog.json — texto completo de slides no disponible (carousel_latest.json ya se había sobreescrito antes de crear este archivo)"
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-08-22T22:18:00.544Z",
+      "week": "2026-08-22",
+      "tema": "5 estrategias de marketing digital para músicos en 2026",
+      "topic_tag": "marketing",
+      "audience_type": "artista",
+      "backlog_id": "gi1s7c",
+      "winner_score": 9,
+      "post_id": "18092581850644063",
+      "caption": "El panorama musical cambia rápido. Estas son las estrategias clave para que tu música llegue más lejos en 2026.\n\n#MusicaLatina #MarketingMusical #LanzamientoMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#MarketingMusical",
+        "#LanzamientoMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "El 80% de tus streams son invisibles.",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Marketing digital para músicos en 2026",
+          "body": "Usa TikTok y Reels para clips cortos. Genera expectación antes del lanzamiento."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Construye comunidad activa.",
+          "body": "Interactúa en Discord, grupos privados. Ofrece contenido exclusivo a fans leales."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Email marketing directo.",
+          "body": "Recopila correos en conciertos y web. Envía newsletters con novedades y ofertas."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Colabora estratégicamente.",
+          "body": "Busca artistas afines. Promociones cruzadas aumentan tu alcance a audiencias nuevas."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Publicidad segmentada.",
+          "body": "Invierte en anuncios en redes sociales. Dirige a fans con intereses similares a tu música."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Lanza tu próximo proyecto en Kinda Club.",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-22/slide-01.png",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-22/slide-02.png",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-22/slide-03.png",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-22/slide-04.png",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-22/slide-05.png",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-22/slide-06.png",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-22/slide-07.png"
+      ],
+      "metrics": null
     }
   ]
 }
