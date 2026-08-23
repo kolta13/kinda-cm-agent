@@ -13,6 +13,7 @@ data/agent.log
 data/agent-scheduler.log
 data/tiktok_token.json
 data/publish_tiktok_latest.json
+data/.tiktok_pkce.json
 
 # Estos SÍ persisten en git (los commitea el workflow tras cada publicación)
 # data/backlog.json      ← NO ignorar

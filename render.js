@@ -1,6 +1,9 @@
 // ── Kinda CM Agent — Fase 3: Render de slides ──────────────────────────
-// Toma carousel_latest.json y genera 7 PNGs con el branding de Kinda Club.
-// Output: output/semana-{N}/slide-01.png ... slide-07.png
+// Toma carousel_latest.json y genera JPGs con el branding de Kinda Club.
+// JPG (no PNG): TikTok Content Posting API rechaza PNG en fotos con
+// file_format_check_failed — solo acepta JPEG/WEBP. Meta acepta ambos,
+// así que se unificó a JPEG para servir el mismo archivo a las dos plataformas.
+// Output: output/semana-{N}/slide-01.jpg ... slide-07.jpg
 //
 // Uso: node render.js
 
@@ -256,7 +259,11 @@ async function renderSlides(carousel, week, data = {}) {
   });
 
   const page = await browser.newPage();
-  await page.setViewport({ width: SIZE_W, height: SIZE_H, deviceScaleFactor: 2 });
+  // deviceScaleFactor 1 (antes 2): a 2160×2700 (factor 2) TikTok rechazaba las
+  // fotos con picture_size_check_failed. 1080×1350 nativo funciona en TikTok Y
+  // es exactamente la resolución que Instagram recomienda para posts 4:5 — no
+  // se pierde calidad real, además reduce el peso de archivo casi 10x.
+  await page.setViewport({ width: SIZE_W, height: SIZE_H, deviceScaleFactor: 1 });
 
   const templateUrl = 'file:///' + TEMPLATE.replace(/\\/g, '/');
   await page.goto(templateUrl, { waitUntil: 'networkidle0', timeout: 30000 });
@@ -285,13 +292,13 @@ async function renderSlides(carousel, week, data = {}) {
   // Definir qué slides renderizar según los slides generados (dinámico 3-8)
   const contenidosCount = slideData.contenidos.length; // 1-6
   const slideDefs = [
-    { id: 'slide-portada', label: 'Portada', file: 'slide-01.png' },
+    { id: 'slide-portada', label: 'Portada', file: 'slide-01.jpg' },
     ...slideData.contenidos.map((_, i) => ({
       id:    `slide-${i + 1}`,
       label: `${i + 1}`,
-      file:  `slide-${String(i + 2).padStart(2, '0')}.png`,
+      file:  `slide-${String(i + 2).padStart(2, '0')}.jpg`,
     })),
-    { id: 'slide-cta', label: 'CTA', file: `slide-${String(contenidosCount + 2).padStart(2, '0')}.png` },
+    { id: 'slide-cta', label: 'CTA', file: `slide-${String(contenidosCount + 2).padStart(2, '0')}.jpg` },
   ];
 
   const paths = [];
@@ -301,7 +308,7 @@ async function renderSlides(carousel, week, data = {}) {
     await new Promise(r => setTimeout(r, 120));
 
     const outPath = path.join(outDir, def.file);
-    await page.screenshot({ path: outPath, type: 'png', clip: { x: 0, y: 0, width: SIZE_W, height: SIZE_H } });
+    await page.screenshot({ path: outPath, type: 'jpeg', quality: 92, clip: { x: 0, y: 0, width: SIZE_W, height: SIZE_H } });
     paths.push(outPath);
     console.log(`  ✓ ${def.label} → ${def.file}`);
   }

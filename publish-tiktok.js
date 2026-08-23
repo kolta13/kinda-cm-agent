@@ -149,31 +149,48 @@ function resolvePrivacyLevel(creatorInfo) {
 async function initPhotoPost(accessToken, imageUrls, caption, privacyLevel) {
   console.log(`[tiktok] Iniciando publicación de ${imageUrls.length} fotos (privacy_level: ${privacyLevel})...`);
 
-  // TikTok caption max 2200 chars; no acepta algunas URLs directamente en el título
-  const title = caption.slice(0, 2200);
+  // En posts de FOTO, TikTok separa "title" (corto, ~90 chars) de "description"
+  // (el caption largo) — a diferencia de video, donde solo existe "title".
+  const title       = caption.split('\n')[0].slice(0, 90);
+  const description = caption.slice(0, 2200);
 
-  const res = await httpsPost(
+  const buildBody = (level) => ({
+    post_info: {
+      title,
+      description,
+      privacy_level:   level,
+      disable_comment: false,
+      auto_add_music:  false, // no agregar música de fondo automática
+    },
+    source_info: {
+      source:            'PULL_FROM_URL',
+      photo_images:      imageUrls,
+      photo_cover_index: 0,
+    },
+    post_mode:  'DIRECT_POST', // requerido junto con media_type — su ausencia
+                                // causaba "Invalid media_type or post_mode"
+    media_type: 'PHOTO',
+  });
+
+  let res = await httpsPost(
     TIKTOK_HOST,
     '/v2/post/publish/content/init/',
-    {
-      post_info: {
-        title,
-        privacy_level:         privacyLevel,
-        disable_duet:          false,
-        disable_comment:       false,
-        disable_stitch:        false,
-        brand_content_toggle:  false,
-        brand_organic_toggle:  false,
-      },
-      source_info: {
-        source:            'PULL_FROM_URL',
-        photo_images:      imageUrls,
-        photo_cover_index: 0,
-      },
-      media_type: 'PHOTO',
-    },
+    buildBody(privacyLevel),
     { Authorization: `Bearer ${accessToken}` }
   );
+
+  // creator_info puede listar PUBLIC_TO_EVERYONE como "permitido" aunque la app
+  // no esté auditada todavía — la restricción real solo se aplica acá, al publicar.
+  // Reintentar automáticamente como privado en vez de fallar el ciclo completo.
+  if (res.error?.code === 'unaudited_client_can_only_post_to_private_accounts' && privacyLevel !== 'SELF_ONLY') {
+    console.log('  ⚠ App sin auditar — reintentando como SELF_ONLY (privado)...');
+    res = await httpsPost(
+      TIKTOK_HOST,
+      '/v2/post/publish/content/init/',
+      buildBody('SELF_ONLY'),
+      { Authorization: `Bearer ${accessToken}` }
+    );
+  }
 
   if (res.error && res.error.code !== 'ok') {
     throw new Error(`TikTok post init: ${res.error.message} (${res.error.code})`);
