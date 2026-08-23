@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T22:18:00.542Z",
+  "updated_at": "2026-08-23T22:17:50.003Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -610,10 +610,10 @@
       },
       "angulo": "Ataca el problema de los altos costos en servicios musicales, prometiendo tarifas transparentes.",
       "por_que": "Aborda directamente la preocupación económica de los artistas independientes, ofreciendo transparencia y acceso a servicios a precios justos.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-08-17T04:42:26.463Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-08-23T22:17:50.003Z",
+      "post_id": "18443056633193332",
       "audience_type": "artista"
     },
     {
@@ -1679,14 +1679,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/p/DVVtEsAjBCZ/",
       "topic_tag": "shows",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Enfoque en la organización de eventos independientes y cómo el booking puede ser una solución.",
+      "por_que": "Ofrece una solución práctica para artistas que buscan organizar sus propios eventos, abordando un aspecto clave como es el booking.",
       "status": "pending",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "yfyagb",
@@ -1717,14 +1723,20 @@
       "source": "google",
       "source_url": "https://www.facebook.com/EIPMadrid/posts/booking-producci%C3%B3n-seguridad-timing-un-festival-no-empieza-cuando-sube-el-primer/1383134397369325/",
       "topic_tag": "shows",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Detalla los elementos cruciales para la promoción de conciertos y festivales, más allá de lo obvio.",
+      "por_que": "Proporciona una visión integral de la organización de eventos, ayudando a los artistas a entender la complejidad y a planificar mejor sus presentaciones.",
       "status": "pending",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "5vqvss",
@@ -1733,14 +1745,20 @@
       "source": "google",
       "source_url": "https://www.noisesyndicate.com/servicios",
       "topic_tag": "shows",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Presenta servicios de management, booking y promoción para bandas emergentes.",
+      "por_que": "Dirigido a profesionales que buscan expandir su cartera de servicios o entender cómo operan otras agencias en el mercado.",
       "status": "pending",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "m4n1bt",
@@ -1749,14 +1767,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/reel/DbHn6ySKJON/",
       "topic_tag": "distribucion",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Identifica un error frecuente en la estrategia de lanzamiento de canciones de artistas independientes.",
+      "por_que": "Aborda un problema práctico y común que afecta la visibilidad y el impacto de los lanzamientos musicales de artistas emergentes.",
       "status": "pending",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "pap3so",
@@ -1765,14 +1789,20 @@
       "source": "google",
       "source_url": "https://www.facebook.com/solyofficial/posts/lo-que-el-99-de-los-artistas-independientes-hacen-mal/1601731358075953/",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Se enfoca en errores comunes de artistas independientes, incluyendo la salud mental.",
+      "por_que": "Toca un tema sensible pero crucial para la sostenibilidad de una carrera musical, ofreciendo una perspectiva diferente a la puramente técnica.",
       "status": "pending",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "38qovv",
@@ -1781,14 +1811,20 @@
       "source": "google",
       "source_url": "https://www.facebook.com/solyofficial/posts/por-esta-raz%C3%B3n-es-que-los-artistas-independientes-fracasan/1623710452544710/",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Analiza las razones del fracaso en artistas independientes, destacando problemas de salud mental.",
+      "por_que": "Similar al punto 5, aborda las causas subyacentes del fracaso artístico, yendo más allá de la falta de talento o estrategia.",
       "status": "pending",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "k9nlup",
@@ -1797,14 +1833,20 @@
       "source": "youtube_viral",
       "source_url": "https://www.instagram.com/reel/DbydlgPxSHH/",
       "topic_tag": "video_viral",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Propone el storytelling con performance y gancho POV como formato de contenido efectivo.",
+      "por_que": "Ofrece una estrategia de contenido concreta y moderna para redes sociales que busca maximizar la conexión con la audiencia.",
       "status": "pending",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "fkntsq",
@@ -1813,14 +1855,20 @@
       "source": "youtube_viral",
       "source_url": "https://www.instagram.com/reel/DbrBWpiRiW1/",
       "topic_tag": "video_viral",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Sugiere el uso de una herramienta específica para la promoción musical en TikTok que muchos artistas desconocen.",
+      "por_que": "Aporta valor práctico al señalar una herramienta infrautilizada en una plataforma clave para el descubrimiento musical.",
       "status": "pending",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "oppo2y",
@@ -1829,14 +1877,20 @@
       "source": "youtube_viral",
       "source_url": "https://www.instagram.com/reel/DbvcBPxtq2Y/",
       "topic_tag": "video_viral",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía sobre cómo optimizar la configuración de la cuenta de TikTok para mejorar la visibilidad del contenido.",
+      "por_que": "Ofrece pasos claros y aplicables para que los artistas mejoren el alcance de sus videos en TikTok, una plataforma crucial.",
       "status": "pending",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "28ree2",
@@ -1845,14 +1899,20 @@
       "source": "youtube_viral",
       "source_url": "https://www.instagram.com/reel/Db8SNpXRSxV/",
       "topic_tag": "marketing",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Identifica los 5 formatos de contenido que generan millones de streams sin necesidad de sello o manager.",
+      "por_que": "Proporciona una hoja de ruta de contenido de alto rendimiento, directamente aplicable para el crecimiento orgánico de artistas independientes.",
       "status": "pending",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "n26s88",
@@ -1883,14 +1943,20 @@
       "source": "google",
       "source_url": "https://sympathyforthelawyer.com/blog/como-se-negocian-contratos-productor-artista-sello/",
       "topic_tag": "monetizacion",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Presenta una guía gratuita sobre la negociación de contratos de productor, cubriendo royalties y anticipos.",
+      "por_que": "Ofrece información legal y contractual actualizada y específica para profesionales, ayudando a asegurar acuerdos justos.",
       "status": "pending",
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "9h3x2v",
@@ -1899,14 +1965,20 @@
       "source": "google",
       "source_url": "https://www.antioquiasoul.es/como-negociar-y-cerrar-un-contrato-justo-para-una-banda-paisa-que-sale-de-su-primer-disco-casero",
       "topic_tag": "distribucion",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía a las bandas sobre cómo prepararse y negociar contratos de manera efectiva.",
+      "por_que": "Empodera a los artistas con el conocimiento necesario para negociar acuerdos equitativos, un aspecto fundamental de la carrera musical.",
       "status": "pending",
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "na47mn",
@@ -1915,14 +1987,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/p/DXsU1rEjB8J/?__d",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Explica por qué los artistas pueden ser dueños de su música pero no generar ingresos por ella.",
+      "por_que": "Aclara un punto confuso sobre la propiedad intelectual y la monetización, crucial para que los artistas entiendan sus derechos y flujos de ingresos.",
       "status": "pending",
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "2j1vrx",
@@ -1953,14 +2031,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/reel/DW6Xo8MAJWU/?hl=en",
       "topic_tag": "monetizacion",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Desglosa cuánto se gana realmente por stream en diferentes plataformas de música.",
+      "por_que": "Responde a una pregunta fundamental para los artistas sobre la monetización del streaming, ofreciendo transparencia en un área a menudo opaca.",
       "status": "pending",
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "ey016g",
@@ -2013,14 +2097,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/reel/DZIITFnsPFA/",
       "topic_tag": "monetizacion",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Calcula cuántos streams se necesitan para ganar $1,000 en cada plataforma de streaming.",
+      "por_que": "Ofrece una perspectiva cuantitativa y comparativa sobre la monetización del streaming, ayudando a los artistas a establecer metas realistas.",
       "status": "pending",
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "xcvg4o",
@@ -2029,14 +2119,20 @@
       "source": "youtube_viral",
       "source_url": "https://www.instagram.com/reel/DbYzJkCg7J1/",
       "topic_tag": "video_viral",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Revela verdades ocultas de la industria musical dirigidas a artistas independientes.",
+      "por_que": "Proporciona información valiosa y a menudo no compartida, que ayuda a los artistas a navegar la industria con mayor realismo y preparación.",
       "status": "pending",
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "ranjsc",
@@ -2045,14 +2141,20 @@
       "source": "youtube_viral",
       "source_url": "https://www.instagram.com/reel/Db4qATsoEN9/",
       "topic_tag": "marketing",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Enfatiza la importancia de la constancia sobre el talento para artistas emergentes.",
+      "por_que": "Ofrece una perspectiva motivacional y práctica sobre el desarrollo de una carrera musical, destacando un factor clave para el éxito a largo plazo.",
       "status": "pending",
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "azwrd6",
@@ -2061,14 +2163,20 @@
       "source": "youtube_viral",
       "source_url": "https://www.instagram.com/reel/DbYNTF0hvSa/",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Comparte 5 lecciones aprendidas por un artista antes de iniciar su carrera profesional.",
+      "por_que": "Ofrece consejos prácticos y reflexiones personales que pueden prevenir errores comunes y acelerar el aprendizaje de nuevos artistas.",
       "status": "pending",
       "discovered_at": "2026-08-20T22:21:22.885Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "svyhl8",
@@ -2077,14 +2185,20 @@
       "source": "youtube_viral",
       "source_url": "https://www.instagram.com/reel/DbbkfUwNBfG/",
       "topic_tag": "video_viral",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Un consejo directo para aquellos que desean iniciar una carrera musical.",
+      "por_que": "Proporciona una guía concisa y motivadora para aspirantes a músicos, abordando un punto clave para el comienzo de su trayectoria.",
       "status": "pending",
       "discovered_at": "2026-08-20T22:21:22.885Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "ezb16z",
@@ -2093,14 +2207,20 @@
       "source": "youtube_viral",
       "source_url": "https://www.instagram.com/reel/Db_T_zlx3pO/",
       "topic_tag": "video_viral",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Instruye sobre la importancia de registrar regalías antes de que una canción se vuelva viral.",
+      "por_que": "Ofrece una acción preventiva y crucial para asegurar la correcta monetización y protección de la música, especialmente ante un posible éxito viral.",
       "status": "pending",
       "discovered_at": "2026-08-20T22:21:22.885Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "cjjgig",
@@ -2175,14 +2295,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/reel/DZjEXh6BS3m/",
       "topic_tag": "monetizacion",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Guía práctica sobre sync licensing y agencias clave en LATAM.",
+      "por_que": "El sync licensing es una fuente de ingresos y visibilidad muy atractiva para artistas independientes. Ofrecer un camino claro y agencias específicas en la región lo hace muy valioso.",
       "status": "pending",
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "ylafyv",
@@ -2345,14 +2471,20 @@
       "source": "youtube_viral",
       "source_url": "/goto?url=CAESYwHrOzAVohfv2ovtw8Jit55xNvr-9S8DnaD4ebM_ukOprZ4lskGP_vJt_mSq1G8EuiajKqzQEWatdd4jQHi98A2Jp52a2Ml_lOg7Nt8bvqmUv3xLcEccQrqwcywO40BnNfYFIw",
       "topic_tag": "distribucion",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Análisis de una estrategia de lanzamiento masiva y su efectividad para artistas emergentes.",
+      "por_que": "Presenta una táctica de lanzamiento poco convencional que puede generar curiosidad y debate sobre la saturación y la estrategia en plataformas como Spotify.",
       "status": "pending",
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "nv6mp2",
@@ -2361,14 +2493,20 @@
       "source": "youtube_viral",
       "source_url": "/goto?url=CAESYwHrOzAVF94VqhU1AVhSc3OTiiuvKXxz-YTRtd-8IHMz_bvGQjjy64cv1bFlL2BnvEI9jJYNHRBlfU19myI9mdstsSL7XdZqw-0KgI-PSwWES3UEBsOV1vO9isz3Kqr_mBTKkw",
       "topic_tag": "marketing",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Top 10 de prioridades para artistas emergentes, enfocado en lo esencial para el crecimiento.",
+      "por_que": "Ofrece una hoja de ruta clara y priorizada, abordando la necesidad de los artistas de saber dónde enfocar sus esfuerzos y recursos limitados.",
       "status": "pending",
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "7756ng",
@@ -2487,14 +2625,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/djmotionpr/reel/DcMrhgMutEc/",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Reflexión sobre la colaboración y producción musical con talentos emergentes.",
+      "por_que": "Aunque es una cita, puede servir como punto de partida para discutir la importancia de la colaboración y la producción en la carrera de un artista.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "q9sxmi",
@@ -2503,14 +2647,20 @@
       "source": "google",
       "source_url": "https://mooseeka.com/blog/como-encontrar-productor-musical-latinoamerica",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9.5,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 10
+      },
+      "angulo": "Guía exhaustiva para conectar con productores musicales en la región.",
+      "por_que": "Es una necesidad fundamental para muchos artistas independientes. Una guía práctica y localizada sobre cómo encontrar y elegir al productor adecuado es de altísimo valor.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "nzi8y8",
@@ -2519,14 +2669,20 @@
       "source": "google",
       "source_url": "https://www.facebook.com/RollingStoneMX/posts/aqdc-daramola-ha-tendido-puentes-entre-%C3%A1frica-y-am%C3%A9rica-latina-como-productor-y-/1558383129667263/",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "El rol de Daramola como puente musical entre África y LATAM.",
+      "por_que": "Muestra cómo la música puede trascender fronteras y la importancia de la colaboración global, inspirando a artistas a buscar conexiones internacionales.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "vt5t9g",
@@ -2535,14 +2691,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/p/DbyFAY3EgAS/",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "La historia de éxito de Daniela en el music publishing latino.",
+      "por_que": "Ofrece un ejemplo inspirador de una carrera en music publishing desde LATAM, mostrando un camino menos explorado para artistas y profesionales.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "c8wudu",
@@ -2551,14 +2713,20 @@
       "source": "google",
       "source_url": "https://www.facebook.com/solyofficial/posts/llegu%C3%A9-a-millones-de-streams-sin-sello-nimanageren-esta-gu%C3%ADa-comparto-el-sistema/1557249535857469/",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategia para alcanzar millones de streams de forma independiente.",
+      "por_que": "Aborda directamente el sueño de muchos artistas independientes: el éxito en plataformas de streaming sin depender de estructuras tradicionales. El 'Paso cero' es intrigante.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "4nwfjh",
@@ -2567,14 +2735,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/reel/DaLRgaaRHmE/",
       "topic_tag": "networking",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Revela verdades ocultas sobre la construcción de una carrera musical.",
+      "por_que": "Desmitifica la dependencia de terceros (sellos, managers) y empodera al artista a tomar el control de su carrera desde el principio, ofreciendo una perspectiva más realista.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "o3hos0",
@@ -2583,14 +2757,20 @@
       "source": "google",
       "source_url": "https://www.instagram.com/reel/DZm4Ev0jBPd/",
       "topic_tag": "general",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "La importancia crítica de la protección de la propiedad intelectual para artistas.",
+      "por_que": "Muchos artistas se enfocan solo en la creación y descuidan la protección legal de su obra. Este tema aborda una necesidad fundamental y a menudo ignorada.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "n6ygxs",
@@ -2599,14 +2779,20 @@
       "source": "google",
       "source_url": "https://igeca.net/la-industria-musical-y-su-influencia-en-la-forma-de-vivir-la-musica/",
       "topic_tag": "noticias",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Análisis de la estructura y funcionamiento de la industria musical.",
+      "por_que": "Proporciona una visión general que puede ser útil tanto para artistas que buscan entender el ecosistema como para profesionales que quieren contextualizar su rol.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "ntty8p",
@@ -2637,14 +2823,20 @@
       "source": "tiktok_viral",
       "source_url": "https://www.tiktok.com/@symphoniclatino/video/7667253353377746184",
       "topic_tag": "monetizacion",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía para asegurar una correcta monetización de la música en plataformas digitales.",
+      "por_que": "La monetización es un dolor de cabeza constante para los artistas independientes. Ofrecer claridad sobre cómo cobrar lo justo es de altísimo valor práctico.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "5z3wyt",
@@ -2653,14 +2845,20 @@
       "source": "tiktok_viral",
       "source_url": "https://www.tiktok.com/@wilmybaez3/video/7675035876354723093",
       "topic_tag": "monetizacion",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Criterios para evaluar y decidir sobre la venta de un proyecto musical.",
+      "por_que": "Aborda una decisión estratégica compleja que pocos artistas consideran activamente. Ofrecer criterios claros para la valoración económica es útil.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.012Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "birdpg",
@@ -2691,14 +2889,20 @@
       "source": "youtube_viral",
       "source_url": "https://www.instagram.com/reel/Db8qG0qRpLL/",
       "topic_tag": "monetizacion",
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "La estrategia de usar la controversia y la publicidad gratuita en redes sociales.",
+      "por_que": "Explora un ángulo interesante sobre cómo el 'hate' puede ser capitalizado como publicidad, un enfoque provocador y relevante para la gestión de marca en redes.",
       "status": "pending",
       "discovered_at": "2026-08-22T22:16:13.012Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "wo1zm0",
@@ -2743,6 +2947,314 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
+    },
+    {
+      "id": "vrwnr3",
+      "title": "Vampr - Find & Meet Musicians - Aplicaciones en ...",
+      "description": "Vampr es la red social número uno que ayuda a creativos y artistas a encontrar personas con las cuales colaborar, crear nueva música y monetizar su trabajo.",
+      "source": "google",
+      "source_url": "https://play.google.com/store/apps/details?id=me.vampr.android&hl=es",
+      "topic_tag": "monetizacion",
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Presentación de Vampr como herramienta para conectar músicos y creativos.",
+      "por_que": "Las redes de contacto son vitales. Destacar una plataforma específica que facilita la colaboración y el networking para artistas emergentes es muy práctico.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "pb3u92",
+      "title": "Redes sociales para músicos emergentes",
+      "description": "- Construir una identidad clara y coherente que represente tu proyecto. Acciones prácticas para usar redes como medio 1. Define tu mensaje: elige tono, estética ...",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/@midisquera/video/7657285423244348685",
+      "topic_tag": "marketing",
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategias y acciones prácticas para el uso efectivo de redes sociales.",
+      "por_que": "Las redes sociales son la principal herramienta de marketing para artistas independientes. Ofrecer consejos aplicables y una guía de identidad es fundamental.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "bfimph",
+      "title": "Redes sociales para bandas de música: el error que comete ...",
+      "description": "La mayoría de los perfiles sociales de bandas, promotoras y festivales funcionan como tablones de anuncios. Suben lo que hay, cuando lo hay, y esperan que eso ...",
+      "source": "google",
+      "source_url": "https://raquelmartinsm.com/redes-sociales-para-bandas-de-musica/",
+      "topic_tag": "marketing",
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Identifica y corrige el error común en el uso de redes sociales por parte de bandas.",
+      "por_que": "Se enfoca en un error específico y común, ofreciendo una solución práctica para mejorar la presencia online de bandas y artistas, diferenciándose de guías genéricas.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "tp1x87",
+      "title": "Plataformas para músicos emergentes en 2026",
+      "description": "Spotify, Bandcamp, TikTok, Reddit, SoundCloud: análisis honesto de qué hace bien cada plataforma para músicos emergentes y cuáles no valen la pena según tu ...",
+      "source": "google",
+      "source_url": "https://groovehubmusic.com/blog/los-mejores-sitios-para-musicos-emergentes-plataformas-para-compartir-musica-recibir-feedback-y-crecer-como-artista",
+      "topic_tag": "distribucion",
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Análisis comparativo y honesto de plataformas clave para artistas en el futuro cercano.",
+      "por_que": "Ofrece una visión actualizada y crítica de las herramientas digitales esenciales, ayudando a los artistas a tomar decisiones informadas sobre dónde enfocar su energía.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "7x7kpa",
+      "title": "Abogado de Música on Instagram: \"5 cosas que debes saber ...",
+      "description": "Un contrato que puede cambiarlo todo, una Cláusula de cumplimiento y un artista que sube su música antes de pedir autorización. Un Storytime que puede pasar a ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DVRU_HvEdIx/?hl=es",
+      "topic_tag": "networking",
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Aspectos legales clave sobre contratos musicales y subida de música a plataformas.",
+      "por_que": "La protección legal y los contratos son cruciales. Resumir '5 cosas que debes saber' de un abogado es muy valioso y aplicable para artistas que lanzan su música.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "cahef1",
+      "title": "Destra Entertainment Lawyers ® on Instagram: \"Cada contrato ...",
+      "description": "Primero, la duración del contrato. ¿Te estás vinculando por años, discos o por tiempo indefinido? Un contrato muy largo puede limitar tus oportunidades futuras.",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DaaHGjckz-v/",
+      "topic_tag": "networking",
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Análisis de la duración y términos clave en contratos de entretenimiento.",
+      "por_que": "Se enfoca en un aspecto específico y crítico de los contratos (duración), ofreciendo una perspectiva detallada que puede ser útil tanto para artistas como para profesionales que negocian acuerdos.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "ikw13r",
+      "title": "9 Cláusulas Importantes en Contratos Musicales",
+      "description": "99% de los contratos dura más tiempo de lo que inicialmente piensas. Estas son 9 cláusulas que afectan cuánto tiempo estás bajo contrato. #industriamusical # ...",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/@alexiomarrodriguez/photo/7641587229076376845",
+      "topic_tag": "monetizacion",
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Desglosar las 9 cláusulas clave en contratos musicales, enfocándose en su duración y cómo proteger al artista independiente.",
+      "por_que": "Los contratos son cruciales y a menudo mal entendidos por artistas independientes. Ofrecer claridad sobre cláusulas específicas y su impacto a largo plazo es de alta relevancia y aplicabilidad.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "aqtgla",
+      "title": "Asi son los contratos en la industria musical",
+      "description": "Dos: La vigencia. El contrato va a establecer que es por una cierta cantidad de años. Pero ese plazo muchas veces está condicionado a ciertas entregas o a una ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DaRYDP_El6N/",
+      "topic_tag": "networking",
+      "score_total": 8.25,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Explicar la estructura y duración típica de los contratos en la industria musical, con énfasis en la vigencia.",
+      "por_que": "Muchos artistas independientes firman contratos sin comprender completamente su duración y las implicaciones. Este contenido aborda esa brecha de conocimiento de forma directa.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "drgwvu",
+      "title": "Los artistas independientes deberían de dejar de hacer ...",
+      "description": "Estos cantantes vacíos existen porque lamentablemente hay gente apoyando si no fuera así esos badbunny o ese montón de reguetoneros corrientes NO existirían...",
+      "source": "youtube_viral",
+      "source_url": "/goto?url=CAES0QEB6zswFZu8nJXPKFWkAnyalKWO2QTSuAQs9ORaLXhqidRW9vqxBUjJlSw33B2CWMK98BzBRcIAx8XJR75K3jVGdWPzgFUUEaB6sp3QCrRNSWWC9_KTIze65fHm5eSXRk1PtShmu9IIRkw50aGZrhaxd2RNEARgovfQq7Hx9k83InLSoG2PqrD7bdcCflOmAAMBp9Sz1ZLQ1GRZGEFo6u_UnT8smRZ3OdYZncfsVLlVk-JTG0UIrdzYQCkyCpSSitgVoIA04AYSt_YtKpDXfy8bGg",
+      "topic_tag": "general",
+      "score_total": 7.75,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 9,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Identificar y criticar comportamientos o estrategias comunes entre artistas independientes que limitan su éxito, incentivando un cambio.",
+      "por_que": "Este formato genera debate y curiosidad, apelando directamente a las experiencias y frustraciones de los artistas. El ángulo provocador puede impulsar el engagement.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "cphb4t",
+      "title": "Errores de un artista emergente: no hay momento perfecto ...",
+      "description": "- Muchos creen que solo basta con tener talento para triunfar en la industria musical, pero a veces vemos a compositores y artistas reconocidos logrando \" ...",
+      "source": "youtube_viral",
+      "source_url": "/goto?url=CAESyAEB6zswFf_syp2ekWcRXkIlTcGvbS8LZdD36ExTZmUQOb_oUmsNQf-jItxIKUtT-uXVwcQEFiq7PJ_dvsN5diDBUD_wF53PkIxsghn_RibYmGriw3lQw1qEdB5Q1wypNooKL5qYwUJ8ClZOyCC9TD5mGoIG5apP2onvzHm-ZjAcLHFJjJccd0dLRk__07v2UZTpYayMSF1944p0GbImstZ4OtrU-FOdPGtiPI7Wl8fRQV3DAgIDSnc-Q7KFpp-5Jy-TqHpp3W6KaQ",
+      "topic_tag": "noticias",
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Abordar el mito de que solo el talento basta y señalar errores comunes de artistas emergentes, promoviendo la acción y la estrategia.",
+      "por_que": "Los artistas emergentes buscan activamente consejos para superar obstáculos. Señalar errores comunes y desmitificar el éxito basado únicamente en talento es muy relevante y aplicable.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "l3oypv",
+      "title": "Muchos artistas independientes no van a llegar a ningún lado",
+      "description": "Muchos artistas luchan porque no entienden el negocio de la música. El foco no es el artista, son las canciones. Equilibra ser artista y empresario para ser ...",
+      "source": "youtube_viral",
+      "source_url": "/goto?url=CAESYwHrOzAVCW0QDCQkyUD6qevyqs3G3tBmcszDD2GlZEqvASUip7X0fhqVqjNlTsEllttgeWQ_vR-sj5sKkf5Bzo7vfmYbMlA4tQKc7MIh583IJ1Dk1iHPHtMDFWJPUq5OQqLfiw",
+      "topic_tag": "networking",
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Analizar por qué muchos artistas independientes fracasan, enfocándose en la falta de comprensión del negocio musical y el enfoque en el producto sobre el mercado.",
+      "por_que": "Es una afirmación audaz que puede generar discusión. Explica una realidad dura pero necesaria para que los artistas comprendan la importancia del aspecto de negocio.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "rl6xvi",
+      "title": "Cobrar por derechos de autor, música y patentes: la inversión alternativa que busca ingresos recurrentes fuera del mercado tradicional",
+      "description": "Royalties editoriales, licencias tecnológicas, flujos farmacéuticos convierten activos intangibles en nuevas fuentes periódicas para patrimonios pacientes.",
+      "source": "noticia",
+      "source_url": "https://www.lideractual.es/mercados-inversiones/cobrar-por-derechos-de-autor-musica-y-patentes-la-inversion-alternativa-que-busca-ingresos-recurrentes-fuera-del-mercado-tradicional_14464",
+      "topic_tag": "noticias",
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 8,
+        "aplicabilidad": 7
+      },
+      "angulo": "Explorar las oportunidades de inversión y generación de ingresos recurrentes a través de derechos de autor, licencias y patentes en la industria musical y tecnológica.",
+      "por_que": "Este tema se enfoca en modelos de negocio y finanzas, más alineado con profesionales que buscan diversificar ingresos o invertir. El ángulo de 'inversión alternativa' es diferenciador.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "6p2ol5",
+      "title": "Apple Music incluirá una etiqueta para identificar las canciones creadas con IA",
+      "description": "Apple Music se une a otras plataformas de streaming como Spotify y Tidal e incluirá antes de que acabe 2026 etiquetas visibles para que los usuarios puedan...",
+      "source": "noticia",
+      "source_url": "https://www.europafm.com/noticias/musica/apple-music-incluira-etiqueta-identificar-canciones-creadas_202608216a88419da5690f0473870a4d.html",
+      "topic_tag": "noticias",
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Informar sobre la nueva política de Apple Music de etiquetar contenido generado por IA y sus implicaciones para artistas y la industria.",
+      "por_que": "La IA en la música es un tema candente. Las decisiones de grandes plataformas como Apple Music afectan directamente a los artistas y su forma de crear y distribuir música.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "qyk4q6",
+      "title": "All Music Works gana Keiretsu Forum con IA generativa y SaaS",
+      "description": "Qué es All Music Works y por qué ganó el Keiretsu Forum All Music Works, startup malagueña fundada por Carlos Zehr, se impuso como…",
+      "source": "noticia",
+      "source_url": "https://ecosistemastartup.com/all-music-works-gana-keiretsu-forum-con-ia-generativa-y-saas/",
+      "topic_tag": "noticias",
+      "score_total": 7.25,
+      "scores": {
+        "relevancia": 6,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Destacar el caso de éxito de All Music Works, una startup que combina IA generativa y SaaS, y su reconocimiento en el Keiretsu Forum.",
+      "por_que": "Este caso de estudio es relevante para profesionales de la música interesados en tecnología, startups y modelos de negocio innovadores. La aplicabilidad reside en aprender de su éxito.",
+      "status": "pending",
+      "discovered_at": "2026-08-23T22:16:23.986Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
     }
   ]
 }

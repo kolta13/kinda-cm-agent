@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T22:18:00.544Z",
+  "updated_at": "2026-08-23T22:17:50.004Z",
   "posts": [
     {
       "platform": "instagram",
@@ -182,6 +182,59 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-08-22/slide-05.png",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-22/slide-06.png",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-22/slide-07.png"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-08-23T22:17:50.004Z",
+      "week": "2026-08-23",
+      "tema": "El fin de los presupuestos inflados para independientes",
+      "topic_tag": "networking",
+      "audience_type": "artista",
+      "backlog_id": "fgel8x",
+      "winner_score": 9.5,
+      "post_id": "18443056633193332",
+      "caption": "Los costos de producción musical no tienen por qué ser un muro. Te mostramos cómo acceder a servicios profesionales sin pagar de más.\n\n#MusicaIndependiente #ProduccionMusical #ServiciosMusicales #KindaClub",
+      "hashtags": [
+        "#MusicaIndependiente",
+        "#ProduccionMusical",
+        "#ServiciosMusicales",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Servicios musicales: ¿pagas de más?",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Tarifas transparentes para tu carrera",
+          "body": "Adiós a los presupuestos inflados. Accede a servicios de calidad a precios justos y predecibles."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Calidad sin sobrecostos",
+          "body": "Mezcla, masterización, diseño gráfico o promoción. Obtén resultados profesionales sin vaciar tu cuenta."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Equipo confiable y a tu medida",
+          "body": "Conecta con productores, ingenieros y diseñadores que entienden tu proyecto y tu presupuesto."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Encuentra tu equipo a precio justo en Kinda Club",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-23/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-23/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-23/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-23/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-23/slide-05.jpg"
       ],
       "metrics": null
     }
