@@ -1,32 +1,37 @@
 // ── Kinda CM Agent — Demo Sandbox para TikTok Developer Portal ──────────
-// Corre el flujo de publicación en TikTok de punta a punta contra el
-// Sandbox (mientras la app no esté aprobada), usando las imágenes del
-// último post publicado en Instagram. Pensado para GRABAR EL VIDEO DEMO
-// que pide TikTok al submitear la app a revisión.
+// Corre el flujo COMPLETO de punta a punta contra el Sandbox de TikTok
+// (mientras la app no esté aprobada): renderiza slides frescos, los sube
+// por FTP, y los publica. Pensado para GRABAR EL VIDEO DEMO que pide
+// TikTok al submitear la app a revisión — muestra render → upload →
+// publish, no solo el último paso.
 //
 // Pre-requisitos:
 //   1. En TikTok Developer Portal, activar el toggle "Sandbox" (junto a Production)
-//   2. Agregar tu cuenta de TikTok de prueba como "Target User" del Sandbox
+//   2. Agregar tu cuenta de TikTok de prueba (PERSONAL, no de negocio) como
+//      "Target User" del Sandbox, y ponerla en privado (Settings > Privacy)
 //   3. Correr: node get-tiktok-token.js  (autorizar CON esa cuenta de prueba)
 //   4. tiktokClientKey/tiktokClientSecret/tiktokRefreshToken ya en config.js
+//   5. data/carousel_latest.json debe existir (corre generate.js si no)
 //
 // Uso: node demo-tiktok-sandbox.js
 //
 // Qué hace, paso a paso (útil para narrar mientras grabas):
-//   1. Refresca el access token
-//   2. Consulta creator_info (muestra qué cuenta está conectada y qué
-//      niveles de privacidad tiene permitidos — esto es lo que TikTok
-//      quiere ver: la app respeta las restricciones del Sandbox)
-//   3. Toma las imágenes del último post publicado (data/post_history.json)
-//   4. Publica el carrusel de fotos como SELF_ONLY (privado — visible solo
-//      para la cuenta de prueba, como exige el Sandbox)
-//   5. Espera confirmación y muestra el resultado
+//   1. Renderiza slides frescos (JPG, 1080x1350) desde carousel_latest.json
+//   2. Sube los slides por FTP y obtiene URLs públicas
+//   3. Refresca el access token de TikTok
+//   4. Consulta creator_info (qué cuenta está conectada, qué niveles de
+//      privacidad tiene permitidos — esto es lo que TikTok revisa: que la
+//      app respete las restricciones del Sandbox)
+//   5. Publica el carrusel de fotos (privacy_level se resuelve automático:
+//      SELF_ONLY mientras la app no esté aprobada)
+//   6. Espera confirmación y muestra el resultado
 
 'use strict';
 const fs      = require('fs');
 const path    = require('path');
 const config  = require('./config');
-const history = require('./history');
+const { render }       = require('./render');
+const { uploadSlides } = require('./publish');
 const {
   refreshAccessToken,
   queryCreatorInfo,
@@ -44,6 +49,7 @@ function step(n, msg) {
 async function main() {
   console.log('═══════════════════════════════════════════════════════');
   console.log('  Kinda CM Agent — Demo Sandbox de TikTok               ');
+  console.log('  (render → upload → publish, de punta a punta)         ');
   console.log('═══════════════════════════════════════════════════════');
 
   if (!config.tiktokClientKey || !config.tiktokClientSecret || !config.tiktokRefreshToken) {
@@ -53,12 +59,28 @@ async function main() {
     process.exit(1);
   }
 
-  // ── Paso 1: refrescar token ────────────────────────────────────────────
-  step(1, 'Refrescando access token...');
+  const carouselPath = path.join(__dirname, 'data', 'carousel_latest.json');
+  if (!fs.existsSync(carouselPath)) {
+    console.error('\n❌ No existe data/carousel_latest.json — corre generate.js primero.');
+    process.exit(1);
+  }
+
+  // ── Paso 1: renderizar slides frescos ───────────────────────────────────
+  step(1, 'Renderizando slides (JPG, 1080x1350)...');
+  const manifest = await render();
+  console.log(`  ✓ ${manifest.slides.length} slides renderizados: "${manifest.tema}"`);
+
+  // ── Paso 2: subir por FTP ────────────────────────────────────────────────
+  step(2, 'Subiendo slides por FTP...');
+  const imageUrls = await uploadSlides(manifest);
+  imageUrls.forEach((url, i) => console.log(`    slide ${i + 1}: ${url}`));
+
+  // ── Paso 3: refrescar token ──────────────────────────────────────────────
+  step(3, 'Refrescando access token de TikTok...');
   const { access_token } = await refreshAccessToken();
 
-  // ── Paso 2: consultar creator_info ─────────────────────────────────────
-  step(2, 'Consultando información del creador y niveles de privacidad permitidos...');
+  // ── Paso 4: consultar creator_info ───────────────────────────────────────
+  step(4, 'Consultando información del creador y niveles de privacidad permitidos...');
   const creatorInfo  = await queryCreatorInfo(access_token);
   const privacyLevel = resolvePrivacyLevel(creatorInfo);
   console.log(`\n  → Publicando como: ${privacyLevel}`);
@@ -67,45 +89,18 @@ async function main() {
     console.log('    solo permite posts privados (visibles solo para esta cuenta de prueba).');
   }
 
-  // ── Paso 3: tomar imágenes del último post publicado ───────────────────
-  step(3, 'Buscando imágenes del último post publicado...');
-  const recent = history.getRecent(1)[0];
-  let imageUrls, caption, tema;
+  // ── Paso 5: publicar ─────────────────────────────────────────────────────
+  step(5, `Publicando carrusel de ${imageUrls.length} fotos en TikTok Sandbox...`);
+  const publishId = await initPhotoPost(access_token, imageUrls, manifest.caption, privacyLevel);
 
-  if (recent && recent.image_urls && recent.image_urls.length > 0) {
-    imageUrls = recent.image_urls;
-    caption   = recent.caption || recent.tema;
-    tema      = recent.tema;
-    console.log(`  ✓ Usando imágenes de: "${tema}" (${imageUrls.length} slides)`);
-  } else {
-    // Fallback: leer publish_latest.json si existe localmente
-    const publishPath = path.join(__dirname, 'data', 'publish_latest.json');
-    if (!fs.existsSync(publishPath)) {
-      console.error('\n❌ No hay posts en el histórico ni publish_latest.json local.');
-      console.error('   Corre el pipeline completo al menos una vez (node agent.js) antes del demo.');
-      process.exit(1);
-    }
-    const publishData = JSON.parse(fs.readFileSync(publishPath, 'utf8'));
-    imageUrls = publishData.image_urls;
-    caption   = publishData.tema;
-    tema      = publishData.tema;
-    console.log(`  ✓ Usando imágenes de publish_latest.json: "${tema}" (${imageUrls.length} slides)`);
-  }
-
-  imageUrls.forEach((url, i) => console.log(`    slide ${i + 1}: ${url}`));
-
-  // ── Paso 4: publicar ────────────────────────────────────────────────────
-  step(4, `Publicando carrusel de ${imageUrls.length} fotos en TikTok Sandbox...`);
-  const publishId = await initPhotoPost(access_token, imageUrls, caption, privacyLevel);
-
-  // ── Paso 5: esperar confirmación ────────────────────────────────────────
-  step(5, 'Esperando confirmación de TikTok...');
+  // ── Paso 6: esperar confirmación ─────────────────────────────────────────
+  step(6, 'Esperando confirmación de TikTok...');
   const postId = await waitForPublish(access_token, publishId);
 
   console.log('\n═══════════════════════════════════════════════════════');
   console.log('  ✅ DEMO COMPLETADO');
   console.log('═══════════════════════════════════════════════════════');
-  console.log(`  Tema:          ${tema}`);
+  console.log(`  Tema:          ${manifest.tema}`);
   console.log(`  Privacy level: ${privacyLevel}`);
   console.log(`  Post ID:       ${postId}`);
   console.log(`  Cuenta:        @${creatorInfo.creator_username || '?'}`);

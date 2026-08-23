@@ -268,4 +268,4 @@ if (require.main === module) {
   publish().catch(e => { console.error('[publish] Error fatal:', e.message); process.exit(1); });
 }
 
-module.exports = { publish };
+module.exports = { publish, uploadSlides };
