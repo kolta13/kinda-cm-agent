@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T22:17:50.003Z",
+  "updated_at": "2026-08-24T22:21:31.231Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -2656,10 +2656,10 @@
       },
       "angulo": "Guía exhaustiva para conectar con productores musicales en la región.",
       "por_que": "Es una necesidad fundamental para muchos artistas independientes. Una guía práctica y localizada sobre cómo encontrar y elegir al productor adecuado es de altísimo valor.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-08-22T22:16:13.011Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-08-24T22:21:31.231Z",
+      "post_id": "18416941960148778",
       "audience_type": "artista"
     },
     {
@@ -3255,6 +3255,248 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "profesional"
+    },
+    {
+      "id": "ruvedd",
+      "title": "Cómo hacer un press kit musical (EPK): guía completa",
+      "description": "Cómo hacer un press kit musical paso a paso: las secciones imprescindibles · 1. Tu música · 2. La biografía · 3. El gancho: tu “por qué ahora” · 4. Fotos de prensa ...",
+      "source": "google",
+      "source_url": "https://www.mbacademy.es/como-hacer-press-kit-musical/",
+      "topic_tag": "general",
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía paso a paso detallada con secciones imprescindibles para crear un EPK efectivo.",
+      "por_que": "Un EPK es fundamental para la profesionalización del artista independiente, facilitando el contacto con medios y profesionales.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "q6uira",
+      "title": "Necesitas estos documentos para tocar en vivo como músico ...",
+      "description": "Necesitas estos documentos para tocar en vivo como músico independiente #PressKit #Rider #StagePlot #ImputList. ... Soy diseñador grafico, si necesitan hacer el ...",
+      "source": "google",
+      "source_url": "https://www.facebook.com/Fharinamx/videos/necesitas-estos-documentos-para-tocar-en-vivo-como-m%C3%BAsico-independientepresskit-/975807171609886/",
+      "topic_tag": "general",
+      "score_total": 8,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Enfocado en los documentos clave (Press Kit, Rider, Stage Plot) para presentaciones en vivo.",
+      "por_que": "Aborda una necesidad práctica y esencial para artistas que buscan tocar en vivo, tanto a nivel local como internacional.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "vjnhhn",
+      "title": "The Music Mulier ® on Instagram: \"Un press kit es la ...",
+      "description": "Pero un buen Press Kit puede hacer que esa puerta se abra. Muchos artistas ven el Press Kit como un trámite o un documento que “hay que tener”. Yo lo veo de ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DVwl70oDLfJ/",
+      "topic_tag": "general",
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 6,
+        "aplicabilidad": 9
+      },
+      "angulo": "Destaca el poder de un buen Press Kit para abrir puertas en la industria.",
+      "por_que": "Refuerza la importancia del EPK desde una perspectiva de impacto y oportunidades, complementando la guía práctica.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "mswpod",
+      "title": "Documentos esenciales para músicos independientes",
+      "description": "Documentos que necesitas como músico independiente #presskit #rider #stageplot #imputlist. Documentos esenciales para músicos independientes. Descubre los ...",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/@fharinamx/video/7631369977978768648",
+      "topic_tag": "general",
+      "score_total": 8.2,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Listado de documentos cruciales (press kit, rider, stage plot, input list) para la carrera del músico independiente.",
+      "por_que": "Cubre las bases documentales necesarias para la gestión profesional de un artista, facilitando su operación diaria.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "snhdzh",
+      "title": "¿Cómo ganan dinero los artistas musicales (sin CDs) en ...",
+      "description": "Crea una tienda online para tus productos musicales. Mira cómo. 7. Alianzas de marca y patrocinios. Las colaboraciones con marcas y los patrocinios suelen ser ...Every time a song is played live, on the radio, or in public places like cafes or stores, these royalties come into play. Organizations such as ASCAP, BMI, and ...",
+      "source": "google",
+      "source_url": "https://sellfy.com/blog/how-do-artists-make-money/",
+      "topic_tag": "monetizacion",
+      "score_total": 8.8,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Explora la creación de tiendas online y alianzas de marca como fuentes de ingresos para artistas.",
+      "por_que": "Ofrece estrategias de monetización modernas y adaptadas a la era digital, cruciales para la sostenibilidad de artistas independientes.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "4x7u4x",
+      "title": "▷ Cómo Ganar Dinero con la Música [6 Estrategias 2026]",
+      "description": "Estrategias como crowdfunding, afiliados, enseñanza musical y colaboraciones con marcas ofrecen estabilidad financiera y visibilidad. La clave está en ...",
+      "source": "google",
+      "source_url": "https://www.duplicat.com/ganar-dinero-musica/",
+      "topic_tag": "monetizacion",
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Presenta 6 estrategias de monetización, incluyendo crowdfunding, afiliados, enseñanza y colaboraciones de marca.",
+      "por_que": "Proporciona un panorama completo y prospectivo de cómo los artistas pueden generar ingresos, abordando la evolución del mercado.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "p80cxm",
+      "title": "Ofrezco mis servicios como manager de artistas",
+      "description": "Busco personas que quieran monetizar su música ✓ Monetizar Spotify ✓Registrate como artista ✓Registra tus canciones ✓Distribución general ✓monetizar ...",
+      "source": "google",
+      "source_url": "https://www.facebook.com/groups/latorreolivencia/posts/3224065341112104/",
+      "topic_tag": "monetizacion",
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Servicio de gestión enfocado en la monetización de la música y registro de artistas.",
+      "por_que": "Atrae a artistas que buscan profesionalizar su carrera y monetizar su trabajo, conectándolos con servicios de gestión.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "h3czg8",
+      "title": "Colaboraciones De Annabgo",
+      "description": "Descubre secretos sobre colaboraciones con marcas que los creadores pasan por alto. ¡Aprende cómo conseguir las mejores oportunidades! 183 Likes, 8 Comments ...",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/discover/colaboraciones-de-annabgo",
+      "topic_tag": "networking",
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Revela secretos sobre colaboraciones con marcas que los creadores suelen pasar por alto.",
+      "por_que": "Ofrece una perspectiva valiosa sobre cómo los artistas pueden generar ingresos y visibilidad a través de alianzas estratégicas.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "7qd333",
+      "title": "Si eres artista y quieres crecer en #spotify ESCRIBENOS",
+      "description": "¿Ya usas Spotify for Artists o solo revisas tus reproducciones? Descubre cómo aprovechar todas sus herramientas para optimizar tu perfil, conocer a tu audiencia ...",
+      "source": "youtube_viral",
+      "source_url": "/goto?url=CAES6QIB6zswFZJ-Dz10FI-oK7oJBclYmy0gyyT2t9avvnPpDtsqxTdb0snj1W797KxFTOKPdVZRmkzbm_9oZiz3cb6F2TzrB0zXHVMurIrh5ENKRv8F_BZoCt0XHcDRXeKVXcLOxYD1DZVBET-3tk9EwBnNMDTK4PUgmdlVYQRcQZLFSeU7vvl8HhOZM3bxKDdzIAxGUSWxj1zo7_Fk9d3J0GSIRdVCRcSXPAPvbyKfxWnK7fwbqccp2stAKwjOfeH-BRDH21wZwbjPRBkyoFZf5ng2VPvm0Pde5nU_esxCLrD0iV-QeyuV-_0GIEP3eIEG9Q_pfP-3aGMx_3aVeKcc0VyEpn2ui-SpI3fgE4XmwAYT5b2ZQLoN3RYsfg8yEMQyntOlXSoWxHqZyyhfMeVhFL3Q-bq6SUncJS83K0X21Tg4oGE8twpEy26OCqKsjg3LdVz5EiFBHn1_oDZ0s6LxxhgCFxmfHTGFuaTm",
+      "topic_tag": "distribucion",
+      "score_total": 9.2,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía para aprovechar al máximo Spotify for Artists más allá de revisar reproducciones.",
+      "por_que": "Spotify es la plataforma de streaming dominante en LATAM; optimizar su uso es crucial para el crecimiento de cualquier artista.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "2wcc49",
+      "title": "Estrategia Musical on Instagram: \"Los 5 formatos de contenido ...",
+      "description": "Tu contenido se le muestra a cualquier persona, sin conexión con quién vos sos como artista o a quién le estás hablando. Pero entonces, ¿cuál es la solución? Es ...",
+      "source": "youtube_viral",
+      "source_url": "/goto?url=CAESYwHrOzAVXgL38BlPEyg-GdVoC2x9Uc1zWI2ZChlDcXDKL1hWsnsX-FvN3AlnTswK7kZ1Fh1Voupf27Ua7VtDRT4VJpsbREBhfPQkORQRkgP1_rTDxA6X6WbwxMlTmOOJ4QFbeg",
+      "topic_tag": "general",
+      "score_total": 7.8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Enfatiza la importancia de crear contenido con conexión personal y no genérico.",
+      "por_que": "Ayuda a los artistas a entender la importancia de la autenticidad y la conexión con su audiencia a través de sus contenidos.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "jnp7uz",
+      "title": "No te cobro nada por adelantado. Me quedo solo con lo que ...",
+      "description": "Abro una lista cerrada de artistas para trabajar sus temas en playlists orgánicas reales. O sea que si tu música no genera, yo no gano. Es la única forma de que ...",
+      "source": "youtube_viral",
+      "source_url": "/goto?url=CAESYwHrOzAVpv8lArltrNNACtXtxM-ZG2JXpEi6zYktJBh2eY0EOWphysdrS55Aeg7tQcLl60GC50PyqS83xyBSEWpF3lH7_-iG2TydJnU5kJdZlZIbhz0gB33B4Deibmkjue11Sw",
+      "topic_tag": "distribucion",
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Propuesta de trabajo basada en resultados para promoción en playlists orgánicas reales.",
+      "por_que": "Ofrece una alternativa de promoción atractiva y de bajo riesgo para artistas, enfocada en un método orgánico y efectivo.",
+      "status": "pending",
+      "discovered_at": "2026-08-24T22:20:30.119Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }

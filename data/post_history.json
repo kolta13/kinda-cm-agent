@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T22:17:50.004Z",
+  "updated_at": "2026-08-24T22:21:31.233Z",
   "posts": [
     {
       "platform": "instagram",
@@ -235,6 +235,65 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-08-23/slide-03.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-23/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-23/slide-05.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-08-24T22:21:31.233Z",
+      "week": "2026-08-24",
+      "tema": "Cómo encontrar un productor musical en Latinoamérica",
+      "topic_tag": "general",
+      "audience_type": "artista",
+      "backlog_id": "q9sxmi",
+      "winner_score": 9.5,
+      "post_id": "18416941960148778",
+      "caption": "Encontrar el productor adecuado es clave. Aquí te damos los pasos directos para conectar con talento en Latinoamérica.\n\n#MusicaLatina #ProductorMusical #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ProductorMusical",
+        "#ProduccionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Tu música merece el sonido correcto.",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Encuentra tu productor musical ideal.",
+          "body": "Define tu género, presupuesto y objetivos antes de buscar."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Investiga y contacta.",
+          "body": "Busca en plataformas, revisa portafolios y escucha sus trabajos previos."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Prepara tu demo.",
+          "body": "Envía lo mejor de tu trabajo, claro y conciso. Explica tu visión."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Define el acuerdo.",
+          "body": "Establece tarifas, entregables y plazos. Confirma derechos de autor."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Conecta con productores verificados en Kinda Club.",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-24/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-24/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-24/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-24/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-24/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-24/slide-06.jpg"
       ],
       "metrics": null
     }
