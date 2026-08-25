@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T22:21:31.233Z",
+  "updated_at": "2026-08-25T22:22:20.816Z",
   "posts": [
     {
       "platform": "instagram",
@@ -294,6 +294,65 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-08-24/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-24/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-24/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-08-25T22:22:20.816Z",
+      "week": "2026-08-25",
+      "tema": "Mejor contrato para artista independiente: qué evitar",
+      "topic_tag": "monetizacion",
+      "audience_type": "artista",
+      "backlog_id": "bl46zz",
+      "winner_score": 9,
+      "post_id": "18038790902822692",
+      "caption": "Firmar un contrato de distribución es clave. Asegúrate de entender cada cláusula para no perder dinero ni control sobre tu música.\n\n#MusicaIndependiente #ContratosMusicales #DistribucionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaIndependiente",
+        "#ContratosMusicales",
+        "#DistribucionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Tu contrato de distribución oculta dinero.",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Cláusulas a evitar en tu contrato.",
+          "body": "Revisa la duración, exclusividad y porcentajes de regalías. Protege tu catálogo a largo plazo."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Derechos de autor y licencias.",
+          "body": "Evita ceder derechos de tu música permanentemente. Negocia licencias claras y limitadas en el tiempo."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Territorios y sub-licencias.",
+          "body": "Asegúrate de entender dónde se distribuirá tu música y quién puede sub-licenciarla."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Costos ocultos y retenciones.",
+          "body": "Pregunta por tarifas de procesamiento, marketing o devoluciones antes de firmar."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Protege tu música. Revisa contratos en Kinda Club.",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-25/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-25/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-25/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-25/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-25/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-25/slide-06.jpg"
       ],
       "metrics": null
     }
