@@ -126,7 +126,10 @@
     position: relative; z-index: 2;
     font-size: 108px;
     font-weight: 800;
-    line-height: .92;
+    /* 1.02 (antes .92): con line-height < 1 los acentos de vocales mayúsculas
+       (Ó, Í, Á) sobresalen del cap-height y chocan con la línea de arriba en
+       texto de 2-3 líneas. Se vio en varios posts reales. */
+    line-height: 1.02;
     text-transform: uppercase;
     letter-spacing: -.03em;
     color: var(--ink);
@@ -151,11 +154,20 @@
   .slide-contenido .cover-bg .overlay {
     position: absolute;
     inset: 0;
-    /* 92% (antes 84%): a 84% se alcanzaba a leer texto de fondo de la foto
-       (nombres de festivales, clubes, handles) en fotos de stock de conciertos.
-       Más opaco = la foto sigue dando textura/ambiente pero cualquier texto
-       queda ilegible. */
-    background: rgba(0,0,0,0.92);
+    /* Degradado, no plano. Un overlay plano al 84% dejaba leerse texto de
+       fondo real (nombres de festivales, clubes); subirlo a 92% tapaba el
+       texto pero volvía la foto invisible (rectángulo negro, sin aporte).
+       El texto de este slide siempre queda centrado verticalmente — así que
+       arriba (donde vive la foto sin estorbar) queda más transparente, y a
+       partir de donde arranca el bloque de texto (~30-50% de la altura) sí
+       se oscurece a fondo para que cualquier marca ajena quede ilegible. */
+    background: linear-gradient(
+      180deg,
+      rgba(0,0,0,0.40) 0%,
+      rgba(0,0,0,0.72) 18%,
+      rgba(0,0,0,0.93) 32%,
+      rgba(0,0,0,0.96) 100%
+    );
   }
   .slide-contenido .number {
     position: relative; z-index: 2;
@@ -170,7 +182,7 @@
     position: relative; z-index: 2;
     font-size: 82px;
     font-weight: 800;
-    line-height: .96;
+    line-height: 1.05; /* antes .96 — acentos chocaban con la línea de arriba */
     text-transform: uppercase;
     letter-spacing: -.03em;
     color: var(--ink);
@@ -227,7 +239,7 @@
     position: relative; z-index: 2;
     font-size: 90px;
     font-weight: 800;
-    line-height: .96;
+    line-height: 1.05; /* antes .96 — el mismo choque de acentos que en h1/h2 */
     text-transform: uppercase;
     letter-spacing: -.03em;
     color: white;

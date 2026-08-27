@@ -94,8 +94,17 @@ function selectWinner(pending) {
   const sorted = [...pending].sort((a, b) => (b.score_total || 0) - (a.score_total || 0));
 
   // Ratio 80/20: si los últimos 5 publicados no tienen ningún "profesional", forzar uno
+  //
+  // BUG (encontrado en revisión del 27-08-2026): bl.ideas mantiene el orden de
+  // DESCUBRIMIENTO (cuándo se agregó al backlog), no el de publicación. Un
+  // .slice(-5) sin ordenar por fecha real tomaba ideas descubiertas hace
+  // semanas y publicadas fuera de orden — el sistema creía haber cumplido la
+  // cuota de "profesional" cuando en realidad los últimos 5 posts REALES no
+  // tenían ninguno. Resultado: 7 de los últimos 8 posts fueron para artistas.
   const bl        = backlog.load();
-  const published = bl.ideas.filter(i => i.status === 'published');
+  const published = bl.ideas
+    .filter(i => i.status === 'published')
+    .sort((a, b) => (a.published_at || '').localeCompare(b.published_at || ''));
   const lastFive  = published.slice(-5);
   const profCount = lastFive.filter(i => i.audience_type === 'profesional').length;
   const needProf  = profCount === 0 && lastFive.length >= 4;
