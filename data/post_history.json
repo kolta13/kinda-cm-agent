@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T22:22:20.816Z",
+  "updated_at": "2026-08-27T02:50:08.481Z",
   "posts": [
     {
       "platform": "instagram",
@@ -353,6 +353,59 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-08-25/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-25/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-25/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-08-27T02:50:08.480Z",
+      "week": "2026-08-27",
+      "tema": "¿Cómo hacer bien el pitch editorial en Spotify?",
+      "topic_tag": "distribucion",
+      "audience_type": "artista",
+      "backlog_id": "u1pck9",
+      "winner_score": 9.5,
+      "post_id": "18108915683105771",
+      "caption": "La herramienta de pitch editorial de Spotify es gratuita y clave. Úsala bien para que tu música llegue a quienes la programan.\n\n#MusicaIndependiente #SpotifyForArtists #PitchEditorial #KindaClub",
+      "hashtags": [
+        "#MusicaIndependiente",
+        "#SpotifyForArtists",
+        "#PitchEditorial",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Tu demo llegó y nadie la escuchó.",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Así se arma un pitch editorial efectivo.",
+          "body": "Usa la herramienta de Spotify 7 días antes del lanzamiento. Completa toda la información."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Detalles que marcan la diferencia.",
+          "body": "Género, subgénero y estados de ánimo precisos. Describe tu música y el contexto del lanzamiento."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Comparte tu historia y objetivos.",
+          "body": "Explica la narrativa detrás de tu canción. Menciona influencias y planes de promoción."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Postula tu próxima canción a playlists en Kinda Club.",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-27/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-27/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-27/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-27/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-27/slide-05.jpg"
       ],
       "metrics": null
     }
