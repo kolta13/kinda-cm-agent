@@ -81,14 +81,39 @@ function stripBrandSuffix(title) {
   return title.replace(/\s+[-–—|:]\s+[A-ZÁÉÍÓÚÑ][\wÁÉÍÓÚÑáéíóúñ.]*(\s+[A-ZÁÉÍÓÚÑ][\wÁÉÍÓÚÑáéíóúñ.]*){0,2}$/, '').trim();
 }
 
+// Detecta títulos que son el anzuelo comercial de OTRA agencia o profesional,
+// no contenido educativo. El research scrapea posts de Instagram/TikTok y trae
+// captaciones de clientes ajenas ("Si eres artista y quieres crecer ESCRIBENOS",
+// "Cómo hago crecer artistas..."). Usarlas como tema significa reescribir el
+// pitch comercial de un competidor. El guard de marcas no las detecta porque no
+// nombran ninguna empresa.
+const THIRD_PARTY_AD_PATTERNS = [
+  /escr[ií]benos|escr[ií]beme|cont[áa]ctanos|cont[áa]ctame/i,
+  /\bmanda(me)?\s+(un\s+)?(dm|mensaje)\b|\bal\s+dm\b|\bpor\s+dm\b/i,
+  /link\s+en\s+(la\s+)?bio|links?\s+en\s+bio/i,
+  /\bcupos?\s+(disponible|limitad)|\búltimos?\s+cupos?\b/i,
+  /agenda\s+(tu|una)\s+(llamada|sesi[óo]n|asesor[íi]a|reuni[óo]n)/i,
+  /trabaja\s+conmigo|trabajemos\s+juntos/i,
+  /\bmi\s+(agencia|equipo|programa|mentor[íi]a|curso)\b/i,
+  /c[óo]mo\s+(hago|hacemos)\s+crecer\s+(a\s+)?(artistas|clientes)/i,
+  /asesor[íi]a\s+gratis|clase\s+gratis|webinar\s+gratis|masterclass\s+gratis/i,
+];
+
+function isThirdPartyAd(title, description = '') {
+  const text = `${title} ${description}`;
+  return THIRD_PARTY_AD_PATTERNS.some(re => re.test(text));
+}
+
 // Añadir ideas nuevas al backlog (ignora duplicados por ID)
 function addIdeas(newIdeas) {
   const backlog    = load();
   const existingIds = new Set(backlog.ideas.map(i => i.id));
   let added = 0;
+  let rejectedAds = 0;
 
   for (const idea of newIdeas) {
     if (!idea.title || idea.title.length < 5) continue;
+    if (isThirdPartyAd(idea.title, idea.description)) { rejectedAds++; continue; }
     const cleanTitle = stripBrandSuffix(idea.title);
     if (cleanTitle.length < 5) continue; // el título quedó vacío tras limpiar, descartar
     const id = ideaId(cleanTitle);
@@ -101,6 +126,10 @@ function addIdeas(newIdeas) {
       source:       idea.source || 'unknown',
       source_url:   idea.url    || '',
       topic_tag:    idea.topic_tag || detectTopic(idea.title, idea.description),
+      // Ideas cuyo TEMA es promocionar Kinda Club (las cargadas a mano para el
+      // lanzamiento). No sirven en días de CTA blando: el post no podría vender
+      // aunque el tema entero sea justamente eso. Ver selectWinner en generate.js.
+      is_promotional: idea.is_promotional === true,
       score_total:  null,
       scores:       null,
       angulo:       null,
@@ -114,6 +143,9 @@ function addIdeas(newIdeas) {
   }
 
   save(backlog);
+  if (rejectedAds > 0) {
+    console.log(`[backlog] ${rejectedAds} idea(s) descartada(s) por ser publicidad de terceros`);
+  }
   return added;
 }
 

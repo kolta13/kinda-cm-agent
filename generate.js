@@ -90,8 +90,25 @@ function safeJsonParse(raw) {
 // Solo ordenamos por score y aplicamos las reglas de ratio.
 
 function selectWinner(pending) {
+  // Las ideas promocionales (tema = promocionar Kinda Club) solo tienen sentido
+  // en días de CTA directo. En un día de CTA blando el carrusel no puede vender,
+  // y un post cuyo tema entero ES Kinda Club sin poder llamar a la acción queda
+  // descolgado. getDailyCtaMode es una declaración de función (hoisted), así que
+  // se puede llamar aunque esté definida más abajo.
+  let candidatas = pending;
+  if (getDailyCtaMode() !== 'directo') {
+    const sinPromo = pending.filter(i => !i.is_promotional);
+    if (sinPromo.length >= 3) {
+      const excluidas = pending.length - sinPromo.length;
+      if (excluidas > 0) {
+        console.log(`[generate] ${excluidas} idea(s) promocional(es) excluida(s) — hoy el CTA es blando`);
+      }
+      candidatas = sinPromo;
+    }
+  }
+
   // Ordenar por score_total desc; ideas sin score van al final (score 0)
-  const sorted = [...pending].sort((a, b) => (b.score_total || 0) - (a.score_total || 0));
+  const sorted = [...candidatas].sort((a, b) => (b.score_total || 0) - (a.score_total || 0));
 
   // Ratio 80/20: si los últimos 5 publicados no tienen ningún "profesional", forzar uno
   //
@@ -658,4 +675,4 @@ if (require.main === module) {
   generate().catch(e => { console.error('[generate] Error fatal:', e); process.exit(1); });
 }
 
-module.exports = { generate };
+module.exports = { generate, selectWinner, getDailyFormat, getDailyCtaMode };

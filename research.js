@@ -42,6 +42,14 @@ const GOOGLE_QUERIES = [
   'contratos musicales cláusulas importantes',
   'cómo hacer un press kit músico independiente',
   'colaboraciones musicales cómo conseguirlas',
+  // Shows/booking/merch estaba cubierto por una sola query de 20, y el topic
+  // "shows" quedó con apenas 3 ideas en el backlog contra 44 de distribución.
+  'cómo armar una gira de conciertos independiente',
+  'cuánto cobrar por un show músico independiente',
+  'cómo contactar productoras de eventos y venues',
+  'merchandising para artistas independientes qué vender',
+  'rider técnico y contrato de show qué incluir',
+  'cómo tocar en festivales siendo artista emergente',
 ];
 
 const VIDEO_QUERIES = [

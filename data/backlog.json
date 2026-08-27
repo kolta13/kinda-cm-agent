@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T02:50:08.479Z",
+  "updated_at": "2026-08-27T05:05:28.560Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -20,7 +20,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "r43nc4",
@@ -41,7 +42,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "cjmqct",
@@ -62,7 +64,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "vf9fhz",
@@ -83,7 +86,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "gi1s7c",
@@ -104,7 +108,8 @@
       "status": "published",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": "2026-08-22T22:18:00.542Z",
-      "post_id": "18092581850644063"
+      "post_id": "18092581850644063",
+      "is_promotional": false
     },
     {
       "id": "4md8d4",
@@ -125,7 +130,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "ymfr0j",
@@ -146,7 +152,8 @@
       "status": "published",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": "2026-08-16T22:16:55.763Z",
-      "post_id": "17938192455341633"
+      "post_id": "17938192455341633",
+      "is_promotional": false
     },
     {
       "id": "mz41va",
@@ -167,7 +174,8 @@
       "status": "published",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": "2026-08-16T05:21:50.615Z",
-      "post_id": "18089117870233098"
+      "post_id": "18089117870233098",
+      "is_promotional": false
     },
     {
       "id": "31u6cc",
@@ -188,7 +196,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "3aj2fa",
@@ -209,7 +218,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "7p5jxo",
@@ -230,7 +240,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "8fb80q",
@@ -251,7 +262,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "v6e3fp",
@@ -272,7 +284,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "53hhhx",
@@ -293,7 +306,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "hvkto9",
@@ -314,7 +328,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:20:07.026Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "yv1yju",
@@ -335,7 +350,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:37:39.538Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "4thpy8",
@@ -356,7 +372,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T05:37:39.538Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "1do56d",
@@ -377,7 +394,8 @@
       "status": "published",
       "discovered_at": "2026-08-16T05:37:39.538Z",
       "published_at": "2026-08-16T05:39:00.021Z",
-      "post_id": "17914759452242487"
+      "post_id": "17914759452242487",
+      "is_promotional": false
     },
     {
       "id": "g6m9zn",
@@ -398,7 +416,8 @@
       "status": "published",
       "discovered_at": "2026-08-16T05:37:39.538Z",
       "published_at": "2026-08-21T22:20:22.525Z",
-      "post_id": "17881914630619445"
+      "post_id": "17881914630619445",
+      "is_promotional": false
     },
     {
       "id": "bsre1c",
@@ -420,7 +439,8 @@
       "discovered_at": "2026-08-16T05:37:39.538Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "mnqs1u",
@@ -442,7 +462,8 @@
       "discovered_at": "2026-08-16T05:37:39.538Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "qfhtpt",
@@ -463,7 +484,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T22:15:19.526Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "u1pck9",
@@ -484,7 +506,8 @@
       "status": "published",
       "discovered_at": "2026-08-16T22:15:19.526Z",
       "published_at": "2026-08-27T02:50:08.479Z",
-      "post_id": "18108915683105771"
+      "post_id": "18108915683105771",
+      "is_promotional": false
     },
     {
       "id": "qlvwvs",
@@ -506,7 +529,8 @@
       "discovered_at": "2026-08-16T22:15:19.526Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "swly1l",
@@ -528,7 +552,8 @@
       "discovered_at": "2026-08-16T22:15:19.526Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "54tpj1",
@@ -549,7 +574,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T22:15:19.526Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "6k9w78",
@@ -570,7 +596,8 @@
       "status": "pending",
       "discovered_at": "2026-08-16T22:15:19.526Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "ksxv6",
@@ -592,7 +619,8 @@
       "discovered_at": "2026-08-17T04:42:26.450Z",
       "published_at": "2026-08-17T22:20:04.976Z",
       "post_id": "18125949934776893",
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "fgel8x",
@@ -614,7 +642,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": "2026-08-23T22:17:50.003Z",
       "post_id": "18443056633193332",
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "vcofo7",
@@ -636,7 +665,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "fxstk1",
@@ -658,7 +688,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "tzny9y",
@@ -680,7 +711,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "5hx2ih",
@@ -702,7 +734,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "es8p5n",
@@ -724,7 +757,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "okd03h",
@@ -746,7 +780,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "g5pdwu",
@@ -768,7 +803,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "1qkvwr",
@@ -790,7 +826,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "4dibhp",
@@ -812,7 +849,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "hj98yr",
@@ -834,7 +872,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "7jop7r",
@@ -856,7 +895,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "5ukp4s",
@@ -878,7 +918,8 @@
       "discovered_at": "2026-08-17T04:42:26.463Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": true
     },
     {
       "id": "iae94e",
@@ -900,7 +941,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": "2026-08-19T22:20:19.800Z",
       "post_id": "18100496267348185",
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "q6qaay",
@@ -922,7 +964,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "8b85ww",
@@ -944,7 +987,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "pjv7uh",
@@ -966,7 +1010,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "j6fa7j",
@@ -988,7 +1033,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "3z87qt",
@@ -1010,7 +1056,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "q34tpl",
@@ -1032,7 +1079,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "bl46zz",
@@ -1054,7 +1102,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": "2026-08-25T22:22:20.815Z",
       "post_id": "18038790902822692",
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "mwxxol",
@@ -1076,7 +1125,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "iwojpc",
@@ -1098,7 +1148,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "hbxvo5",
@@ -1120,7 +1171,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": "2026-08-20T22:23:03.397Z",
       "post_id": "17944943997276896",
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "uqmujm",
@@ -1142,7 +1194,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "4yz6zv",
@@ -1164,7 +1217,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "kka1pt",
@@ -1186,7 +1240,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "1md5mq",
@@ -1208,7 +1263,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "fig5mr",
@@ -1230,7 +1286,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "n62isd",
@@ -1252,7 +1309,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "nt95vk",
@@ -1274,7 +1332,8 @@
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "m5zel9",
@@ -1296,7 +1355,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "mtgdv5",
@@ -1318,7 +1378,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "dq2b9a",
@@ -1340,7 +1401,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "81fngp",
@@ -1362,7 +1424,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "9lebmo",
@@ -1384,7 +1447,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "hq2u5c",
@@ -1406,7 +1470,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "k61t5o",
@@ -1428,7 +1493,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "f2yo0t",
@@ -1450,7 +1516,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "my5w5d",
@@ -1472,7 +1539,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "upnvei",
@@ -1494,7 +1562,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "cqileq",
@@ -1516,7 +1585,8 @@
       "discovered_at": "2026-08-18T22:17:39.392Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "5ys9hg",
@@ -1538,7 +1608,8 @@
       "discovered_at": "2026-08-18T22:17:39.393Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "4nh802",
@@ -1560,7 +1631,8 @@
       "discovered_at": "2026-08-18T22:17:39.393Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "h2bz47",
@@ -1582,7 +1654,8 @@
       "discovered_at": "2026-08-18T22:17:39.393Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "m9lv19",
@@ -1604,7 +1677,8 @@
       "discovered_at": "2026-08-18T22:17:39.393Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "i6hzty",
@@ -1626,7 +1700,8 @@
       "discovered_at": "2026-08-18T22:17:39.393Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "3h1qjl",
@@ -1648,7 +1723,8 @@
       "discovered_at": "2026-08-18T22:17:39.393Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "mnd8oe",
@@ -1670,7 +1746,8 @@
       "discovered_at": "2026-08-18T22:17:39.393Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "yo4037",
@@ -1692,7 +1769,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "yfyagb",
@@ -1714,7 +1792,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "a58fie",
@@ -1736,7 +1815,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "5vqvss",
@@ -1758,7 +1838,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "m4n1bt",
@@ -1780,7 +1861,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "pap3so",
@@ -1802,7 +1884,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "38qovv",
@@ -1824,7 +1907,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "k9nlup",
@@ -1846,7 +1930,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "fkntsq",
@@ -1868,7 +1953,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "oppo2y",
@@ -1890,7 +1976,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "28ree2",
@@ -1912,7 +1999,8 @@
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "n26s88",
@@ -1930,11 +2018,14 @@
       },
       "angulo": "Compartir un proceso real y detallado de cómo se hace crecer a artistas en TikTok e Instagram, mostrando un caso práctico de marketing musical.",
       "por_que": "Los artistas buscan estrategias probadas y resultados tangibles. Un 'proceso real' y un enfoque en plataformas clave como TikTok e Instagram lo hacen extremadamente relevante y confiable.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-19T22:19:11.530Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false,
+      "skipped_at": "2026-08-27T05:04:06.628Z",
+      "skipped_reason": "Publicidad/captación de un tercero, no contenido educativo"
     },
     {
       "id": "fosd2q",
@@ -1956,7 +2047,8 @@
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "9h3x2v",
@@ -1978,7 +2070,8 @@
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "na47mn",
@@ -2000,7 +2093,8 @@
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "2j1vrx",
@@ -2022,7 +2116,8 @@
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "10u1ep",
@@ -2044,7 +2139,8 @@
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "ey016g",
@@ -2066,7 +2162,8 @@
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "89js7i",
@@ -2088,7 +2185,8 @@
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "ryo9t3",
@@ -2110,7 +2208,8 @@
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "xcvg4o",
@@ -2132,7 +2231,8 @@
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "ranjsc",
@@ -2154,7 +2254,8 @@
       "discovered_at": "2026-08-20T22:21:22.884Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "azwrd6",
@@ -2176,7 +2277,8 @@
       "discovered_at": "2026-08-20T22:21:22.885Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "svyhl8",
@@ -2198,7 +2300,8 @@
       "discovered_at": "2026-08-20T22:21:22.885Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "ezb16z",
@@ -2220,7 +2323,8 @@
       "discovered_at": "2026-08-20T22:21:22.885Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "cjjgig",
@@ -2242,7 +2346,8 @@
       "discovered_at": "2026-08-20T22:21:22.885Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "ggpjof",
@@ -2264,7 +2369,8 @@
       "discovered_at": "2026-08-20T22:21:22.885Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "46zicz",
@@ -2286,7 +2392,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "d85ooq",
@@ -2308,7 +2415,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "ylafyv",
@@ -2330,7 +2438,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "qef2zi",
@@ -2352,7 +2461,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "1upwf3",
@@ -2374,7 +2484,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "4gwzot",
@@ -2396,7 +2507,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "lpfk5l",
@@ -2418,7 +2530,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "va8r3e",
@@ -2440,7 +2553,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "nfh2o4",
@@ -2462,7 +2576,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "491yxo",
@@ -2484,7 +2599,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "nv6mp2",
@@ -2506,7 +2622,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "7756ng",
@@ -2528,7 +2645,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "lvos5",
@@ -2550,7 +2668,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "o874ip",
@@ -2572,7 +2691,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "bhr5vu",
@@ -2594,7 +2714,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "ol6j9n",
@@ -2616,7 +2737,8 @@
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "wh1yex",
@@ -2638,7 +2760,8 @@
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "q9sxmi",
@@ -2660,7 +2783,8 @@
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": "2026-08-24T22:21:31.231Z",
       "post_id": "18416941960148778",
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "nzi8y8",
@@ -2682,7 +2806,8 @@
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "vt5t9g",
@@ -2704,7 +2829,8 @@
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "c8wudu",
@@ -2726,7 +2852,8 @@
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "4nwfjh",
@@ -2748,7 +2875,8 @@
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "o3hos0",
@@ -2770,7 +2898,8 @@
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "n6ygxs",
@@ -2792,7 +2921,8 @@
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "ntty8p",
@@ -2814,7 +2944,8 @@
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "94cqvq",
@@ -2836,7 +2967,8 @@
       "discovered_at": "2026-08-22T22:16:13.011Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "5z3wyt",
@@ -2858,7 +2990,8 @@
       "discovered_at": "2026-08-22T22:16:13.012Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "birdpg",
@@ -2880,7 +3013,8 @@
       "discovered_at": "2026-08-22T22:16:13.012Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "yycrqc",
@@ -2902,7 +3036,8 @@
       "discovered_at": "2026-08-22T22:16:13.012Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "wo1zm0",
@@ -2924,7 +3059,8 @@
       "discovered_at": "2026-08-22T22:16:13.012Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "z6xwps",
@@ -2946,7 +3082,8 @@
       "discovered_at": "2026-08-22T22:16:13.012Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "vrwnr3",
@@ -2968,7 +3105,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "pb3u92",
@@ -2990,7 +3128,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "bfimph",
@@ -3012,7 +3151,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "tp1x87",
@@ -3034,7 +3174,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "7x7kpa",
@@ -3056,7 +3197,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "cahef1",
@@ -3078,7 +3220,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "ikw13r",
@@ -3100,7 +3243,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "aqtgla",
@@ -3122,7 +3266,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "drgwvu",
@@ -3144,7 +3289,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "cphb4t",
@@ -3166,7 +3312,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "l3oypv",
@@ -3188,7 +3335,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "rl6xvi",
@@ -3210,7 +3358,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "6p2ol5",
@@ -3232,7 +3381,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "qyk4q6",
@@ -3254,7 +3404,8 @@
       "discovered_at": "2026-08-23T22:16:23.986Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "ruvedd",
@@ -3276,7 +3427,8 @@
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "q6uira",
@@ -3298,7 +3450,8 @@
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "vjnhhn",
@@ -3320,7 +3473,8 @@
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "mswpod",
@@ -3342,7 +3496,8 @@
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "snhdzh",
@@ -3364,7 +3519,8 @@
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "4x7u4x",
@@ -3386,7 +3542,8 @@
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "p80cxm",
@@ -3408,7 +3565,8 @@
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "is_promotional": false
     },
     {
       "id": "h3czg8",
@@ -3430,7 +3588,8 @@
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "7qd333",
@@ -3448,11 +3607,14 @@
       },
       "angulo": "Guía para aprovechar al máximo Spotify for Artists más allá de revisar reproducciones.",
       "por_que": "Spotify es la plataforma de streaming dominante en LATAM; optimizar su uso es crucial para el crecimiento de cualquier artista.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false,
+      "skipped_at": "2026-08-27T05:04:06.632Z",
+      "skipped_reason": "Publicidad/captación de un tercero, no contenido educativo"
     },
     {
       "id": "2wcc49",
@@ -3474,7 +3636,8 @@
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "jnp7uz",
@@ -3496,7 +3659,8 @@
       "discovered_at": "2026-08-24T22:20:30.119Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "y5djus",
@@ -3518,7 +3682,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "yecug6",
@@ -3540,7 +3705,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "ig1btl",
@@ -3562,7 +3728,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "lm30ay",
@@ -3584,7 +3751,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "t4c4zj",
@@ -3606,7 +3774,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "v4nboj",
@@ -3628,7 +3797,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "o9zf3k",
@@ -3650,7 +3820,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "fl1ws6",
@@ -3672,7 +3843,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "lrybel",
@@ -3694,7 +3866,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "vwy0n5",
@@ -3716,7 +3889,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "ug3u1e",
@@ -3738,7 +3912,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "mbfbrc",
@@ -3760,7 +3935,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "27ie1w",
@@ -3782,7 +3958,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "oiy77t",
@@ -3804,7 +3981,8 @@
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "h5g3rb",
@@ -3820,7 +3998,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.969Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "3nig51",
@@ -3836,7 +4015,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.969Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "ng6l44",
@@ -3852,7 +4032,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "7shz5x",
@@ -3868,7 +4049,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "p7o9j2",
@@ -3884,7 +4066,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "sk9lbv",
@@ -3900,7 +4083,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "2iolb",
@@ -3916,7 +4100,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "u4zj2s",
@@ -3932,7 +4117,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "55dpxp",
@@ -3948,7 +4134,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "5pete",
@@ -3964,7 +4151,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "qoewec",
@@ -3980,7 +4168,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "bd2zby",
@@ -3996,7 +4185,8 @@
       "status": "pending",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "is_promotional": false
     },
     {
       "id": "xn5w2p",
@@ -4018,7 +4208,8 @@
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     },
     {
       "id": "o33aq",
@@ -4040,7 +4231,8 @@
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "is_promotional": false
     }
   ]
 }

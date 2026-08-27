@@ -53,10 +53,13 @@ async function main() {
     }];
   }
 
-  // Añadir fuente 'manual' si no viene especificada
+  // Añadir fuente 'manual' si no viene especificada.
+  // is_promotional: pásalo como true en el JSON para ideas cuyo tema ES promocionar
+  // Kinda Club (las de lanzamiento). Esas solo salen en días de CTA directo.
   ideas = ideas.map(idea => ({
     ...idea,
     source: idea.source || 'manual',
+    is_promotional: idea.is_promotional === true,
   }));
 
   const added = backlog.addIdeas(ideas);
