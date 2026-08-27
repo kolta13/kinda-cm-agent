@@ -66,14 +66,25 @@ const PEXELS_QUERY_STYLES = [
 // Mapea keywords del titulo/body de CADA slide a un query de Pexels específico,
 // para que la imagen se relacione con el contenido real de esa slide en vez de
 // ser genérica para todo el carrusel.
+// Los posts manuales que mejor funcionaron usaban capturas reales de plataformas
+// (dashboard de Spotify for Artists, calendario del teléfono). No podemos generar
+// capturas reales, así que sesgamos hacia fotos de pantallas y dispositivos.
+//
+// CUIDADO (aprendido a la mala): un query de pantalla genérico como "financial
+// data screen analytics" devuelve capturas de exchanges de cripto con tickers y
+// marcas legibles — irrelevante para música y peor que una foto abstracta.
+// TODA query de pantalla debe llevar un ancla de música ("music", "audio",
+// "recording") para que Pexels no se vaya a finanzas, trading o negocios genéricos.
 const TOPIC_IMAGE_QUERIES = [
-  { keywords: ['estudio', 'grabaci', 'mezcla', 'masteriz', 'produc'],                  query: 'recording studio mixing console music production' },
-  { keywords: ['spotify', 'streaming', 'playlist', 'algoritmo'],                       query: 'music streaming app phone dark' },
+  { keywords: ['estudio', 'grabaci', 'mezcla', 'masteriz', 'produc'],                  query: 'music production software daw screen studio' },
+  { keywords: ['spotify', 'streaming', 'playlist', 'algoritmo'],                       query: 'music streaming app phone listening headphones' },
+  { keywords: ['dato', 'métrica', 'metrica', 'analítica', 'analitica', 'estadístic', 'oyentes', 'audiencia'], query: 'music producer laptop headphones desk dark' },
   { keywords: ['concierto', 'show', 'gira', 'festival', 'presentaci', 'escenario'],    query: 'live concert stage lights silhouette' },
-  { keywords: ['contrato', 'sello', 'manager', 'negoci', 'acuerdo', 'label'],          query: 'business meeting contract signing music industry' },
-  { keywords: ['redes', 'contenido', 'fanbase', 'engagement', 'instagram', 'reel'],    query: 'social media content creator phone' },
+  { keywords: ['contrato', 'sello', 'manager', 'negoci', 'acuerdo', 'label', 'cláusul', 'clausul'], query: 'signing document pen paper desk closeup' },
+  { keywords: ['redes', 'contenido', 'fanbase', 'engagement', 'instagram', 'reel'],    query: 'musician filming phone content social media' },
   { keywords: ['tiktok', 'video', 'viral', 'shorts'],                                  query: 'filming vertical video phone content creator' },
-  { keywords: ['dinero', 'royalt', 'ingres', 'gana', 'pago', 'cobr', 'tarifa', 'sync'], query: 'music royalties income finance dark' },
+  { keywords: ['dinero', 'royalt', 'ingres', 'gana', 'pago', 'cobr', 'tarifa', 'sync'], query: 'musician counting money guitar desk dark' },
+  { keywords: ['calendario', 'fecha', 'plazo', 'cronograma', 'planifica'],             query: 'calendar planner notebook desk music' },
   { keywords: ['micrófono', 'microfono', 'vocal', 'cantar', 'voz', 'cantante'],        query: 'singer vocalist microphone studio' },
   { keywords: ['dj', 'beat', 'plugin', 'daw', 'software', 'herramienta'],              query: 'music producer studio equipment dark' },
   { keywords: ['booking', 'evento', 'merch'],                                          query: 'concert booking event merchandise' },
@@ -190,7 +201,11 @@ const TOPIC_BADGE_LABELS = {
 // Naranjo (ember) y violeta (accent) de la paleta — alternan día por medio
 const BADGE_COLORS = ['#ff2400', '#4100f5'];
 
-function resolveBadgeLabel(topicTag, audienceType) {
+// El kicker que genera Gemini es específico del tema ("SPOTIFY 101",
+// "SPOTIFY x META ADS") y funciona mucho mejor que la categoría genérica.
+// TOPIC_BADGE_LABELS queda solo como respaldo si el modelo no devolvió kicker.
+function resolveBadgeLabel(kicker, topicTag, audienceType) {
+  if (kicker && String(kicker).trim()) return String(kicker).trim().toUpperCase();
   return TOPIC_BADGE_LABELS[topicTag]
     || (audienceType === 'profesional' ? 'PARA PROFESIONALES' : 'ARTISTAS INDEPENDIENTES');
 }
@@ -213,11 +228,17 @@ function buildSlideData(carousel, meta = {}) {
     portada: {
       titulo:      portada?.titulo   || '',
       subtitulo:   portada?.subtitulo || '',
-      badge:       resolveBadgeLabel(meta.topic_tag, meta.audience_type),
+      badge:       resolveBadgeLabel(portada?.kicker, meta.topic_tag, meta.audience_type),
       badgeColor:  resolveBadgeColor(),
+      // Contador visible desde la portada (1/N): los posts manuales que mejor
+      // funcionaron lo mostraban ahí — le dice al lector cuánto dura antes de empezar.
+      counter:     `1 / ${slides.length}`,
     },
-    contenidos: contenidos.map((s, i) => ({
-      label: `${i + 1}`,
+    contenidos: contenidos.map((s) => ({
+      // Sin número suelto: el título ya trae la etiqueta estructural ("ERROR 1:",
+      // "ANTES:", "PASO 2:") y arriba a la derecha está el contador X/N. Un tercer
+      // número era redundante y ensuciaba — los posts manuales tampoco lo tenían.
+      label: '',
       titulo: cleanTitle(s.titulo),
       body:   s.body || '',
     })),

@@ -169,6 +169,7 @@
       rgba(0,0,0,0.96) 100%
     );
   }
+  .slide-contenido .number:empty { display: none; }
   .slide-contenido .number {
     position: relative; z-index: 2;
     font-size: 22px;
@@ -274,6 +275,7 @@
 <div class="slide slide-portada" id="slide-portada">
   <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
   <div class="blob"></div>
+  <div class="slide-num" id="num-portada"></div>
   <div class="badge" id="badge-portada"></div>
   <h1 id="titulo-portada">Título del carrusel</h1>
   <p class="sub" id="subtitulo-portada"></p>
@@ -355,14 +357,31 @@ window.fillSlide = function(data) {
   }
   set('titulo-portada', data.portada?.titulo);
   set('subtitulo-portada', data.portada?.subtitulo || '');
+
+  // Auto-ajuste del tamaño de portada: red de seguridad para que un título
+  // largo nunca desborde ni coma toda la slide. El prompt pide 5-9 palabras,
+  // pero si el modelo se pasa, esto lo mantiene visualmente contenido.
+  var tituloEl = document.getElementById('titulo-portada');
+  var texto = data.portada?.titulo || '';
+  if (tituloEl && texto) {
+    var chars = texto.length;
+    var size = 108;
+    if (chars > 80)      size = 66;
+    else if (chars > 60) size = 78;
+    else if (chars > 45) size = 92;
+    tituloEl.style.fontSize = size + 'px';
+  }
   set('badge-portada', data.portada?.badge || '');
+  set('num-portada', data.portada?.counter || '');
   var badgeEl = document.getElementById('badge-portada');
   if (badgeEl && data.portada?.badgeColor) badgeEl.style.background = data.portada.badgeColor;
 
+  // Contador sobre el TOTAL del carrusel (portada + contenidos + cta), no sobre
+  // los slides de contenido: el lector cuenta lo que desliza, no las secciones.
   (data.contenidos || []).forEach(function(c, i) {
     var n = i + 1;
-    var total = data.contenidos.length;
-    set('num-' + n, String(n).padStart(2,'0') + ' / ' + String(total).padStart(2,'0'));
+    var total = data.contenidos.length + 2; // + portada + cta
+    set('num-' + n, (n + 1) + ' / ' + total);
     set('label-' + n, c.label || '');
     set('titulo-' + n, c.titulo);
     set('body-' + n, c.body);

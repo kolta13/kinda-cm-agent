@@ -240,41 +240,67 @@ Reformula siempre a segunda persona (instrucción al lector) o a tercera (dato d
 - BIEN: "Un videoclip animado con celular sale bajo USD 50 en props y dos días de edición."
 - BIEN: "Puedes grabar un videoclip animado con tu celular por menos de USD 50."
 
-PORTADA (slide 1) — EL GANCHO:
-- Objetivo único: DETENER el scroll Y crear un GAP DE CURIOSIDAD que solo se cierra swipeando.
-- Máximo 6 palabras. DURO. Sin excepción.
-- La portada NO explica el tema — lo insinúa. El lector necesita swipear para entender.
-- FORMATOS que funcionan:
-  · Provocación: "Spotify no paga lo que crees."
-  · Contradicción: "El 90% lo hace al revés."
-  · Consecuencia sin causa: "Tu demo llegó y nadie la escuchó."
-  · Número + tensión: "3 errores que cuestan tu placement."
-  · Verdad incómoda: "Publicar sin estrategia es regalar música."
-- PROHIBIDO: títulos descriptivos ("Estrategia de lanzamiento musical"), subtítulos explicativos, gerundios, cualquier frase que RESUMA o DESCRIBA el contenido del carrusel. Si la portada ya responde la pregunta, nadie swipea.
+PORTADA (slide 1) — LA PROMESA:
+- Objetivo: que el lector sepa EXACTAMENTE qué se lleva si desliza. Contenido educativo
+  para un nicho: la promesa clara convierte mejor que la intriga críptica.
+- Estructura obligatoria de la portada, dos partes:
+  1. "kicker": la categoría específica, 2-4 palabras, en mayúsculas. Es el sello de sección.
+     Ejemplos buenos: "SPOTIFY 101", "SPOTIFY x META ADS", "ARTISTA EMERGENTE",
+     "ARTISTAS INDEPENDIENTES", "CONTRATOS 101", "MEZCLA Y MASTER".
+     Debe nombrar la plataforma o el subtema real, NO una categoría genérica como
+     "MARKETING" o "DISTRIBUCIÓN" a secas.
+  2. "titulo": la promesa concreta de lo que el carrusel entrega. 5 a 9 palabras,
+     nunca más. Un título largo ocupa toda la portada y pierde impacto visual.
+     Si el tema original es una frase larga, RESÚMELO — no lo copies.
+     Ejemplo MALO (13 palabras, ocupa 7 líneas): "Derechos de autor y patentes:
+     genera ingresos recurrentes fuera del mercado tradicional"
+     Ejemplo BIEN (6 palabras): "Cómo cobrar regalías toda tu vida"
+- FORMATOS DE TÍTULO que funcionan (todos anuncian el contenido, no lo esconden):
+  · Lista numerada: "3 errores que cometen los artistas al lanzar música"
+  · Ranking: "Top 3 distribuidoras musicales en 2026"
+  · Pregunta directa del tema: "¿Cómo Spotify decide a quién recomendar?"
+  · Desglose: "3 pilares de tu identidad artística"
+  · Cómo-hacer: "Cómo crecer en Spotify con Meta Ads"
+- Si el formato del día implica una cantidad (3 errores, 4 pasos, 3 pilares), el número
+  DEBE aparecer en el título y coincidir con la cantidad real de slides de contenido.
+- PROHIBIDO: intriga sin promesa ("Tu demo llegó y nadie la escuchó", "El 90% lo hace al
+  revés"). Suena a clickbait y no dice qué se lleva el lector. Tampoco frases sueltas sin
+  sustantivo del tema.
+- La portada NO lleva "body" (queda null).
 
-SLIDE 2 — LA REVELACIÓN (bisagra obligatoria entre portada y contenido):
-- La portada abre un gap de curiosidad sin decir de qué trata el carrusel. El SLIDE 2 tiene
-  la obligación de CERRAR ese gap: su "titulo" debe nombrar el tema explícitamente para que
-  portada + slide 2 juntos se entiendan como una idea completa.
-- PROHIBIDO que el titulo del slide 2 sea un marcador genérico sin contexto: "Paso 1",
-  "Primero", "Define tu plan", "El primer error" — el lector no sabe plan/error DE QUÉ.
-  El titulo debe incluir el sustantivo del tema (lanzamiento, mezcla, booking, tarifas, etc.).
-  Ejemplo MALO (sin contexto): portada "El 90% lo hace al revés." → slide 2 "Paso 1: Define
-  tu plan" (no dice plan de qué). Ejemplo BUENO: → slide 2 "Así se arma un lanzamiento"
-  (nombra el tema — lanzamiento — y recién ahí el body entra en la mecánica del paso 1).
-- PROHIBIDO también que sea una LISTA de sub-puntos separados por comas o dos puntos
-  (ej. "Marketing: Marca, Audiencia y Comunidad" — eso es un índice, no un gancho). El
-  titulo del slide 2 es UNA sola frase corta y directa, no una enumeración de todo lo que
+SLIDE 2 — ENTRADA DIRECTA AL CONTENIDO:
+- Como la portada ya dijo de qué trata, el slide 2 NO necesita re-presentar el tema:
+  entra directo al primer punto real usando la etiqueta estructural del formato de hoy.
+- El "titulo" del slide 2 ya puede ser el primer ítem etiquetado ("ERROR 1: LANZAR SIN
+  FECHA", "PILAR 1: TU SONIDO", "PASO 1: ...") — ver ETIQUETAS ESTRUCTURALES abajo.
+- PROHIBIDO que sea una LISTA de sub-puntos separados por comas o dos puntos
+  (ej. "Marketing: Marca, Audiencia y Comunidad" — eso es un índice, no un título). El
+  titulo del slide 2 es UNA sola idea, no una enumeración de todo lo que
   viene después. Ejemplo MALO (lista): "Marketing: Marca, Audiencia y Comunidad." Ejemplo
   BUENO (frase única): "Así funciona el marketing real."
-- A partir del slide 3, ya con el tema establecido, sí pueden ser pasos numerados directos
-  ("Paso 2", "Paso 3") sin repetir el contexto cada vez.
+  viene después.
+
+ETIQUETAS ESTRUCTURALES (obligatorias en slides de contenido):
+- Cada slide de contenido empieza su "titulo" con una etiqueta que marca dónde está el
+  lector dentro del carrusel. La etiqueta depende del FORMATO DEL CARRUSEL DE HOY:
+  · PASO A PASO            → "PASO 1: ...", "PASO 2: ..."
+  · MITO VS REALIDAD       → "MITO 1: ...", "MITO 2: ..."
+  · ERROR Y CONSECUENCIA   → "ERROR 1: ...", "ERROR 2: ..."
+  · DESGLOSE DE UN NÚMERO  → "DÓNDE VA 1: ...", o el nombre del componente si es más claro
+  · ANTES Y DESPUÉS        → "ANTES: ..." / "DESPUÉS: ..." por par de ideas
+  · CHECKLIST              → "REVISA 1: ...", "REVISA 2: ..."
+- Después de la etiqueta va el nombre concreto del punto, en 2-5 palabras.
+  Ejemplos reales que funcionan: "ERROR 1: LANZAR SIN FECHA", "PILAR 1: TU SONIDO".
+- La numeración debe ser correlativa y coincidir con el número prometido en la portada.
 
 SLIDES DE CONTENIDO (general):
 - 2 niveles de lectura obligatorios:
-  1. "titulo": 3 a 6 palabras. Ancla la atención. Sin punto final.
-  2. "body": 12 a 18 palabras exactas. Debe cumplir la REGLA #1 de especificidad.
-- Límite total por slide: 25 palabras entre titulo + body.
+  1. "titulo": etiqueta estructural + nombre del punto. Máximo 7 palabras. Sin punto final.
+  2. "body": 18 a 30 palabras. Debe cumplir la REGLA #1 de especificidad.
+     Tiene espacio para dar contexto real, no solo una instrucción telegráfica: explica
+     el QUÉ y el POR QUÉ, con el dato concreto adentro.
+     Ejemplo del largo correcto: "No es el género — es la textura que te hace reconocible
+     entre mil canciones. Tu voz, tus instrumentos, tu forma de producir."
 - La estructura la define el FORMATO DEL CARRUSEL DE HOY (arriba), no elijas otra.
 - PROHIBIDO: explicaciones teóricas densas, frases de relleno, consejos que el lector ya sabe.
 
@@ -310,9 +336,16 @@ LISTA NEGRA — NUNCA USAR:
 
 CAPTION DE INSTAGRAM:
 - Tono: músico experimentado hablando con un colega. Sin hype.
+- Estructura que funciona: una frase que plantea el problema o la pregunta del carrusel,
+  cerrando con 👇 para invitar a deslizar. Luego línea en blanco y los hashtags.
+  Ejemplos reales que funcionaron:
+  · "3 errores que vemos repetirse una y otra vez 👇"
+  · "¿Sabías que puedes usar Meta Ads para darle instrucciones a Spotify? 👇"
+  · "El algoritmo de Spotify no es magia — son datos. Y si entiendes los 3 números que
+     mira, puedes trabajar a tu favor. 👇"
 - Máximo 3 líneas + línea en blanco + exactamente 4 hashtags.
 - Hashtags: 1 amplio LATAM (#Musicos o #MusicaLatina) + 2 de nicho del tema + #KindaClub.
-- Sin exclamaciones. Emojis: máximo 2, solo si suman.
+- Sin exclamaciones. Emojis: máximo 2 (el 👇 del final cuenta como uno).
 
 Responde SOLO con JSON válido:
 {
@@ -323,33 +356,34 @@ Responde SOLO con JSON válido:
     {
       "numero": 1,
       "tipo": "portada",
-      "titulo": "Declaración contundente, max 10 palabras",
+      "kicker": "SPOTIFY 101",
+      "titulo": "Promesa concreta de lo que entrega el carrusel, 6-12 palabras",
       "subtitulo": null,
       "body": null
     },
     {
       "numero": 2,
       "tipo": "contenido",
-      "titulo": "Nombra el tema explícitamente (no 'Paso 1' genérico)",
+      "titulo": "ERROR 1: NOMBRE DEL PUNTO",
       "subtitulo": null,
-      "body": "12 a 18 palabras de instrucción técnica directa o dato concreto accionable."
+      "body": "18 a 30 palabras con el dato concreto adentro, explicando el qué y el por qué."
     },
     {
       "numero": 3,
       "tipo": "contenido",
-      "titulo": "Otro punto clave",
+      "titulo": "ERROR 2: NOMBRE DEL PUNTO",
       "subtitulo": null,
-      "body": "12 a 18 palabras exactas. Sin relleno."
+      "body": "18 a 30 palabras. Mismo nivel de especificidad, sin relleno."
     },
     {
       "numero": 4,
       "tipo": "cta",
-      "titulo": "CTA ultradirecto max 12 palabras hacia kindaclub.com",
+      "titulo": "Cierre según el modo de CTA de hoy, max 12 palabras",
       "subtitulo": null,
       "body": null
     }
   ],
-  "caption_instagram": "Caption directo sin hype. Máximo 3 líneas.\n\n#HashtagAmplio #NichoTema1 #NichoTema2 #KindaClub",
+  "caption_instagram": "Frase que plantea el problema del carrusel 👇\n\n#HashtagAmplio #NichoTema1 #NichoTema2 #KindaClub",
   "hashtags": ["#HashtagAmplio", "#NichoTema1", "#NichoTema2", "#KindaClub"]
 }`;
 
