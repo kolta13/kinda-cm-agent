@@ -198,10 +198,42 @@ TEST OBLIGATORIO — aplícalo a cada "body" antes de escribirlo:
 Si la respuesta es sí, está mal. Reescríbelo.
 
 Todo "body" DEBE contener al menos UNO de estos anclajes concretos:
-- Una cifra (porcentaje, monto en USD, cantidad, duración)
-- Un plazo específico ("7 días antes", "las primeras 48 horas")
-- El nombre exacto de un campo, formato, herramienta o documento ("la pestaña de pitch en Spotify for Artists", "cláusula de exclusividad territorial", "archivo WAV 24bit/48kHz")
-- Una consecuencia verificable ("pierdes el placement de esa semana", "cedes el máster por 7 años")
+- Un plazo o regla documentada de una plataforma ("Spotify pide el pitch 7 días antes
+  del lanzamiento", "el editorial se revisa una vez por semana")
+- El nombre exacto de un campo, formato, herramienta o documento ("la pestaña de pitch
+  en Spotify for Artists", "cláusula de exclusividad territorial", "WAV 24bit/48kHz")
+- Un rango de precio de mercado, presentado COMO RANGO ("una mezcla profesional en LATAM
+  va de USD 80 a 250 por canción")
+- Una consecuencia contractual o técnica que se deduce del propio hecho ("si el contrato
+  dice territorio mundial a perpetuidad, no recuperas el máster nunca")
+
+═══ REGLA #1b: SOLO DATOS VERIFICABLES PÚBLICAMENTE ═══
+
+CRÍTICO. Kinda Club educa sobre contratos, regalías y plataformas: publicar una cifra
+inventada destruye la credibilidad de la cuenta. NO tienes fuentes que consultar, así
+que solo puedes afirmar lo que es verificable públicamente por cualquiera.
+
+PROHIBIDO ABSOLUTAMENTE — estadísticas de resultado que suenan creíbles pero no puedes
+respaldar:
+- Porcentajes de mejora o rendimiento: "genera un 30% más", "aumenta tus streams 5x",
+  "multiplica tu alcance por 3", "sube un 40% tus reproducciones".
+- Porcentajes de población sin fuente: "el 80% de los artistas comete este error",
+  "9 de cada 10 independientes fracasan".
+- Pagos por stream exactos: "Spotify paga USD 0,004 por reproducción" (varía por país,
+  contrato y período — citarlo como dato fijo es falso).
+- Cualquier cifra que responda "¿cuánto mejora/crece?" en vez de "¿cuánto cuesta/dura?".
+
+SÍ PERMITIDO — hechos que cualquiera puede confirmar:
+- Reglas y plazos publicados por las plataformas.
+- Especificaciones técnicas (formatos de archivo, resoluciones, requisitos de subida).
+- Rangos de precio de mercado, siempre como rango y no como precio único.
+- Mecánicas contractuales y qué implica cada cláusula.
+- Aritmética evidente ("un acuerdo a 7 años son 7 años sin poder relicenciar").
+
+SI NO TIENES UN DATO VERIFICABLE, usa una comparación cualitativa honesta en vez de
+inventar un número. Es mejor decir menos que decir algo falso.
+- MAL:  "Licenciar genera un 30% más que vender el máster."
+- BIEN: "Licenciar mantiene el máster a tu nombre; venderlo lo entrega de forma definitiva."
 
 VERBOS PROHIBIDOS como acción principal — son huecos y no dicen nada:
 "investiga", "busca", "define tus objetivos", "prepara", "sé claro", "conoce", "organiza", "planifica", "asegúrate de entender", "ten en cuenta".
@@ -392,8 +424,38 @@ Responde SOLO con JSON válido:
   const clean    = neutralizeSpanish(carousel);
   stripTitlePeriods(clean);
   warnFirstPerson(clean);
+  warnUnverifiableStats(clean);
   assertNoBrandMentions(clean);
   return clean;
+}
+
+// Detecta estadísticas de resultado que el modelo no puede respaldar ("genera un
+// 30% más", "5x más streams", "el 80% de los artistas..."). La regla de
+// especificidad empuja a dar cifras y Gemini tiende a inventar las que no sabe —
+// para una cuenta que educa sobre contratos y regalías eso es un riesgo real de
+// credibilidad. Solo advierte, no bloquea: queda en el log del run y en el email
+// de notificación para poder revisar el post publicado.
+const UNVERIFIABLE_STAT_PATTERNS = [
+  // porcentaje seguido (cerca) de un verbo de mejora/crecimiento
+  /\b\d{1,3}\s?%\s+(más|menos|mayor|de aumento|de crecimiento|de mejora)/i,
+  /(aumenta|incrementa|mejora|sube|crece|multiplica|reduce)[^.]{0,40}\b\d{1,3}\s?%/i,
+  // multiplicadores tipo "3x más", "duplica tus streams"
+  /\b\d{1,2}\s?x\s+(más|mayor)/i,
+  /\b(duplica|triplica|multiplica)\s+(tus|tu|el|la)\b/i,
+  // "N de cada M" y "el N% de los artistas/músicos/independientes"
+  /\b\d{1,2}\s+de\s+cada\s+\d{1,2}\b/i,
+  /\bel\s+\d{1,3}\s?%\s+de\s+(los|las)\b/i,
+  // pago por stream citado como cifra fija
+  /(USD|US\$|\$)\s?0[.,]\d{3,}\s*(por|\/)\s*(stream|reproducci)/i,
+];
+
+function warnUnverifiableStats(carousel) {
+  const text  = JSON.stringify(carousel);
+  const found = UNVERIFIABLE_STAT_PATTERNS.filter(re => re.test(text));
+  if (found.length > 0) {
+    const matches = found.map(re => (text.match(re) || [''])[0].trim()).filter(Boolean);
+    console.warn(`[generate] ⚠ Posible estadística no verificable (revisar antes de dar por bueno el post): ${matches.join(' | ')}`);
+  }
 }
 
 // Detecta relatos en primera persona (Kinda Club apropiándose de la experiencia
