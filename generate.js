@@ -111,10 +111,59 @@ function selectWinner(pending) {
   return { winner, sorted };
 }
 
+// ── Formatos de carrusel (rotación diaria) ────────────────────────────────
+// Sin esto, Gemini escribe SIEMPRE un listicle ("N pasos para X"). Revisión
+// del 27-08-2026: los 5 posts anteriores tenían estructura idéntica. Rotar el
+// formato por día garantiza variedad real en el feed en vez de confiar en que
+// el modelo varíe solo.
+
+const CARRUSEL_FORMATS = [
+  {
+    nombre: 'PASO A PASO',
+    instruccion: 'Secuencia cronológica de acciones. Cada slide es un paso que depende del anterior. El lector debe poder ejecutarlos en orden hoy mismo.',
+  },
+  {
+    nombre: 'MITO VS REALIDAD',
+    instruccion: 'Cada slide desarma una creencia común. Estructura del body: la creencia, y por qué es falsa con un dato. El titulo nombra el mito. No uses las palabras "mito" ni "realidad" literalmente en cada slide — se vuelve repetitivo.',
+  },
+  {
+    nombre: 'ERROR Y CONSECUENCIA',
+    instruccion: 'Cada slide es un error concreto que comete la audiencia, qué le cuesta (en dinero, tiempo u oportunidad perdida), y el arreglo. El titulo nombra el error, no la solución.',
+  },
+  {
+    nombre: 'DESGLOSE DE UN NÚMERO',
+    instruccion: 'Toma una cifra central del tema y descomponla. Cada slide desarma una parte de esa cifra. Ejemplo de armazón: "de cada USD 100 en streams, X se va en esto, Y en esto otro". Requiere cifras en TODOS los slides.',
+  },
+  {
+    nombre: 'ANTES Y DESPUÉS',
+    instruccion: 'Cada slide contrasta cómo lo hace la mayoría contra cómo se hace bien. Estructura del body: el contraste concreto, no la moraleja. El titulo nombra la decisión en juego.',
+  },
+  {
+    nombre: 'CHECKLIST DE VERIFICACIÓN',
+    instruccion: 'Cada slide es algo que el lector debe revisar/confirmar antes de avanzar, con el criterio exacto de qué buscar. No "revisa el contrato" sino qué cláusula y qué número específico mirar.',
+  },
+];
+
+function getDailyFormat() {
+  const dayIndex = Math.floor(Date.now() / 86400000);
+  return CARRUSEL_FORMATS[dayIndex % CARRUSEL_FORMATS.length];
+}
+
+// El CTA no puede vender todos los días. Revisión del 27-08-2026: 5 de 5 posts
+// terminaban empujando a kindaclub.com, lo que hace que la cuenta se lea como
+// publicidad. 2 de cada 3 días el cierre es de valor/comunidad, no transaccional.
+function getDailyCtaMode() {
+  const dayIndex = Math.floor(Date.now() / 86400000);
+  return dayIndex % 3 === 0 ? 'directo' : 'blando';
+}
+
 // ── Fase 2b: Generación de copy ───────────────────────────────────────────
 
 async function generateCarousel(winner) {
+  const formato = getDailyFormat();
+  const ctaMode = getDailyCtaMode();
   console.log(`[generate] Generando carrusel para: "${winner.title}"`);
+  console.log(`[generate] Formato de hoy: ${formato.nombre} | CTA: ${ctaMode}`);
 
   const prompt = `Eres el creador de contenido de Kinda Club (kindaclub.com). Tu tono es técnico, minimalista, directo y de colega a colega. Hablas como un productor o creativo independiente experimentado, nunca como una agencia de marketing.
 
@@ -125,7 +174,62 @@ Audiencia: ${winner.audience_type === 'profesional' ? 'PROFESIONALES DE LA MÚSI
 
 ═══ REGLAS EDITORIALES (OBLIGATORIAS) ═══
 
+FORMATO DEL CARRUSEL DE HOY: ${formato.nombre}
+${formato.instruccion}
+Este formato es obligatorio hoy. Si el tema no encaja perfecto con él, adapta el ángulo del tema al formato — no cambies el formato. La variedad entre publicaciones importa más que el encaje perfecto de un tema puntual.
+
 CANTIDAD DE SLIDES: Entre 3 y 8 slides en total (portada + contenido + cta). Sin relleno. Solo los slides que el tema justifica.
+
+═══ REGLA #1: ESPECIFICIDAD (la más importante) ═══
+
+El problema más grave del contenido genérico es que suena a IA que no sabe nada del rubro. Cada slide debe demostrar conocimiento real de la industria musical latinoamericana.
+
+TEST OBLIGATORIO — aplícalo a cada "body" antes de escribirlo:
+"¿Este texto podría aparecer tal cual en un carrusel de CUALQUIER otro rubro (marketing digital, fitness, finanzas) cambiando dos palabras?"
+Si la respuesta es sí, está mal. Reescríbelo.
+
+Todo "body" DEBE contener al menos UNO de estos anclajes concretos:
+- Una cifra (porcentaje, monto en USD, cantidad, duración)
+- Un plazo específico ("7 días antes", "las primeras 48 horas")
+- El nombre exacto de un campo, formato, herramienta o documento ("la pestaña de pitch en Spotify for Artists", "cláusula de exclusividad territorial", "archivo WAV 24bit/48kHz")
+- Una consecuencia verificable ("pierdes el placement de esa semana", "cedes el máster por 7 años")
+
+VERBOS PROHIBIDOS como acción principal — son huecos y no dicen nada:
+"investiga", "busca", "define tus objetivos", "prepara", "sé claro", "conoce", "organiza", "planifica", "asegúrate de entender", "ten en cuenta".
+Solo se permiten si van seguidos de QUÉ exactamente y CON QUÉ criterio.
+
+EJEMPLOS REALES DE LO QUE NO SIRVE (salieron publicados, son el error a evitar):
+- MAL: "Busca en plataformas, revisa portafolios y escucha sus trabajos previos."
+  BIEN: "Pide 3 referencias en tu mismo género y precio cerrado por canción, nunca por hora."
+- MAL: "Define tu género, presupuesto y objetivos antes de buscar."
+  BIEN: "Mezcla profesional en LATAM va de USD 80 a 250 por canción. Cotiza 3 antes de decidir."
+- MAL: "Asegúrate de entender dónde se distribuirá tu música."
+  BIEN: "Si el contrato dice territorio mundial y a perpetuidad, no puedes recuperar el máster nunca."
+
+Si no tienes un dato concreto real para un punto, ELIMINA ese slide. Un carrusel de 3 slides con sustancia vale más que uno de 7 con relleno.
+
+TÍTULOS DE RELLENO PROHIBIDOS — no aportan y gastan un slide:
+"El resultado final", "En resumen", "La conclusión", "Lo más importante", "Para terminar",
+"El siguiente paso", "Consideraciones finales". Cada título nombra algo concreto o no existe.
+
+FRASES PUBLICITARIAS PROHIBIDAS — suenan a folleto, no a colega:
+"calidad de estudio", "sin salir de casa", "resultados profesionales", "lleva tu música al
+siguiente nivel", "todo lo que necesitas", "la clave del éxito", "sin complicaciones".
+
+═══ REGLA #2: VOZ — nunca en primera persona ═══
+
+El tema de hoy puede venir de un título ajeno escrito en primera persona ("Cómo HICE mi
+videoclip", "Así es como GRABAMOS..."). Kinda Club NO vivió esa experiencia: es una
+plataforma, no un artista. Apropiarse de la historia de otro es deshonesto y se nota.
+
+PROHIBIDO en slides y caption: "hice", "hicimos", "grabé", "grabamos", "mi videoclip",
+"nuestro lanzamiento", "cuando yo empecé", o cualquier relato en primera persona de una
+experiencia personal.
+
+Reformula siempre a segunda persona (instrucción al lector) o a tercera (dato del rubro):
+- MAL:  "Hice un videoclip animado con el móvil por menos de USD 50."
+- BIEN: "Un videoclip animado con celular sale bajo USD 50 en props y dos días de edición."
+- BIEN: "Puedes grabar un videoclip animado con tu celular por menos de USD 50."
 
 PORTADA (slide 1) — EL GANCHO:
 - Objetivo único: DETENER el scroll Y crear un GAP DE CURIOSIDAD que solo se cierra swipeando.
@@ -159,17 +263,26 @@ SLIDE 2 — LA REVELACIÓN (bisagra obligatoria entre portada y contenido):
 
 SLIDES DE CONTENIDO (general):
 - 2 niveles de lectura obligatorios:
-  1. "titulo": 3 a 6 palabras. Ancla la atención.
-  2. "body": 12 a 18 palabras exactas. Instrucción técnica directa, dato concreto o paso accionable. Nada más.
+  1. "titulo": 3 a 6 palabras. Ancla la atención. Sin punto final.
+  2. "body": 12 a 18 palabras exactas. Debe cumplir la REGLA #1 de especificidad.
 - Límite total por slide: 25 palabras entre titulo + body.
-- Formato preferido: checklist, paso a paso, comparativa Antes/Después.
-- PROHIBIDO: explicaciones teóricas densas, frases de relleno.
+- La estructura la define el FORMATO DEL CARRUSEL DE HOY (arriba), no elijas otra.
+- PROHIBIDO: explicaciones teóricas densas, frases de relleno, consejos que el lector ya sabe.
 
-SLIDE FINAL / CTA:
-- Llamado ultradirecto, transaccional, sin rodeos.
+SLIDE FINAL / CTA — modo de hoy: ${ctaMode.toUpperCase()}
+${ctaMode === 'directo'
+  ? `- Llamado directo y transaccional a kindaclub.com.
+- Si es para ARTISTAS: subir proyecto, buscar equipo en el catálogo o postular canción a playlists.
+- Si es para PROFESIONALES: crear perfil, subir portafolio y definir tarifas.`
+  : `- HOY NO SE VENDE. El cierre es de valor, no transaccional. Una cuenta que pide algo en
+  cada publicación se lee como publicidad y la gente deja de seguirla.
+- Opciones válidas para hoy (elige la que cierre mejor el tema):
+  · Cierre con la idea más fuerte del carrusel reformulada como conclusión.
+  · Pregunta genuina a la comunidad que invite a comentar su experiencia.
+  · Recordatorio de guardar el carrusel para cuando lo necesite.
+- Puedes mencionar Kinda Club al pasar, pero NO como llamado a la acción principal.
+- PROHIBIDO hoy: "postula", "crea tu perfil", "únete", "conecta en kindaclub.com".`}
 - Máximo 10-12 palabras en titulo.
-- Si es para ARTISTAS: dirigir a subir proyecto, buscar equipo en el catálogo o postular canción a playlists de Spotify en kindaclub.com.
-- Si es para PROFESIONALES: dirigir a crear perfil, subir portafolio y definir tarifas en kindaclub.com.
 - body del CTA: null (solo el titulo basta).
 
 LISTA NEGRA — NUNCA USAR:
@@ -234,8 +347,40 @@ Responde SOLO con JSON válido:
   const raw      = await callGemini(prompt);
   const carousel = safeJsonParse(raw);
   const clean    = neutralizeSpanish(carousel);
+  stripTitlePeriods(clean);
+  warnFirstPerson(clean);
   assertNoBrandMentions(clean);
   return clean;
+}
+
+// Detecta relatos en primera persona (Kinda Club apropiándose de la experiencia
+// de otro, porque la idea vino de un título ajeno tipo "Cómo HICE mi videoclip").
+// Solo advierte, NO bloquea: un caption con voz equivocada es un problema menor
+// comparado con quedarse sin publicar ese día.
+const FIRST_PERSON_PATTERNS = [
+  /\bhice\b/i, /\bhicimos\b/i, /\bgrabé\b/i, /\bgrabamos\b/i, /\blancé\b/i,
+  /\blanzamos\b/i, /\bconseguí\b/i, /\bconseguimos\b/i, /\baprendí\b/i,
+  /\bmi (primer|primera|videoclip|disco|single|lanzamiento|carrera)\b/i,
+  /\bnuestro (videoclip|disco|single|lanzamiento)\b/i,
+];
+
+function warnFirstPerson(carousel) {
+  const text  = JSON.stringify(carousel);
+  const found = FIRST_PERSON_PATTERNS.filter(re => re.test(text));
+  if (found.length > 0) {
+    console.warn(`[generate] ⚠ Posible relato en primera persona (Kinda Club no vivió esa experiencia): ${found.map(r => r.source).join(', ')}`);
+  }
+}
+
+// Quita el punto final de los títulos de slide. En display de 82-108px un punto
+// colgando al final se ve anticuado y además queda visualmente despegado por el
+// letter-spacing negativo. Los "body" SÍ conservan su puntuación normal.
+function stripTitlePeriods(carousel) {
+  (carousel.slides || []).forEach(s => {
+    if (typeof s.titulo === 'string') {
+      s.titulo = s.titulo.replace(/\s*\.\s*$/, '').trim();
+    }
+  });
 }
 
 // ── Guardia de marcas de terceros ─────────────────────────────────────────
