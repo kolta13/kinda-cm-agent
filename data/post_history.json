@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T02:50:08.481Z",
+  "updated_at": "2026-08-28T05:56:21.987Z",
   "posts": [
     {
       "platform": "instagram",
@@ -406,6 +406,65 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-08-27/slide-03.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-27/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-27/slide-05.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-08-28T05:56:21.987Z",
+      "week": "2026-08-28",
+      "tema": "Cobrar por derechos de autor, música y patentes: la inversión alternativa que busca ingresos recurrentes fuera del mercado tradicional",
+      "topic_tag": "noticias",
+      "audience_type": "profesional_musica",
+      "backlog_id": "rl6xvi",
+      "winner_score": 7.5,
+      "post_id": "17926823409164380",
+      "caption": "Cobrar por tu música no termina con el primer lanzamiento. Si entiendes los contratos, puedes generar ingresos recurrentes por décadas 👇\n\n#MusicaLatina #Regalias #DerechosDeAutor #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#Regalias",
+        "#DerechosDeAutor",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Cómo cobrar regalías de tu música toda tu vida",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "REVISA 1: TUS CONTRATOS ACTUALES",
+          "body": "Busca cláusulas de cesión de máster y derechos de sincronización. Asegúrate de no haber cedido el control total para evitar futuras licencias."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "REVISA 2: TERRITORIO Y DURACIÓN",
+          "body": "Verifica si los derechos son mundiales y a perpetuidad. Un acuerdo a 7 años significa 7 años sin poder relicenciar el máster."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "REVISA 3: TUS REGALÍAS DE PUBLICACIÓN",
+          "body": "Confirma que tu registro de publicación incluya todos los metadatos correctos. Un error aquí te cuesta dinero cada vez que tu música suena."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "REVISA 4: LICENCIAS DE SINCRO",
+          "body": "Entiende qué permisos necesitas para cine, TV o videojuegos. Una licencia de sincronización te da ingresos directos por uso específico."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Revisa estos puntos y mantén el control de tus ingresos",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-28/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-28/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-28/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-28/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-28/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-28/slide-06.jpg"
       ],
       "metrics": null
     }
