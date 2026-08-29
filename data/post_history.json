@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T03:28:53.598Z",
+  "updated_at": "2026-08-29T23:51:53.532Z",
   "posts": [
     {
       "platform": "instagram",
@@ -518,6 +518,65 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-03.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-05.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-08-29T23:51:53.532Z",
+      "week": "2026-08-29",
+      "tema": "Cómo hice un videoclip animado grabado con el móvil",
+      "topic_tag": "video_viral",
+      "audience_type": "artista",
+      "backlog_id": "lpfk5l",
+      "winner_score": 9.25,
+      "post_id": "18617133631028725",
+      "caption": "Crear un videoclip animado con presupuesto cero es posible. Aquí el cómo 👇\n\n#MusicaLatina #ProduccionMusical #VideoclipIndie #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ProduccionMusical",
+        "#VideoclipIndie",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Crea tu videoclip animado solo con tu móvil",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "PASO 1: Define tu concepto y storyboard",
+          "body": "Antes de grabar, esquematiza cada escena. No necesitas dibujar perfecto; trazos simples bastan para guiar la acción y la animación."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "PASO 2: Filma tus planos base con el móvil",
+          "body": "Usa tu celular para grabar los elementos reales que animarás. Enfócate en movimientos limpios y buena iluminación, incluso natural."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "PASO 3: Anima cuadro a cuadro con apps",
+          "body": "Herramientas como Stop Motion Studio o FlipaClip permiten animar tus grabaciones. Cada frame suma al movimiento, creando la ilusión deseada."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "PASO 4: Edita y sincroniza en postproducción",
+          "body": "Monta tus clips animados y planos base. Asegúrate de que el ritmo visual coincida con la música, usando editores móviles o de escritorio."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Sube tu proyecto a kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-06.jpg"
       ],
       "metrics": null
     }

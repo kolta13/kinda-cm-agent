@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T03:28:53.595Z",
+  "updated_at": "2026-08-29T23:51:53.530Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -2526,10 +2526,10 @@
       },
       "angulo": "Proceso creativo y técnico para realizar un videoclip animado utilizando solo un teléfono móvil.",
       "por_que": "Combina dos tendencias: la creación de contenido con móvil y la animación. Es un ángulo muy diferenciador y altamente aplicable para artistas con presupuestos muy ajustados.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-08-21T22:18:45.710Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-08-29T23:51:53.530Z",
+      "post_id": "18617133631028725",
       "audience_type": "artista",
       "is_promotional": false
     },
@@ -4711,6 +4711,46 @@
       "por_que": "Ofrece una guía clara y basada en resultados sobre qué tipo de contenido funciona mejor para el crecimiento de artistas en la era digital.",
       "status": "pending",
       "discovered_at": "2026-08-29T03:27:41.015Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "idj997",
+      "title": "25 ideas de merchandising de bandas para diseños ...",
+      "description": "Los parches permiten a los fans personalizar chaquetas, mochilas o jeans. Vende versiones para planchar o coser en diferentes formas como círculos, rectángulos ...",
+      "source": "google",
+      "source_url": "https://www.printkk.com/es/blog/articles/band-merch-ideas?srsltid=AfmBOoocRmaW8nkD5CdcYBoOjDUrf5ei0rSV37hZRNrXp-bh_Kze9IcP",
+      "topic_tag": "shows",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-08-29T23:50:35.440Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "bjfiqy",
+      "title": "El formato de contenido que hace viral a un artista sin sello  ...",
+      "description": "Número tres: Storytelling con performance y gancho POV. Incluye elementos de storytelling que enganchen al usuario desde el inicio del video. Da resolución a la ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DbydlgPxSHH/",
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Desglosa una estrategia de contenido específica (storytelling con performance y POV) para lograr viralidad sin necesidad de un sello discográfico.",
+      "por_que": "Los artistas independientes buscan constantemente formas de destacar y alcanzar audiencias más amplias. Este contenido ofrece una táctica concreta y explicada de forma detallada para generar impacto y viralidad en plataformas digitales.",
+      "status": "pending",
+      "discovered_at": "2026-08-29T23:50:35.440Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
