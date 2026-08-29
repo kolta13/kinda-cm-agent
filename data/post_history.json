@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28T05:56:21.987Z",
+  "updated_at": "2026-08-29T03:28:53.598Z",
   "posts": [
     {
       "platform": "instagram",
@@ -465,6 +465,59 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-08-28/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-28/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-08-28/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-08-29T03:28:53.597Z",
+      "week": "2026-08-29",
+      "tema": "Productores con tarifas claras y portafolios verificados",
+      "topic_tag": "networking",
+      "audience_type": "artista",
+      "backlog_id": "5hx2ih",
+      "winner_score": 9.5,
+      "post_id": "17903218719516408",
+      "caption": "Encontrar al productor correcto puede ser un laberinto. Aquí te damos los pasos para evitarlo 👇\n\n#MusicaLatina #ProduccionMusical #EquipoMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ProduccionMusical",
+        "#EquipoMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Encuentra productores con tarifas fijas y trabajos probados",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "PASO 1: PIDE TARIFAS POR SESIÓN O TRACK",
+          "body": "Una mezcla profesional en LATAM va de USD 80 a 250 por canción. Pide cotización cerrada para evitar sorpresas. Nunca pagues por hora sin un alcance definido."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "PASO 2: REVISA PORTAFOLIOS Y REFERENCIAS",
+          "body": "Solicita 3 trabajos previos del productor en tu mismo género. Confirma que el sonido se alinee con tu visión artística. Pide contactos de artistas que hayan trabajado con él."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "PASO 3: CONFIRMA EL ALCANCE EN CONTRATO",
+          "body": "Asegúrate de que el contrato detalle revisiones incluidas, formatos de entrega (WAV 24bit/48kHz) y plazos de entrega. Un contrato claro previene disputas."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Busca productores verificados en kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-08-29/slide-05.jpg"
       ],
       "metrics": null
     }
