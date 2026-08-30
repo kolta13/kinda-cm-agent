@@ -2,8 +2,15 @@ name: Kinda CM Agent — Post Diario
 
 on:
   schedule:
-    # 22:00 UTC = 19:00 Chile invierno (UTC-3). En verano queda a las 18:00.
-    - cron: '0 22 * * *'
+    # 21:37 UTC ≈ 18:37 Chile invierno (UTC-3). En verano queda ~17:37.
+    #
+    # Minuto 37 y no ":00" a propósito: GitHub retrasa o descarta ejecuciones
+    # programadas cuando hay carga alta, y la hora en punto es el pico (todo el
+    # mundo agenda ahí). Con '0 22' los posts del 27, 28 y 29-08-2026 salieron a
+    # las 02:50, 05:56 y 03:28 UTC — entre 5 y 8 horas tarde, o sea de madrugada
+    # en Chile — y los días 18 y 26 la corrida se descartó por completo.
+    # Un minuto poco común reduce el retraso; no lo garantiza, pero es gratis.
+    - cron: '37 21 * * *'
   workflow_dispatch:  # permite disparar manualmente desde la UI de GitHub
 
 permissions:
