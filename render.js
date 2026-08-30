@@ -261,8 +261,18 @@ async function renderSlides(carousel, week, data = {}) {
     topic_tag:     data.topic_tag,
     audience_type: carousel.audience_type,
   });
-  const outDir    = path.join(OUT_BASE, `semana-${week}`);
-  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+  // La carpeta lleva la fecha, pero el cron de GitHub Actions se atrasa bastante
+  // (hasta 6h) y dos corridas pueden caer el mismo día — pasó el 29-08-2026, y el
+  // segundo post sobrescribió las imágenes del primero, dejando las URLs del post
+  // ya publicado apuntando a slides ajenas. Si la carpeta existe, se sufija.
+  let outDir = path.join(OUT_BASE, `semana-${week}`);
+  if (fs.existsSync(outDir)) {
+    let n = 2;
+    while (fs.existsSync(path.join(OUT_BASE, `semana-${week}-${n}`))) n++;
+    outDir = path.join(OUT_BASE, `semana-${week}-${n}`);
+    console.log(`[render] Ya existía semana-${week} — usando ${path.basename(outDir)} para no pisar el post anterior`);
+  }
+  fs.mkdirSync(outDir, { recursive: true });
 
   // Buscar una foto RELEVANTE AL CONTENIDO de cada slide (mismo orden que
   // los elementos .cover-img en el DOM: portada, contenidos..., cta).
@@ -343,6 +353,10 @@ async function renderSlides(carousel, week, data = {}) {
     tema:         carousel.tema,
     backlog_id:   data.backlog_id || null,
     outDir,
+    // Nombre real de la carpeta (puede llevar sufijo si hubo dos posts el mismo
+    // día). publish.js lo usa para la ruta remota en vez de recalcularla desde
+    // `week`, que no distingue entre corridas.
+    dirName:      path.basename(outDir),
     slides:       slideDefs.map((d, i) => ({ label: d.label, file: d.file, path: paths[i] })),
     caption:      carousel.caption_instagram,
     hashtags:     carousel.hashtags,

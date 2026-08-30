@@ -440,6 +440,7 @@ Responde SOLO con JSON válido:
   const carousel = safeJsonParse(raw);
   const clean    = neutralizeSpanish(carousel);
   stripTitlePeriods(clean);
+  normalizeAudienceType(clean);
   warnFirstPerson(clean);
   warnUnverifiableStats(clean);
   assertNoBrandMentions(clean);
@@ -492,6 +493,16 @@ function warnFirstPerson(carousel) {
   if (found.length > 0) {
     console.warn(`[generate] ⚠ Posible relato en primera persona (Kinda Club no vivió esa experiencia): ${found.map(r => r.source).join(', ')}`);
   }
+}
+
+// Gemini a veces devuelve variantes del audience_type en vez de los dos valores
+// del schema ("artista" / "profesional") — el post del 28-08-2026 quedó guardado
+// como "profesional_musica". No rompe la selección (selectWinner lee el valor
+// del backlog, que viene del scoring), pero sí ensucia post_history.json, que es
+// el dataset que usamos para las retrospectivas de balance 80/20.
+function normalizeAudienceType(carousel) {
+  const raw = String(carousel.audience_type || '').toLowerCase();
+  carousel.audience_type = raw.includes('profesional') ? 'profesional' : 'artista';
 }
 
 // Quita el punto final de los títulos de slide. En display de 82-108px un punto

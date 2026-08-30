@@ -35,7 +35,12 @@ async function uploadSlides(manifest) {
       secure:   false,
     });
 
-    const remoteWeekDir = `${config.ftpOutputPath}/semana-${manifest.week}`;
+    // dirName viene del render y puede llevar sufijo (-2, -3) si hubo más de un
+    // post el mismo día. Sin él, dos corridas del mismo día suben a la misma
+    // carpeta remota y la segunda pisa las imágenes de la primera — le pasó al
+    // post del 29-08-2026. Fallback a `week` para manifiestos viejos.
+    const remoteDirName = manifest.dirName || `semana-${manifest.week}`;
+    const remoteWeekDir = `${config.ftpOutputPath}/${remoteDirName}`;
     await client.ensureDir(remoteWeekDir);
     console.log(`[publish] Directorio remoto: ${remoteWeekDir}`);
 
@@ -43,7 +48,7 @@ async function uploadSlides(manifest) {
     for (const slide of manifest.slides) {
       const remotePath = `${remoteWeekDir}/${slide.file}`;
       await client.uploadFrom(slide.path, remotePath);
-      const url = `${config.agentBaseUrl}/output/semana-${manifest.week}/${slide.file}`;
+      const url = `${config.agentBaseUrl}/output/${remoteDirName}/${slide.file}`;
       urls.push(url);
       console.log(`  ✓ ${slide.file}`);
       // Pausa entre uploads para no saturar el servidor

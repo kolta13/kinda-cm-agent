@@ -126,10 +126,12 @@
     position: relative; z-index: 2;
     font-size: 108px;
     font-weight: 800;
-    /* 1.02 (antes .92): con line-height < 1 los acentos de vocales mayúsculas
-       (Ó, Í, Á) sobresalen del cap-height y chocan con la línea de arriba en
-       texto de 2-3 líneas. Se vio en varios posts reales. */
-    line-height: 1.02;
+    /* Los acentos de vocales mayúsculas (Ó, Í, Á) sobresalen del cap-height y
+       chocan con la línea de arriba. 1.02 no bastaba: medido con Range sobre la
+       fuente real, seguía solapando 7.8px (visible en el post del 29-08-2026,
+       donde la Ó de "MÓVIL" atravesaba la S de "SOLO" y la hacía ver como Ş).
+       1.08 aún roza (1.4px); 1.12 es el primer valor sin solape. */
+    line-height: 1.12;
     text-transform: uppercase;
     letter-spacing: -.03em;
     color: var(--ink);
@@ -183,7 +185,7 @@
     position: relative; z-index: 2;
     font-size: 82px;
     font-weight: 800;
-    line-height: 1.05; /* antes .96 — acentos chocaban con la línea de arriba */
+    line-height: 1.12; /* mismo umbral medido que en la portada — ver h1 */
     text-transform: uppercase;
     letter-spacing: -.03em;
     color: var(--ink);
@@ -240,7 +242,7 @@
     position: relative; z-index: 2;
     font-size: 90px;
     font-weight: 800;
-    line-height: 1.05; /* antes .96 — el mismo choque de acentos que en h1/h2 */
+    line-height: 1.12; /* mismo umbral medido que en la portada — ver h1 */
     text-transform: uppercase;
     letter-spacing: -.03em;
     color: white;
