@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T00:48:15.075Z",
+  "updated_at": "2026-09-01T23:33:49.101Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -5077,10 +5077,10 @@
       },
       "angulo": "Estrategia integral de marketing musical para independientes, cubriendo desde la conceptualización hasta la ejecución, con un llamado a la acción claro.",
       "por_que": "Aborda directamente las necesidades de los artistas independientes en LATAM, ofreciendo una hoja de ruta completa y práctica para el lanzamiento de su música.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-09-01T00:46:09.918Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-09-01T23:33:49.101Z",
+      "post_id": "18103503692622194",
       "audience_type": "artista"
     },
     {
@@ -5197,6 +5197,121 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
+    },
+    {
+      "id": "uy92g4",
+      "title": "¿Cómo ayudar a tu amigx que se dedica a la música de una ...",
+      "description": "¿Cómo apoyar a tu amigo artista en las redes? Número uno: mira el video entero. Es lo más importante. Eso le dice al algoritmo: 'Mira, este video está súper ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/Db8nG2UM3Gd/",
+      "topic_tag": "marketing",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Enseña a los artistas cómo comunicar a sus amigos y familiares cómo pueden apoyarlos de manera efectiva en redes sociales.",
+      "por_que": "Aborda una necesidad común de los artistas independientes: cómo obtener apoyo genuino de su círculo cercano. Es práctico y fomenta la comunidad.",
+      "status": "pending",
+      "discovered_at": "2026-09-01T23:32:23.646Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "hbd890",
+      "title": "Subir covers para crecer en redes sirve? #music ...",
+      "description": "Subir covers para crear una comunidad de una audiencia, sí, pero no para todo el mundo. Y no crear únicamente covers. Pero algo que sí es cierto es que es ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DcMHWrcRtbW/",
+      "topic_tag": "marketing",
+      "is_promotional": false,
+      "score_total": 7.8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Analiza el uso de covers en redes sociales, destacando cuándo son útiles para construir comunidad y cuándo pueden ser contraproducentes para la identidad del artista.",
+      "por_que": "Resuelve una duda frecuente entre artistas emergentes sobre la estrategia de covers. Ofrece una perspectiva matizada que va más allá del 'sí' o 'no'.",
+      "status": "pending",
+      "discovered_at": "2026-09-01T23:32:23.646Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "s0vtvc",
+      "title": "La canción mundial del verano 2026 en TikTok: 'The One That Got Away' de Katy Perry",
+      "description": "El deporte reina en la banda sonora del verano 2026 en TikTok: 'Dai Dai', y 'La roja baila', himno oficial de la Selección Española, se sitúan entre las 10...",
+      "source": "noticia",
+      "source_url": "https://newsroom.tiktok.com/la-cancin-mundial-del-verano-2026-en-tiktok-the-one-that-got-away-de-katy-perry?lang=es",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 5,
+      "scores": {
+        "relevancia": 4,
+        "engagement": 6,
+        "diferenciador": 5,
+        "aplicabilidad": 7
+      },
+      "angulo": "Predice las tendencias musicales y virales en TikTok para el verano de 2026, enfocándose en cómo el deporte influye en la banda sonora.",
+      "por_que": "Aunque interesante como predicción, su aplicabilidad inmediata para artistas independientes en LATAM es limitada, y la referencia a Katy Perry puede no resonar tanto como artistas locales.",
+      "status": "pending",
+      "discovered_at": "2026-09-01T23:32:23.646Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "a7m9if",
+      "title": "Las 30 Mejores Canciones de Música Latina de 2026 (hasta ahora): Selección editorial",
+      "description": "Desde seductores afrobeats hasta melancólicas rancheras e incluso un nuevo himno para la Copa Mundial y mucho más, el panorama de la música latina en 2026...",
+      "source": "noticia",
+      "source_url": "https://www.billboard.com/lists/mejores-canciones-musica-latina-2026-hasta-ahora/",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Presenta una selección curada de lo mejor de la música latina del año, abarcando diversos géneros y destacando el impacto de eventos globales.",
+      "por_que": "Ofrece una visión inspiradora y de referencia para artistas latinos, mostrando el panorama actual y las tendencias. Fomenta el descubrimiento y la conversación sobre la música regional.",
+      "status": "pending",
+      "discovered_at": "2026-09-01T23:32:23.646Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "5sgxz3",
+      "title": "[Oficial] 'Nuevo artista de HYBE' TUIDE alcanza el top 10 en las ventas iniciales de debut de un grupo femenino de todos los tiempos",
+      "description": "El nuevo grupo femenino de HYBE, TUIDE, ha demostrado su presencia como la «mejor nueva artista del año» al lograr resultados significativos desde su álbum...",
+      "source": "noticia",
+      "source_url": "https://www.starnewskorea.com/es/music/2026/08/31/2026083110140257486",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Analiza el exitoso debut de un nuevo grupo femenino de K-Pop (TUIDE) y su impacto en las métricas de ventas iniciales a nivel global.",
+      "por_que": "Si bien muestra un caso de éxito en la industria musical, el enfoque en K-Pop y una agencia específica como HYBE tiene menor relevancia directa para profesionales de la música latinoamericana que buscan clientes locales.",
+      "status": "pending",
+      "discovered_at": "2026-09-01T23:32:23.646Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
     }
   ]
 }

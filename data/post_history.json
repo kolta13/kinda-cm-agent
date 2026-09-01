@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T00:48:15.077Z",
+  "updated_at": "2026-09-01T23:33:49.104Z",
   "posts": [
     {
       "platform": "instagram",
@@ -695,6 +695,65 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-06.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-01T23:33:49.104Z",
+      "week": "2026-09-01",
+      "tema": "🎯 Marketing Musical para Artistas Independientes 👉 https://kindaclub.com/marketing-para-independientes",
+      "topic_tag": "distribucion",
+      "audience_type": "artista",
+      "backlog_id": "qd9e7a",
+      "winner_score": 9.25,
+      "post_id": "18103503692622194",
+      "caption": "Cada lanzamiento requiere una inversión. Saber a dónde va cada dólar es clave para crecer de forma sostenible 👇\n\n#MusicaIndependiente #MarketingMusical #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaIndependiente",
+        "#MarketingMusical",
+        "#ProduccionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Desglose de tu inversión en lanzamientos musicales",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "DÓNDE VA 1: COSTOS DE PRODUCCIÓN",
+          "body": "La grabación, mezcla y masterización son la base. Una mezcla profesional en LATAM va de USD 80 a 250 por canción, sin contar producción."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "DÓNDE VA 2: DISTRIBUCIÓN Y SERVICIOS",
+          "body": "Las distribuidoras cobran fees anuales o por lanzamiento. Plataformas como DistroKid o TuneCore tienen planes desde USD 20/año."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "DÓNDE VA 3: MARKETING Y PROMOCIÓN",
+          "body": "Aquí entra la publicidad en redes sociales (Meta Ads, TikTok Ads) y posibles servicios de PR. Un presupuesto inicial puede ser de USD 100-300/mes."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "DÓNDE VA 4: VISUALES Y CONTENIDO",
+          "body": "Videoclips, arte de tapa, fotos promocionales. Un videoclip básico puede costar entre USD 150 y 500, dependiendo de la complejidad."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Optimiza tu presupuesto musical en kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-06.jpg"
       ],
       "metrics": null
     }
