@@ -146,26 +146,32 @@ function selectWinner(pending) {
 const CARRUSEL_FORMATS = [
   {
     nombre: 'PASO A PASO',
+    etiqueta: 'PASO {n}',
     instruccion: 'Secuencia cronológica de acciones. Cada slide es un paso que depende del anterior. El lector debe poder ejecutarlos en orden hoy mismo.',
   },
   {
     nombre: 'MITO VS REALIDAD',
+    etiqueta: 'MITO {n}',
     instruccion: 'Cada slide desarma una creencia común. Estructura del body: la creencia, y por qué es falsa con un dato. El titulo nombra el mito. No uses las palabras "mito" ni "realidad" literalmente en cada slide — se vuelve repetitivo.',
   },
   {
     nombre: 'ERROR Y CONSECUENCIA',
+    etiqueta: 'ERROR {n}',
     instruccion: 'Cada slide es un error concreto que comete la audiencia, qué le cuesta (en dinero, tiempo u oportunidad perdida), y el arreglo. El titulo nombra el error, no la solución.',
   },
   {
     nombre: 'DESGLOSE DE UN NÚMERO',
+    etiqueta: 'PARTE {n}',
     instruccion: 'Toma una cifra central del tema y descomponla. Cada slide desarma una parte de esa cifra. Ejemplo de armazón: "de cada USD 100 en streams, X se va en esto, Y en esto otro". Requiere cifras en TODOS los slides.',
   },
   {
     nombre: 'ANTES Y DESPUÉS',
+    etiqueta: 'CASO {n}',
     instruccion: 'Cada slide contrasta cómo lo hace la mayoría contra cómo se hace bien. Estructura del body: el contraste concreto, no la moraleja. El titulo nombra la decisión en juego.',
   },
   {
     nombre: 'CHECKLIST DE VERIFICACIÓN',
+    etiqueta: 'REVISA {n}',
     instruccion: 'Cada slide es algo que el lector debe revisar/confirmar antes de avanzar, con el criterio exacto de qué buscar. No "revisa el contrato" sino qué cláusula y qué número específico mirar.',
   },
 ];
@@ -329,23 +335,23 @@ SLIDE 2 — ENTRADA DIRECTA AL CONTENIDO:
   BUENO (frase única): "Así funciona el marketing real."
   viene después.
 
-ETIQUETAS ESTRUCTURALES (obligatorias en slides de contenido):
-- Cada slide de contenido empieza su "titulo" con una etiqueta que marca dónde está el
-  lector dentro del carrusel. La etiqueta depende del FORMATO DEL CARRUSEL DE HOY:
-  · PASO A PASO            → "PASO 1: ...", "PASO 2: ..."
-  · MITO VS REALIDAD       → "MITO 1: ...", "MITO 2: ..."
-  · ERROR Y CONSECUENCIA   → "ERROR 1: ...", "ERROR 2: ..."
-  · DESGLOSE DE UN NÚMERO  → "DÓNDE VA 1: ...", o el nombre del componente si es más claro
-  · ANTES Y DESPUÉS        → "ANTES: ..." / "DESPUÉS: ..." por par de ideas
-  · CHECKLIST              → "REVISA 1: ...", "REVISA 2: ..."
-- Después de la etiqueta va el nombre concreto del punto, en 2-5 palabras.
-  Ejemplos reales que funcionan: "ERROR 1: LANZAR SIN FECHA", "PILAR 1: TU SONIDO".
+ETIQUETAS ESTRUCTURALES (campo aparte, NO dentro del título):
+- Cada slide de contenido lleva un campo "etiqueta" que marca dónde está el lector dentro
+  del carrusel. Se renderiza en otro color y tamaño que el título, así que va SEPARADO.
+- La etiqueta de hoy es exactamente: "${formato.etiqueta}" (reemplaza {n} por el número
+  correlativo del slide: 1, 2, 3...). No inventes otra ni la traduzcas.
+- PROHIBIDO meter la etiqueta dentro del "titulo". El título NO empieza con "PASO 1:",
+  "MITO 2:" ni nada parecido — esa parte va solo en el campo "etiqueta".
+  MAL:  etiqueta: "PASO 1", titulo: "PASO 1: Define tu concepto"
+  BIEN: etiqueta: "PASO 1", titulo: "Define tu concepto"
 - La numeración debe ser correlativa y coincidir con el número prometido en la portada.
 
 SLIDES DE CONTENIDO (general):
 - 2 niveles de lectura obligatorios:
-  1. "titulo": etiqueta estructural + nombre del punto. Máximo 7 palabras. Sin punto final.
-  2. "body": 18 a 30 palabras. Debe cumplir la REGLA #1 de especificidad.
+  1. "etiqueta": la etiqueta estructural del formato de hoy (ver arriba).
+  2. "titulo": SOLO el nombre concreto del punto, 2 a 5 palabras. Sin la etiqueta adentro,
+     sin punto final.
+  3. "body": 18 a 30 palabras. Debe cumplir la REGLA #1 de especificidad.
      Tiene espacio para dar contexto real, no solo una instrucción telegráfica: explica
      el QUÉ y el POR QUÉ, con el dato concreto adentro.
      Ejemplo del largo correcto: "No es el género — es la textura que te hace reconocible
@@ -413,14 +419,16 @@ Responde SOLO con JSON válido:
     {
       "numero": 2,
       "tipo": "contenido",
-      "titulo": "ERROR 1: NOMBRE DEL PUNTO",
+      "etiqueta": "ERROR 1",
+      "titulo": "NOMBRE DEL PUNTO",
       "subtitulo": null,
       "body": "18 a 30 palabras con el dato concreto adentro, explicando el qué y el por qué."
     },
     {
       "numero": 3,
       "tipo": "contenido",
-      "titulo": "ERROR 2: NOMBRE DEL PUNTO",
+      "etiqueta": "ERROR 2",
+      "titulo": "NOMBRE DEL PUNTO",
       "subtitulo": null,
       "body": "18 a 30 palabras. Mismo nivel de especificidad, sin relleno."
     },

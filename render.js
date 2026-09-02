@@ -234,12 +234,14 @@ function buildSlideData(carousel, meta = {}) {
       // funcionaron lo mostraban ahí — le dice al lector cuánto dura antes de empezar.
       counter:     `1 / ${slides.length}`,
     },
-    contenidos: contenidos.map((s) => ({
-      // Sin número suelto: el título ya trae la etiqueta estructural ("ERROR 1:",
-      // "ANTES:", "PASO 2:") y arriba a la derecha está el contador X/N. Un tercer
-      // número era redundante y ensuciaba — los posts manuales tampoco lo tenían.
-      label: '',
-      titulo: cleanTitle(s.titulo),
+    contenidos: contenidos.map((s, i) => ({
+      // La etiqueta estructural ("PASO 1", "MITO 2", "REVISA 3") va en su propio
+      // slot, que el template pinta en violeta y más chico. Antes venía embebida
+      // dentro del título y salía toda en blanco al mismo tamaño, sin jerarquía.
+      // Fallback: si Gemini no mandó "etiqueta", se extrae del título por si
+      // todavía viene con el formato viejo ("PASO 1: Define tu concepto").
+      label:  (s.etiqueta || extractLabel(s.titulo) || '').trim(),
+      titulo: cleanTitle(stripLabel(s.titulo)),
       body:   s.body || '',
     })),
     cta: {
@@ -247,6 +249,20 @@ function buildSlideData(carousel, meta = {}) {
       body:   cta?.body   || 'Conecta con artistas, managers y productores de LATAM.',
     },
   };
+}
+
+// Etiqueta estructural embebida al inicio del título: "PASO 1: Algo", "MITO 2: Algo",
+// "ANTES: Algo". Se usa como respaldo cuando Gemini no devuelve el campo "etiqueta"
+// separado (formato viejo, previo al 02-09-2026).
+const EMBEDDED_LABEL_RE = /^\s*([A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ\s]{1,14}?\s*\d{0,2})\s*:\s*/;
+
+function extractLabel(t) {
+  const m = String(t || '').match(EMBEDDED_LABEL_RE);
+  return m ? m[1].trim() : '';
+}
+
+function stripLabel(t) {
+  return String(t || '').replace(EMBEDDED_LABEL_RE, '').trim();
 }
 
 // Limpiar numeración automática del título ("1. Streaming" → "Streaming")
