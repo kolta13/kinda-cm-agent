@@ -171,7 +171,10 @@ const CARRUSEL_FORMATS = [
   },
   {
     nombre: 'CHECKLIST DE VERIFICACIÓN',
-    etiqueta: 'REVISA {n}',
+    // Solo el número: "REVISA 1" no funciona porque es un verbo, y los verbos no
+    // numeran ("revisa uno" no se dice). Las otras etiquetas son sustantivos
+    // ("PASO 1", "MITO 2") y por eso sí leen bien.
+    etiqueta: '{n}',
     instruccion: 'Cada slide es algo que el lector debe revisar/confirmar antes de avanzar, con el criterio exacto de qué buscar. No "revisa el contrato" sino qué cláusula y qué número específico mirar.',
   },
 ];
