@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T23:33:49.104Z",
+  "updated_at": "2026-09-02T23:33:37.911Z",
   "posts": [
     {
       "platform": "instagram",
@@ -754,6 +754,65 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-01/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-02T23:33:37.911Z",
+      "week": "2026-09-02",
+      "tema": "Cómo se negocian hoy los contratos entre productor y artista: royalties y anticipos.",
+      "topic_tag": "monetizacion",
+      "audience_type": "profesional",
+      "backlog_id": "fosd2q",
+      "winner_score": 8.5,
+      "post_id": "18115185376977916",
+      "caption": "Los contratos son la base de tu carrera como productor. Entenderlos te da poder. 👇\n\n#MusicaLatina #ContratosMusicales #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ContratosMusicales",
+        "#ProduccionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Negocia tus regalías y anticipos como productor",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Royalty Share vs. Fee Fijo",
+          "body": "La mayoría acepta un fee fijo bajo. Negocia un Royalty Share (ej. 50/50) sobre las ganancias netas del máster para compartir el riesgo y el éxito a largo plazo."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Anticipos y Recuperación",
+          "body": "No aceptes anticipos que no puedas recuperar. Asegúrate de que tu fee o porcentaje de royalties cubra ese adelanto antes de que el artista recupere su inversión."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Cláusula de Territorio y Duración",
+          "body": "Un contrato mundial y a perpetuidad te ata de por vida. Define territorios específicos y plazos claros (ej. 5-7 años) para poder relicenciar el máster."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Definición de 'Ganancias Netas'",
+          "body": "Especifica qué se considera 'ganancias netas'. Excluye costos de marketing, distribución y otros gastos del artista para asegurar que tus royalties se calculen sobre ingresos reales."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Guarda este post para tu próxima negociación",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-02/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-02/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-02/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-02/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-02/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-02/slide-06.jpg"
       ],
       "metrics": null
     }

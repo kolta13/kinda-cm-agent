@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T23:33:49.101Z",
+  "updated_at": "2026-09-02T23:33:37.908Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -2043,10 +2043,10 @@
       },
       "angulo": "Presenta una guía gratuita sobre la negociación de contratos de productor, cubriendo royalties y anticipos.",
       "por_que": "Ofrece información legal y contractual actualizada y específica para profesionales, ayudando a asegurar acuerdos justos.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-08-20T22:21:22.884Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-09-02T23:33:37.908Z",
+      "post_id": "18115185376977916",
       "audience_type": "profesional",
       "is_promotional": false
     },
@@ -5312,6 +5312,236 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "profesional"
+    },
+    {
+      "id": "9ok898",
+      "title": "Cómo ganar dinero en Spotify: Consejos y preguntas frecuentes ...",
+      "description": "Descubre los métodos para ganar dinero en Spotify, ya sea a través de regalías, pódcasts, merchandising y todas las otras estrategias disponibles.",
+      "source": "google",
+      "source_url": "https://www.shopify.com/es/blog/ganar-dinero-en-spotify",
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 8.25,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Desmitificar las fuentes de ingresos en Spotify, yendo más allá de las regalías directas.",
+      "por_que": "Los artistas independientes buscan activamente maximizar sus ingresos. Este tema es fundamental y de alta aplicabilidad.",
+      "status": "pending",
+      "discovered_at": "2026-09-02T23:32:11.415Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "46ia1x",
+      "title": "Distribuidoras musicales: mapa del mercado por modelo de negocio",
+      "description": "Mapa del mercado de la distribución musical: 30 distribuidoras clasificadas por modelo de negocio para entender qué se elige al elegir.",
+      "source": "google",
+      "source_url": "https://muwalk.com/distribuidoras-musicales/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Un comparativo visual y práctico de distribuidoras, clasificadas por sus modelos de negocio y beneficios.",
+      "por_que": "Permite a los artistas tomar decisiones informadas sobre qué distribuidora se adapta mejor a sus necesidades y presupuesto.",
+      "status": "pending",
+      "discovered_at": "2026-09-02T23:32:11.415Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "7ktg97",
+      "title": "Blog de Huruz: distribución musical para artistas y sellos",
+      "description": "Guía completa para artistas independientes que quieren planificar su primera gira en Latinoamérica: financiamiento, booking, logística, promoción y cómo no ...",
+      "source": "google",
+      "source_url": "https://blog.huruz.com/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 7.75,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía práctica para planificar la primera gira en Latinoamérica, enfocada en logística y promoción.",
+      "por_que": "Las giras son cruciales para la monetización y el crecimiento de artistas independientes en la región.",
+      "status": "pending",
+      "discovered_at": "2026-09-02T23:32:11.415Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "7l3oe7",
+      "title": "30 años impulsando la música en Latinoamérica Desde ...",
+      "description": "... distribuidora: somos tecnología, estrategia y creatividad al servicio de ... Música Latina 34%, Indie 28% ¿Qué señales deja el streaming? 01 Regiones y ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DWfFmVEjxvd/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Un vistazo a la trayectoria de una distribuidora clave, destacando su impacto y evolución en LATAM.",
+      "por_que": "Ofrece una perspectiva histórica y de éxito en la industria latinoamericana, inspirando y educando.",
+      "status": "pending",
+      "discovered_at": "2026-09-02T23:32:11.415Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "oio5t0",
+      "title": "Lo que no nos dicen a los artistas independientes",
+      "description": "Este texto recoge, con humor y sinceridad, las situaciones más comunes que enfrentan músicos y artistas emergentes. Expectativas vs. realidad - Libertad ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@batresmusic/video/7678531796472139028",
+      "topic_tag": "general",
+      "is_promotional": false,
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 8
+      },
+      "angulo": "Revelaciones honestas y con humor sobre los desafíos y realidades no contadas del camino del artista independiente.",
+      "por_que": "Conecta directamente con las frustraciones y experiencias de los artistas, generando empatía y conversación.",
+      "status": "pending",
+      "discovered_at": "2026-09-02T23:32:11.416Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "vswrl5",
+      "title": "La Música No Es Sencilla: Errores de Artistas al Buscar Éxito ...",
+      "description": "Tampoco es un video viral lo que los va a salvar de esa percepción errónea. Existe una tendencia entre algunos artistas de pensar que, tras solo tres o cuatro ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@cristianpoow/video/7677590327364046100",
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Análisis de los errores comunes que impiden a los artistas independientes alcanzar el éxito, más allá de la viralidad.",
+      "por_que": "Aborda las expectativas poco realistas y ofrece una visión más estratégica y fundamentada del crecimiento artístico.",
+      "status": "pending",
+      "discovered_at": "2026-09-02T23:32:11.416Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "dlfrwl",
+      "title": "Artistas independientes, tu música no se vende sola",
+      "description": "Por este error los artistas independientes pasan hambre. Jul 3, 2026 · 1.4K ... viral\" — es. 00:11. \"Estoy probando a hacer muchos videos para que uno ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.facebook.com/solyofficial/videos/artistas-independientes-tu-m%C3%BAsica-no-se-vende-sola/1747113369882515/",
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 8
+      },
+      "angulo": "Estrategias de marketing y venta esenciales para que los artistas independientes logren monetizar su música activamente.",
+      "por_que": "Es un llamado a la acción directo sobre la necesidad de proactividad en la promoción y venta, un punto débil común.",
+      "status": "pending",
+      "discovered_at": "2026-09-02T23:32:11.416Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "b495m3",
+      "title": "Sony y Warner demandan a Anthropic: US$150.000 por canción",
+      "description": "Qué pasó: otra demanda por derechos de autor contra Anthropic El 28 de agosto de 2026, Sony Music Publishing, Warner Chappell Music y un grupo de…",
+      "source": "noticia",
+      "source_url": "https://ecosistemastartup.com/sony-y-warner-demandan-a-anthropic-us150-000-por-cancion/",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 8,
+        "aplicabilidad": 6
+      },
+      "angulo": "Impacto de la demanda de Sony y Warner a Anthropic, y sus implicaciones para el uso de música en IA.",
+      "por_que": "Alerta sobre los riesgos y debates en torno a los derechos de autor en la era de la IA, relevante para la protección de su obra.",
+      "status": "pending",
+      "discovered_at": "2026-09-02T23:32:11.416Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "96cua0",
+      "title": "Sony y Warner Music demandan a Anthropic por el uso de canciones en el entrenamiento de IA",
+      "description": "Esta demanda se une a una oleada de litigios contra empresas tecnológicas por derechos de autor debido al uso de sus obras para entrenar sistemas de IA.",
+      "source": "noticia",
+      "source_url": "https://forbes.com.mx/sony-y-warner-music-demandan-a-anthropic-por-el-uso-de-canciones-en-el-entrenamiento-de-ia/",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 8,
+        "aplicabilidad": 6
+      },
+      "angulo": "Análisis de la demanda de Sony y Warner a Anthropic, enfocándose en la violación de derechos de autor en el entrenamiento de IA.",
+      "por_que": "Informa a los artistas sobre las batallas legales actuales que definen el futuro del uso de música en tecnologías emergentes.",
+      "status": "pending",
+      "discovered_at": "2026-09-02T23:32:11.416Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "4wkhfe",
+      "title": "Sony y Warner demandan a Anthropic; le acusan de piratear miles de canciones",
+      "description": "Las firmas musicales Sony Music Publishing y Warner Chappell Music presentaron el 28 de agosto de 2026 una demanda formal ante el Tribunal de Distrito de...",
+      "source": "noticia",
+      "source_url": "https://mvsnoticias.com/mundo/2026/8/31/sony-y-warner-demandan-a-anthropic-le-acusan-de-piratear-miles-de-canciones-744075.html",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 8,
+        "aplicabilidad": 6
+      },
+      "angulo": "Detalles de la acusación de piratería contra Anthropic por parte de Sony y Warner Music, y el valor de las canciones implicadas.",
+      "por_que": "Subraya la importancia de la protección de derechos de autor y las consecuencias legales del uso no autorizado de música.",
+      "status": "pending",
+      "discovered_at": "2026-09-02T23:32:11.416Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }
