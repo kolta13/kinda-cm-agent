@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T23:33:37.911Z",
+  "updated_at": "2026-09-03T23:38:40.898Z",
   "posts": [
     {
       "platform": "instagram",
@@ -813,6 +813,65 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-02/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-02/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-02/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-03T23:38:40.898Z",
+      "week": "2026-09-03",
+      "tema": "Spotify quiere que sepas si tu nuevo artista favorito existe de verdad",
+      "topic_tag": "noticias",
+      "audience_type": "artista",
+      "backlog_id": "lvos5",
+      "winner_score": 9,
+      "post_id": "17876482788548355",
+      "caption": "Spotify está implementando reglas claras sobre el uso de IA en la música. Asegúrate de conocerlas para tu próximo lanzamiento 👇\n\n#MusicaLatina #SpotifyForArtists #InteligenciaArtificial #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#SpotifyForArtists",
+        "#InteligenciaArtificial",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Identifica música IA: Las nuevas reglas de Spotify para artistas",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Declaración obligatoria de contenido generado por IA",
+          "body": "Spotify exige que declares cualquier contenido musical creado con asistencia de IA. Esto incluye voces, instrumentación o composiciones generadas algorítmicamente."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Etiquetado para el 'pitch' editorial",
+          "body": "Al enviar tu música para consideración editorial, debes indicar si usaste IA. Esto ayuda a los curadores a entender el origen de la obra."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Transparencia en la autoría",
+          "body": "La plataforma busca distinguir entre artistas humanos y contenido totalmente sintético. La falta de declaración puede afectar la distribución y monetización."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Impacto en la recomendación algorítmica",
+          "body": "Spotify usará esta información para refinar sus algoritmos de recomendación, asegurando que los oyentes sepan la procedencia de la música que descubren."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Asegúrate de cumplir las directrices de Spotify para tu próximo lanzamiento",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-03/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-03/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-03/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-03/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-03/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-03/slide-06.jpg"
       ],
       "metrics": null
     }
