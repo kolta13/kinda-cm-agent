@@ -113,7 +113,10 @@ function step1_generateAuthUrl() {
     //                 de respaldo mientras esa auditoría no esté aprobada.
     // Pedir ambos: sin video.upload el fallback a borrador devuelve
     // scope_not_authorized aunque el scope esté habilitado en la app.
-    scope:                 'video.publish,video.upload',
+    // video.list = leer métricas de los posts (view/like/comment/share count).
+    // Es la base del ciclo de aprendizaje: sin esto el agente publica a ciegas
+    // y nunca sabe qué funcionó.
+    scope:                 'video.publish,video.upload,video.list',
     response_type:         'code',
     redirect_uri:          REDIRECT_URI,
     state,

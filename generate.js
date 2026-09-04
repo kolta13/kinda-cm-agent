@@ -12,6 +12,7 @@ const https   = require('https');
 const config  = require('./config');
 const backlog = require('./backlog');
 const { withRetry } = require('./retry');
+const insights = require('./insights');
 
 // ── HTTP helper ───────────────────────────────────────────────────────────
 
@@ -200,6 +201,14 @@ async function generateCarousel(winner) {
   console.log(`[generate] Generando carrusel para: "${winner.title}"`);
   console.log(`[generate] Formato de hoy: ${formato.nombre} | CTA: ${ctaMode}`);
 
+  // Cierre del ciclo: lo que el rendimiento real de posts anteriores sugiere.
+  // Devuelve '' mientras no haya muestra suficiente, y en ese caso no se inyecta
+  // nada — mejor que alimentar el prompt con una conclusión sacada de 1-2 posts.
+  const aprendizajesTexto = insights.aprendizajes();
+  if (aprendizajesTexto) {
+    console.log('[generate] Inyectando aprendizajes de rendimiento al prompt');
+  }
+
   const prompt = `Eres el creador de contenido de Kinda Club (kindaclub.com). Tu tono es técnico, minimalista, directo y de colega a colega. Hablas como un productor o creativo independiente experimentado, nunca como una agencia de marketing.
 
 El tema del carrusel es: "${winner.title}"
@@ -209,7 +218,7 @@ Audiencia: ${winner.audience_type === 'profesional' ? 'PROFESIONALES DE LA MÚSI
 
 ═══ REGLAS EDITORIALES (OBLIGATORIAS) ═══
 
-FORMATO DEL CARRUSEL DE HOY: ${formato.nombre}
+${aprendizajesTexto ? aprendizajesTexto + '\n\n' : ''}FORMATO DEL CARRUSEL DE HOY: ${formato.nombre}
 ${formato.instruccion}
 Este formato es obligatorio hoy. Si el tema no encaja perfecto con él, adapta el ángulo del tema al formato — no cambies el formato. La variedad entre publicaciones importa más que el encaje perfecto de un tema puntual.
 
@@ -676,6 +685,12 @@ async function generate() {
     winner_score: winner.score_total,
     backlog_id:   winnerId,
     topic_tag:    winner.topic_tag || 'general', // para el badge de la portada en render.js
+    // Se guardan para el ciclo de aprendizaje: son las dos variables que el
+    // sistema controla y rota, así que son las que se pueden correlacionar
+    // contra el rendimiento del post. Sin esto el análisis no puede responder
+    // "¿qué formato funciona mejor?", que es justamente la pregunta útil.
+    formato:      getDailyFormat().nombre,
+    cta_mode:     getDailyCtaMode(),
     top_10:       sorted.slice(0, 10), // preview de las candidatas mejor puntuadas, no el backlog completo
     carousel,
   };

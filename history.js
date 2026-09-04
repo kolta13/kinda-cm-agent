@@ -25,7 +25,7 @@ function save(history) {
 }
 
 // Registra un post recién publicado. `platform`: 'instagram' | 'tiktok'.
-function appendPost({ platform, week, tema, topic_tag, audience_type, backlog_id, winner_score, post_id, caption, hashtags, slides, image_urls }) {
+function appendPost({ platform, week, tema, topic_tag, audience_type, formato, cta_mode, backlog_id, winner_score, post_id, caption, hashtags, slides, image_urls }) {
   const history = load();
   history.posts.push({
     platform:      platform || 'instagram',
@@ -34,6 +34,10 @@ function appendPost({ platform, week, tema, topic_tag, audience_type, backlog_id
     tema,
     topic_tag:     topic_tag || null,
     audience_type: audience_type || null,
+    // Variables que el sistema controla y rota — son las que el análisis de
+    // rendimiento correlaciona contra las métricas para sacar aprendizajes.
+    formato:       formato || null,
+    cta_mode:      cta_mode || null,
     backlog_id:    backlog_id || null,
     winner_score:  winner_score ?? null,
     post_id,
@@ -57,4 +61,4 @@ function getRecent(n = 10) {
   return posts.slice(-n).reverse();
 }
 
-module.exports = { appendPost, getAll, getRecent };
+module.exports = { appendPost, getAll, getRecent, load, save };

@@ -238,6 +238,8 @@ async function publish() {
     tema:          manifest.tema,
     topic_tag:     carouselData?.topic_tag,
     audience_type: carouselData?.carousel?.audience_type,
+    formato:       carouselData?.formato,
+    cta_mode:      carouselData?.cta_mode,
     backlog_id:    manifest.backlog_id,
     winner_score:  carouselData?.winner_score,
     post_id:       postId,
