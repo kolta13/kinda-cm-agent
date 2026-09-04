@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T23:38:40.895Z",
+  "updated_at": "2026-09-04T23:15:45.320Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -822,10 +822,10 @@
       },
       "angulo": "Anuncia el lanzamiento de Kindaclub.com como la plataforma para conectar artistas directamente con profesionales.",
       "por_que": "Es un anuncio directo y claro del propósito principal de la plataforma, resolviendo la necesidad de acceso a talento profesional.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-08-17T04:42:26.463Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-09-04T23:15:45.320Z",
+      "post_id": "18213588223342688",
       "audience_type": "artista",
       "is_promotional": true
     },
@@ -5726,6 +5726,190 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
+    },
+    {
+      "id": "6wib3k",
+      "title": "Booking Musical: Qué Es y Cómo Funciona para Artistas",
+      "description": "Cómo un Artista Independiente Puede Hacer Su Propio Booking · 1. Construye Tu Presencia Online · 2. Identifica los Locales Adecuados a Tu Nivel · 3. Construye una ...",
+      "source": "google",
+      "source_url": "https://hatmusic.it/es/news/booking-musical-que-es-y-como-funciona",
+      "topic_tag": "shows",
+      "is_promotional": false,
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 10
+      },
+      "angulo": "Guía práctica y detallada sobre cómo un artista independiente puede gestionar su propio booking, desglosando el proceso en pasos accionables.",
+      "por_que": "El booking es fundamental para la monetización y crecimiento de artistas independientes. Esta idea ofrece una hoja de ruta clara y aplicable para que tomen control de sus presentaciones.",
+      "status": "pending",
+      "discovered_at": "2026-09-04T23:14:32.929Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "s4n8qg",
+      "title": "3 Errores Comunes de Artistas Independientes (y Cómo Evitarlos)",
+      "description": "Si eres un artista independiente y grabas tus propios temas, es crucial que evites cometer estos tres errores comunes. El primero y más importante es la ...",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/@latinogangbeats/video/7668789172689243400",
+      "topic_tag": "general",
+      "is_promotional": false,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Análisis de los errores más frecuentes en la carrera de artistas independientes, con soluciones prácticas para superarlos y potenciar su desarrollo.",
+      "por_que": "Los artistas independientes a menudo enfrentan desafíos similares. Identificar y corregir estos errores comunes es crucial para evitar estancarse y avanzar en sus carreras.",
+      "status": "pending",
+      "discovered_at": "2026-09-04T23:14:32.930Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "in1za",
+      "title": "TOP 5 Errores que cometen los artistas emergentes (y ...",
+      "description": "1.- El solo hacer música para obtener fama y dinero. Seamos sinceros, la mayoría que está leyendo esto quieren eso, nadie quiere realmente ver su proyecto como ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/p/DWUs5MwjK8J/",
+      "topic_tag": "general",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Identificación de los cinco principales errores de los artistas emergentes, enfocándose en la motivación detrás de la música y la construcción de una carrera sostenible.",
+      "por_que": "Aborda la mentalidad y las expectativas de los artistas emergentes, un punto de partida esencial para una carrera musical exitosa y duradera en lugar de buscar fama efímera.",
+      "status": "pending",
+      "discovered_at": "2026-09-04T23:14:32.930Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "d8j03g",
+      "title": "Solo soy una Artista Independiente tratando de promocionar ...",
+      "description": "27 me gusta,Vídeo de TikTok de tutute (@tutute.m): «Solo soy una Artista Independiente tratando de promocionar sus canciones escuchame :p ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@tutute.m/video/7671813761757416725",
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 9
+      },
+      "angulo": "Reflejo de la realidad y los desafíos de un artista independiente en la promoción musical, con un enfoque en la constancia y las estrategias de difusión.",
+      "por_que": "Resuena con la experiencia diaria de muchos artistas independientes. Puede generar empatía y ser un punto de partida para discutir estrategias de promoción efectivas.",
+      "status": "pending",
+      "discovered_at": "2026-09-04T23:14:32.930Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "ytpyy9",
+      "title": "Haz esto ANTES de que tu canción sea viral",
+      "description": "Porque publicar canciones no es lo mismo que construir una carrera. Cada lanzamiento debería dejar algo al siguiente: más audiencia, más comunidad, mejores ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DcjLrRBRK0g/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 9.25,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 10,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategias proactivas y de construcción de carrera que un artista debe implementar antes de un posible éxito viral, enfocándose en la sostenibilidad a largo plazo.",
+      "por_que": "Cambia el enfoque de la viralidad pasiva a la construcción activa de una carrera. Es un ángulo diferenciador que resalta la importancia de la planificación y la estrategia.",
+      "status": "pending",
+      "discovered_at": "2026-09-04T23:14:32.930Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "h7z5m1",
+      "title": "Jcesartv | Firmar con una disquera o ser artista independiente?",
+      "description": "Si eres artista independiente, debes escuchar esto... #paratifypシ゚viral #artistaindependente #música · August 22 · jcesartv7's profile picture · jcesartv7. •.",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/Dc1x5oFRkOS/",
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 10
+      },
+      "angulo": "Análisis comparativo y reflexivo sobre las ventajas y desventajas de firmar con un sello discográfico versus mantener la independencia como artista.",
+      "por_que": "Es una decisión crucial para muchos artistas. Ofrecer una perspectiva equilibrada y basada en la experiencia ayuda a los artistas a tomar una decisión informada sobre su camino.",
+      "status": "pending",
+      "discovered_at": "2026-09-04T23:14:32.930Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "pbh10x",
+      "title": "“En talento, somos el primer mercado musical de Latinoamérica”: Violeta Parra sobre BOmm 2026",
+      "description": "Antes de la edición quinceañera del Bogotá Music Market, primera que se abre a talentos internacionales, Arcadia habló con su directora sobre logros y retos...",
+      "source": "noticia",
+      "source_url": "https://www.semana.com/cultura/musica/articulo/en-talento-somos-el-primer-mercado-musical-de-latinoamerica-violeta-parra-sobre-bomm-2026/202619/",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Declaraciones sobre el potencial y alcance del mercado musical latinoamericano, destacando el rol de eventos como BOmm en la proyección internacional.",
+      "por_que": "Posiciona a Latinoamérica como un actor clave en la industria musical global y resalta la importancia de eventos como BOmm para profesionales que buscan oportunidades y networking.",
+      "status": "pending",
+      "discovered_at": "2026-09-04T23:14:32.930Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "jr2iq0",
+      "title": "Starlite consolida su papel como plataforma de música internacional",
+      "description": "Los 'Premios Juventud' llegan por primera vez a Europa el 3 de septiembre, tras el éxito en Marbella con 'Billboard No. 1s' en 2025.",
+      "source": "noticia",
+      "source_url": "https://www.latribunadeguadalajara.es/noticia/z07b0b6ad-04f9-4928-910d4edfd1e5c87b/202608/starlite-consolida-su-papel-como-plataforma-de-musica-internacional",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 8
+      },
+      "angulo": "Análisis de cómo el festival Starlite se ha establecido como un punto de encuentro relevante para la música internacional y su impacto en la industria.",
+      "por_que": "Muestra el éxito de plataformas y eventos consolidados, ofreciendo un caso de estudio para profesionales sobre cómo construir y mantener relevancia en el mercado musical.",
+      "status": "pending",
+      "discovered_at": "2026-09-04T23:14:32.930Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
     }
   ]
 }

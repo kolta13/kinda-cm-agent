@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T23:38:40.898Z",
+  "updated_at": "2026-09-04T23:15:45.323Z",
   "posts": [
     {
       "platform": "instagram",
@@ -872,6 +872,61 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-03/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-03/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-03/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-04T23:15:45.323Z",
+      "week": "2026-09-04",
+      "tema": "Kindaclub.com: conexión directa con profesionales de la música",
+      "topic_tag": "networking",
+      "audience_type": "artista",
+      "formato": "PASO A PASO",
+      "cta_mode": "directo",
+      "backlog_id": "1qkvwr",
+      "winner_score": 9.5,
+      "post_id": "18213588223342688",
+      "caption": "Conectar con el equipo correcto puede ser un cuello de botella. Así se hace directo 👇\n\n#MusicaLatina #ProduccionMusical #NetworkingMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ProduccionMusical",
+        "#NetworkingMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Conecta directo con productores y managers en Kindaclub.com",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Define tu necesidad real",
+          "body": "Buscas mezclar una canción, necesitas masterizarla o quieres un manager. Ser específico ahorra tiempo y dinero a ambas partes."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Explora el catálogo de profesionales",
+          "body": "En Kindaclub, filtra por especialidad, experiencia y revisa portafolios. Una mezcla profesional en LATAM va de USD 80 a 250 por tema."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Contacta y negocia directo",
+          "body": "Sin intermediarios. Envía tu proyecto, discute detalles y acuerda tarifas. Asegúrate de tener un contrato claro, incluso para trabajos puntuales."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Encuentra el equipo que necesitas en Kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-04/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-04/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-04/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-04/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-04/slide-05.jpg"
       ],
       "metrics": null
     }
