@@ -250,6 +250,58 @@ function aprendizajes({ minMuestra = MIN_MUESTRA } = {}) {
   ].join('\n');
 }
 
+// ── Señal para ideación y priorización ────────────────────────────────────
+//
+// TENSIÓN EXPLORACIÓN / EXPLOTACIÓN — el riesgo central de todo esto:
+// si el sistema solo produce más de lo que ya funcionó, deja de descubrir, se
+// encierra en un monocultivo y sus propios datos se lo confirman (los temas
+// favorecidos se publican más, acumulan más muestra, se favorecen más).
+//
+// Tres frenos deliberados:
+//   1. El ajuste al score está acotado a ±AJUSTE_MAX sobre una escala de 10 —
+//      reordena entre ideas parejas, nunca rescata una idea mala.
+//   2. getRecentTopics(5) en generate.js sigue excluyendo temas publicados hace
+//      poco, así que ningún tema puede dominar aunque rinda mejor.
+//   3. research.js conserva la rotación completa de queries y solo AGREGA una;
+//      la cobertura de todos los temas se mantiene intacta.
+const AJUSTE_MAX = 0.5;
+
+// Temas ordenados de mejor a peor, combinando tasa y volumen (mismo criterio
+// que rankear(): ninguna de las dos señales manda sola).
+function topicsPorRendimiento({ minMuestra = MIN_MUESTRA } = {}) {
+  const grupos = analizarPor('topic_tag', { minMuestra });
+  if (grupos.length < 2) return [];
+
+  const porTasa = [...grupos].sort((a, b) => (b.share ?? 0) - (a.share ?? 0));
+  const porAbs  = [...grupos].sort((a, b) => (b.sharesAbs ?? 0) - (a.sharesAbs ?? 0));
+
+  return grupos
+    .map(g => ({ valor: g.valor, muestra: g.muestra, score: porTasa.indexOf(g) + porAbs.indexOf(g) }))
+    .sort((a, b) => a.score - b.score);
+}
+
+/** El tema que mejor rinde, o null si no hay muestra suficiente. */
+function mejorTopic(opts = {}) {
+  const r = topicsPorRendimiento(opts);
+  return r.length > 0 ? r[0].valor : null;
+}
+
+/**
+ * Ajuste acotado al score de una idea según cómo ha rendido su tema.
+ * Devuelve 0 si no hay datos: sin evidencia, no se toca nada.
+ */
+function ajustePorTopic(topicTag, opts = {}) {
+  const ranking = topicsPorRendimiento(opts);
+  if (ranking.length < 2 || !topicTag) return 0;
+
+  const idx = ranking.findIndex(r => r.valor === topicTag);
+  if (idx === -1) return 0; // tema sin historial suficiente → neutro
+
+  // Lineal de +AJUSTE_MAX (primero) a -AJUSTE_MAX (último)
+  const pos = idx / (ranking.length - 1); // 0..1
+  return +(AJUSTE_MAX - pos * 2 * AJUSTE_MAX).toFixed(3);
+}
+
 // ── Resumen para consola ──────────────────────────────────────────────────
 
 function resumen() {
@@ -366,4 +418,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { setMetrics, analizarPor, aprendizajes, ejemplosDeCopy, rankear, tasas };
+module.exports = { setMetrics, analizarPor, aprendizajes, ejemplosDeCopy, rankear, tasas, mejorTopic, ajustePorTopic, topicsPorRendimiento };

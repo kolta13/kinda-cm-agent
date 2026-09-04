@@ -7,6 +7,7 @@
 const https   = require('https');
 const config  = require('./config');
 const backlog = require('./backlog');
+const insights = require('./insights');
 const { withRetry } = require('./retry');
 
 const BATCH_SIZE = 20;
@@ -149,9 +150,30 @@ async function scoreNewIdeas() {
 
     try {
       const scores = await scoreBatch(batch);
-      backlog.updateScores(scores);
-      totalScored += scores.length;
-      console.log(`  ✓ ${scores.length} ideas puntuadas`);
+      // Ajuste por rendimiento histórico del tema. Acotado a ±0.5 sobre 10 a
+      // propósito: reordena entre ideas parejas, pero nunca rescata una idea
+      // mala ni entierra una buena. Sin ese tope el sistema se encerraría en
+      // los temas que ya funcionaron y dejaría de descubrir.
+      const conAjuste = scores.map(s => {
+        const idea = batch.find(b => backlog.ideaId(b.title) === backlog.ideaId(s.title));
+        const ajuste = idea ? insights.ajustePorTopic(idea.topic_tag) : 0;
+        if (!ajuste) return s;
+        return {
+          ...s,
+          score_total: Math.max(1, Math.min(10, s.score_total + ajuste)),
+          score_base:  s.score_total,   // se conserva el crudo para poder auditar
+          ajuste_topic: ajuste,
+        };
+      });
+
+      const ajustadas = conAjuste.filter(s => s.ajuste_topic).length;
+      if (ajustadas > 0) {
+        console.log(`  ↕ ${ajustadas} idea(s) ajustada(s) por rendimiento histórico del tema`);
+      }
+
+      backlog.updateScores(conAjuste);
+      totalScored += conAjuste.length;
+      console.log(`  ✓ ${conAjuste.length} ideas puntuadas`);
     } catch (e) {
       console.warn(`  ⚠ Batch ${batchNum} falló: ${e.message}`);
     }

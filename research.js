@@ -17,6 +17,7 @@ const https   = require('https');
 const config  = require('./config');
 const backlog = require('./backlog');
 const { scoreNewIdeas } = require('./score');
+const insights = require('./insights');
 
 // ── Queries por categoría ─────────────────────────────────────────────────
 // Se rotan diariamente para cubrir distintos ángulos sin repetirse.
@@ -120,6 +121,29 @@ function getDailyQueries(pool, n) {
   const slice  = pool.slice(offset, offset + n);
   if (slice.length < n) slice.push(...pool.slice(0, n - slice.length));
   return slice;
+}
+
+// Rotación normal + UNA query extra del tema que mejor rinde.
+//
+// La rotación completa se conserva a propósito: garantiza que todos los temas
+// se sigan explorando aunque uno domine en métricas. Si el sesgo reemplazara
+// la rotación, el backlog se llenaría solo de un tema, el sistema publicaría
+// solo eso, y sus propios datos se lo confirmarían — monocultivo por
+// retroalimentación. Acá el aprendizaje suma exploración, no la reemplaza.
+//
+// Las queries no están etiquetadas por tema, pero detectTopic() ya sabe
+// clasificarlas (verificado: "contratos musicales..." → networking,
+// "cuánto cobrar por un show..." → monetizacion).
+function getDailyQueriesConSesgo(pool, n) {
+  const base = getDailyQueries(pool, n);
+  const mejor = insights.mejorTopic();
+  if (!mejor) return base; // sin datos suficientes, rotación pura
+
+  const extra = pool.find(q => backlog.detectTopic(q) === mejor && !base.includes(q));
+  if (!extra) return base;
+
+  console.log(`[research] +1 query sesgada al tema con mejor rendimiento (${mejor}): "${extra}"`);
+  return [...base, extra];
 }
 
 function normalizeTitle(t) {
@@ -266,7 +290,7 @@ async function research() {
   console.log('[research] Iniciando research diario...');
 
   // Google Search (2 queries rotativas hoy)
-  const gQueries = getDailyQueries(GOOGLE_QUERIES, 2);
+  const gQueries = getDailyQueriesConSesgo(GOOGLE_QUERIES, 2);
   console.log('[research] Google queries:', gQueries);
   for (const q of gQueries) {
     const { organic, paa } = await searchSerper(q, 4);
