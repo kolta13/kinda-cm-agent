@@ -91,7 +91,7 @@ async function main() {
 
   // ── Paso 5: publicar ─────────────────────────────────────────────────────
   step(5, `Publicando carrusel de ${imageUrls.length} fotos en TikTok Sandbox...`);
-  const publishId = await initPhotoPost(access_token, imageUrls, manifest.caption, privacyLevel);
+  const { publishId } = await initPhotoPost(access_token, imageUrls, manifest.caption, privacyLevel);
 
   // ── Paso 6: esperar confirmación ─────────────────────────────────────────
   step(6, 'Esperando confirmación de TikTok...');

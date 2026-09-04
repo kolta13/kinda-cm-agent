@@ -154,7 +154,15 @@ async function initPhotoPost(accessToken, imageUrls, caption, privacyLevel) {
   const title       = caption.split('\n')[0].slice(0, 90);
   const description = caption.slice(0, 2200);
 
-  const buildBody = (level) => ({
+  const sourceInfo = {
+    source:            'PULL_FROM_URL',
+    photo_images:      imageUrls,
+    photo_cover_index: 0,
+  };
+
+  // DIRECT_POST publica de una. Requiere que la app tenga aprobada la auditoría
+  // específica de Direct Post — que es aparte de que la app esté "Live".
+  const bodyDirecto = (level) => ({
     post_info: {
       title,
       description,
@@ -162,34 +170,47 @@ async function initPhotoPost(accessToken, imageUrls, caption, privacyLevel) {
       disable_comment: false,
       auto_add_music:  false, // no agregar música de fondo automática
     },
-    source_info: {
-      source:            'PULL_FROM_URL',
-      photo_images:      imageUrls,
-      photo_cover_index: 0,
-    },
+    source_info: sourceInfo,
     post_mode:  'DIRECT_POST', // requerido junto con media_type — su ausencia
                                 // causaba "Invalid media_type or post_mode"
     media_type: 'PHOTO',
   });
 
-  let res = await httpsPost(
+  // MEDIA_UPLOAD deja el carrusel como BORRADOR en la bandeja de la cuenta: llega
+  // una notificación a TikTok y el creador termina de publicar desde la app. Solo
+  // necesita el scope video.upload, sin auditoría de Direct Post. El borrador no
+  // acepta privacy_level ni toggles — esos los elige el creador al publicar.
+  const bodyBorrador = () => ({
+    post_info: { title, description },
+    source_info: sourceInfo,
+    post_mode:  'MEDIA_UPLOAD',
+    media_type: 'PHOTO',
+  });
+
+  const enviar = (body) => httpsPost(
     TIKTOK_HOST,
     '/v2/post/publish/content/init/',
-    buildBody(privacyLevel),
+    body,
     { Authorization: `Bearer ${accessToken}` }
   );
 
-  // creator_info puede listar PUBLIC_TO_EVERYONE como "permitido" aunque la app
-  // no esté auditada todavía — la restricción real solo se aplica acá, al publicar.
-  // Reintentar automáticamente como privado en vez de fallar el ciclo completo.
+  let modo = 'DIRECT_POST';
+  let res  = await enviar(bodyDirecto(privacyLevel));
+
+  // creator_info puede listar PUBLIC_TO_EVERYONE como "permitido" aunque el
+  // cliente no esté auditado — la restricción real solo aparece acá, al publicar.
   if (res.error?.code === 'unaudited_client_can_only_post_to_private_accounts' && privacyLevel !== 'SELF_ONLY') {
-    console.log('  ⚠ App sin auditar — reintentando como SELF_ONLY (privado)...');
-    res = await httpsPost(
-      TIKTOK_HOST,
-      '/v2/post/publish/content/init/',
-      buildBody('SELF_ONLY'),
-      { Authorization: `Bearer ${accessToken}` }
-    );
+    console.log('  ⚠ Direct Post sin auditar — reintentando como SELF_ONLY...');
+    res = await enviar(bodyDirecto('SELF_ONLY'));
+  }
+
+  // Si sigue bloqueado, la cuenta es pública (las de negocio no pueden ser
+  // privadas) y no hay forma de publicar directo hasta que aprueben la auditoría.
+  // En vez de perder el post, se sube como borrador para terminarlo a mano.
+  if (res.error?.code === 'unaudited_client_can_only_post_to_private_accounts') {
+    console.log('  ⚠ Cuenta pública sin auditoría de Direct Post — subiendo como BORRADOR...');
+    modo = 'MEDIA_UPLOAD';
+    res  = await enviar(bodyBorrador());
   }
 
   if (res.error && res.error.code !== 'ok') {
@@ -199,8 +220,8 @@ async function initPhotoPost(accessToken, imageUrls, caption, privacyLevel) {
   const publishId = res.data?.publish_id;
   if (!publishId) throw new Error(`TikTok: no publish_id en respuesta: ${JSON.stringify(res)}`);
 
-  console.log(`  ✓ Publish iniciado. ID: ${publishId}`);
-  return publishId;
+  console.log(`  ✓ Publish iniciado (${modo}). ID: ${publishId}`);
+  return { publishId, modo };
 }
 
 // ── TikTok: esperar hasta que se publique ─────────────────────────────────
@@ -225,6 +246,13 @@ async function waitForPublish(accessToken, publishId, maxWaitMs = 90000) {
     if (status === 'PUBLISH_COMPLETE') {
       const postIds = res.data?.publicaly_available_post_id || [];
       return postIds[0] || publishId;
+    }
+    // Estado terminal del modo borrador: el carrusel ya está en la bandeja de la
+    // cuenta y llegó la notificación a TikTok. No hay post público todavía —
+    // el creador lo termina desde la app.
+    if (status === 'SEND_TO_USER_INBOX') {
+      console.log('  ✓ Borrador enviado a la bandeja de TikTok — termínalo desde la app');
+      return publishId;
     }
     if (status === 'FAILED') {
       const reason = res.data?.fail_reason || 'unknown';
@@ -275,19 +303,22 @@ async function publishTikTok() {
     console.log(`[tiktok] ⚠ App aún no aprobada — publicando como ${privacyLevel} (solo visible para la cuenta de prueba del Sandbox)`);
   }
 
-  // 3. Iniciar publicación
-  const publishId = await initPhotoPost(access_token, imageUrls, caption, privacyLevel);
+  // 3. Iniciar publicación (cae a borrador si Direct Post no está auditado)
+  const { publishId, modo } = await initPhotoPost(access_token, imageUrls, caption, privacyLevel);
 
   // 4. Esperar confirmación
   const postId = await waitForPublish(access_token, publishId);
 
+  const esBorrador = modo === 'MEDIA_UPLOAD';
   const result = {
     published_at:  new Date().toISOString(),
     week:          publishData.week,
     tema:          publishData.tema,
     post_id:       postId,
     publish_id:    publishId,
-    privacy_level: privacyLevel,
+    post_mode:     modo,
+    es_borrador:   esBorrador,
+    privacy_level: esBorrador ? null : privacyLevel,
     image_count:   imageUrls.length,
   };
 
@@ -297,7 +328,12 @@ async function publishTikTok() {
     'utf8'
   );
 
-  console.log(`\n[tiktok] ✅ Carrusel publicado en TikTok`);
+  if (esBorrador) {
+    console.log(`\n[tiktok] 📥 Carrusel enviado como BORRADOR a TikTok`);
+    console.log(`  Ábrelo desde la app de TikTok y dale publicar.`);
+  } else {
+    console.log(`\n[tiktok] ✅ Carrusel publicado en TikTok`);
+  }
   console.log(`  Post ID: ${postId}`);
   return result;
 }

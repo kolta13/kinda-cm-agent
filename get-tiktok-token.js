@@ -108,7 +108,12 @@ function step1_generateAuthUrl() {
 
   const authParams = new URLSearchParams({
     client_key:            config.tiktokClientKey,
-    scope:                 'video.publish',
+    // video.publish = publicación directa (requiere auditoría de Direct Post).
+    // video.upload  = subir como borrador a la bandeja del creador; es el modo
+    //                 de respaldo mientras esa auditoría no esté aprobada.
+    // Pedir ambos: sin video.upload el fallback a borrador devuelve
+    // scope_not_authorized aunque el scope esté habilitado en la app.
+    scope:                 'video.publish,video.upload',
     response_type:         'code',
     redirect_uri:          REDIRECT_URI,
     state,
