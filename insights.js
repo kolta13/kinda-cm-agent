@@ -170,6 +170,56 @@ function resumen() {
   console.log(texto || '(nada todavía — hace falta más muestra por grupo)');
 }
 
+// ── Carga interactiva ─────────────────────────────────────────────────────
+// Los guardados no están en la API (ni en TikTok ni en Meta sin permisos
+// extra) y scrapear TikTok choca contra su WAF, así que la vía realista es
+// mirarlos en Analytics. Esto evita tener que copiar post_ids a mano.
+
+function postsSinMetricas(plataforma = null) {
+  return history.getAll().filter(p =>
+    (!p.metrics || !p.metrics.views) && (!plataforma || p.platform === plataforma)
+  );
+}
+
+async function capturar(plataforma = null) {
+  const readline = require('readline');
+  const pendientes = postsSinMetricas(plataforma);
+
+  if (pendientes.length === 0) {
+    console.log('No hay posts sin métricas. Todo al día.');
+    return;
+  }
+
+  console.log(`${pendientes.length} post(s) sin métricas.`);
+  console.log('Enter vacío salta el post. Enter en un campo lo deja sin dato.\n');
+
+  const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+  const preguntar = (q) => new Promise(res => rl.question(q, res));
+
+  let guardados = 0;
+  for (const p of pendientes) {
+    console.log('─'.repeat(64));
+    console.log(`${p.published_at.slice(0, 10)}  [${p.platform}]  ${p.tema.slice(0, 52)}`);
+    console.log(`formato: ${p.formato || '—'}   tema: ${p.topic_tag || '—'}   cta: ${p.cta_mode || '—'}`);
+
+    const views = (await preguntar('  vistas (Enter salta este post): ')).trim();
+    if (!views) { console.log('  saltado\n'); continue; }
+
+    const datos = { views };
+    for (const campo of ['likes', 'comments', 'shares', 'saves']) {
+      datos[campo] = (await preguntar(`  ${campo}: `)).trim();
+    }
+
+    setMetrics(p.post_id, datos, 'manual');
+    guardados++;
+    console.log('  ✓ guardado\n');
+  }
+
+  rl.close();
+  console.log(`${guardados} post(s) actualizado(s).`);
+  if (guardados > 0) console.log('Corre "node insights.js" para ver el análisis.');
+}
+
 // ── CLI ───────────────────────────────────────────────────────────────────
 
 if (require.main === module) {
@@ -189,6 +239,16 @@ if (require.main === module) {
     const ok = setMetrics(postId, datos, 'manual');
     console.log(ok ? `✓ Métricas guardadas para ${postId}` : `✗ No existe un post con post_id ${postId}`);
     if (!ok) process.exit(1);
+
+  } else if (cmd === 'capturar') {
+    // Opcional: filtrar por plataforma → node insights.js capturar tiktok
+    capturar(args[0] || null).catch(e => { console.error('Error:', e.message); process.exit(1); });
+
+  } else if (cmd === 'pendientes') {
+    const p = postsSinMetricas(args[0] || null);
+    console.log(`${p.length} post(s) sin métricas:`);
+    p.forEach(x => console.log(`  ${x.published_at.slice(0,10)} [${x.platform}] ${x.tema.slice(0,55)}`));
+
   } else {
     resumen();
   }
