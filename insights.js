@@ -115,6 +115,83 @@ function promedio(valores) {
   return v.reduce((a, b) => a + b, 0) / v.length;
 }
 
+// ── Ranking de posts por rendimiento ──────────────────────────────────────
+// El copy no se puede promediar: no existe "el hook promedio". Pero sí se le
+// puede mostrar a Gemini el copy real de los que funcionaron y los que no, para
+// que infiera el patrón — que es algo que un modelo hace mejor que cualquier
+// métrica que definamos a mano.
+//
+// Para ordenarlos se suman los dos rankings (Borda): posición por tasa de
+// compartido + posición por compartidos absolutos. Así ninguna de las dos
+// señales manda sola, que es justo el problema de la dilución por viralidad.
+
+function rankear(plataforma = null) {
+  const posts = history.getAll().filter(p =>
+    p.metrics && p.metrics.views && p.slides &&
+    (!plataforma || p.platform === plataforma)
+  );
+  if (posts.length < 2) return [];
+
+  const porTasa = [...posts].sort((a, b) => (tasas(b.metrics).share ?? 0) - (tasas(a.metrics).share ?? 0));
+  const porAbs  = [...posts].sort((a, b) => (b.metrics.shares ?? 0) - (a.metrics.shares ?? 0));
+
+  return posts
+    .map(p => ({
+      post:  p,
+      score: porTasa.indexOf(p) + porAbs.indexOf(p), // menor = mejor
+    }))
+    .sort((a, b) => a.score - b.score)
+    .map(x => x.post);
+}
+
+// Resume un post a lo que importa para aprender de su estructura: el hook, el
+// arco de títulos y el caption. Los bodies se omiten a propósito — triplicarían
+// el tamaño del prompt y lo que se quiere enseñar acá es la forma, no el dato.
+function resumirCopy(p) {
+  const t = tasas(p.metrics);
+  const portada = (p.slides.find(s => s.tipo === 'portada') || {}).titulo || '—';
+  const arco = p.slides
+    .filter(s => s.tipo === 'contenido')
+    .map(s => s.titulo)
+    .join(' → ');
+  const cta = (p.slides.find(s => s.tipo === 'cta') || {}).titulo || '—';
+
+  const pct = t.share != null ? (t.share * 100).toFixed(2) + '%' : '—';
+  return [
+    `  HOOK: "${portada}"`,
+    `  ARCO: ${arco || '—'}`,
+    `  CIERRE: ${cta}`,
+    `  CAPTION: ${(p.caption || '').split('\n')[0]}`,
+    `  (formato ${p.formato || '—'} · ${p.metrics.shares ?? '—'} compartidos · tasa ${pct} · ${p.metrics.views} vistas)`,
+  ].join('\n');
+}
+
+/**
+ * Bloque con el copy real de los mejores y peores posts, para que el modelo
+ * infiera qué estructura y qué tipo de hook funcionan.
+ */
+function ejemplosDeCopy({ mejores = 3, peores = 2, plataforma = null } = {}) {
+  const ranking = rankear(plataforma);
+  // Con menos de 5 posts medidos no hay contraste real: los "peores" serían
+  // simplemente los segundos mejores y el modelo aprendería una distinción falsa.
+  if (ranking.length < 5) return '';
+
+  const top    = ranking.slice(0, mejores);
+  const bottom = ranking.slice(-peores);
+
+  return [
+    'COPY QUE FUNCIONÓ (posts reales de esta cuenta, ordenados por rendimiento):',
+    top.map((p, i) => `${i + 1}.\n${resumirCopy(p)}`).join('\n\n'),
+    '',
+    'COPY QUE NO FUNCIONÓ:',
+    bottom.map((p, i) => `${i + 1}.\n${resumirCopy(p)}`).join('\n\n'),
+    '',
+    'Fíjate en QUÉ hace distinto al primer grupo: el tipo de hook, cómo avanza el',
+    'arco de títulos, qué tan concreto es el cierre. Aplica ese patrón al carrusel',
+    'de hoy sin copiar los temas ni las frases.',
+  ].join('\n');
+}
+
 // ── Aprendizajes para el prompt ───────────────────────────────────────────
 
 /**
@@ -289,4 +366,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { setMetrics, analizarPor, aprendizajes, tasas };
+module.exports = { setMetrics, analizarPor, aprendizajes, ejemplosDeCopy, rankear, tasas };

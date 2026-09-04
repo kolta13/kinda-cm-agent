@@ -204,7 +204,13 @@ async function generateCarousel(winner) {
   // Cierre del ciclo: lo que el rendimiento real de posts anteriores sugiere.
   // Devuelve '' mientras no haya muestra suficiente, y en ese caso no se inyecta
   // nada — mejor que alimentar el prompt con una conclusión sacada de 1-2 posts.
-  const aprendizajesTexto = insights.aprendizajes();
+  // Dos niveles de aprendizaje: el agregado (qué formato/tema/CTA rinde) y el
+  // copy real de los mejores y peores posts. El segundo es el que enseña sobre
+  // hooks y estructura — cosas que no se pueden promediar pero que el modelo sí
+  // puede inferir viendo ejemplos con su resultado al lado.
+  const aprendizajesTexto = [insights.aprendizajes(), insights.ejemplosDeCopy()]
+    .filter(Boolean)
+    .join('\n\n');
   if (aprendizajesTexto) {
     console.log('[generate] Inyectando aprendizajes de rendimiento al prompt');
   }
