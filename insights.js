@@ -84,18 +84,27 @@ function analizarPor(dimension, { minMuestra = MIN_MUESTRA, plataforma = null } 
   const grupos = {};
   for (const p of posts) {
     const clave = p[dimension];
-    (grupos[clave] = grupos[clave] || []).push(tasas(p.metrics));
+    (grupos[clave] = grupos[clave] || []).push(p);
   }
 
   return Object.entries(grupos)
-    .map(([clave, lista]) => ({
-      valor:   clave,
-      muestra: lista.length,
-      share:      promedio(lista.map(t => t.share)),
-      comment:    promedio(lista.map(t => t.comment)),
-      save:       promedio(lista.map(t => t.save)),
-      engagement: promedio(lista.map(t => t.engagement)),
-    }))
+    .map(([clave, lista]) => {
+      const t = lista.map(p => tasas(p.metrics));
+      return {
+        valor:   clave,
+        muestra: lista.length,
+        // Tasas: densidad de resonancia en quien vio el post.
+        share:      promedio(t.map(x => x.share)),
+        comment:    promedio(t.map(x => x.comment)),
+        save:       promedio(t.map(x => x.save)),
+        engagement: promedio(t.map(x => x.engagement)),
+        // Absolutos: alcance × resonancia. Se guardan porque las tasas solas
+        // engañan — ver comentario en aprendizajes().
+        sharesAbs:  promedio(lista.map(p => p.metrics.shares)),
+        savesAbs:   promedio(lista.map(p => p.metrics.saves)),
+        viewsAbs:   promedio(lista.map(p => p.metrics.views)),
+      };
+    })
     .filter(g => g.muestra >= minMuestra)
     .sort((a, b) => (b.share ?? 0) - (a.share ?? 0));
 }
@@ -113,6 +122,18 @@ function promedio(valores) {
  * prompt de generación. Devuelve '' si todavía no hay datos suficientes —
  * preferible a inventar una conclusión que el sistema seguiría por semanas.
  */
+// Las tasas solas engañan: cuando un post se viraliza, TikTok lo saca del núcleo
+// de audiencia y lo empuja a gente menos afín, que engagea menos. El denominador
+// crece con tráfico de peor calidad y la tasa CAE aunque el contenido sea mejor.
+// Peor aún: en TikTok el alcance ES el veredicto del algoritmo (muestra a un lote
+// chico, mide, expande si funciona), así que dividir por vistas es dividir por la
+// señal que queríamos medir.
+//
+// Los absolutos tienen el sesgo opuesto: premian suerte de timing.
+//
+// Por eso se miran las dos y solo se afirma cuando COINCIDEN. Si se contradicen,
+// se dice explícitamente — con 10-20 posts, una conclusión falsamente segura es
+// peor que admitir la ambigüedad, porque el sistema la seguiría por semanas.
 function aprendizajes({ minMuestra = MIN_MUESTRA } = {}) {
   const lineas = [];
 
@@ -120,16 +141,27 @@ function aprendizajes({ minMuestra = MIN_MUESTRA } = {}) {
     const grupos = analizarPor(dim, { minMuestra });
     if (grupos.length < 2) continue; // sin al menos dos grupos no hay comparación
 
-    const mejor = grupos[0];
-    const peor  = grupos[grupos.length - 1];
-    if (mejor.share == null || peor.share == null || mejor.share === 0) continue;
+    // grupos ya viene ordenado por tasa de compartido
+    const mejorTasa = grupos[0];
+    const peorTasa  = grupos[grupos.length - 1];
+    if (mejorTasa.share == null || peorTasa.share == null || peorTasa.share === 0) continue;
 
-    const veces = peor.share > 0 ? (mejor.share / peor.share) : null;
-    lineas.push(
-      veces && veces >= 1.5
-        ? `- Por ${etiqueta}: "${mejor.valor}" se comparte ${veces.toFixed(1)}x más que "${peor.valor}" (muestras: ${mejor.muestra} y ${peor.muestra}).`
-        : `- Por ${etiqueta}: "${mejor.valor}" lidera en compartidos, sin diferencia grande con el resto.`
-    );
+    // El mismo ranking, pero por compartidos absolutos
+    const porAbs    = [...grupos].sort((a, b) => (b.sharesAbs ?? 0) - (a.sharesAbs ?? 0));
+    const mejorAbs  = porAbs[0];
+
+    const vecesTasa = mejorTasa.share / peorTasa.share;
+
+    if (mejorAbs.valor === mejorTasa.valor) {
+      // Ambas señales apuntan al mismo grupo: conclusión sólida.
+      lineas.push(vecesTasa >= 1.5
+        ? `- Por ${etiqueta}: "${mejorTasa.valor}" gana en tasa Y en volumen de compartidos (${vecesTasa.toFixed(1)}x sobre "${peorTasa.valor}"; muestras: ${mejorTasa.muestra} y ${peorTasa.muestra}).`
+        : `- Por ${etiqueta}: "${mejorTasa.valor}" lidera en tasa y volumen, pero sin diferencia grande.`);
+    } else {
+      // Se contradicen: casi siempre significa que el líder por volumen se
+      // viralizó (más alcance, tasa diluida). No hay ganador claro.
+      lineas.push(`- Por ${etiqueta}: señales cruzadas — "${mejorTasa.valor}" tiene mejor tasa de compartido, pero "${mejorAbs.valor}" consigue más compartidos totales (probable mayor alcance). Sin ganador claro todavía.`);
+    }
   }
 
   if (lineas.length === 0) return '';
@@ -159,9 +191,12 @@ function resumen() {
     if (grupos.length === 0) continue;
     console.log(`\n=== POR ${etiqueta} ===`);
     grupos.forEach(g => {
-      const pct = (x) => (x == null ? '   —  ' : (x * 100).toFixed(2) + '%');
+      const pct = (x) => (x == null ? '  — ' : (x * 100).toFixed(2) + '%');
+      const num = (x) => (x == null ? ' —' : Math.round(x).toLocaleString('es'));
       const aviso = g.muestra < MIN_MUESTRA ? '  ⚠ muestra chica' : '';
-      console.log(`  ${String(g.valor).padEnd(26)} n=${g.muestra}  share ${pct(g.share)}  save ${pct(g.save)}  eng ${pct(g.engagement)}${aviso}`);
+      // Tasa y absoluto lado a lado: si se contradicen, casi siempre es que el
+      // de más volumen se viralizó y diluyó su tasa.
+      console.log(`  ${String(g.valor).padEnd(26)} n=${g.muestra}  tasa ${pct(g.share)}  |  compart. ${String(num(g.sharesAbs)).padStart(6)}  vistas ${String(num(g.viewsAbs)).padStart(7)}${aviso}`);
     });
   }
 
