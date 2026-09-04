@@ -129,8 +129,12 @@ jobs:
             " || true
           fi
 
-      # Rotar refresh token de TikTok en GitHub Secrets (si el agente generó uno nuevo)
-      # Requiere KINDA_GITHUB_PAT con scope "repo" para poder escribir secrets
+      # Rotar refresh token de TikTok en GitHub Secrets, si cambió.
+      #
+      # OPCIONAL: comprobado el 04-09-2026 que TikTok NO rota el refresh token —
+      # devuelve el mismo string en cada refresh, así que este paso normalmente
+      # reescribe el valor que ya estaba. Se deja por si TikTok cambia ese
+      # comportamiento: sin KINDA_GITHUB_PAT el paso se salta solo, no falla.
       - name: Rotar refresh token de TikTok
         if: always()
         env:
