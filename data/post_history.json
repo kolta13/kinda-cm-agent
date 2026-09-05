@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T23:15:45.323Z",
+  "updated_at": "2026-09-05T23:15:08.014Z",
   "posts": [
     {
       "platform": "instagram",
@@ -927,6 +927,73 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-04/slide-03.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-04/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-04/slide-05.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-05T23:15:08.014Z",
+      "week": "2026-09-05",
+      "tema": "El formato de contenido que hace crecer a un artista",
+      "topic_tag": "marketing",
+      "audience_type": "artista",
+      "formato": "MITO VS REALIDAD",
+      "cta_mode": "blando",
+      "backlog_id": "28ree2",
+      "winner_score": 9,
+      "post_id": "18082262660696142",
+      "caption": "Más allá de los singles, ¿qué contenido realmente hace crecer a un artista independiente hoy? 👇\n\n#MusicaLatina #MarketingMusical #ContenidoParaArtistas #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#MarketingMusical",
+        "#ContenidoParaArtistas",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "5 formatos de contenido para millones de streams sin sello",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Solo los singles pegan",
+          "body": "Falso. Los EPs y álbumes bien curados demuestran consistencia y profundidad, generando más oyentes recurrentes. Spotify prioriza la discografía completa en sus algoritmos."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Videos musicales caros son clave",
+          "body": "No siempre. Videos cortos y creativos para TikTok o Reels, enfocados en la canción o un fragmento, viralizan más. La clave es la frecuencia y el gancho, no el presupuesto."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "La promoción paga es indispensable",
+          "body": "No es el único camino. Contenido orgánico de valor constante en redes atrae seguidores reales. Las campañas de Meta Ads funcionan mejor una vez que tienes una base sólida."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Solo importa el lanzamiento",
+          "body": "Falso. El contenido post-lanzamiento mantiene el impulso. Crear B-sides, remixes, o contenido detrás de cámaras mantiene a tu audiencia enganchada y da más puntos al algoritmo."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Necesitas equipo profesional siempre",
+          "body": "Puedes empezar solo. Contenido crudo y auténtico resuena. Un buen máster WAV 24bit/48kHz es lo técnico esencial; el resto puede ser orgánico y directo."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Guarda este carrusel para tu próxima estrategia",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-05/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-05/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-05/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-05/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-05/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-05/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-05/slide-07.jpg"
       ],
       "metrics": null
     }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T23:15:45.320Z",
+  "updated_at": "2026-09-05T23:15:08.011Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -1995,10 +1995,10 @@
       },
       "angulo": "Identifica los 5 formatos de contenido que generan millones de streams sin necesidad de sello o manager.",
       "por_que": "Proporciona una hoja de ruta de contenido de alto rendimiento, directamente aplicable para el crecimiento orgánico de artistas independientes.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-08-19T22:19:11.530Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-09-05T23:15:08.011Z",
+      "post_id": "18082262660696142",
       "audience_type": "artista",
       "is_promotional": false
     },
@@ -5910,6 +5910,190 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "profesional"
+    },
+    {
+      "id": "grrkxj",
+      "title": "¿Cómo firmar con una disquera El proceso explicado paso a paso?",
+      "description": "Cómo proteger tu negocio musical. Jul 26, 2026 · 682 views. El Dinero que ... Sello discográfico o distribuidora? Muchos artistas creen que son lo ...",
+      "source": "google",
+      "source_url": "https://www.facebook.com/javierpaniaguaoficial/videos/co%CC%81mo-firmar-con-una-disquera-el-proceso-explicado-paso-a-paso-edgar-burciaga-ab/2090652085049948/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Desglosar el proceso de firma con una disquera en pasos claros y accionables, enfocándose en la protección legal y contractual del artista independiente en LATAM.",
+      "por_que": "Los artistas independientes en LATAM buscan activamente cómo profesionalizar su carrera. Entender los contratos y derechos es crucial para su crecimiento a largo plazo.",
+      "status": "pending",
+      "discovered_at": "2026-09-05T23:13:38.319Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "j7f0k1",
+      "title": "Calculadora de royalties de streaming para Spotify, Apple Music y más",
+      "description": "Calculadora de regalías de streaming ; Royalties brutos estimados EUR 3.90 ; Participación estimada del artista EUR 3.12 ; Rango de mercado rastreado EUR 2.72 - ...",
+      "source": "google",
+      "source_url": "https://spacemedia.uk/es/streaming-royalties-calculator",
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 9.5,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 10
+      },
+      "angulo": "Ofrecer una herramienta interactiva y gratuita que permita a los artistas de LATAM calcular sus regalías de streaming de forma precisa y transparente.",
+      "por_que": "La transparencia en los pagos de regalías es una preocupación constante para los artistas. Una calculadora les da control y conocimiento sobre sus ingresos.",
+      "status": "pending",
+      "discovered_at": "2026-09-05T23:13:38.319Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "c73h4l",
+      "title": "¿Cuánto paga Spotify por reproducción en 2026?",
+      "description": "Spotify paga a los artistas entre 0,003 y 0,005 USD por transmisión en promedio. Eso funciona como una división de ingresos aproximada de 70/30 - así que eso es ...",
+      "source": "google",
+      "source_url": "https://dittomusic.com/es/blog/how-much-does-spotify-pay-per-stream",
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Proporcionar datos actualizados y contextualizados sobre el pago por reproducción en Spotify, desmitificando cifras y explicando los factores que influyen en los ingresos del artista.",
+      "por_que": "Es una pregunta recurrente y fundamental para los artistas que buscan monetizar su música. Aclarar estas cifras les ayuda a establecer expectativas realistas.",
+      "status": "pending",
+      "discovered_at": "2026-09-05T23:13:38.319Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "wfkjcs",
+      "title": "La Estrategia del Error que Se Volvió Hit #tiktok #viral #artistas ...",
+      "description": "... Estrategia del Error que Se Volvió Hit #tiktok #viral #artistas #artistaindependiente #artistaemergente #caompositores #canciones #musica #marketingmusical\".",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DbtX6HQRyAu/",
+      "topic_tag": "marketing",
+      "is_promotional": false,
+      "score_total": 8.8,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Analizar casos de éxito en TikTok donde 'errores' o contenido no convencional se viralizaron, mostrando cómo los artistas independientes pueden capitalizar tendencias inesperadas.",
+      "por_que": "Los artistas buscan estrategias de marketing innovadoras y de bajo costo. Este enfoque en lo inesperado puede generar ideas creativas y virales para sus lanzamientos.",
+      "status": "pending",
+      "discovered_at": "2026-09-05T23:13:38.319Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "t457yy",
+      "title": "El artista amateur persigue reproducciones. ...",
+      "description": "Porque 100.000 reproducciones en Spotify pueden verse bien en una captura. Pero si esas personas no recuerdan tu nombre, no guardan tu música, no compran una ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/p/DcgyI6LNRoO/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Cuestionar la métrica de 'reproducciones' como único indicador de éxito, enfocándose en la calidad de la audiencia y la monetización real para artistas independientes en LATAM.",
+      "por_que": "Muchos artistas se obsesionan con los números de reproducciones sin entender su valor real. Este contenido les anima a buscar métricas más significativas y estrategias de monetización efectivas.",
+      "status": "pending",
+      "discovered_at": "2026-09-05T23:13:38.319Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "owm1m7",
+      "title": "Empezaron armando playlists de Spotify a los 13 años y hoy manejan una red con más de 18 millones de seguidores",
+      "description": "Music Rise, la empresa de marketing musical fundada por dos jóvenes que se conocieron de chicos intercambiando canciones en playlists de Spotify,...",
+      "source": "noticia",
+      "source_url": "https://es-us.noticias.yahoo.com/empezaron-armando-playlists-spotify-13-101400661.html",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Mostrar el camino de emprendedores que crecieron en el ecosistema de Spotify, destacando cómo la curación de playlists puede ser una puerta de entrada al marketing musical.",
+      "por_que": "Inspira a los artistas a ver oportunidades en la curación de playlists y el marketing digital, mostrando un camino de crecimiento desde una actividad inicial hasta un negocio.",
+      "status": "pending",
+      "discovered_at": "2026-09-05T23:13:38.319Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "e2tgei",
+      "title": "Más allá del heavy metal: Los artistas que inspiraron a Jay Weinberg en su carrera musical",
+      "description": "El ex baterista de Slipknot se refirió a sus mayores referentes musicales durante una entrevista para el podcast HeartSupport.",
+      "source": "noticia",
+      "source_url": "https://www.futuro.cl/2026/09/mas-alla-del-heavy-metal-los-artistas-que-inspiraron-a-jay-weinberg-en-su-carrera-musical/",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 5,
+      "scores": {
+        "relevancia": 4,
+        "engagement": 5,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Explorar las influencias musicales de un artista reconocido, conectando géneros diversos y mostrando cómo las inspiraciones pueden moldear una carrera.",
+      "por_que": "Si bien puede ser interesante, su aplicabilidad directa para la mayoría de los artistas independientes en LATAM es limitada. Podría funcionar para bateristas o fans del rock.",
+      "status": "pending",
+      "discovered_at": "2026-09-05T23:13:38.319Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "7fxeck",
+      "title": "Top 10 plataformas para escuchar música online: precios, ventajas y cuál elegir",
+      "description": "Descubre las plataformas de música en streaming con mejor calidad de sonido de 2026 y compara sus precios y calidad de sonido.",
+      "source": "noticia",
+      "source_url": "https://www.elindependiente.com/de-tiendas/2026/09/02/top-10-apps-para-escuchar-musica-online/",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 8
+      },
+      "angulo": "Comparar las principales plataformas de streaming musical, analizando sus características, modelos de negocio y beneficios para artistas y oyentes en el contexto latinoamericano.",
+      "por_que": "Ayuda a los artistas a entender dónde se distribuye su música y qué plataformas ofrecen mejores condiciones o alcance para su público objetivo en la región.",
+      "status": "pending",
+      "discovered_at": "2026-09-05T23:13:38.319Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }
