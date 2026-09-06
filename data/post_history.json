@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T23:15:08.014Z",
+  "updated_at": "2026-09-06T23:06:31.571Z",
   "posts": [
     {
       "platform": "instagram",
@@ -994,6 +994,61 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-05/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-05/slide-06.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-05/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-06T23:06:31.571Z",
+      "week": "2026-09-06",
+      "tema": "Estrategia Musical on Instagram: Haz esto ANTES de que tu .",
+      "topic_tag": "video_viral",
+      "audience_type": "artista",
+      "formato": "ERROR Y CONSECUENCIA",
+      "cta_mode": "blando",
+      "backlog_id": "ezb16z",
+      "winner_score": 9,
+      "post_id": "18194068975378603",
+      "caption": "Si tu canción explota y no registraste tus regalías, es dinero que se va a otro lado 👇\n\n#MusicaLatina #DerechosDeAutor #Regalias #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#DerechosDeAutor",
+        "#Regalias",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Errores al registrar regalías te cuestan dinero",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "No registrar tus derechos de autor",
+          "body": "Sin registro formal ante la entidad correspondiente en tu país, pierdes la prueba legal de autoría y la capacidad de reclamar regalías si tu música se usa."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "No usar un agregador digital",
+          "body": "Si tu música se viraliza en plataformas sin pasar por un agregador (DistroKid, TuneCore), la monetización se complica y el pago directo a tus cuentas es casi imposible."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "No declarar coautores",
+          "body": "Omitir coautores en el registro inicial genera conflictos a futuro. Las regalías se dividen y no podrás reclamar el porcentaje completo si tu tema despega."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Registra tu música antes de que sea tarde",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-06/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-06/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-06/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-06/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-06/slide-05.jpg"
       ],
       "metrics": null
     }
