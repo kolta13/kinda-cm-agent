@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T23:06:31.571Z",
+  "updated_at": "2026-09-07T23:44:51.189Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1049,6 +1049,67 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-06/slide-03.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-06/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-06/slide-05.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-07T23:44:51.189Z",
+      "week": "2026-09-07",
+      "tema": "Calculadora de royalties de streaming para Spotify, Apple Music y más",
+      "topic_tag": "monetizacion",
+      "audience_type": "artista",
+      "formato": "DESGLOSE DE UN NÚMERO",
+      "cta_mode": "directo",
+      "backlog_id": "j7f0k1",
+      "winner_score": 9.5,
+      "post_id": "17909325732494413",
+      "caption": "La transparencia en regalías es clave. ¿Sabes cuánto te llega realmente? 👇\n\n#MusicaLatina #Regalias #Spotify #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#Regalias",
+        "#Spotify",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Calcula cuánto pagan Spotify, Apple Music y más",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "El ingreso bruto no es tu pago",
+          "body": "Las plataformas no te pagan directo del total. Un porcentaje se retiene para intermediarios y licencias antes de llegar a ti."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Cada plataforma tiene su tasa",
+          "body": "Spotify, Apple Music o Deezer pagan distinto por stream. La tasa varía por país y tipo de suscripción del oyente."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Acuerdos de distribución clave",
+          "body": "Si tu distribuidora cobra un 15% fijo, de tu pago bruto se va ese porcentaje. Revisa tu contrato."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Tus regalías, tu control",
+          "body": "Una calculadora te da visibilidad real. Entiende de dónde viene cada dólar y cómo impactan los diferentes servicios."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Calcula tus regalías gratis en kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-07/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-07/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-07/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-07/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-07/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-07/slide-06.jpg"
       ],
       "metrics": null
     }
