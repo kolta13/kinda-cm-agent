@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T23:44:51.189Z",
+  "updated_at": "2026-09-08T23:39:26.155Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1110,6 +1110,61 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-07/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-07/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-07/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-08T23:39:26.155Z",
+      "week": "2026-09-08",
+      "tema": "Spotify Exec BREAKS DOWN Artist Payouts, Streaming Fraud & AI.",
+      "topic_tag": "distribucion",
+      "audience_type": "profesional",
+      "formato": "ANTES Y DESPUÉS",
+      "cta_mode": "blando",
+      "backlog_id": "mnd8oe",
+      "winner_score": 9,
+      "post_id": "18105901339937015",
+      "caption": "La música en streaming tiene complejidades que van más allá de subir tu track. Spotify revela detalles sobre pagos, fraude y IA. 👇\n\n#MusicaLatina #Spotify #Streaming #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#Spotify",
+        "#Streaming",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Pagos, Fraude y IA: La Visión de Spotify",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Pagos: El Modelo Actual",
+          "body": "La mayoría ve los pagos por stream como una cifra fija. Spotify explica que varía por país y acuerdo, afectando el cálculo final de regalías."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Fraude: ¿Cómo Afecta?",
+          "body": "El fraude de streams infla métricas artificialmente. Spotify se enfoca en detectarlo para asegurar que los pagos lleguen a creadores reales, no bots."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "IA: El Futuro",
+          "body": "La IA se usa para mejorar recomendaciones y detectar patrones anómalos. Spotify la implementa para optimizar la experiencia del oyente y la industria."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Guarda este post para entender el ecosistema de Spotify",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-08/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-08/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-08/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-08/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-08/slide-05.jpg"
       ],
       "metrics": null
     }

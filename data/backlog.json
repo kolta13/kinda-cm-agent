@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T23:44:51.186Z",
+  "updated_at": "2026-09-08T23:39:26.152Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -1742,10 +1742,10 @@
       },
       "angulo": "Análisis de un ejecutivo de Spotify sobre pagos a artistas, fraude en streaming e inteligencia artificial.",
       "por_que": "Información de alto valor y directamente relevante para profesionales de la música en LATAM, abordando temas críticos como pagos, transparencia y el futuro de la industria.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-08-18T22:17:39.393Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-09-08T23:39:26.152Z",
+      "post_id": "18105901339937015",
       "audience_type": "profesional",
       "is_promotional": false
     },
@@ -6287,14 +6287,20 @@
       "source_url": "https://www.tiktok.com/@gustavocabreramusica/video/7680009443374943506",
       "topic_tag": "monetizacion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.25,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 7,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Desmitificar la creencia de que subir música a plataformas es suficiente para el éxito, enfocándose en estrategias complementarias.",
+      "por_que": "Muchos artistas emergentes en LATAM invierten recursos en subir música sin una estrategia clara de promoción, lo que genera frustración. Este contenido les ofrece una perspectiva realista y aplicable.",
       "status": "pending",
       "discovered_at": "2026-09-06T23:05:04.042Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "srxtw5",
@@ -6419,14 +6425,20 @@
       "source_url": "https://www.facebook.com/groups/378406493718720/posts/1276345327258161/",
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 5,
+        "aplicabilidad": 9
+      },
+      "angulo": "Conectar directamente artistas emergentes con productores de nicho en una ciudad específica, facilitando colaboraciones locales.",
+      "por_que": "La necesidad de colaboradores en la industria musical es constante. Este tipo de contenido fomenta la red de contactos y la creación de equipos de trabajo, vital para artistas independientes.",
       "status": "pending",
       "discovered_at": "2026-09-07T23:43:29.683Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "tys82r",
@@ -6482,14 +6494,20 @@
       "source_url": "https://www.instagram.com/reel/DcfHb-bRtNv/",
       "topic_tag": "networking",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Desglosar el 'detrás de cámaras' de la industria musical, mostrando que un artista puede (y debe) asumir múltiples roles para profesionalizar su carrera.",
+      "por_que": "Aborda la autosuficiencia y el emprendimiento, aspectos clave para artistas independientes en LATAM que a menudo carecen de grandes estructuras. El formato de 'comenta para saber más' genera alto engagement.",
       "status": "pending",
       "discovered_at": "2026-09-07T23:43:29.683Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "ca634b",
@@ -6674,6 +6692,190 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "profesional"
+    },
+    {
+      "id": "hmiej7",
+      "title": "Cómo Iniciar una Carrera Musical desde Cero en 2026",
+      "description": "Construye tu carrera musical desde cero en 2026. Encuentra tu sonido, consigue tus primeros 1,000 fans reales y crea múltiples fuentes de ingreso.",
+      "source": "google",
+      "source_url": "https://www.chartlex.com/blog/es/career/how-to-start-a-music-career-2026",
+      "topic_tag": "general",
+      "is_promotional": false,
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Ofrecer una hoja de ruta clara y actualizada para aspirantes a músicos, enfocándose en los primeros pasos y la construcción de una base sólida.",
+      "por_que": "Muchos artistas, especialmente jóvenes en LATAM, buscan una guía estructurada para empezar. El enfoque en '2026' le da un toque de actualidad y visión a futuro.",
+      "status": "pending",
+      "discovered_at": "2026-09-08T23:38:07.919Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "t73tv6",
+      "title": "Cuidado con estas cláusulas en tu contrato #industriamusical ...",
+      "description": "En una sola canción pueden existir distintos titulares de derechos: compositor, productor, dueño del máster, editorial e incluso un sello discográfico. Si esos ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DYujTX6EtIp/",
+      "topic_tag": "networking",
+      "is_promotional": false,
+      "score_total": 9.25,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Alertar a los artistas sobre cláusulas contractuales comunes pero perjudiciales, promoviendo la transparencia y el conocimiento legal en la industria.",
+      "por_que": "Los contratos son un punto crítico de vulnerabilidad para artistas independientes en LATAM. Educar sobre ellos es fundamental para evitar abusos y asegurar acuerdos justos.",
+      "status": "pending",
+      "discovered_at": "2026-09-08T23:38:07.919Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "373ht0",
+      "title": "Modelo Contrato de Colaboración Musical entre Artistas y Sellos ...",
+      "description": "Es un acuerdo formal entre un artista y un sello discográfico que regula aspectos como producción, distribución y derechos de autor. ¿Cuáles son los elementos ...",
+      "source": "google",
+      "source_url": "https://doculegalia.com/blog/acuerdos-colaboracion/modelo-contrato-colaboracion-musical",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 6,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Proporcionar un modelo de contrato específico para colaboraciones entre artistas y sellos, detallando los aspectos clave de la relación.",
+      "por_que": "Si bien es más técnico, un modelo de contrato de este tipo es valioso para profesionales que buscan formalizar acuerdos y para artistas que quieren entender mejor los términos.",
+      "status": "pending",
+      "discovered_at": "2026-09-08T23:38:07.919Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "wp93r3",
+      "title": "Contratos Musicales para Compositores y Artistas (Guía Completa)",
+      "description": "El contrato editorial musical es un acuerdo entre un autor (o compositores) y un editor musical. El autor cede ciertos derechos de explotación de sus obras (la ...",
+      "source": "google",
+      "source_url": "https://guitarrec.com/contratos-musicales-guia-completa/",
+      "topic_tag": "networking",
+      "is_promotional": false,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Ofrecer una guía exhaustiva sobre contratos editoriales, desglosando los derechos y responsabilidades de compositores y artistas.",
+      "por_que": "El conocimiento sobre derechos de autor y contratos editoriales es crucial para que los artistas en LATAM puedan monetizar su trabajo de forma justa y evitar conflictos legales.",
+      "status": "pending",
+      "discovered_at": "2026-09-08T23:38:07.919Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "ng9l5s",
+      "title": "Contrato de grupo musical: 17 cláusulas y modelo interno",
+      "description": "Uno de los puntos más importantes es establecer qué ocurre cuando un miembro abandona la agrupación: uso del nombre de la banda, derechos sobre canciones, ...",
+      "source": "google",
+      "source_url": "https://actitudsimbiotica.com/acuerdo-interno/",
+      "topic_tag": "networking",
+      "is_promotional": false,
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Abordar la complejidad de los contratos internos en agrupaciones musicales, con un enfoque en la prevención de conflictos y la claridad operativa.",
+      "por_que": "Las dinámicas de grupo son un desafío común para bandas y colectivos en LATAM. Un contrato interno bien definido puede salvar carreras y amistades, siendo muy aplicable.",
+      "status": "pending",
+      "discovered_at": "2026-09-08T23:38:07.919Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "499df1",
+      "title": "Pagar playlist de terceros es una trampa que Spotify no avala ...",
+      "description": "probaron canciones antes de producirlas, y entendieron que Instagram y TikTok funcionan como canales de distribución, como en cualquier negocio. La mayoría sube ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/p/DczdcDgoo6K/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 9.25,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Advertir sobre las prácticas engañosas de pago por playlists y destacar canales de promoción más efectivos y avalados.",
+      "por_que": "Es una práctica común y tentadora para artistas independientes en LATAM. Desmontar este mito y ofrecer alternativas es de altísimo valor y aplicabilidad inmediata.",
+      "status": "pending",
+      "discovered_at": "2026-09-08T23:38:07.919Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "rrdo5k",
+      "title": "¿Por qué millones de artistas suben música a Spotify y casi ...",
+      "description": "... sin contexto — que quede incompleto que genere intriga. • La historia ... NI LOS GRANDES SELLOS ENTINDEN ESTO UN SELLO TE CRECER MUCHISIMO COMO ARTISTA ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DcB35l-N-4L/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Generar intriga sobre la baja efectividad de subir música a plataformas sin una estrategia, insinuando que la clave está en el 'contexto' y la 'historia'.",
+      "por_que": "Aborda una realidad frustrante para muchos artistas: la falta de resultados a pesar del esfuerzo. El formato intrigante fomenta la interacción y el deseo de saber más.",
+      "status": "pending",
+      "discovered_at": "2026-09-08T23:38:07.920Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "dxhedo",
+      "title": "Imagínate lanzar una canción y que no se quede solo entre tus ...",
+      "description": "¿Cuánto te acerca esto a conseguir nuevos fans? ❌ Subir música a Spotify sin estrategia. ❌ Esperar a que te descubran. ✓ Hacer colaboraciones con artistas ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DcW0z4VBbod/",
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Contrastar la estrategia efectiva de lanzamiento musical (con enfoque en fans) frente a la inacción de solo 'subir música a Spotify'.",
+      "por_que": "Enfatiza la importancia de la estrategia y la conexión con la audiencia, un mensaje clave para artistas independientes en LATAM que buscan construir una carrera sostenible.",
+      "status": "pending",
+      "discovered_at": "2026-09-08T23:38:07.920Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }
