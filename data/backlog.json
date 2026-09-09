@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T23:39:26.152Z",
+  "updated_at": "2026-09-09T23:30:15.901Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -6733,10 +6733,10 @@
       },
       "angulo": "Alertar a los artistas sobre cláusulas contractuales comunes pero perjudiciales, promoviendo la transparencia y el conocimiento legal en la industria.",
       "por_que": "Los contratos son un punto crítico de vulnerabilidad para artistas independientes en LATAM. Educar sobre ellos es fundamental para evitar abusos y asegurar acuerdos justos.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-09-08T23:38:07.919Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-09-09T23:30:15.901Z",
+      "post_id": "17876471658555983",
       "audience_type": "artista"
     },
     {
@@ -6873,6 +6873,144 @@
       "por_que": "Enfatiza la importancia de la estrategia y la conexión con la audiencia, un mensaje clave para artistas independientes en LATAM que buscan construir una carrera sostenible.",
       "status": "pending",
       "discovered_at": "2026-09-08T23:38:07.920Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "es9lr",
+      "title": "¡FREE COVER LLEGA A BUENOS DÍAS AMÉRICA! El fenómeno ...",
+      "description": "El fenómeno musical venezolano Free Cover está con nosotros en cabina. 🎙️✨ Con una propuesta que ha conquistado públicos dentro y fuera de Venezuela, siguen ...",
+      "source": "google",
+      "source_url": "https://www.facebook.com/BuenosdiasAM/videos/-free-cover-llega-a-buenos-d%C3%ADas-am%C3%A9rica-el-fen%C3%B3meno-musical-venezolano-free-cove/1932894054071341/",
+      "topic_tag": "general",
+      "is_promotional": false,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Entrevista con un artista emergente exitoso que comparte su experiencia en un medio masivo.",
+      "por_que": "Los artistas independientes buscan inspiración y validación en historias de éxito. Ver a Free Cover en un medio importante les muestra el potencial de su carrera.",
+      "status": "pending",
+      "discovered_at": "2026-09-09T23:28:57.918Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "s78qzn",
+      "title": "Ofrezco mis servicios como manager de artistas Como manager de ...",
+      "description": "Busco personas que quieran monetizar su música ✓ Monetizar Spotify ✓Registrate como artista ✓Registra tus canciones ✓Distribución general ✓monetizar ...",
+      "source": "google",
+      "source_url": "https://www.facebook.com/groups/latorreolivencia/posts/3228067037378601/",
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 6,
+        "engagement": 6,
+        "diferenciador": 8,
+        "aplicabilidad": 7
+      },
+      "angulo": "Servicio de gestión de artistas enfocado en monetización y registro.",
+      "por_que": "Profesionales que buscan clientes y artistas que buscan representación. El enfoque en monetización es clave para ambos.",
+      "status": "pending",
+      "discovered_at": "2026-09-09T23:28:57.918Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "orez6a",
+      "title": "Pau revela detalles de su nuevo disco \"RIQUÍSIMO\"",
+      "description": "La colaboración con c a s, a quien conoció como productor y además resultó ser vecino, surgió de una conexión musical mutua. Al descubrir que compartían gustos ...",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/@los40chile/video/7680257812659768597",
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Detalles del proceso creativo y colaboraciones de un nuevo disco, destacando la cercanía entre artista y productor.",
+      "por_que": "Los artistas independientes se benefician de conocer los procesos creativos de otros artistas, especialmente las colaboraciones y cómo surgen.",
+      "status": "pending",
+      "discovered_at": "2026-09-09T23:28:57.918Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "yn44ls",
+      "title": "La Prueba de la Reacción a Ciegas #artistaindependiente #life ...",
+      "description": "... artista #vida #consejos #productionlife #viral #cantantes # ... 4 Verdades de la Industria Musical que Nadie Te Dice (Consejos para Artistas Independientes).",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DcR0RprjlwW/",
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Un formato interactivo donde se reacciona a música a ciegas, ofreciendo consejos sobre la industria.",
+      "por_que": "Este formato es dinámico y genera interacción. Los artistas independientes buscan consejos prácticos y ver reacciones a música puede ser muy útil.",
+      "status": "pending",
+      "discovered_at": "2026-09-09T23:28:57.918Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "6ag2hf",
+      "title": "Fono se alía con Dinero Nuevo para impulsar nuevos talentos de regional mexicano y Los Menor3s firman con WKE",
+      "description": "Valentina, Los Menor3s, Duplat y Juos se encuentran entre los artistas latinoamericanos que recientemente concretaron nuevos acuerdos en la industria...",
+      "source": "noticia",
+      "source_url": "https://www.billboard.com/lists/fono-dinero-nuevo-regional-mexicano-los-menor3s-wke/",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Noticias sobre alianzas estratégicas y firmas de artistas en géneros clave de Latinoamérica.",
+      "por_que": "Los artistas independientes necesitan estar al tanto de las oportunidades de la industria, como alianzas y firmas, para entender el panorama y sus posibilidades.",
+      "status": "pending",
+      "discovered_at": "2026-09-09T23:28:57.918Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "jusqb",
+      "title": "50 Grandes Canciones de 2025",
+      "description": "Un recorrido por las canciones que definieron un año de riesgo creativo, cruces culturales y nuevas formas de entender la música en español.",
+      "source": "noticia",
+      "source_url": "https://es.rollingstone.com/50-grandes-canciones-de-2025/",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 8,
+        "diferenciador": 6,
+        "aplicabilidad": 6
+      },
+      "angulo": "Un listado curado de las canciones más destacadas del año, analizando tendencias creativas y culturales.",
+      "por_que": "Si bien es retrospectivo, ayuda a los artistas a entender qué resonó en el público y la industria, informando futuras decisiones creativas.",
+      "status": "pending",
+      "discovered_at": "2026-09-09T23:28:57.918Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
