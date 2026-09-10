@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T23:30:15.905Z",
+  "updated_at": "2026-09-10T23:23:50.855Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1226,6 +1226,67 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-09/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-09/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-09/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-10T23:23:50.855Z",
+      "week": "2026-09-10",
+      "tema": "Cómo hacer un video con bajo presupuesto",
+      "topic_tag": "marketing",
+      "audience_type": "artista",
+      "formato": "PASO A PASO",
+      "cta_mode": "directo",
+      "backlog_id": "1upwf3",
+      "winner_score": 9,
+      "post_id": "18111242144001315",
+      "caption": "Crear un videoclip no tiene por qué costar miles de dólares. Aquí tienes los pasos esenciales 👇\n\n#MusicaLatina #Videoclips #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#Videoclips",
+        "#ProduccionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Crea tu videoclip profesional sin arruinarte",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Define tu concepto visual",
+          "body": "Piensa en la historia y la estética. Un buen concepto no requiere efectos caros, sino ideas claras y un guion sólido para guiar la producción."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Aprovecha la luz natural",
+          "body": "Filma durante el día, cerca de ventanas o al aire libre. La luz natural es gratuita y da una calidad cinematográfica que las luces baratas no igualan."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Usa tu celular y trípode",
+          "body": "Los smartphones modernos graban en alta resolución. Invierte en un trípode estable. Evita movimientos bruscos; la estabilidad es clave para un look profesional."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Edición y postproducción básica",
+          "body": "Hay software gratuito como DaVinci Resolve o iMovie. Aprende cortes limpios, corrección de color básica y sincronización de audio. No necesitas efectos complejos."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Sube tu proyecto a kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-10/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-10/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-10/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-10/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-10/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-10/slide-06.jpg"
       ],
       "metrics": null
     }
