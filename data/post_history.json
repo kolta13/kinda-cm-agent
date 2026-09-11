@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T23:23:50.855Z",
+  "updated_at": "2026-09-11T23:31:44.144Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1287,6 +1287,67 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-10/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-10/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-10/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-11T23:31:44.144Z",
+      "week": "2026-09-11",
+      "tema": "Cómo vender merchandising de artistas sin mantener inventario",
+      "topic_tag": "shows",
+      "audience_type": "artista",
+      "formato": "MITO VS REALIDAD",
+      "cta_mode": "blando",
+      "backlog_id": "gv671b",
+      "winner_score": 9.5,
+      "post_id": "17956761321248198",
+      "caption": "Vender tu arte en formato físico no tiene por qué ser un dolor de cabeza logístico. 👇\n\n#MusicaLatina #MerchParaArtistas #PrintOnDemand #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#MerchParaArtistas",
+        "#PrintOnDemand",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Vende tu Merch Sin Stock: La Guía Práctica",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Necesitas invertir miles en stock",
+          "body": "Falso. Modelos como Print-on-Demand o pre-venta te permiten producir solo lo vendido. Así evitas costos iniciales y almacén."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "La calidad se sacrifica por el bajo riesgo",
+          "body": "No necesariamente. Hay proveedores de Print-on-Demand con textiles de buena calidad. Pide muestras y verifica el gramaje del algodón, por ejemplo."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Los márgenes de ganancia son muy bajos",
+          "body": "Depende. Si vendes directamente a fans, los márgenes son mayores que a través de terceros. Un precio estratégico es clave."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Es complicado gestionar los envíos",
+          "body": "Con modelos como Print-on-Demand, el proveedor se encarga del fulfillment. Tú solo gestionas el diseño y la venta online."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Guarda este post para tu próxima campaña de merch",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-11/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-11/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-11/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-11/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-11/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-11/slide-06.jpg"
       ],
       "metrics": null
     }
