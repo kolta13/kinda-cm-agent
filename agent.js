@@ -104,8 +104,8 @@ async function run() {
       try {
         const tiktokResult = await publishTikTok();
         if (tiktokResult) {
-          tiktokPostId = tiktokResult.post_id;
-          log(`[agent] ✓ Publish TikTok: Post ID ${tiktokPostId}`);
+          tiktokPostId = tiktokResult.publish_id;
+          log(`[agent] ✓ TikTok: borrador enviado a la bandeja (publish_id ${tiktokPostId})`);
         }
       } catch (tiktokErr) {
         log(`[agent] ⚠ TikTok falló (Instagram ya publicado): ${tiktokErr.message}`);

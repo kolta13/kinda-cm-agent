@@ -146,82 +146,49 @@ function resolvePrivacyLevel(creatorInfo) {
 
 // ── TikTok: iniciar publicación de fotos ──────────────────────────────────
 
-async function initPhotoPost(accessToken, imageUrls, caption, privacyLevel) {
-  console.log(`[tiktok] Iniciando publicación de ${imageUrls.length} fotos (privacy_level: ${privacyLevel})...`);
+// Siempre como BORRADOR (post_mode MEDIA_UPLOAD). No se intenta DIRECT_POST:
+// la auditoría se rechazó el 04-09-2026 y las Content Sharing Guidelines lo
+// prohíben para un flujo automático — el punto 5 exige que el usuario "expressly
+// consent" antes de cada subida, además de elegir privacidad sin valor por defecto,
+// marcar interacciones y aceptar la declaración de música. Un proceso sin pantalla
+// nunca va a cumplir eso.
+//
+// El borrador llega como notificación a la bandeja de la app de TikTok de la
+// cuenta que autorizó (@kindaclub). Ahí TikTok muestra su propio flujo de
+// publicación con el consentimiento incluido. Solo requiere el scope video.upload.
+async function initPhotoPost(accessToken, imageUrls, caption) {
+  console.log(`[tiktok] Subiendo ${imageUrls.length} fotos como borrador...`);
 
   // En posts de FOTO, TikTok separa "title" (corto, ~90 chars) de "description"
   // (el caption largo) — a diferencia de video, donde solo existe "title".
   const title       = caption.split('\n')[0].slice(0, 90);
   const description = caption.slice(0, 2200);
 
-  const sourceInfo = {
-    source:            'PULL_FROM_URL',
-    photo_images:      imageUrls,
-    photo_cover_index: 0,
-  };
-
-  // DIRECT_POST publica de una. Requiere que la app tenga aprobada la auditoría
-  // específica de Direct Post — que es aparte de que la app esté "Live".
-  const bodyDirecto = (level) => ({
-    post_info: {
-      title,
-      description,
-      privacy_level:   level,
-      disable_comment: false,
-      auto_add_music:  false, // no agregar música de fondo automática
-    },
-    source_info: sourceInfo,
-    post_mode:  'DIRECT_POST', // requerido junto con media_type — su ausencia
-                                // causaba "Invalid media_type or post_mode"
-    media_type: 'PHOTO',
-  });
-
-  // MEDIA_UPLOAD deja el carrusel como BORRADOR en la bandeja de la cuenta: llega
-  // una notificación a TikTok y el creador termina de publicar desde la app. Solo
-  // necesita el scope video.upload, sin auditoría de Direct Post. El borrador no
-  // acepta privacy_level ni toggles — esos los elige el creador al publicar.
-  const bodyBorrador = () => ({
-    post_info: { title, description },
-    source_info: sourceInfo,
-    post_mode:  'MEDIA_UPLOAD',
-    media_type: 'PHOTO',
-  });
-
-  const enviar = (body) => httpsPost(
+  const res = await httpsPost(
     TIKTOK_HOST,
     '/v2/post/publish/content/init/',
-    body,
+    {
+      post_info:   { title, description },
+      source_info: {
+        source:            'PULL_FROM_URL',
+        photo_images:      imageUrls,
+        photo_cover_index: 0,
+      },
+      post_mode:  'MEDIA_UPLOAD', // requerido junto con media_type
+      media_type: 'PHOTO',
+    },
     { Authorization: `Bearer ${accessToken}` }
   );
 
-  let modo = 'DIRECT_POST';
-  let res  = await enviar(bodyDirecto(privacyLevel));
-
-  // creator_info puede listar PUBLIC_TO_EVERYONE como "permitido" aunque el
-  // cliente no esté auditado — la restricción real solo aparece acá, al publicar.
-  if (res.error?.code === 'unaudited_client_can_only_post_to_private_accounts' && privacyLevel !== 'SELF_ONLY') {
-    console.log('  ⚠ Direct Post sin auditar — reintentando como SELF_ONLY...');
-    res = await enviar(bodyDirecto('SELF_ONLY'));
-  }
-
-  // Si sigue bloqueado, la cuenta es pública (las de negocio no pueden ser
-  // privadas) y no hay forma de publicar directo hasta que aprueben la auditoría.
-  // En vez de perder el post, se sube como borrador para terminarlo a mano.
-  if (res.error?.code === 'unaudited_client_can_only_post_to_private_accounts') {
-    console.log('  ⚠ Cuenta pública sin auditoría de Direct Post — subiendo como BORRADOR...');
-    modo = 'MEDIA_UPLOAD';
-    res  = await enviar(bodyBorrador());
-  }
-
   if (res.error && res.error.code !== 'ok') {
-    throw new Error(`TikTok post init: ${res.error.message} (${res.error.code})`);
+    throw new Error(`TikTok upload: ${res.error.message} (${res.error.code})`);
   }
 
   const publishId = res.data?.publish_id;
   if (!publishId) throw new Error(`TikTok: no publish_id en respuesta: ${JSON.stringify(res)}`);
 
-  console.log(`  ✓ Publish iniciado (${modo}). ID: ${publishId}`);
-  return { publishId, modo };
+  console.log(`  ✓ Subida iniciada. ID: ${publishId}`);
+  return { publishId, modo: 'MEDIA_UPLOAD' };
 }
 
 // ── TikTok: esperar hasta que se publique ─────────────────────────────────
@@ -295,31 +262,19 @@ async function publishTikTok() {
   const { access_token, refresh_token } = await refreshAccessToken();
   saveNewRefreshToken(refresh_token);
 
-  // 2. Consultar qué privacy_level tenemos permitido (SELF_ONLY mientras la app
-  //    no esté aprobada; PUBLIC_TO_EVERYONE en cuanto TikTok la audite)
-  const creatorInfo  = await queryCreatorInfo(access_token);
-  const privacyLevel = resolvePrivacyLevel(creatorInfo);
-  if (privacyLevel !== 'PUBLIC_TO_EVERYONE') {
-    console.log(`[tiktok] ⚠ App aún no aprobada — publicando como ${privacyLevel} (solo visible para la cuenta de prueba del Sandbox)`);
-  }
+  // 2. Subir como borrador (ver initPhotoPost: Direct Post no aplica a este flujo)
+  const { publishId, modo } = await initPhotoPost(access_token, imageUrls, caption);
 
-  // 3. Iniciar publicación (cae a borrador si Direct Post no está auditado)
-  const { publishId, modo } = await initPhotoPost(access_token, imageUrls, caption, privacyLevel);
-
-  // 4. Esperar confirmación
+  // 3. Esperar confirmación (estado terminal esperado: SEND_TO_USER_INBOX)
   const postId = await waitForPublish(access_token, publishId);
 
-  const esBorrador = modo === 'MEDIA_UPLOAD';
   const result = {
-    published_at:  new Date().toISOString(),
-    week:          publishData.week,
-    tema:          publishData.tema,
-    post_id:       postId,
-    publish_id:    publishId,
-    post_mode:     modo,
-    es_borrador:   esBorrador,
-    privacy_level: esBorrador ? null : privacyLevel,
-    image_count:   imageUrls.length,
+    enviado_at:  new Date().toISOString(),
+    week:        publishData.week,
+    tema:        publishData.tema,
+    publish_id:  publishId,
+    post_mode:   modo,
+    image_count: imageUrls.length,
   };
 
   fs.writeFileSync(
@@ -328,13 +283,9 @@ async function publishTikTok() {
     'utf8'
   );
 
-  if (esBorrador) {
-    console.log(`\n[tiktok] 📥 Carrusel enviado como BORRADOR a TikTok`);
-    console.log(`  Ábrelo desde la app de TikTok y dale publicar.`);
-  } else {
-    console.log(`\n[tiktok] ✅ Carrusel publicado en TikTok`);
-  }
-  console.log(`  Post ID: ${postId}`);
+  console.log(`\n[tiktok] 📥 Carrusel enviado como BORRADOR a la bandeja de TikTok`);
+  console.log(`  Aparece como notificación en la app móvil de @kindaclub → Bandeja de entrada.`);
+  console.log(`  publish_id: ${postId}`);
   return result;
 }
 
