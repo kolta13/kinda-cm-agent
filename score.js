@@ -94,6 +94,14 @@ Distribución de audiencia objetivo:
 - 80% del contenido: ARTISTAS INDEPENDIENTES (lanzamientos, presupuesto, equipo, procesos, feedback)
 - 20% del contenido: PROFESIONALES DE LA MÚSICA (conseguir clientes, portafolio, tarifas)
 
+IMPORTANTE sobre merchandising ("merch"): es un tema real, pero relevante recién
+cuando un artista YA tiene base de fans consolidada — no para un artista emergente
+que recién está lanzando música. Es el segmento más pequeño y tardío del journey
+del artista independiente. Si una idea es sobre merch, baja su "relevancia" (1-10)
+salvo que el ángulo hable explícitamente de artistas con fanbase ya establecida.
+No la descartes del todo (puede servir como contenido "profesional" o aspiracional
+ocasional), pero no le des un score alto como prioridad para artistas emergentes.
+
 Tienes estas ${ideas.length} ideas de contenido:
 
 ${ideasList}

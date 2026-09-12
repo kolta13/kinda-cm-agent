@@ -53,10 +53,15 @@ function httpGet(url, headers) {
 // carteles o señalética real de eventos/clubes que se alcanza a leer bajo el
 // overlay (ej. nombre de un festival o discoteca real quedando visible en el post).
 // Se prefieren planos más cerrados: siluetas, luces de escenario, primeros planos.
+// Feedback directo: las fotos de concierto/escenario son las más impactantes de
+// todo el set (post "Vende tu merch sin stock" con foto de estadio). Se duplicaron
+// sus dos variantes en la rotación para que salgan ~2 de cada 5 días en vez de 2/7.
 const PEXELS_QUERY_STYLES = [
-  'music producer studio headphones dark moody',
   'concert stage lights silhouette dark',
+  'music producer studio headphones dark moody',
+  'stage lights smoke silhouette night',
   'urban street hip-hop culture graffiti',
+  'concert stage lights silhouette dark',
   'recording studio microphone professional',
   'musician portrait dark dramatic lighting',
   'stage lights smoke silhouette night',
@@ -75,16 +80,44 @@ const PEXELS_QUERY_STYLES = [
 // marcas legibles — irrelevante para música y peor que una foto abstracta.
 // TODA query de pantalla debe llevar un ancla de música ("music", "audio",
 // "recording") para que Pexels no se vaya a finanzas, trading o negocios genéricos.
+// Plataformas nombradas: se chequean ANTES que las categorías genéricas de abajo.
+// Verificado contra la API real de Pexels que sí existen fotos con la app/logo
+// visible (no es un supuesto): "spotify/tiktok/instagram/youtube app phone screen"
+// devuelven miles de resultados con la marca reconocible en pantalla. Sin esta
+// capa, un post literalmente sobre Spotify caía en la categoría genérica de
+// streaming y salía una foto random de alguien con audífonos, sin relación
+// visual con la plataforma de la que habla el texto.
+const PLATFORM_IMAGE_QUERIES = [
+  { keywords: ['spotify'],   query: 'spotify app phone screen' },
+  { keywords: ['tiktok'],    query: 'tiktok app phone screen' },
+  { keywords: ['instagram'], query: 'instagram app phone screen' },
+  { keywords: ['youtube'],   query: 'youtube app phone screen' },
+];
+
 const TOPIC_IMAGE_QUERIES = [
   { keywords: ['estudio', 'grabaci', 'mezcla', 'masteriz', 'produc'],                  query: 'music production software daw screen studio' },
-  { keywords: ['spotify', 'streaming', 'playlist', 'algoritmo'],                       query: 'music streaming app phone listening headphones' },
+  { keywords: ['streaming', 'playlist', 'algoritmo'],                                  query: 'music streaming app phone listening headphones' },
   { keywords: ['dato', 'métrica', 'metrica', 'analítica', 'analitica', 'estadístic', 'oyentes', 'audiencia'], query: 'music producer laptop headphones desk dark' },
   { keywords: ['concierto', 'show', 'gira', 'festival', 'presentaci', 'escenario'],    query: 'live concert stage lights silhouette' },
-  { keywords: ['contrato', 'sello', 'manager', 'negoci', 'acuerdo', 'label', 'cláusul', 'clausul'], query: 'signing document pen paper desk closeup' },
-  { keywords: ['redes', 'contenido', 'fanbase', 'engagement', 'instagram', 'reel'],    query: 'musician filming phone content social media' },
-  { keywords: ['tiktok', 'video', 'viral', 'shorts'],                                  query: 'filming vertical video phone content creator' },
-  { keywords: ['dinero', 'royalt', 'ingres', 'gana', 'pago', 'cobr', 'tarifa', 'sync'], query: 'musician counting money guitar desk dark' },
-  { keywords: ['calendario', 'fecha', 'plazo', 'cronograma', 'planifica'],             query: 'calendar planner notebook desk music' },
+  // Verificado contra la API: "signing document pen paper" devolvía 0/5 fotos con
+  // algo musical visible (oficinistas firmando papeles genéricos) — Pexels no tiene
+  // "firma de contrato musical" como categoría real, cae a stock de negocios/legal.
+  // "music sheet pen signing desk" sube a 7/10 con relevancia musical real
+  // (partitura, violín, pluma) sin perder la idea de firma/documento.
+  { keywords: ['contrato', 'sello', 'manager', 'negoci', 'acuerdo', 'label', 'cláusul', 'clausul'], query: 'music sheet pen signing desk' },
+  // Mismo problema que arriba: "filming phone content social media" caía a tutoriales
+  // de cocina y setups genéricos de creador de contenido (2/8 y 1/8 con música visible).
+  // "artist filming music video smartphone" sube a 7/8.
+  { keywords: ['redes', 'contenido', 'fanbase', 'engagement', 'reel'],                 query: 'artist filming music video smartphone' },
+  { keywords: ['video', 'viral', 'shorts'],                                            query: 'artist filming music video smartphone' },
+  // Mismo problema: "counting money guitar" devolvía 0/5 con algo musical (cajeros,
+  // oficinistas contando billetes). "holding money cash guitar" sube a 6/10 —
+  // trae la escena real de "propinas en el estuche de guitarra", visualmente
+  // coherente con regalías/ingresos sin caer en stock financiero genérico.
+  { keywords: ['dinero', 'royalt', 'ingres', 'gana', 'pago', 'cobr', 'tarifa', 'sync'], query: 'musician holding money cash guitar' },
+  // "calendar planner notebook desk music" daba 0/8 — puro flat-lay de productividad
+  // sin ancla musical. "album release calendar music planning" da 8/8.
+  { keywords: ['calendario', 'fecha', 'plazo', 'cronograma', 'planifica'],             query: 'album release calendar music planning' },
   { keywords: ['micrófono', 'microfono', 'vocal', 'cantar', 'voz', 'cantante'],        query: 'singer vocalist microphone studio' },
   { keywords: ['dj', 'beat', 'plugin', 'daw', 'software', 'herramienta'],              query: 'music producer studio equipment dark' },
   { keywords: ['booking', 'evento', 'merch'],                                          query: 'concert booking event merchandise' },
@@ -94,6 +127,8 @@ const TOPIC_IMAGE_QUERIES = [
 
 function resolveQueryForSlide(titulo, body) {
   const text = ((titulo || '') + ' ' + (body || '')).toLowerCase();
+  const platform = PLATFORM_IMAGE_QUERIES.find(({ keywords }) => keywords.some(kw => text.includes(kw)));
+  if (platform) return platform.query;
   const match = TOPIC_IMAGE_QUERIES.find(({ keywords }) => keywords.some(kw => text.includes(kw)));
   return match ? match.query : null;
 }

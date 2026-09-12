@@ -152,7 +152,7 @@ function resumirCopy(p) {
   const portada = (p.slides.find(s => s.tipo === 'portada') || {}).titulo || '—';
   const arco = p.slides
     .filter(s => s.tipo === 'contenido')
-    .map(s => s.titulo)
+    .map(s => (s.etiqueta ? `${s.etiqueta}: ${s.titulo}` : s.titulo))
     .join(' → ');
   const cta = (p.slides.find(s => s.tipo === 'cta') || {}).titulo || '—';
 

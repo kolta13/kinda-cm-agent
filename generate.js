@@ -198,6 +198,9 @@ function getDailyCtaMode() {
 async function generateCarousel(winner) {
   const formato = getDailyFormat();
   const ctaMode = getDailyCtaMode();
+  // Sustantivo de la etiqueta, para exigir que la portada use la MISMA palabra si
+  // promete cantidad. "MITO {n}" -> "MITO"; "{n}" (checklist) -> '' (sin sustantivo fijo).
+  const etiquetaNoun = formato.etiqueta.replace('{n}', '').trim();
   console.log(`[generate] Generando carrusel para: "${winner.title}"`);
   console.log(`[generate] Formato de hoy: ${formato.nombre} | CTA: ${ctaMode}`);
 
@@ -221,6 +224,26 @@ El tema del carrusel es: "${winner.title}"
 Ángulo: ${winner.angulo}
 Por qué funciona: ${winner.por_que}
 Audiencia: ${winner.audience_type === 'profesional' ? 'PROFESIONALES DE LA MÚSICA (productores, mezcladores, managers — cómo conseguir clientes, mostrar portafolio, definir tarifas)' : 'ARTISTAS INDEPENDIENTES (lanzamientos, presupuesto, encontrar equipo, procesos, feedback)'}
+
+═══ QUÉ ES KINDA CLUB REALMENTE (para no prometer algo que no existe) ═══
+
+Kinda Club (kindaclub.com) es, hoy, exactamente esto — nada más:
+- Catálogo de profesionales de la industria (productores, managers, mezcladores) para
+  que artistas los encuentren y contacten.
+- Perfil de artista o profesional con portafolio.
+- Postulación de canciones a playlists.
+- Subida de proyectos musicales.
+- Muro comunitario y mensajería directa entre usuarios.
+
+PROHIBIDO ABSOLUTAMENTE mencionar cualquier función que Kinda Club NO tiene: calculadoras
+(de regalías, de precios, de lo que sea), dashboards, generadores, simuladores,
+comparadores, o cualquier "herramienta" que suene útil para el tema pero que no esté en
+la lista de arriba. Pasó de verdad: un carrusel sobre cuánto pagan las plataformas
+prometía "calcula tus regalías gratis en kindaclub.com" — esa calculadora NO EXISTE. Es
+una promesa falsa sobre el producto, no un error de estilo: alguien hace clic esperando
+una herramienta y no hay nada. Si el CTA necesita un verbo de acción, usa SOLO los de la
+lista de arriba (buscar, postular, subir, crear perfil, contactar) — nunca inventes qué
+puede "hacer" el usuario en el sitio más allá de eso.
 
 ═══ REGLAS EDITORIALES (OBLIGATORIAS) ═══
 
@@ -316,6 +339,16 @@ Reformula siempre a segunda persona (instrucción al lector) o a tercera (dato d
 PORTADA (slide 1) — LA PROMESA:
 - Objetivo: que el lector sepa EXACTAMENTE qué se lleva si desliza. Contenido educativo
   para un nicho: la promesa clara convierte mejor que la intriga críptica.
+- LA PROMESA DEBE SER ALGO QUE EL CONTENIDO REALMENTE ENTREGA. Pasó de verdad: portada
+  "Calcula cuánto pagan Spotify, Apple Music y más" prometía un cálculo/cifra concreta,
+  pero el contenido (correctamente, por la REGLA #1b de abajo) nunca da un número fijo
+  porque no existe un número verificable — solo explica CÓMO funciona la estructura de
+  pago. Resultado: la portada promete un resultado que el carrusel no puede cumplir.
+  Si tu contenido va a explicar un CONCEPTO o PROCESO (no a entregar una cifra), la
+  portada debe prometer entender/conocer ese proceso, no "calcular" o "saber cuánto".
+  Ejemplo MAL: "Calcula cuánto te paga Spotify" (promete una cifra que no vas a dar).
+  Ejemplo BIEN: "Así se calcula tu pago real en streaming" (promete entender el cómo,
+  que es justo lo que el contenido entrega).
 - Estructura obligatoria de la portada, dos partes:
   1. "kicker": la categoría específica, 2-4 palabras, en mayúsculas. Es el sello de sección.
      Ejemplos buenos: "SPOTIFY 101", "SPOTIFY x META ADS", "ARTISTA EMERGENTE",
@@ -334,11 +367,34 @@ PORTADA (slide 1) — LA PROMESA:
   · Pregunta directa del tema: "¿Cómo Spotify decide a quién recomendar?"
   · Desglose: "3 pilares de tu identidad artística"
   · Cómo-hacer: "Cómo crecer en Spotify con Meta Ads"
-- Si el formato del día implica una cantidad (3 errores, 4 pasos, 3 pilares), el número
-  DEBE aparecer en el título y coincidir con la cantidad real de slides de contenido.
+- Si el título usa un número (ej. "5 X"), el sustantivo X DEBE ser el mismo que usa la
+  ETIQUETA de hoy (ver ETIQUETAS ESTRUCTURALES abajo), no un sinónimo ni otra palabra.
+  Etiqueta de hoy: "${formato.etiqueta}" → sustantivo de la etiqueta: "${etiquetaNoun || '(sin sustantivo fijo — la etiqueta de hoy es solo el número)'}".
+  ${etiquetaNoun
+    ? `Si prometes una cantidad en el título, debe decir "${etiquetaNoun.toLowerCase()}s" (o su forma natural en plural), y ese número debe coincidir con la cantidad real de slides de contenido.
+  Ejemplo MAL (pasó de verdad): título "5 formatos de contenido..." con slides etiquetados MITO 1, MITO 2, MITO 3 — el lector no sabe si son formatos o mitos.
+  Ejemplo BIEN: título "5 mitos sobre crecer sin sello" con esos mismos slides MITO 1-5.
+  Si "${etiquetaNoun.toLowerCase()}s" no encaja de forma natural en una portada corta, NO
+  prometas cantidad — usa una promesa sin número (pregunta directa, cómo-hacer, desglose sin
+  numeral) en vez de forzar un sustantivo que no calce.`
+    : `Como la etiqueta de hoy es solo el número (sin sustantivo propio), puedes prometer
+  cantidad con cualquier sustantivo que calce con el tema (ej. "5 cosas que revisar antes de firmar"), siempre que el número coincida con la cantidad real de slides de contenido.`}
 - PROHIBIDO: intriga sin promesa ("Tu demo llegó y nadie la escuchó", "El 90% lo hace al
   revés"). Suena a clickbait y no dice qué se lleva el lector. Tampoco frases sueltas sin
   sustantivo del tema.
+- PROHIBIDO empezar el título con un verbo sin sujeto explícito cuando ese verbo puede
+  leerse como orden. En español, la forma "tú" del imperativo y la 3ª persona del
+  presente son IDÉNTICAS ("identifica", "publica", "sube", "paga" sirven para mandar Y
+  para afirmar). Sin sujeto, el lector no sabe si le estás dando una instrucción o
+  contándole un hecho de la plataforma.
+  Ejemplo MAL (pasó de verdad, ambiguo): "Identifica música IA: las nuevas reglas de
+  Spotify" — se lee como orden ("tú, identifica") hasta llegar al final de la frase.
+  Ejemplo BIEN (sujeto explícito, sin ambigüedad): "Spotify ya identifica música hecha
+  con IA" — queda claro desde la primera palabra que es Spotify quien actúa.
+  Si el sujeto es una plataforma o empresa nombrada en el tema, ponla PRIMERO en el
+  título. Si el título es genuinamente una instrucción al lector, usa un imperativo que
+  no sea ambiguo con la 3ª persona (ej. "Revisa esto antes de firmar" es imperativo claro
+  porque no hay sujeto plausible en 3ª persona compitiendo).
 - La portada NO lleva "body" (queda null).
 
 SLIDE 2 — ENTRADA DIRECTA AL CONTENIDO:

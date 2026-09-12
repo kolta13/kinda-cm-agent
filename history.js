@@ -43,7 +43,10 @@ function appendPost({ platform, week, tema, topic_tag, audience_type, formato, c
     post_id,
     caption:       caption || '',
     hashtags:      hashtags || [],
-    slides:        (slides || []).map(s => ({ tipo: s.tipo, titulo: s.titulo, body: s.body || null })),
+    // etiqueta faltaba acá: se guardaba undefined en todo el histórico desde que se
+    // separó del título (el render la lee bien de carousel_latest.json, esto solo
+    // afectaba el copy de ejemplo que insights.js le muestra a Gemini para aprender).
+    slides:        (slides || []).map(s => ({ tipo: s.tipo, etiqueta: s.etiqueta || null, titulo: s.titulo, body: s.body || null })),
     image_urls:    image_urls || [],
     // Espacio para métricas de engagement, si en el futuro se consultan via Graph API insights
     metrics:       null,
