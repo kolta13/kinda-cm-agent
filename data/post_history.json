@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T23:31:44.144Z",
+  "updated_at": "2026-09-12T23:16:28.097Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1348,6 +1348,67 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-11/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-11/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-11/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-12T23:16:28.097Z",
+      "week": "2026-09-12",
+      "tema": "Como hacer un video musical sin presupuesto ❤️‍🔥 #tutorial",
+      "topic_tag": "video_viral",
+      "audience_type": "artista",
+      "formato": "ERROR Y CONSECUENCIA",
+      "cta_mode": "blando",
+      "backlog_id": "m91dg5",
+      "winner_score": 9.25,
+      "post_id": "18077499290407319",
+      "caption": "Grabar un videoclip con cero presupuesto es posible, pero requiere un plan. Aquí te decimos dónde suelen fallar los artistas 👇\n\n#MusicaLatina #VideoMusical #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#VideoMusical",
+        "#ProduccionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "titulo": "Graba tu videoclip sin gastar un peso",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Ignorar el guion gráfico",
+          "body": "Creer que puedes filmar sin un plan visual detallado. Cuesta tiempo en set improvisando y resultados caóticos, sin coherencia narrativa."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Usar luz natural sin control",
+          "body": "Depender solo del sol sin evaluar su calidad o duración. Pierdes tomas esenciales al anochecer o por cambios climáticos."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Vestuario y set genéricos",
+          "body": "No invertir tiempo en estilismo y ambientación que reflejen tu identidad. El resultado es un video impersonal que no conecta."
+        },
+        {
+          "tipo": "contenido",
+          "titulo": "Edición sin ritmo",
+          "body": "Cortar escenas sin sincronizar con la música o el tempo. El video pierde energía, se siente lento y desorganizado."
+        },
+        {
+          "tipo": "cta",
+          "titulo": "Guarda este tutorial para tu próximo clip",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-12/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-12/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-12/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-12/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-12/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-12/slide-06.jpg"
       ],
       "metrics": null
     }
