@@ -87,12 +87,22 @@ const PEXELS_QUERY_STYLES = [
 // capa, un post literalmente sobre Spotify caía en la categoría genérica de
 // streaming y salía una foto random de alguien con audífonos, sin relación
 // visual con la plataforma de la que habla el texto.
+// CORRECCIÓN 2026-09-14: verificar que la query DEVUELVE fotos con la marca no
+// basta — hay que verificar que Pexels las pone PRIMERO. Búsqueda real de
+// "spotify app phone screen": de 15 resultados, solo 3 mencionan "Spotify" en
+// su alt text (el resto es "music app" genérico) y no vienen ordenados al
+// principio. Salió al aire una portada con el logo de Pandora en pantalla en
+// vez de Spotify. Por eso además de la query se guarda `brand`: fetchSlideImages
+// filtra los resultados por alt text que mencione la marca ANTES de elegir foto.
 const PLATFORM_IMAGE_QUERIES = [
-  { keywords: ['spotify'],   query: 'spotify app phone screen' },
-  { keywords: ['tiktok'],    query: 'tiktok app phone screen' },
-  { keywords: ['instagram'], query: 'instagram app phone screen' },
-  { keywords: ['youtube'],   query: 'youtube app phone screen' },
+  { keywords: ['spotify'],   query: 'spotify app phone screen',   brand: 'spotify' },
+  { keywords: ['tiktok'],    query: 'tiktok app phone screen',    brand: 'tiktok' },
+  { keywords: ['instagram'], query: 'instagram app phone screen', brand: 'instagram' },
+  { keywords: ['youtube'],   query: 'youtube app phone screen',   brand: 'youtube' },
 ];
+
+// query string -> marca a exigir en el alt text (usado por fetchSlideImages)
+const QUERY_BRAND = new Map(PLATFORM_IMAGE_QUERIES.map(p => [p.query, p.brand]));
 
 const TOPIC_IMAGE_QUERIES = [
   { keywords: ['estudio', 'grabaci', 'mezcla', 'masteriz', 'produc'],                  query: 'music production software daw screen studio' },
@@ -173,16 +183,30 @@ async function fetchSlideImages(slideTexts) {
   const newlyUsedIds = [];
 
   for (const [query, indices] of groups) {
-    const count   = indices.length;
-    const perPage = Math.min(count * 3, 30);
-    const apiUrl  = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&orientation=portrait&size=large&per_page=${perPage}&page=${page}`;
+    const count = indices.length;
+    // Las fotos con la marca realmente visible en Pexels están concentradas en la
+    // página 1 (es como ordena por relevancia) — la rotación por día las salteaba
+    // y caía en páginas 2-4 con 0 resultados de marca. Para queries de plataforma
+    // se fija page=1 y se pide un pool grande (40) para tener margen de filtrar
+    // por marca y aun así no repetir fotos ya usadas en posts anteriores.
+    const brand    = QUERY_BRAND.get(query);
+    const usePage  = brand ? 1 : page;
+    const perPage  = brand ? 40 : Math.min(count * 3, 30);
+    const apiUrl   = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&orientation=portrait&size=large&per_page=${perPage}&page=${usePage}`;
 
     try {
       const raw   = await httpGet(apiUrl, { Authorization: config.pexelsApiKey });
       const data  = JSON.parse(raw.toString());
       const photos = data.photos || [];
       const fresh  = photos.filter(p => !usedIds.has(String(p.id)));
-      const toUse  = (fresh.length >= count ? fresh : photos).slice(0, count);
+      const pool   = fresh.length >= count ? fresh : photos;
+
+      // Si es una query de plataforma (spotify/tiktok/etc), priorizar fotos cuyo
+      // alt text de Pexels mencione la marca — la query sola no lo garantiza.
+      const branded = brand ? pool.filter(p => (p.alt || '').toLowerCase().includes(brand)) : [];
+      const ordered = branded.length > 0 ? [...branded, ...pool.filter(p => !branded.includes(p))] : pool;
+      const toUse  = ordered.slice(0, count);
+      if (brand) console.log(`[render]   → ${branded.length}/${pool.length} con "${brand}" visible en el alt text`);
 
       console.log(`[render] "${query}" → ${photos.length} fotos, usando ${toUse.length} para ${count} slide(s)`);
 
