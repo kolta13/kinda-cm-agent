@@ -340,6 +340,31 @@ FRASES PUBLICITARIAS PROHIBIDAS — suenan a folleto, no a colega:
 "calidad de estudio", "sin salir de casa", "resultados profesionales", "lleva tu música al
 siguiente nivel", "todo lo que necesitas", "la clave del éxito", "sin complicaciones".
 
+═══ REGLA #1c: NO DISFRAZAR UNA LISTA DE ERRORES ═══
+
+CRÍTICO PARA LA CREDIBILIDAD DE LA CUENTA. Pasó de verdad: un carrusel con portada
+"Conecta Spotify y TikTok para crecimiento real" (promesa positiva, sin mencionar
+errores) tenía slides tituladas "Ignorar el tráfico externo", "No dar contexto a
+Spotify", "Desconectar la audiencia" — es decir, una lista de errores/cosas que NO
+hacer, pero la portada nunca avisó que el post trataba de errores. Si esto se publica,
+el lector siente que le vendieron una cosa y le dieron otra — pérdida de confianza real.
+
+TEST: ¿El "titulo" de un slide de contenido nombra una acción MALA, una omisión o algo
+que NO se debe hacer (empieza con "Ignorar", "No + verbo", "Evitar", "Desconectar",
+"Confundir", "Descuidar", "Subestimar", o similar)? Si la respuesta es sí, solo está
+permitido cuando la portada lo anunció explícitamente como error/mito/problema (ej.
+título con "errores", "mitos" o etiqueta de hoy = "ERROR {n}" con esa promesa). En
+cualquier otro caso, reescribe el título nombrando la ACCIÓN CORRECTA o la decisión en
+juego, no la equivocación.
+Ejemplo MAL: titulo "Ignorar el tráfico externo" (bajo una portada que promete
+"crecimiento real", no "errores").
+Ejemplo BIEN: titulo "El tráfico externo cuenta como señal" (nombra el hecho/acción
+correcta directamente, sin pasar primero por la versión equivocada).
+El "body" sí puede mencionar brevemente qué hace mal la mayoría como contraste (eso es
+parte de REGLA #1, especificidad) — lo que no puede pasar es que el "titulo" completo
+del slide sea la versión negativa/incorrecta sin que la portada haya anunciado que el
+post trata de errores.
+
 ═══ REGLA #2: VOZ — nunca en primera persona ═══
 
 El tema de hoy puede venir de un título ajeno escrito en primera persona ("Cómo HICE mi
