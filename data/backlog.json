@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T20:03:58.863Z",
+  "updated_at": "2026-09-14T21:40:34.272Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -8279,6 +8279,23 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
+    },
+    {
+      "id": "c7ilyl",
+      "title": "Cómo pegarte en la música: 3 formas que funcionan",
+      "description": "... viral una canción, estrategias para músicos emergentes, promoción musical en redes, consejos para artistas independientes, crecer en música 2026. Este es un ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@_moorebaby/video/7683722501863558408",
+      "topic_tag": "marketing",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-09-14T21:40:25.355Z",
+      "published_at": null,
+      "post_id": null
     }
   ]
 }
