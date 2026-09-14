@@ -275,6 +275,21 @@ Todo "body" DEBE contener al menos UNO de estos anclajes concretos:
 - Una consecuencia contractual o técnica que se deduce del propio hecho ("si el contrato
   dice territorio mundial a perpetuidad, no recuperas el máster nunca")
 
+CASO ESPECIAL — cuando el ángulo CONECTA dos plataformas o herramientas (ej. "TikTok y
+Spotify", "Instagram y tu web"): no te quedes en el flujo de uso superficial ("usa TikTok
+para promocionar, luego manda tu pitch a Spotify"). Ese flujo lo puede describir cualquiera
+sin saber nada del rubro. Lo que hace que el post tenga valor real es el MECANISMO CAUSAL
+por el que una plataforma alimenta a la otra — qué señal específica se traspasa y por qué
+le importa al algoritmo/curador del otro lado.
+Ejemplo MAL (pasó de verdad, conexión superficial): "Usa TikTok para generar buzz sobre tu
+lanzamiento, luego dirige a tus seguidores a Spotify."
+Ejemplo BIEN (mecanismo real): "El tráfico externo que llega a Spotify desde un link de
+TikTok cuenta como señal de descubrimiento activo para el algoritmo de Spotify — no es lo
+mismo que un stream desde una playlist. Cuantos más oyentes lleguen así y completen la
+canción, más probable que Discover Weekly y Radio la empiecen a recomendar sola."
+Si no conoces el mecanismo causal real de la conexión que estás describiendo, cambia el
+ángulo a algo que sí puedas anclar con un hecho verificable — no describas solo el flujo.
+
 ═══ REGLA #1b: SOLO DATOS VERIFICABLES PÚBLICAMENTE ═══
 
 CRÍTICO. Kinda Club educa sobre contratos, regalías y plataformas: publicar una cifra
