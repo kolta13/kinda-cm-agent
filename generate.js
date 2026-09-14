@@ -380,6 +380,15 @@ PORTADA (slide 1) — LA PROMESA:
      Ejemplo MALO (13 palabras, ocupa 7 líneas): "Derechos de autor y patentes:
      genera ingresos recurrentes fuera del mercado tradicional"
      Ejemplo BIEN (6 palabras): "Cómo cobrar regalías toda tu vida"
+     Si el tema trata sobre una o más plataformas/marcas nombradas (Spotify, TikTok,
+     Instagram, YouTube, etc.), el NOMBRE de la plataforma va DENTRO del "titulo", no
+     solo en el "kicker" — el kicker se ve en un color y tamaño chico, el título es lo
+     que la gente realmente lee al pasar. Un post sobre Spotify y TikTok con un título
+     genérico como "Dos plataformas: un plan de crecimiento real" pierde el contexto
+     apenas el kicker no se nota (compartido, mala conexión, thumbnail chico en redes).
+     Ejemplo MAL (nombra la plataforma solo en el kicker): kicker "SPOTIFY X TIKTOK",
+     titulo "Dos plataformas: un plan de crecimiento real".
+     Ejemplo BIEN: titulo "Cómo conectar Spotify y TikTok de verdad".
 - FORMATOS DE TÍTULO que funcionan (todos anuncian el contenido, no lo esconden):
   · Lista numerada: "3 errores que cometen los artistas al lanzar música"
   · Ranking: "Top 3 distribuidoras musicales en 2026"

@@ -63,7 +63,9 @@ const PEXELS_QUERY_STYLES = [
   'urban street hip-hop culture graffiti',
   'concert stage lights silhouette dark',
   'recording studio microphone professional',
-  'musician portrait dark dramatic lighting',
+  // Reemplazo 2026-09-14: "musician portrait dark dramatic lighting" traía primeros
+  // planos de rostro — regla del usuario: nunca personas en primer plano en portada.
+  'dj mixer turntable hands closeup dark',
   'stage lights smoke silhouette night',
   'dj producer nightclub performance dark',
 ];
@@ -103,6 +105,11 @@ const PLATFORM_IMAGE_QUERIES = [
 
 // query string -> marca a exigir en el alt text (usado por fetchSlideImages)
 const QUERY_BRAND = new Map(PLATFORM_IMAGE_QUERIES.map(p => [p.query, p.brand]));
+
+// Regla del usuario: nunca fotos de personas en primer plano (retratos/selfies/rostro
+// cerca de cámara) — se ven fuera de lugar detrás del texto. Sí se permiten manos,
+// siluetas o gente de cuerpo/espalda (no calzan con estos patrones).
+const FACE_CLOSEUP_RE = /\b(portrait|headshot|selfie|smiling|close-up of (a|the) (man|woman|person|boy|girl)('s)? face|face of a|posing)\b/i;
 
 const TOPIC_IMAGE_QUERIES = [
   { keywords: ['estudio', 'grabaci', 'mezcla', 'masteriz', 'produc'],                  query: 'music production software daw screen studio' },
@@ -199,7 +206,14 @@ async function fetchSlideImages(slideTexts) {
       const data  = JSON.parse(raw.toString());
       const photos = data.photos || [];
       const fresh  = photos.filter(p => !usedIds.has(String(p.id)));
-      const pool   = fresh.length >= count ? fresh : photos;
+      const rawPool = fresh.length >= count ? fresh : photos;
+
+      // Regla del usuario: nunca primeros planos de rostro en portada/slides — se ven
+      // raros junto al texto y no aportan nada al mensaje. Se descartan por alt text
+      // ANTES de elegir foto; si el filtro deja el pool vacío, se usa el pool sin
+      // filtrar para no romper el render (mejor una foto genérica que ninguna).
+      const noFaces = rawPool.filter(p => !FACE_CLOSEUP_RE.test(p.alt || ''));
+      const pool    = noFaces.length > 0 ? noFaces : rawPool;
 
       // Si es una query de plataforma (spotify/tiktok/etc), priorizar fotos cuyo
       // alt text de Pexels mencione la marca — la query sola no lo garantiza.
