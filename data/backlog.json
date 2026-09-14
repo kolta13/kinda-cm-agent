@@ -7078,13 +7078,11 @@
       },
       "angulo": "Desglosar de manera práctica y realista el presupuesto necesario para montar un concierto independiente, incluyendo costos ocultos.",
       "por_que": "El costo es una de las mayores barreras para los artistas independientes. Ofrecer un desglose claro y útil es altamente demandado y aplicable.",
-      "status": "skipped",
+      "status": "pending",
       "discovered_at": "2026-09-10T23:22:03.401Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista",
-      "skipped_at": "2026-09-13T23:27:32.244Z",
-      "skipped_reason": "Gemini error: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
+      "audience_type": "artista"
     },
     {
       "id": "7tgmuc",

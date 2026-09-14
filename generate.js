@@ -59,7 +59,11 @@ async function callGemini(prompt) {
 
     const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
     return text.replace(/^```json\s*/i, '').replace(/\s*```$/, '').trim();
-  }, { label: 'Gemini (generate)' });
+  // retries/baseDelayMs subidos de los defaults (3 / 2000ms): "high demand" de
+  // Gemini se vio en producción durar más que los ~8s totales que daba el default,
+  // tumbando el ciclo del día entero por una idea que en realidad era buena
+  // (ver commit del 2026-09-14: descartó la idea top-score del día por esto).
+  }, { label: 'Gemini (generate)', retries: 5, baseDelayMs: 3000 });
 }
 
 // Parsea JSON de Gemini tolerando caracteres de control sin escapar dentro de strings
@@ -733,10 +737,21 @@ async function generate() {
   try {
     carousel = await generateCarousel(winner);
   } catch (err) {
-    // Si el guard de marcas de terceros (u otro fallo de generación) tumba esta idea,
-    // descartarla del backlog para no reintentarla mañana con el mismo resultado.
-    backlog.markSkipped(winnerId, err.message);
-    console.error(`[generate] Idea "${winner.title}" descartada del backlog: ${err.message}`);
+    // Solo descartar la idea si el fallo es del CONTENIDO (guard de marcas, JSON
+    // inválido, etc) — reintentar mañana daría el mismo resultado. Si es un fallo
+    // transitorio de infraestructura (Gemini caído/con demanda alta, timeout de
+    // red), la idea es inocente: dejarla pending para reintentarla el próximo
+    // ciclo. Bug real detectado el 2026-09-13: una idea con score 9.25 (la mejor
+    // del día) se perdió para siempre porque Gemini estaba con demanda alta.
+    const msg = (err.message || '').toLowerCase();
+    const esFalloTransitorio = msg.includes('high demand') || msg.includes('timeout')
+      || msg.includes('econnreset') || msg.includes('503') || msg.includes('overloaded');
+    if (esFalloTransitorio) {
+      console.error(`[generate] Fallo transitorio generando "${winner.title}" — se deja pending para reintentar: ${err.message}`);
+    } else {
+      backlog.markSkipped(winnerId, err.message);
+      console.error(`[generate] Idea "${winner.title}" descartada del backlog: ${err.message}`);
+    }
     throw err;
   }
 

@@ -43,7 +43,8 @@ function httpPost(url, body) {
 }
 
 async function callGemini(prompt) {
-  return withRetry(() => callGeminiOnce(prompt), { label: 'Gemini (score)' });
+  // retries/baseDelayMs subidos: ver nota igual en generate.js sobre "high demand".
+  return withRetry(() => callGeminiOnce(prompt), { label: 'Gemini (score)', retries: 5, baseDelayMs: 3000 });
 }
 
 async function callGeminiOnce(prompt) {
