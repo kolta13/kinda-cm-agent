@@ -172,12 +172,7 @@ const CARRUSEL_FORMATS = [
   {
     nombre: 'ANTES Y DESPUÉS',
     etiqueta: 'CASO {n}',
-    instruccion: `Cada slide es un CONTRASTE literal entre dos formas de hacer lo mismo, no un tip suelto ni un paso de una lista. El body DEBE tener ambas mitades explícitas:
-  "ANTES/la mayoría: [lo que hace mal o distinto la mayoría, concreto] → MEJOR: [cómo se hace bien, concreto]"
-No es opcional mostrar las dos mitades — si el body solo describe UNA acción a tomar (ej. "envía tu canción con 7 días de antelación"), es un PASO A PASO disfrazado de "CASO", no un antes/después real.
-MAL (esto es una lista de tácticas, no un contraste): "Envía tu canción a curadores editoriales con 7 días de antelación."
-BIEN (dos mitades explícitas): "La mayoría manda su canción a Spotify el mismo día del lanzamiento y pierde el pitch editorial → Los que sí entran a playlists editoriales la envían con al menos 7 días de antelación desde la pestaña 'pitch' de Spotify for Artists."
-El titulo nombra la decisión en juego (ej. "Cuándo mandar tu pitch a Spotify"), no la acción correcta sola.`,
+    instruccion: 'Cada slide contrasta cómo lo hace la mayoría contra cómo se hace bien. Estructura del body: el contraste concreto, no la moraleja. El titulo nombra la decisión en juego.',
   },
   {
     nombre: 'CHECKLIST DE VERIFICACIÓN',
@@ -409,8 +404,9 @@ PORTADA (slide 1) — LA PROMESA:
 SLIDE 2 — ENTRADA DIRECTA AL CONTENIDO:
 - Como la portada ya dijo de qué trata, el slide 2 NO necesita re-presentar el tema:
   entra directo al primer punto real usando la etiqueta estructural del formato de hoy.
-- El "titulo" del slide 2 ya puede ser el primer ítem etiquetado ("ERROR 1: LANZAR SIN
-  FECHA", "PILAR 1: TU SONIDO", "PASO 1: ...") — ver ETIQUETAS ESTRUCTURALES abajo.
+- El "titulo" del slide 2 entra directo al primer punto real (ver ETIQUETAS
+  ESTRUCTURALES abajo para qué va en el campo "etiqueta" — NUNCA copies las palabras de
+  los ejemplos de esta sección, son solo ilustrativos de otros posts).
 - PROHIBIDO que sea una LISTA de sub-puntos separados por comas o dos puntos
   (ej. "Marketing: Marca, Audiencia y Comunidad" — eso es un índice, no un título). El
   titulo del slide 2 es UNA sola idea, no una enumeración de todo lo que
@@ -421,13 +417,27 @@ SLIDE 2 — ENTRADA DIRECTA AL CONTENIDO:
 ETIQUETAS ESTRUCTURALES (campo aparte, NO dentro del título):
 - Cada slide de contenido lleva un campo "etiqueta" que marca dónde está el lector dentro
   del carrusel. Se renderiza en otro color y tamaño que el título, así que va SEPARADO.
-- La etiqueta de hoy es exactamente: "${formato.etiqueta}" (reemplaza {n} por el número
-  correlativo del slide: 1, 2, 3...). No inventes otra ni la traduzcas.
+- La palabra de la etiqueta ("${etiquetaNoun || 'ninguna, solo número'}") SOLO se usa si tu
+  portada prometió explícitamente una cantidad de ese sustantivo (ej. portada "5 errores
+  al lanzar tu single" → etiqueta "ERROR 1", "ERROR 2"...). Si tu portada NO hizo esa
+  promesa numerada (preguntas, "cómo hacer", desgloses sin numeral, comparaciones de
+  plataformas, etc.), la palabra NO calza — usa como etiqueta SOLO el número correlativo,
+  sin la palabra ("1", "2", "3"...).
+  Aprendizaje real (pasó en un post publicado): portada "Spotify y TikTok: impulsa tu
+  carrera musical hoy" (sin promesa numerada) con slides etiquetados "CASO 1", "CASO 2"
+  — no tenía sentido, porque el título nunca prometió "casos". Debieron ir solo "1", "2".
+- Si SÍ usas la palabra, es EXACTA Y ÚNICAMENTE "${formato.etiqueta}" (reemplaza {n} por
+  el número correlativo del slide: 1, 2, 3...). PROHIBIDO usar cualquier otra palabra
+  aunque encaje semánticamente con el contenido (ej. si el contenido describe errores
+  pero la etiqueta de hoy es "${formato.etiqueta}" y no "ERROR {n}", igual usas
+  "${formato.etiqueta}" — la palabra de la etiqueta la define el FORMATO DEL DÍA, nunca
+  el contenido de cada slide individual).
 - PROHIBIDO meter la etiqueta dentro del "titulo". El título NO empieza con "PASO 1:",
   "MITO 2:" ni nada parecido — esa parte va solo en el campo "etiqueta".
   MAL:  etiqueta: "PASO 1", titulo: "PASO 1: Define tu concepto"
   BIEN: etiqueta: "PASO 1", titulo: "Define tu concepto"
-- La numeración debe ser correlativa y coincidir con el número prometido en la portada.
+- La numeración debe ser correlativa y, si usas la palabra, coincidir con el número
+  prometido en la portada.
 
 SLIDES DE CONTENIDO (general):
 - 2 niveles de lectura obligatorios:
@@ -531,6 +541,7 @@ Responde SOLO con JSON válido:
   const carousel = safeJsonParse(raw);
   const clean    = neutralizeSpanish(carousel);
   stripTitlePeriods(clean);
+  normalizeEtiquetaWord(clean, etiquetaNoun);
   normalizeAudienceType(clean);
   warnFirstPerson(clean);
   warnUnverifiableStats(clean);
@@ -594,6 +605,36 @@ function warnFirstPerson(carousel) {
 function normalizeAudienceType(carousel) {
   const raw = String(carousel.audience_type || '').toLowerCase();
   carousel.audience_type = raw.includes('profesional') ? 'profesional' : 'artista';
+}
+
+// Pluraliza un sustantivo en español con la regla simple (vocal final -> +s,
+// consonante final -> +es). Cubre los 5 sustantivos reales de CARRUSEL_FORMATS
+// (paso, mito, error, parte, caso) sin necesitar un diccionario.
+function pluralizeEs(noun) {
+  const lower = noun.toLowerCase();
+  return /[aeiouáéíóú]$/.test(lower) ? lower + 's' : lower + 'es';
+}
+
+// Gemini insiste en usar la palabra de la etiqueta del formato de hoy (ej. "CASO 1")
+// aunque la portada nunca haya prometido una cantidad de esa palabra — pasó en
+// producción con la portada "Spotify y TikTok: impulsa tu carrera musical hoy"
+// seguida de slides "CASO 1", "CASO 2" sin que el título mencionara "casos" en
+// ningún lado. Instruirlo en el prompt no bastó (se probó y Gemini lo ignoró en
+// 3/3 corridas de prueba), así que se fuerza en código: si la portada no contiene
+// el plural de la palabra de la etiqueta, se le quita la palabra a cada etiqueta
+// de contenido y queda solo el número.
+function normalizeEtiquetaWord(carousel, etiquetaNoun) {
+  if (!etiquetaNoun) return; // formato checklist: la etiqueta ya es solo el número
+  const portada = carousel.slides.find(s => s.tipo === 'portada');
+  const tituloPortada = (portada?.titulo || '').toLowerCase();
+  const prometeCantidad = tituloPortada.includes(pluralizeEs(etiquetaNoun));
+  if (prometeCantidad) return;
+
+  carousel.slides.forEach(s => {
+    if (s.tipo !== 'contenido' || typeof s.etiqueta !== 'string') return;
+    const match = s.etiqueta.match(/\d+/);
+    if (match) s.etiqueta = match[0];
+  });
 }
 
 // Quita el punto final de los títulos de slide. En display de 82-108px un punto
