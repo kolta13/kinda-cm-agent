@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T23:27:32.244Z",
+  "updated_at": "2026-09-14T20:03:58.863Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -7851,14 +7851,20 @@
       "source_url": "https://dynamoi.com/es/learn/spotify-algorithm/the-best-day-to-release-music-on-spotify-data-study",
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Análisis de datos para optimizar el momento del lanzamiento musical en Spotify.",
+      "por_que": "Los artistas independientes buscan maximizar el impacto de sus lanzamientos. Un estudio de datos ofrece una ventaja competitiva clara.",
       "status": "pending",
       "discovered_at": "2026-09-13T23:26:46.757Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "catfgw",
@@ -7868,14 +7874,20 @@
       "source_url": "https://dittomusic.com/es/blog/6-tips-for-promoting-your-music-on-spotify",
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía detallada para aumentar las posibilidades de ser incluido en playlists de Spotify.",
+      "por_que": "Las playlists son cruciales para la visibilidad y el crecimiento de artistas independientes en Spotify.",
       "status": "pending",
       "discovered_at": "2026-09-13T23:26:46.757Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "17qs44",
@@ -7885,14 +7897,20 @@
       "source_url": "https://www.facebook.com/solyofficial/posts/tener-un-video-musical-no-es-estrategia-de-lanzamientocompartir-el-link-de-tu-sp/1514614676787622/",
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 7
+      },
+      "angulo": "Enfoque en la construcción de audiencia previa al lanzamiento de videos musicales.",
+      "por_que": "Desafía la creencia común de que un video musical es suficiente, promoviendo una estrategia más holística.",
       "status": "pending",
       "discovered_at": "2026-09-13T23:26:46.757Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "nqg7c8",
@@ -7902,14 +7920,20 @@
       "source_url": "https://www.reddit.com/r/musicmarketing/comments/1sytjjh/spotify_2026_algorithmic_streams_popularity_score/?tl=es-419",
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Análisis de las métricas algorítmicas de Spotify y su impacto en la popularidad.",
+      "por_que": "Entender cómo funcionan los algoritmos es vital para que los artistas ajusten sus estrategias de crecimiento.",
       "status": "pending",
       "discovered_at": "2026-09-13T23:26:46.757Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "fgwvto",
@@ -7919,14 +7943,20 @@
       "source_url": "https://www.instagram.com/reel/DWFBVtIDxu6/",
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategias de crecimiento en Spotify aplicables a lanzamientos recientes o antiguos.",
+      "por_que": "Ofrece soluciones prácticas para artistas que buscan mejorar su presencia en Spotify, sin importar la antigüedad de su música.",
       "status": "pending",
       "discovered_at": "2026-09-13T23:26:46.758Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "ku117k",
@@ -7936,14 +7966,20 @@
       "source_url": "https://www.chartlex.com/blog/es/streaming/grow-on-spotify-without-label-2026?srsltid=AfmBOop2zsT-q2bR1RHn4fRXeN-5gF6M7h9e1M3JC94OM-gUuWZ-gFPL",
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía completa para que artistas independientes potencien su crecimiento en Spotify.",
+      "por_que": "Aborda directamente las necesidades de los artistas independientes, ofreciendo un camino claro para el éxito en la plataforma.",
       "status": "pending",
       "discovered_at": "2026-09-13T23:26:46.758Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "vxmq1n",
@@ -7953,14 +7989,20 @@
       "source_url": "https://www.instagram.com/p/DcL42BJDb__/",
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 7
+      },
+      "angulo": "Estrategias para el crecimiento musical fuera del ecosistema de Spotify.",
+      "por_que": "Promueve la diversificación de estrategias, crucial para artistas que buscan independencia y no depender de una sola plataforma.",
       "status": "pending",
       "discovered_at": "2026-09-13T23:26:46.758Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "5n0p75",
@@ -7970,14 +8012,20 @@
       "source_url": "https://www.instagram.com/reel/DdHDzHtx5Ow/",
       "topic_tag": "video_viral",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Tácticas para que artistas independientes escalen su presencia y alcance.",
+      "por_que": "Ofrece consejos prácticos para el crecimiento, enfocándose en la escalabilidad para artistas emergentes.",
       "status": "pending",
       "discovered_at": "2026-09-13T23:26:46.758Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "g9l69p",
@@ -7987,14 +8035,250 @@
       "source_url": "https://www.facebook.com/JoshPiMusic/posts/dos-a%C3%B1os-haciendo-m%C3%BAsica-3-d%C3%B3lares-tres-meses-creando-contenido-100-d%C3%B3lares-y-es/1045398698204868/",
       "topic_tag": "monetizacion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 10,
+        "aplicabilidad": 8
+      },
+      "angulo": "Comparativa del ROI entre la creación de música y la de contenido de video para artistas.",
+      "por_que": "Un ángulo muy diferenciador y llamativo que resalta la importancia del contenido de video frente a la producción musical costosa para el crecimiento inicial.",
       "status": "pending",
       "discovered_at": "2026-09-13T23:26:46.758Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "k093sz",
+      "title": "How To Get On Spotify Editorial Playlists",
+      "description": "Sign up, verify your artist profile, make sure your bio and photos are complete. Editors look at your profile. Make it look like someone who takes their music ...",
+      "source": "google",
+      "source_url": "https://www.one-submit.com/post/how-to-get-on-spotify-editorial-playlists",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía práctica para que artistas consigan aparecer en playlists editoriales de Spotify.",
+      "por_que": "El acceso a playlists editoriales es un objetivo clave para la visibilidad de artistas independientes.",
+      "status": "pending",
+      "discovered_at": "2026-09-14T19:49:34.373Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "wbjkzs",
+      "title": "Cómo entrar en playlists de Spotify 2026: guía honesta",
+      "description": "Editoriales, algorítmicas y curadores reales: el proceso completo para entrar en playlists de Spotify sin quemar tu catálogo con bots ni granjas de streams.",
+      "source": "google",
+      "source_url": "https://macutomusic.com/radar/como-entrar-en-playlists-de-spotify-2026/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Proceso completo y realista para acceder a playlists editoriales, algorítmicas y de curadores en Spotify.",
+      "por_que": "Ofrece una visión completa y honesta sobre un tema de alta prioridad para artistas independientes que buscan aumentar su audiencia.",
+      "status": "pending",
+      "discovered_at": "2026-09-14T19:49:34.373Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "c6u637",
+      "title": "Spotify: así puedes crear listas de reproducción a partir de carpetas",
+      "description": "Entra a la carpeta principal y da clic en el ícono “+” de la parte superior. · Da clic en “Crear carpeta” y nómbrala como desees. · Finalmente, pulsa “Crear” y ...",
+      "source": "google",
+      "source_url": "https://www.eluniversal.com.mx/techbit/spotify-asi-puedes-crear-listas-de-reproduccion-a-partir-de-carpetas/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 6,
+      "scores": {
+        "relevancia": 5,
+        "engagement": 6,
+        "diferenciador": 5,
+        "aplicabilidad": 7
+      },
+      "angulo": "Tutorial sobre la organización de música dentro de Spotify mediante carpetas.",
+      "por_que": "Es una función técnica útil para la organización personal, pero con baja relevancia directa para el crecimiento o estrategia de lanzamiento.",
+      "status": "pending",
+      "discovered_at": "2026-09-14T19:49:34.374Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "b50g1g",
+      "title": "Marketing Musical para Artistas Independientes https://f.mtr.cool ...",
+      "description": "Nuestros servicios incluyen optimización de Spotify, distribución digital, registro de obras, publishing y gestión de regalías. Cada lanzamiento merece una ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/p/DZUGi81jJj1/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 8
+      },
+      "angulo": "Servicios de marketing musical enfocados en optimización y distribución para artistas.",
+      "por_que": "Ofrece soluciones concretas para artistas que buscan externalizar o mejorar sus esfuerzos de marketing y distribución.",
+      "status": "pending",
+      "discovered_at": "2026-09-14T19:49:34.374Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "j021jm",
+      "title": "Consejos esenciales para músicos: Javi Cuen explica lo que ...",
+      "description": "1608 me gusta,70 comentarios.Vídeo de TikTok de javicodice (@javicodice): «Breves consejos para músicos por Javi Cuen: ideas prácticas y directas para ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@javicodice/video/7683028639360830741",
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Breves consejos prácticos para músicos compartidos por un profesional.",
+      "por_que": "Aporta valor rápido y directo, ideal para el consumo en redes sociales y para artistas que buscan tips concisos.",
+      "status": "pending",
+      "discovered_at": "2026-09-14T19:49:34.374Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "v9dwp1",
+      "title": "Hacerte. Viral puede destruir tu carrera musical",
+      "description": "94 likes, 1 comments - crececonzeus on September 10, 2026: \"Hacerte. Viral puede destruir tu carrera musical\".",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DdHNxVBNZXF/",
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 7
+      },
+      "angulo": "Advertencia sobre los peligros de la viralidad no planificada para la carrera musical.",
+      "por_que": "Ofrece una perspectiva contraria a la búsqueda de viralidad a toda costa, promoviendo un crecimiento sostenible y estratégico.",
+      "status": "pending",
+      "discovered_at": "2026-09-14T19:49:34.374Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "5d5w77",
+      "title": "Premios Juventud desde Starlite Marbella logra 10 millones de espectadores",
+      "description": "*PJ Fest batió récords con 673 millones de interacciones en multiplataformas a nivel mundial. Notistarz-Foto-Prensa-Premios Juventud.",
+      "source": "noticia",
+      "source_url": "https://www.notistarz.com/premios-juventud-desde-starlite-marbella-logra-10-millones-de-espectadores/",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 5,
+      "scores": {
+        "relevancia": 4,
+        "engagement": 5,
+        "diferenciador": 4,
+        "aplicabilidad": 5
+      },
+      "angulo": "Análisis del alcance y métricas de eventos musicales masivos como Premios Juventud.",
+      "por_que": "Interesante para profesionales que buscan entender el impacto de grandes eventos y la medición de audiencias a gran escala.",
+      "status": "pending",
+      "discovered_at": "2026-09-14T19:49:34.374Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "gbcvjy",
+      "title": "Lady Gaga fue mamá: ¿qué pasó con su sonado regreso a México tras triunfar con Mayhem?",
+      "description": "Lady Gaga y Michael Polansky ya dieron sus primeros pasos como padres, y la paternidad frena, al menos por ahora, los rumores de un regreso de la cantante a...",
+      "source": "noticia",
+      "source_url": "https://www.infobae.com/mexico/2026/09/12/lady-gaga-fue-mama-que-paso-con-su-sonado-regreso-a-mexico-tras-triunfar-con-mayhem/",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 3,
+      "scores": {
+        "relevancia": 1,
+        "engagement": 3,
+        "diferenciador": 1,
+        "aplicabilidad": 3
+      },
+      "angulo": "Noticia sobre la vida personal de una artista de alto perfil y su impacto en su carrera.",
+      "por_que": "Contenido de entretenimiento general, poco relevante para la estrategia o crecimiento de artistas independientes.",
+      "status": "pending",
+      "discovered_at": "2026-09-14T19:49:34.374Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "fobs36",
+      "title": "Chayanne regresa a Colombia: fecha, lugar y precios de boletería en Medellín",
+      "description": "El regreso del artista al país hace parte de la ampliación de su gira con nuevas fechas en Latinoamérica.",
+      "source": "noticia",
+      "source_url": "https://www.minuto60.com/entretenimiento-cultura/regreso-chayanne-colombia-ciudades-precios-boleteria/14905",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 4,
+      "scores": {
+        "relevancia": 3,
+        "engagement": 4,
+        "diferenciador": 3,
+        "aplicabilidad": 5
+      },
+      "angulo": "Detalles de la gira de un artista consolidado y su impacto en el mercado local.",
+      "por_que": "Puede ser útil para profesionales que analizan giras de alto perfil y la logística de eventos masivos en Latinoamérica.",
+      "status": "pending",
+      "discovered_at": "2026-09-14T19:49:34.374Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "fyfyi9",
+      "title": "Si eres un artista independiente y no tienes tiempo para crear ...",
+      "description": "... Video Reacciones, Consejos y Reflexiones, Datos Curiosos, Cocina, Entre otros. ... El video se hace viral y tú decides repetir la fórmula, pero cambiando a ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.facebook.com/solyofficial/posts/si-eres-un-artista-independiente-y-no-tienes-tiempo-para-crear-contenido-este-vi/1646700630245692/",
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 7
+      },
+      "angulo": "Alternativas para artistas independientes con poco tiempo para la creación de contenido de video.",
+      "por_que": "Aborda un problema común de los artistas independientes (falta de tiempo) y ofrece soluciones prácticas para mantener una presencia online.",
+      "status": "pending",
+      "discovered_at": "2026-09-14T20:03:29.385Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }

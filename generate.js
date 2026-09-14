@@ -172,7 +172,12 @@ const CARRUSEL_FORMATS = [
   {
     nombre: 'ANTES Y DESPUÉS',
     etiqueta: 'CASO {n}',
-    instruccion: 'Cada slide contrasta cómo lo hace la mayoría contra cómo se hace bien. Estructura del body: el contraste concreto, no la moraleja. El titulo nombra la decisión en juego.',
+    instruccion: `Cada slide es un CONTRASTE literal entre dos formas de hacer lo mismo, no un tip suelto ni un paso de una lista. El body DEBE tener ambas mitades explícitas:
+  "ANTES/la mayoría: [lo que hace mal o distinto la mayoría, concreto] → MEJOR: [cómo se hace bien, concreto]"
+No es opcional mostrar las dos mitades — si el body solo describe UNA acción a tomar (ej. "envía tu canción con 7 días de antelación"), es un PASO A PASO disfrazado de "CASO", no un antes/después real.
+MAL (esto es una lista de tácticas, no un contraste): "Envía tu canción a curadores editoriales con 7 días de antelación."
+BIEN (dos mitades explícitas): "La mayoría manda su canción a Spotify el mismo día del lanzamiento y pierde el pitch editorial → Los que sí entran a playlists editoriales la envían con al menos 7 días de antelación desde la pestaña 'pitch' de Spotify for Artists."
+El titulo nombra la decisión en juego (ej. "Cuándo mandar tu pitch a Spotify"), no la acción correcta sola.`,
   },
   {
     nombre: 'CHECKLIST DE VERIFICACIÓN',
