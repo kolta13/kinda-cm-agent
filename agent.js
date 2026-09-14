@@ -16,6 +16,7 @@ const { generate }     = require('./generate');
 const { render }       = require('./render');
 const { publish }      = require('./publish');
 const { publishTikTok } = require('./publish-tiktok');
+const supervisor       = require('./supervisor');
 const backlog          = require('./backlog');
 const config           = require('./config');
 const { notifyFailure, notifySuccess } = require('./notify');
@@ -82,8 +83,34 @@ async function run() {
     // ── Fase 2: Generate ────────────────────────────────────────────────
     currentPhase = 'Fase 2: Generate';
     log('[agent] Fase 2: Generate...');
-    const generateResult = await generate();
+    let generateResult = await generate();
     log(`[agent] ✓ Generate: "${generateResult.carousel.tema}" (score ${generateResult.winner_score})`);
+
+    // ── Fase 2.5: Supervisor de calidad ──────────────────────────────────
+    // Segunda pasada de Gemini enfocada solo en detectar fallas (ver
+    // supervisor.js) — confiar en que la generación se autocorrija con el
+    // prompt no bastó: en la sesión del 2026-09-14 el generador ignoró
+    // reglas explícitas varias veces seguidas. Si rechaza, se regenera UNA
+    // vez (generate() vuelve a elegir la misma idea ganadora del backlog,
+    // pero con una redacción nueva); si rechaza de nuevo, se aborta el
+    // ciclo sin publicar en vez de arriesgar la cuenta.
+    currentPhase = 'Fase 2.5: Supervisor';
+    log('[agent] Fase 2.5: Supervisor de calidad...');
+    let review = await supervisor.reviewCarousel(generateResult.carousel);
+    if (!review.aprobado) {
+      log(`[agent] ⚠ Supervisor rechazó la primera versión (${review.problemas.length} problema(s)):`);
+      review.problemas.forEach(p => log(`[agent]    - [Regla ${p.regla}] ${p.slide}: ${p.detalle}`));
+      log('[agent] Regenerando una vez...');
+      generateResult = await generate();
+      log(`[agent] ✓ Generate (2do intento): "${generateResult.carousel.tema}"`);
+      review = await supervisor.reviewCarousel(generateResult.carousel);
+      if (!review.aprobado) {
+        log(`[agent] ❌ Supervisor rechazó la segunda versión también:`);
+        review.problemas.forEach(p => log(`[agent]    - [Regla ${p.regla}] ${p.slide}: ${p.detalle}`));
+        throw new Error(`Supervisor rechazó el contenido 2 veces seguidas: ${review.problemas.map(p => `[Regla ${p.regla}] ${p.detalle}`).join(' | ')}`);
+      }
+    }
+    log('[agent] ✓ Supervisor aprobó el contenido.');
 
     // ── Fase 3: Render ──────────────────────────────────────────────────
     currentPhase = 'Fase 3: Render';

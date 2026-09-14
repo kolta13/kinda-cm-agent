@@ -2,15 +2,23 @@ name: Kinda CM Agent — Post Diario
 
 on:
   schedule:
-    # 21:37 UTC ≈ 18:37 Chile invierno (UTC-3). En verano queda ~17:37.
+    # Adelantado el 2026-09-14: con 21:37 UTC, las corridas reales de los últimos
+    # días salieron 23:14-23:30 UTC (GitHub retrasa ~1h40-1h55 el disparo real vs.
+    # el programado, visto en runs #32-34) — eso caía ~20:15-20:30 Chile (UTC-3,
+    # horario de verano vigente desde el 06-09-2026), o sea cerca de las 9pm, no
+    # las 6pm que se pidió. Se corrió el disparo a 18:43 UTC, dejando ~2h15 de
+    # margen antes de las 21:00 UTC (18:00 Chile verano) incluso si el retraso de
+    # GitHub se repite. En horario de invierno (UTC-4, desde abril) publicaría
+    # aún más temprano (~16:30-17:00 local) — esto solo pone un TOPE máximo, no
+    # un horario exacto.
     #
-    # Minuto 37 y no ":00" a propósito: GitHub retrasa o descarta ejecuciones
+    # Minuto 43 y no ":00" a propósito: GitHub retrasa o descarta ejecuciones
     # programadas cuando hay carga alta, y la hora en punto es el pico (todo el
     # mundo agenda ahí). Con '0 22' los posts del 27, 28 y 29-08-2026 salieron a
     # las 02:50, 05:56 y 03:28 UTC — entre 5 y 8 horas tarde, o sea de madrugada
     # en Chile — y los días 18 y 26 la corrida se descartó por completo.
     # Un minuto poco común reduce el retraso; no lo garantiza, pero es gratis.
-    - cron: '37 21 * * *'
+    - cron: '43 18 * * *'
   workflow_dispatch:  # permite disparar manualmente desde la UI de GitHub
 
 permissions:
