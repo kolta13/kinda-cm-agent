@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T21:40:34.272Z",
+  "updated_at": "2026-09-15T21:47:57.893Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -5652,10 +5652,10 @@
       },
       "angulo": "Cómo los artistas emergentes pueden potenciar sus carreras combinando estrategias efectivas en Spotify y TikTok.",
       "por_que": "Combina dos plataformas cruciales para artistas en LATAM. Ofrece una hoja de ruta clara para el crecimiento y la promoción musical, con alta aplicabilidad.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-09-03T23:37:23.272Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-09-15T21:47:57.893Z",
+      "post_id": "18043449560829946",
       "audience_type": "artista"
     },
     {
@@ -8288,14 +8288,227 @@
       "source_url": "https://www.tiktok.com/@_moorebaby/video/7683722501863558408",
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategias prácticas y accionables para que músicos emergentes logren viralidad y promoción efectiva en redes sociales.",
+      "por_que": "Los artistas emergentes buscan activamente formas de ganar visibilidad. Este contenido ofrece soluciones directas y fáciles de implementar para su crecimiento.",
       "status": "pending",
       "discovered_at": "2026-09-14T21:40:25.355Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "9b8iz8",
+      "title": "Si no sabes cómo monetizar tu música, aquí te comparto 18 ideas ...",
+      "description": "1️⃣ Regalías de Streaming: Cada play cuenta. Asegúrate de estar registrado y distribuir bien. 2️⃣ Licencias para Contenido: Tu música en videos, series, etc ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/p/Dbtt3mCDhGM/",
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 10
+      },
+      "angulo": "Un listado extenso y detallado de 18 métodos concretos para que los artistas generen ingresos a partir de su música, abarcando desde regalías hasta fuentes menos obvias.",
+      "por_que": "La monetización es una preocupación central para todos los artistas. Ofrecer un compendio tan amplio de ideas les da herramientas valiosas para diversificar sus ingresos.",
+      "status": "pending",
+      "discovered_at": "2026-09-15T21:46:33.521Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "s583q1",
+      "title": "Cómo Ganar Dinero Con Tu Música (De Verdad): Una Watchlist ...",
+      "description": "Este video explica cómo funciona el mundo del sync licensing, una de las formas más importantes de monetizar música fuera del streaming. El sync licensing ...",
+      "source": "google",
+      "source_url": "https://blog.symphoniclatino.com/2026/04/05/como-ganar-dinero-con-tu-musica-de-verdad-una-watchlist-esencial/",
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Exploración profunda del sync licensing como una vía de monetización significativa y a menudo subestimada para los músicos.",
+      "por_que": "El sync licensing representa una fuente de ingresos importante y profesional. Educar a los artistas sobre cómo acceder a él les abre puertas a oportunidades de mayor escala.",
+      "status": "pending",
+      "discovered_at": "2026-09-15T21:46:33.522Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "6irc8x",
+      "title": "Cómo Monetizar tus Reels: Frecuencia, Música y Estrategias de ...",
+      "description": "La música correcta puede transformar por completo la percepción de tu contenido. Estas herramientas te ayudarán a encontrar pistas para videos, anuncios, ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DV_QVG7kXYA/",
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Consejos para usar la música de forma estratégica en Reels y optimizar la monetización del contenido en plataformas sociales.",
+      "por_que": "Los artistas buscan maximizar su presencia y potencial de ingresos en redes sociales. Este contenido aborda una plataforma popular y su monetización.",
+      "status": "pending",
+      "discovered_at": "2026-09-15T21:46:33.522Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "frsycm",
+      "title": "Las mejores plataformas de distribución musical para artistas y ...",
+      "description": "Las principales plataformas de distribución musical para artistas y sellos latinoamericanos en 2026 incluyen DistroKid, TuneCore, CD Baby, Amuse, ONErpm, Ditto ...",
+      "source": "google",
+      "source_url": "https://interspacemusic.com/blog/es/las-mejores-plataformas-de-distribucion-musical-para-artistas-y-sellos-latinoamericanos/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 10
+      },
+      "angulo": "Comparativa actualizada de las plataformas de distribución musical más efectivas y relevantes para el mercado latinoamericano en 2026.",
+      "por_que": "La elección de una distribuidora es crucial para el lanzamiento y la monetización. Ofrecer una guía específica para LATAM es altamente valioso y práctico.",
+      "status": "pending",
+      "discovered_at": "2026-09-15T21:46:33.522Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "ge43zn",
+      "title": "@spotifymexico está impulsando a nuevos artistas ...",
+      "description": "Spotify está apostando fuerte por el talento mexicano. La plataforma se suma a México Canta 2026 para impulsar a nuevas voces de la música mexicana y ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DcRZ_XlAOph/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Análisis de cómo Spotify México está apoyando activamente el talento emergente a través de iniciativas como México Canta 2026.",
+      "por_que": "Los artistas buscan oportunidades de ser descubiertos y apoyados por las grandes plataformas. Saber qué iniciativas existen les da una hoja de ruta para aprovechar estos apoyos.",
+      "status": "pending",
+      "discovered_at": "2026-09-15T21:46:33.522Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "itsdhy",
+      "title": "Artista si pensas que “SER ARTISTA” es solo sacar música ...",
+      "description": "Porque vivir de la música no depende de hacer más cosas. Depende de dejar de lanzar canciones como si la suerte fuera una estrategia. Comenta IAI y vemos en qué ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DdNTolaxH7J/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 8
+      },
+      "angulo": "Desmitifica la idea de que ser artista solo implica crear música, enfocándose en la importancia de estrategias y procesos para vivir de ello.",
+      "por_que": "Muchos artistas emergentes se enfocan solo en la creación y descuidan los aspectos de negocio. Este contenido les ayuda a reorientar su enfoque hacia la sostenibilidad de su carrera.",
+      "status": "pending",
+      "discovered_at": "2026-09-15T21:46:33.523Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "b6xjy2",
+      "title": "¿Sabías que los que te escuchan en Spotify no son tu ...",
+      "description": "Ellos básicamente son conocidos por no ayudar a la industria musical y monetizar súper poco para los artistas. Sin embargo esto es un pequeño paso en un terreno ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/p/Dc7Awfzqt79/",
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 6
+      },
+      "angulo": "Una perspectiva crítica sobre la relación entre los oyentes de plataformas de streaming y la construcción de una base de fans real y comprometida.",
+      "por_que": "Ayuda a los artistas a entender la diferencia entre métricas de plataformas y una comunidad de fans leal, fomentando estrategias más profundas de conexión.",
+      "status": "pending",
+      "discovered_at": "2026-09-15T21:46:33.523Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "i3wbij",
+      "title": "De 600 a más 10.000 streaming en su nuevo sencillo en ...",
+      "description": "... Spotify Ana no cambió de género. No se hizo viral. No pagó un playlist ... #spotify #aiartists #topselectorclub #latinmusic #artistaemergente · View ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/Dc3-5KPMyZc/",
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Estudio de caso detallado sobre cómo un artista logró un crecimiento significativo en streams sin recurrir a viralidad artificial, pagos a playlists o cambios de género.",
+      "por_que": "Ofrece un ejemplo realista y alcanzable de crecimiento en Spotify, mostrando que el éxito puede basarse en estrategias sólidas y no solo en suerte o artificios.",
+      "status": "pending",
+      "discovered_at": "2026-09-15T21:46:33.523Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "a0yxa2",
+      "title": "La IA y los algoritmos que deciden qué vemos y consumimos",
+      "description": "Descubre cómo la IA y los algoritmos de Spotify, Netflix y TikTok influyen en lo que vemos, escuchamos y leemos, y cómo cambian la cultura digital.",
+      "source": "noticia",
+      "source_url": "https://www.elplural.com/vivir/ia-algoritmos-deciden-vemos-consumimos-nmrs_400094102",
+      "topic_tag": "noticias",
+      "is_promotional": false,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 6
+      },
+      "angulo": "Explicación sobre cómo la Inteligencia Artificial y los algoritmos de plataformas como Spotify, Netflix y TikTok moldean el consumo cultural.",
+      "por_que": "Permite a los artistas comprender el ecosistema digital en el que operan, ayudándoles a adaptar sus estrategias para navegar y aprovechar la influencia de la IA y los algoritmos.",
+      "status": "pending",
+      "discovered_at": "2026-09-15T21:46:33.523Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }

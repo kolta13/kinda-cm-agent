@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T23:16:28.097Z",
+  "updated_at": "2026-09-15T21:47:57.897Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1409,6 +1409,73 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-12/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-12/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-12/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-15T21:47:57.897Z",
+      "week": "2026-09-15",
+      "tema": "Estrategias de Promoción en Spotify y TikTok para Artistas Emergentes",
+      "topic_tag": "distribucion",
+      "audience_type": "artista",
+      "formato": "CHECKLIST DE VERIFICACIÓN",
+      "cta_mode": "blando",
+      "backlog_id": "r4fyss",
+      "winner_score": 9.25,
+      "post_id": "18043449560829946",
+      "caption": "TikTok y Spotify son tus herramientas clave. Entiende cómo se comunican para que tu música llegue más lejos 👇\n\n#MusicaLatina #SpotifyForArtists #TikTokMusic #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#SpotifyForArtists",
+        "#TikTokMusic",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Conecta Spotify y TikTok para crecimiento real",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "TikTok genera señal de descubrimiento",
+          "body": "El tráfico externo a Spotify desde TikTok no es un stream pasivo. Señala al algoritmo que oyentes activos están llegando a tu música, impulsando recomendaciones."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "El pitch a playlists de Spotify",
+          "body": "Utiliza el dashboard de Spotify for Artists para enviar tus canciones al pitch editorial. Hazlo al menos 7 días antes del lanzamiento oficial."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Contenido de TikTok para Spotify",
+          "body": "Crea clips cortos que capturen la esencia de tu canción. Usa la función de audio para que los usuarios puedan enlazar directamente a Spotify."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Analiza tus métricas combinadas",
+          "body": "Compara el origen de tus oyentes en Spotify con la viralidad de tus clips en TikTok. Identifica qué tipo de contenido resuena más con tu audiencia."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Guarda este post para tu próximo lanzamiento",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-15/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-15/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-15/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-15/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-15/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-15/slide-06.jpg"
       ],
       "metrics": null
     }
