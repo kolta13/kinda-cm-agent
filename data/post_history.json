@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T21:47:57.897Z",
+  "updated_at": "2026-09-16T21:45:30.374Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1476,6 +1476,73 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-15/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-15/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-15/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "published_at": "2026-09-16T21:45:30.374Z",
+      "week": "2026-09-16",
+      "tema": "Licencias sincronizadas: Cómo productores monetizan sus pistas en medios audiovisuales",
+      "topic_tag": "monetizacion",
+      "audience_type": "profesional",
+      "formato": "PASO A PASO",
+      "cta_mode": "directo",
+      "backlog_id": "ylafyv",
+      "winner_score": 8.5,
+      "post_id": "18357404710218312",
+      "caption": "Las licencias de sincronización son una vía directa para que tu música suene en pantalla y genere ingresos. 👇\n\n#MusicaLatina #ProduccionMusical #SyncLicensing #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ProduccionMusical",
+        "#SyncLicensing",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Monetiza tus pistas con licencias de sincronización",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Entiende el mercado audiovisual",
+          "body": "Las licencias de sincronización permiten que tu música se use en películas, series, videojuegos o anuncios. Es un nicho con potencial real de ingresos por pista."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Prepara tu catálogo",
+          "body": "Ten tus temas listos en formato WAV 24bit/48kHz. Organiza metadatos claros (género, mood, instrumentación) para que los supervisores musicales los encuentren fácil."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Busca supervisores musicales",
+          "body": "Contacta supervisores que trabajen en proyectos similares a tu estilo. Un portafolio bien curado en Kinda Club puede ayudarte a mostrar tu trabajo."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Negocia tarifas y derechos",
+          "body": "Las tarifas varían según el uso (TV, cine, internet). Define claramente el territorio y la duración de la licencia para evitar problemas a futuro."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Crea tu perfil de productor en Kinda Club",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-16/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-16/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-16/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-16/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-16/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-16/slide-06.jpg"
       ],
       "metrics": null
     }
