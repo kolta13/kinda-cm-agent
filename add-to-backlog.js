@@ -72,12 +72,17 @@ async function main() {
   console.log(`  Pendientes: ${st.pending}`);
   console.log(`  Publicadas: ${st.published}`);
 
-  // Mostrar las ideas que se agregaron
+  // Mostrar las ideas que se agregaron. Bug real (2026-09-17): filtraba por
+  // source === 'manual' fijo, así que al usar otro source (ej. 'tiktok_manual')
+  // mostraba ideas viejas de OTRA carga que sí tenían source 'manual' — las
+  // ideas sí se guardaban bien, pero la confirmación en pantalla mentía.
+  // Ahora filtra por los sources realmente usados en esta corrida.
   if (added > 0) {
     console.log('\nIdeas agregadas:');
     const bl = backlog.load();
+    const sourcesUsados = new Set(ideas.map(i => i.source));
     const recent = bl.ideas
-      .filter(i => i.source === 'manual' && i.status === 'pending')
+      .filter(i => sourcesUsados.has(i.source) && i.status === 'pending')
       .slice(-added);
     recent.forEach(i => {
       console.log(`  [${i.topic_tag}] ${i.title}`);
