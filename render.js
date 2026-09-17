@@ -169,7 +169,11 @@ function saveUsedPhotoIds(usedSet, newIds) {
 
 // Busca una imagen relevante POR SLIDE según su propio titulo/body.
 // slideTexts: [{titulo, body}, ...] en el mismo orden en que se inyectan a .cover-img.
-async function fetchSlideImages(slideTexts) {
+// artistPhotoUrl: si viene (ya CONFIRMADA por un humano al curar la idea — ver
+// backlog.js/artist-photo.js), reemplaza la foto de portada (índice 0) por la
+// foto real del artista en vez de la búsqueda genérica de Pexels. Nunca se
+// busca ni se decide sola en este paso — solo usa lo que ya vino confirmado.
+async function fetchSlideImages(slideTexts, artistPhotoUrl) {
   if (!config.pexelsApiKey) return [];
 
   const usedIds  = loadUsedPhotoIds();
@@ -245,6 +249,19 @@ async function fetchSlideImages(slideTexts) {
   }
 
   saveUsedPhotoIds(usedIds, newlyUsedIds);
+
+  // Reemplazar la portada por la foto real del artista, YA CONFIRMADA por un
+  // humano (nunca se busca ni se decide en este paso desatendido). Va al final
+  // para no competir con el fallback genérico de arriba si la descarga falla.
+  if (artistPhotoUrl) {
+    try {
+      const buf = await httpGet(artistPhotoUrl, {});
+      images[0] = 'data:image/jpeg;base64,' + buf.toString('base64');
+      console.log('[render] ✓ Portada: foto real del artista (confirmada previamente)');
+    } catch (e) {
+      console.warn('[render] No se pudo descargar la foto del artista, usando fallback genérico:', e.message);
+    }
+  }
 
   // Si alguna query específica no trajo resultado, usar la primera imagen exitosa como fallback
   const fallback = images.find(Boolean) || '';
@@ -370,7 +387,7 @@ async function renderSlides(carousel, week, data = {}) {
     ...slideData.contenidos.map(c => ({ titulo: c.titulo, body: c.body })),
     { titulo: slideData.cta.titulo, body: slideData.cta.body },
   ];
-  const coverImages = await fetchSlideImages(slideTextsInOrder);
+  const coverImages = await fetchSlideImages(slideTextsInOrder, data.artist_photo_url);
 
   console.log('[render] Iniciando Puppeteer...');
   const browser = await puppeteer.launch({

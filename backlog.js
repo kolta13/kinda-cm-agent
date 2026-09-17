@@ -126,10 +126,18 @@ function addIdeas(newIdeas) {
       source:       idea.source || 'unknown',
       source_url:   idea.url    || '',
       // Nombre del artista real cuando la idea es un caso de estudio sobre una
-      // persona específica (ej. "Kidd Voodoo") — si está presente, render.js
-      // intenta traer su foto de Wikimedia Commons (única fuente con licencia
-      // de reuso verificada que encontramos) en vez de foto genérica de stock.
+      // persona específica (ej. "Kidd Voodoo") — solo para referencia/búsqueda
+      // manual, NUNCA dispara una búsqueda automática en el cron diario (ver
+      // nota de seguridad en artist-photo.js: el nombre solo no confirma
+      // identidad, puede haber otra persona con el mismo nombre).
       artist_name:  idea.artist_name || null,
+      // Foto YA CONFIRMADA por un humano (comparada contra fotos de prensa
+      // reales) — esto es lo único que render.js usa en el cron desatendido.
+      // Se llena con artist-photo.js + confirmación visual ANTES de que el
+      // idea entre al pool de candidatas del día, nunca en tiempo real durante
+      // el ciclo automático.
+      artist_photo_url:    idea.artist_photo_url    || null,
+      artist_photo_credit: idea.artist_photo_credit || null,
       topic_tag:    idea.topic_tag || detectTopic(idea.title, idea.description),
       // Ideas cuyo TEMA es promocionar Kinda Club (las cargadas a mano para el
       // lanzamiento). No sirven en días de CTA blando: el post no podría vender

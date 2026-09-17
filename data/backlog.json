@@ -8876,7 +8876,10 @@
       "discovered_at": "2026-09-17T03:50:29.016Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "artist_name": "Kidd Voodoo",
+      "artist_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Kidd_Voodoo_at_the_2026_Montreux_Jazz_Festival_04.jpg/1280px-Kidd_Voodoo_at_the_2026_Montreux_Jazz_Festival_04.jpg",
+      "artist_photo_credit": "Foto: Kalai Ramu / Wikimedia Commons (CC BY-SA 4.0)"
     }
   ]
 }

@@ -866,6 +866,13 @@ async function generate() {
     throw err;
   }
 
+  // Atribución obligatoria de la licencia CC de Wikimedia Commons (ver
+  // artist-photo.js) — se agrega en código, no se le pide a Gemini, para
+  // garantizar que el crédito quede exacto y no se pierda en una reescritura.
+  if (winner.artist_photo_credit && carousel.caption_instagram) {
+    carousel.caption_instagram += `\n\n📷 ${winner.artist_photo_credit}`;
+  }
+
   const today  = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
   const output = {
     generated_at: new Date().toISOString(),
@@ -873,7 +880,12 @@ async function generate() {
     winner_score: winner.score_total,
     backlog_id:   winnerId,
     topic_tag:    winner.topic_tag || 'general', // para el badge de la portada en render.js
-    artist_name:  winner.artist_name || null,    // render.js intenta foto real del artista si viene
+    // artist_photo_url: SOLO se usa si ya fue confirmada por un humano al
+    // curar la idea (ver backlog.js) — el cron desatendido nunca busca ni
+    // decide esto solo. artist_name queda de referencia, no dispara nada.
+    artist_name:         winner.artist_name || null,
+    artist_photo_url:    winner.artist_photo_url || null,
+    artist_photo_credit: winner.artist_photo_credit || null,
     // Se guardan para el ciclo de aprendizaje: son las dos variables que el
     // sistema controla y rota, así que son las que se pueden correlacionar
     // contra el rendimiento del post. Sin esto el análisis no puede responder
