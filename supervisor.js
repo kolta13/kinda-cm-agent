@@ -130,18 +130,22 @@ const CHECKLIST = `
    generar buzz, luego dirige a tus seguidores a Spotify" (solo describe el
    flujo, no dice por qué funciona).
 
-7. LISTA DE ERRORES/MITOS DISFRAZADA: dispara SOLO si el "titulo" LITERAL de un
-   slide de contenido EMPIEZA nombrando la acción mala o creencia falsa en sí —
-   ya sea con verbo negativo ("Ignorar", "Evitar", "Desconectar", "Confundir",
-   "Descuidar", "Subestimar", "No " + verbo) O con forma reductiva de mito ("X es
-   solo Y", "X es solamente Y", "X es secundario/a") — Y la portada no anunció
-   que el post trata de errores o mitos. Ejemplos reales que SÍ violaron esto:
-   portada "Conecta Spotify y TikTok para crecimiento real" con slides "Ignorar
-   el tráfico externo", "No dar contexto a Spotify"; y portada "5 factores del
-   crecimiento de un artista" (no prometió mitos) con slides "El estilo es solo
-   el género", "La marca es solo estética", "TikTok es solo para viralizar" —
-   aunque el formato asignado ese día fuera MITO VS REALIDAD, la portada manda:
-   si ella no prometió mitos, ningún título puede sonar a mito.
+7. LISTA DE ERRORES/MITOS DISFRAZADA: no es una lista de frases a buscar — es un
+   criterio de SIGNIFICADO. Lee el "titulo" de cada slide de contenido SOLO (sin el
+   body) y pregúntate: "¿esta frase tal cual es algo FALSO o una mala práctica, que
+   el lector necesita seguir leyendo para descubrir que en realidad está mal?" Si
+   la respuesta es sí Y la portada no anunció explícitamente que el post trata de
+   errores o mitos, dispara la regla — sin importar la forma gramatical (verbo
+   negativo, "es solo X", "es suficiente", "son inaccesibles", "no aporta", "sigue
+   sonando igual", "es la única", o cualquier otra construcción). Ejemplos reales
+   que SÍ violaron esto, con formas todas distintas: "Ignorar el tráfico externo",
+   "El estilo es solo el género", "La producción casera es suficiente",
+   "Colaboraciones internacionales son inaccesibles", "El género urbano chileno
+   suena siempre igual", "Lanzar singles sueltos es la única estrategia" — todos
+   bajo portadas que prometían algo positivo ("crecimiento real", "factores de
+   éxito"), nunca mitos. El formato asignado ese día puede ser MITO VS REALIDAD,
+   pero la portada manda: si ella no prometió mitos, ningún título puede sonar a
+   mito, en ninguna forma que se te ocurra evaluar.
    IMPORTANTE — esto NO aplica si el título nombra un HECHO, una ACCIÓN CORRECTA,
    o una CONSECUENCIA POSITIVA, aunque el "body" mencione de pasada qué hace mal
    la mayoría como contraste. Ejemplo que NO viola esta regla (título en

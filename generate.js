@@ -358,24 +358,35 @@ Spotify", "Desconectar la audiencia" — es decir, una lista de errores/cosas qu
 hacer, pero la portada nunca avisó que el post trataba de errores. Si esto se publica,
 el lector siente que le vendieron una cosa y le dieron otra — pérdida de confianza real.
 
-TEST: ¿El "titulo" de un slide de contenido nombra una acción MALA, una omisión, una
-creencia falsa o algo que NO se debe hacer/creer — ya sea con un verbo negativo
-("Ignorar", "No + verbo", "Evitar", "Desconectar", "Confundir", "Descuidar",
-"Subestimar") O con la forma reductiva de mito ("X es solo Y", "X es solamente Y",
-"X es secundario/a")? Si la respuesta es sí, solo está permitido cuando la portada lo
-anunció explícitamente como error/mito/problema (ej. título con "errores", "mitos" o
-etiqueta de hoy = "ERROR {n}"/"MITO {n}" con esa promesa). En cualquier otro caso,
-reescribe el título nombrando la ACCIÓN o HECHO CORRECTO directamente, no la creencia
-falsa que luego corriges en el body — aunque el FORMATO de hoy sea "MITO VS REALIDAD",
-la portada manda: si ella no prometió mitos, ningún título puede sonar a mito.
-Ejemplo MAL (verbo negativo): titulo "Ignorar el tráfico externo" (bajo una portada que
-promete "crecimiento real", no "errores").
-Ejemplo MAL (forma reductiva, pasó de verdad): titulo "El estilo es solo el género"
-bajo una portada "5 factores del crecimiento de un artista" (no prometió mitos) — el
-lector no sabe si esa frase es lo que Kinda Club piensa o lo que va a refutar.
-Ejemplo BIEN (mismo dato, en positivo): titulo "Un estilo propio te distingue del
-resto" (nombra el hecho/acción correcta directamente, sin pasar primero por la versión
-equivocada).
+TEST GENERAL (no una lista de frases, un criterio): lee el "titulo" de un slide de
+contenido SOLO — sin leer el body — y pregúntate: "¿esta frase, tal cual, es algo
+FALSO o una mala práctica, que el lector tiene que seguir leyendo para descubrir que
+en realidad está MAL o es un mito?" Si tu respuesta es sí, no importa qué forma
+gramatical usó ("X es solo Y", "X es suficiente", "X son inaccesibles", "X no aporta",
+"X suena siempre igual", un verbo negativo, o cualquier otra construcción que aún no
+hemos visto) — el título está mal, salvo que la portada haya anunciado explícitamente
+que el post trata de errores/mitos. Esto pasó de verdad TRES veces con frases distintas
+cada vez ("Ignorar el tráfico externo", "El estilo es solo el género", "La producción
+casera es suficiente", "Colaboraciones internacionales son inaccesibles") — no sirve
+memorizar patrones de texto, tienes que evaluar el SIGNIFICADO de cada título que
+escribas contra este criterio antes de entregarlo.
+Si la respuesta es sí y la portada no anunció mitos/errores, reescribe el título
+nombrando la ACCIÓN o HECHO CORRECTO directamente — no la creencia falsa que luego
+corriges en el body — aunque el FORMATO de hoy sea "MITO VS REALIDAD", la portada
+manda: si ella no prometió mitos, ningún título puede sonar a mito, en ninguna forma.
+Ejemplo MAL (verbo negativo): titulo "Ignorar el tráfico externo" (portada prometía
+"crecimiento real", no "errores").
+Ejemplo MAL (forma reductiva "es solo"): titulo "El estilo es solo el género" bajo una
+portada "5 factores del crecimiento" (no prometió mitos).
+Ejemplo MAL (formas distintas, mismo problema real): "La producción casera es
+suficiente", "Colaboraciones internacionales son inaccesibles", "El género urbano sigue
+sonando igual", "Lanzar singles sueltos es la única estrategia" — todas leen como una
+afirmación falsa que hay que desmentir, bajo una portada que nunca prometió mitos.
+Ejemplo BIEN (mismos datos, en positivo): "Un estilo propio te distingue del resto",
+"Invertir en producción profesional eleva tu proyecto", "Las colaboraciones
+internacionales abren mercados nuevos", "Un álbum cohesivo profundiza tu narrativa" —
+nombran el hecho/acción correcta directamente, sin pasar primero por la versión
+equivocada.
 El "body" sí puede mencionar brevemente qué hace mal la mayoría como contraste (eso es
 parte de REGLA #1, especificidad) — lo que no puede pasar es que el "titulo" completo
 del slide sea la versión negativa/incorrecta sin que la portada haya anunciado que el

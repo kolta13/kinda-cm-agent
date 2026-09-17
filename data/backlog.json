@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T15:54:43.487Z",
+  "updated_at": "2026-09-17T21:45:57.270Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -8880,6 +8880,32 @@
       "artist_name": "Kidd Voodoo",
       "artist_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Kidd_Voodoo_at_the_2026_Montreux_Jazz_Festival_04.jpg/1280px-Kidd_Voodoo_at_the_2026_Montreux_Jazz_Festival_04.jpg",
       "artist_photo_credit": "Foto: Kalai Ramu / Wikimedia Commons (CC BY-SA 4.0)"
+    },
+    {
+      "id": "poybqj",
+      "title": "Cómo Akriila pasó de 104 mil a 583 mil oyentes mensuales en Spotify en 2024",
+      "description": "Caso real de crecimiento de una artista chilena underground en 2024, verificado con datos de Spotify y prensa real. Creció de 104.700 a 583.300 oyentes mensuales en Spotify durante 2024 (x5.6), según capturas históricas de archive.org. 6 factores documentados: (1) Impulso de prensa temprano — Rolling Stone la incluyó en su lista 'Latin Artists We're Rooting For in 2024' en enero de 2024, meses antes de lanzar su álbum. (2) Sonido que rompe el molde del género urbano chileno — mezcla pop alternativo, reggaetón industrial y drum & bass, parte de una generación que rechaza que el trap/reggaetón tenga una sola forma de sonar. (3) Colaboraciones internacionales reales — Milo J y Taichu (Argentina), Juicy BAE (España), Álvaro Díaz, LATIN MAFIA. (4) Equipo de producción profesional internacional para su álbum debut (Heartgaze, Vinco, Taiko, entre otros) — pasó de grabar sola en su pieza durante la pandemia (2020) a un proyecto con inversión real. (5) Un álbum insignia, no solo singles sueltos — 'Epistolares' (agosto 2024) funcionó como obra completa y coherente. (6) Conexión con la escena local — colaboró con Kidd Voodoo (ya establecido) en 'arreglo floral', cruzando audiencias dentro de Chile; ambos son de Maipú.",
+      "source": "manual",
+      "source_url": "",
+      "artist_name": "Akriila",
+      "artist_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Madrid_Pride_2025_-_Akriila_-_250705_222415.jpg/1280px-Madrid_Pride_2025_-_Akriila_-_250705_222415.jpg",
+      "artist_photo_credit": "Foto: Barcex / Wikimedia Commons (CC BY-SA 4.0)",
+      "topic_tag": "marketing",
+      "is_promotional": false,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Detallar los 6 factores clave y las estrategias específicas que permitieron a Akriila multiplicar su audiencia en Spotify, ofreciendo un modelo replicable para artistas emergentes.",
+      "por_que": "Este caso de éxito real y medible demuestra estrategias concretas de crecimiento para artistas independientes en LATAM. El enfoque en datos verificables y factores documentados lo hace altamente relevante y aplicable.",
+      "status": "pending",
+      "discovered_at": "2026-09-17T21:45:35.149Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }
