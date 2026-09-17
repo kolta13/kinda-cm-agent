@@ -25,10 +25,14 @@ function save(history) {
 }
 
 // Registra un post recién publicado. `platform`: 'instagram' | 'tiktok'.
-function appendPost({ platform, week, tema, topic_tag, audience_type, formato, cta_mode, backlog_id, winner_score, post_id, caption, hashtags, slides, image_urls }) {
+// `status`: 'published' (default, quedó público de verdad) | 'draft_sent' (TikTok:
+// solo se mandó el borrador a la bandeja de la app, alguien debe terminarlo a mano
+// — no hay garantía de que ese post exista públicamente todavía).
+function appendPost({ platform, week, tema, topic_tag, audience_type, formato, cta_mode, backlog_id, winner_score, post_id, caption, hashtags, slides, image_urls, status }) {
   const history = load();
   history.posts.push({
     platform:      platform || 'instagram',
+    status:        status || 'published',
     published_at:  new Date().toISOString(),
     week,
     tema,
@@ -48,7 +52,8 @@ function appendPost({ platform, week, tema, topic_tag, audience_type, formato, c
     // afectaba el copy de ejemplo que insights.js le muestra a Gemini para aprender).
     slides:        (slides || []).map(s => ({ tipo: s.tipo, etiqueta: s.etiqueta || null, titulo: s.titulo, body: s.body || null })),
     image_urls:    image_urls || [],
-    // Espacio para métricas de engagement, si en el futuro se consultan via Graph API insights
+    // Espacio para métricas de engagement — se llena automático para Instagram
+    // (ver insights-fetch.js) o a mano para TikTok (node insights.js set ...).
     metrics:       null,
   });
   save(history);

@@ -12,6 +12,7 @@ const fs    = require('fs');
 const path  = require('path');
 const https = require('https');
 const config = require('./config');
+const history = require('./history');
 
 const DATA_DIR  = path.join(__dirname, 'data');
 const TIKTOK_HOST = 'open.tiktokapis.com';
@@ -267,6 +268,31 @@ async function publishTikTok() {
 
   // 3. Esperar confirmación (estado terminal esperado: SEND_TO_USER_INBOX)
   const postId = await waitForPublish(access_token, publishId);
+
+  // Archivar en el histórico — hasta el 2026-09-16 esto nunca se registraba,
+  // así que los borradores de TikTok no dejaban ningún rastro para retro ni
+  // para cargar métricas después (ver node insights.js set <post_id> ...).
+  // status: 'draft_sent' porque esto NO es una publicación pública confirmada
+  // (TikTok exige que un humano la termine desde la app) — solo dice que el
+  // sistema mandó el borrador con éxito, no que exista un post visible.
+  history.appendPost({
+    platform:      'tiktok',
+    status:        'draft_sent',
+    week:          publishData.week,
+    tema:          publishData.tema,
+    topic_tag:     carouselData?.topic_tag,
+    audience_type: carouselData?.carousel?.audience_type,
+    formato:       carouselData?.formato,
+    cta_mode:      carouselData?.cta_mode,
+    backlog_id:    carouselData?.backlog_id,
+    winner_score:  carouselData?.winner_score,
+    post_id:       postId,
+    caption,
+    hashtags:      carouselData?.carousel?.hashtags,
+    slides:        carouselData?.carousel?.slides,
+    image_urls:    imageUrls,
+  });
+  console.log('[tiktok] Borrador archivado en data/post_history.json (status: draft_sent)');
 
   const result = {
     enviado_at:  new Date().toISOString(),

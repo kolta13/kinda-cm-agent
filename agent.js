@@ -17,6 +17,7 @@ const { render }       = require('./render');
 const { publish }      = require('./publish');
 const { publishTikTok } = require('./publish-tiktok');
 const supervisor       = require('./supervisor');
+const { fetchAndUpdate: fetchInstagramInsights } = require('./insights-fetch');
 const backlog          = require('./backlog');
 const config           = require('./config');
 const { notifyFailure, notifySuccess } = require('./notify');
@@ -73,6 +74,21 @@ async function run() {
     const st = backlog.stats();
     log(`[agent] Backlog: ${st.pending} ideas pendientes / ${st.published} publicadas`);
     log('[agent] ════════════════════════════════════════');
+
+    // ── Fase 0: Ingesta de métricas de Instagram ─────────────────────────
+    // Cierra el loop de aprendizaje ANTES de puntuar/elegir el tema de hoy —
+    // así insights.ajustePorTopic() (usado dentro de research→score) ya ve
+    // las métricas frescas de posts con +24h. Soft-fail: si el token no
+    // tiene el scope instagram_manage_insights (ver insights-fetch.js), esto
+    // no debe tumbar el ciclo del día.
+    currentPhase = 'Fase 0: Ingesta de métricas';
+    log('[agent] Fase 0: Ingesta de métricas de Instagram...');
+    try {
+      const insightsResult = await fetchInstagramInsights();
+      log(`[agent] ✓ Métricas: ${insightsResult.actualizados} actualizados, ${insightsResult.fallidos} fallidos`);
+    } catch (insightsErr) {
+      log(`[agent] ⚠ Ingesta de métricas falló (no crítico, continuando): ${insightsErr.message}`);
+    }
 
     // ── Fase 1: Research ────────────────────────────────────────────────
     currentPhase = 'Fase 1: Research';
