@@ -118,22 +118,44 @@ async function getSpotifyToken() {
   return cachedToken.access_token;
 }
 
-// Busca artistas por nombre. Devuelve TODOS los candidatos (Spotify indexa
-// muchos artistas con nombres iguales o parecidos) para que el dossier los
-// muestre — buildDossier() usa automáticamente el de más seguidores, ver
-// nota al inicio del archivo.
+// Normaliza para comparar nombres sin acentos/mayúsculas/espacios extra.
+function normalizeName(s) {
+  return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+}
+
+// Busca artistas por nombre. Devuelve TODOS los candidatos cuyo nombre
+// realmente coincide con lo buscado (Spotify indexa muchos artistas con
+// nombres iguales o parecidos) para que el dossier los muestre —
+// buildDossier() usa automáticamente el de más seguidores, ver nota al
+// inicio del archivo.
+//
+// BUG REAL encontrado 2026-09-17: buscar "Neton Vega" con una query simple
+// (sin comillas) devolvió, además del artista correcto, a Peso Pluma, Fuerza
+// Regida, Natanael Cano y Tito Double P — Spotify hace matching difuso por
+// género/relevancia, no solo por nombre. Como Peso Pluma tiene más
+// seguidores que el artista real buscado, el auto-selector por seguidores
+// eligió al artista EQUIVOCADO — toda la discografía/charts del dossier
+// terminó siendo de Peso Pluma, no del artista que se quería investigar.
+// Fix en dos capas: (1) usar el filtro de campo `artist:"..."` de Spotify,
+// más restrictivo que una query libre; (2) filtrar el resultado para
+// quedarse SOLO con candidatos cuyo nombre normalizado coincide con el
+// buscado — nunca confiar en que "aparece en los resultados" implica que
+// el nombre coincide.
 async function findSpotifyArtist(name, token) {
-  const url = `https://api.spotify.com/v1/search?q=${encodeURIComponent(name)}&type=artist&limit=5`;
+  const url = `https://api.spotify.com/v1/search?q=${encodeURIComponent(`artist:"${name}"`)}&type=artist&limit=10`;
   const raw = await httpsGetAuth(url, token);
   const data = JSON.parse(raw);
-  return (data.artists?.items || []).map(a => ({
-    id:         a.id,
-    name:       a.name,
-    followers:  a.followers?.total ?? null,
-    genres:     a.genres || [],
-    popularity: a.popularity ?? null,
-    spotifyUrl: a.external_urls?.spotify || '',
-  }));
+  const queryNorm = normalizeName(name);
+  return (data.artists?.items || [])
+    .filter(a => normalizeName(a.name) === queryNorm)
+    .map(a => ({
+      id:         a.id,
+      name:       a.name,
+      followers:  a.followers?.total ?? null,
+      genres:     a.genres || [],
+      popularity: a.popularity ?? null,
+      spotifyUrl: a.external_urls?.spotify || '',
+    }));
 }
 
 // Trae toda la discografía relacionada al artista (paginado) y cuenta lo del
