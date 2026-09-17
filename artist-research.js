@@ -219,6 +219,90 @@ async function getArtistReleasesForYear(artistId, year, token, market) {
   };
 }
 
+// ── Wayback Machine: historial de "X oyentes mensuales" de Spotify ──────
+// Spotify no expone histórico de oyentes mensuales vía API — solo la foto
+// actual. Descubierto en vivo (2026-09-17): la etiqueta <meta name="description">
+// de open.spotify.com/artist/{id} incluye la cifra ("Listen to X on Spotify.
+// Artist · 2.2M monthly listeners.") para SEO, y el Internet Archive tiene
+// capturas históricas de esa misma página desde 2022 en adelante — cruzando
+// ambas cosas se puede armar gratis un "antes vs. después" real, igual al
+// que el usuario armó a mano para Kidd Voodoo 2023 (100 mil a 2.5 millones).
+//
+// Se limita a ~6 capturas repartidas en el rango para no pegarle demasiadas
+// veces a la API de Internet Archive (devuelve 429 con más de unas pocas
+// requests seguidas, visto en vivo). No todas las capturas van a tener la
+// cifra (páginas antiguas de Spotify no siempre traían ese meta tag) — se
+// descartan las que no la tengan, no se inventa un valor.
+
+function parseListenersCount(str) {
+  const m = (str || '').match(/([\d.,]+)\s*([KM]?)\s*monthly listeners/i);
+  if (!m) return null;
+  const num = parseFloat(m[1].replace(/,/g, ''));
+  if (isNaN(num)) return null;
+  if (m[2].toUpperCase() === 'M') return Math.round(num * 1_000_000);
+  if (m[2].toUpperCase() === 'K') return Math.round(num * 1_000);
+  return Math.round(num);
+}
+
+async function fetchWaybackListeners(timestamp, spotifyArtistId) {
+  const url = `https://web.archive.org/web/${timestamp}/https://open.spotify.com/artist/${spotifyArtistId}`;
+  const html = await httpsGetPlain(url);
+  const meta = html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i);
+  return meta ? parseListenersCount(meta[1]) : null;
+}
+
+async function getListenerHistory(spotifyArtistId, year) {
+  const from = `${year - 1}0101`;
+  const to = `${year + 1}0201`;
+  const cdxUrl = `https://web.archive.org/cdx/search/cdx?url=open.spotify.com/artist/${spotifyArtistId}&output=json&from=${from}&to=${to}&filter=statuscode:200&collapse=timestamp:6`;
+
+  let snapshots;
+  try {
+    const raw = await httpsGetPlain(cdxUrl);
+    const rows = JSON.parse(raw);
+    snapshots = rows.slice(1).map(r => r[1]); // saltar la fila de encabezados
+  } catch (e) {
+    return { available: false, note: `Internet Archive no respondió: ${e.message}` };
+  }
+
+  if (snapshots.length === 0) {
+    return { available: false, note: 'Sin capturas de Internet Archive para la página de Spotify de este artista.' };
+  }
+
+  // Tomar como máximo 6 capturas repartidas parejo en el tiempo — evita 429
+  // de Internet Archive y alcanza para ver la tendencia sin demorar el dossier.
+  const MAX_SAMPLES = 6;
+  const step = Math.max(1, Math.floor(snapshots.length / MAX_SAMPLES));
+  const sampled = snapshots.filter((_, i) => i % step === 0).slice(0, MAX_SAMPLES);
+
+  const points = [];
+  for (const ts of sampled) {
+    try {
+      const listeners = await fetchWaybackListeners(ts, spotifyArtistId);
+      if (listeners != null) {
+        const date = `${ts.slice(0, 4)}-${ts.slice(4, 6)}-${ts.slice(6, 8)}`;
+        points.push({ date, listeners });
+      }
+    } catch (e) { /* capturas individuales fallidas se saltan, no rompen todo */ }
+    await new Promise(r => setTimeout(r, 800)); // espaciar requests, Internet Archive rate-limitea agresivo
+  }
+
+  if (points.length < 2) {
+    return { available: false, note: 'No se encontraron suficientes capturas con la cifra de oyentes mensuales visible.' };
+  }
+
+  const first = points[0];
+  const last = points[points.length - 1];
+  return {
+    available: true,
+    points,
+    growth: {
+      from: first, to: last,
+      multiplier: first.listeners > 0 ? +(last.listeners / first.listeners).toFixed(1) : null,
+    },
+  };
+}
+
 // ── kworb.net: historial de charts (gratis, sin login, desde 2014) ──────
 // Datos comunitarios no oficiales — de acceso público hace más de una década
 // y ampliamente usados para investigación (ver hallazgos del 2026-09-17: no
@@ -293,6 +377,7 @@ async function buildDossier(artistName, year, market = 'CL') {
     spotify_error: null,
     discography: null,
     chart_history: null,
+    listener_history: null,
     news_candidates: [],
     photo_candidate: null,
   };
@@ -314,6 +399,14 @@ async function buildDossier(artistName, year, market = 'CL') {
         dossier.chart_history = await getKworbChartHistory(best.id, year, market);
       } catch (e) {
         dossier.chart_history = { available: false, note: `kworb.net falló: ${e.message}` };
+      }
+
+      // Historial de oyentes mensuales vía Wayback Machine — mismo id, mismo
+      // candidato ya resuelto arriba.
+      try {
+        dossier.listener_history = await getListenerHistory(best.id, year);
+      } catch (e) {
+        dossier.listener_history = { available: false, note: `Internet Archive falló: ${e.message}` };
       }
     }
   } catch (e) {
@@ -404,6 +497,18 @@ function printDossier(d) {
       d.chart_history.entriesInYear.forEach(e => console.log(`    - "${e.title}" — peak #${e.marketPeak} en ${d.market} (${e.peakDate})`));
       console.log(`  Fuente: ${d.chart_history.sourceUrl}`);
       console.log('  ⚠ Dato comunitario no oficial — cruzar con otra fuente antes de citarlo como cifra dura.');
+    }
+  }
+
+  if (d.listener_history) {
+    console.log(`\n── OYENTES MENSUALES EN SPOTIFY (Internet Archive, capturas históricas) ──`);
+    if (!d.listener_history.available) {
+      console.log(`  ⚠ ${d.listener_history.note}`);
+    } else {
+      d.listener_history.points.forEach(p => console.log(`    ${p.date}: ${p.listeners.toLocaleString('es-CL')} oyentes mensuales`));
+      const g = d.listener_history.growth;
+      console.log(`  Crecimiento: ${g.from.listeners.toLocaleString('es-CL')} (${g.from.date}) → ${g.to.listeners.toLocaleString('es-CL')} (${g.to.date})${g.multiplier ? ` — x${g.multiplier}` : ''}`);
+      console.log('  ⚠ Sacado de capturas de archive.org de la página pública de Spotify — cruzar con otra fuente antes de citarlo como cifra oficial.');
     }
   }
 
