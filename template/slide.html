@@ -335,6 +335,20 @@
   <div class="logo"><img id="logo-wm" src="" alt="Kinda Club"></div>
 </div>
 
+<!-- Bug real 2026-09-17: el prompt de generate.js permite "entre 3 y 8 slides
+     en total" (hasta 6 de contenido), pero acá solo había slots 1-5 — el 6to
+     slide de contenido salía completamente en negro (fillSlide/showSlide no
+     encontraban el elemento y no tiraban error, fallaban en silencio). -->
+<div class="slide slide-contenido" id="slide-6">
+  <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
+  <div class="slide-num" id="num-6">06 / 06</div>
+  <div class="number" id="label-6">Punto 6</div>
+  <h2 id="titulo-6">Título del punto</h2>
+  <div class="divider"></div>
+  <p class="body" id="body-6">Cuerpo del slide.</p>
+  <div class="logo"><img id="logo-wm" src="" alt="Kinda Club"></div>
+</div>
+
 <!-- ── CTA ─────────────────────────────────────────────────── -->
 <div class="slide slide-cta" id="slide-cta">
   <div class="cover-bg"><img class="cover-img" src="" alt=""><div class="overlay"></div></div>
