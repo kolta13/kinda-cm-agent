@@ -310,7 +310,12 @@ function resolveBadgeColor() {
 function buildSlideData(carousel, meta = {}) {
   const slides    = carousel.slides;
   const portada   = slides.find(s => s.tipo === 'portada');
-  const contenidos = slides.filter(s => s.tipo === 'contenido');
+  // Cualquier slide que no sea portada/cta cuenta como contenido, no solo
+  // tipo === 'contenido' exacto — pasó de verdad (2026-09-17): Gemini puso
+  // tipo: "contexto" en vez de "contenido" para un slide, y con el filtro
+  // estricto de antes ese slide desaparecía del render en silencio, sin
+  // ningún error. Mejor tolerar una variación de texto que perder un slide.
+  const contenidos = slides.filter(s => s.tipo !== 'portada' && s.tipo !== 'cta');
   const cta       = slides.find(s => s.tipo === 'cta');
 
   return {

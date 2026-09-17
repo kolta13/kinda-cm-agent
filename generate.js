@@ -184,6 +184,52 @@ const CARRUSEL_FORMATS = [
   },
 ];
 
+// Formato dedicado para posts de "caso de artista" (ej. Kidd Voodoo, Akriila)
+// — NO forma parte del array CARRUSEL_FORMATS a propósito, así que la
+// rotación diaria nunca lo toca. Se usa cada vez que la idea ganadora tiene
+// artist_name (ver selección en generateCarousel).
+//
+// Por qué existe: con el formato rotativo del día, este tipo de contenido
+// generó 3 veces seguidas el mismo problema real (2026-09-17) — cuando el
+// formato de turno era MITO VS REALIDAD, Gemini forzaba los títulos de cada
+// factor a sonar como una creencia falsa a desmentir ("El estilo es solo el
+// género", "La producción casera es suficiente"), aunque la portada nunca
+// prometió mitos. Cada vez encontraba una frase nueva que las reglas
+// anteriores no cubrían — terminé redactando el carrusel a mano las dos
+// veces para evitarlo. Un formato fijo, pensado específicamente para esta
+// estructura (contexto + N factores en positivo), evita el choque de raíz
+// en vez de seguir parchando frases.
+const CASO_DE_ARTISTA_FORMATO = {
+  nombre: 'CASO DE ARTISTA',
+  etiqueta: 'FACTOR {n}',
+  instruccion: `Estructura OBLIGATORIA, en este orden exacto — el slide de contexto
+NO es opcional, sáltatelo y el post pierde el "por qué importa" antes de leer
+los factores:
+1. Portada (slide 1): promete "N factores/claves del crecimiento de X en [año]".
+2. SLIDE DE CONTEXTO (numero 2, campo "tipo" = EXACTAMENTE el string "contenido"
+   — nunca "contexto" ni ningún otro valor, aunque describamos su función como
+   "de contexto" acá; etiqueta: null — este slide SIEMPRE existe, no es un factor):
+   UNA frase directa con la cifra real de
+   crecimiento del "material de referencia" de abajo. Ejemplo real de cómo se
+   ve (mismos datos, no lo copies literal): titulo "Un salto sin depender de
+   un hit viral", body "De 104.700 a 583.300 oyentes mensuales en Spotify
+   durante 2024 — un crecimiento de 5,6 veces sin un solo tema explosivo."
+3. Slides de factores (numero 3 en adelante): uno por cada factor real que
+   venga en el material de referencia, etiquetados "FACTOR 1", "FACTOR 2",
+   etc. — usa TODOS los factores que vengan, ni más ni menos.
+4. CTA (último slide).
+Total de slides = portada + 1 (contexto) + N factores + cta. Verifica antes de
+responder que tu array "slides" tiene efectivamente el slide de contexto entre
+la portada y "FACTOR 1" — es el error más común en este formato.
+CRÍTICO: cada título de factor nombra la ACCIÓN o HECHO POSITIVO directamente
+("Un sonido que rompe el molde", "Colaboraciones que abren mercados nuevos")
+— NUNCA una creencia falsa o mala práctica a desmentir, en NINGUNA forma
+gramatical (ni "es solo X", ni "es suficiente", ni verbos negativos, ni
+generalizaciones tipo "sigue sonando igual"). La portada de este tipo de post
+promete factores/claves de crecimiento, nunca mitos — así que ningún título
+puede sonar a mito bajo ningún formato, sin excepción.`,
+};
+
 function getDailyFormat() {
   const dayIndex = Math.floor(Date.now() / 86400000);
   return CARRUSEL_FORMATS[dayIndex % CARRUSEL_FORMATS.length];
@@ -200,7 +246,11 @@ function getDailyCtaMode() {
 // ── Fase 2b: Generación de copy ───────────────────────────────────────────
 
 async function generateCarousel(winner) {
-  const formato = getDailyFormat();
+  // Los posts de "caso de artista" (idea con artist_name) usan siempre su
+  // propio formato fijo, nunca el rotativo del día — ver comentario en
+  // CASO_DE_ARTISTA_FORMATO sobre por qué la rotación normal choca con este
+  // tipo de contenido.
+  const formato = winner.artist_name ? CASO_DE_ARTISTA_FORMATO : getDailyFormat();
   const ctaMode = getDailyCtaMode();
   // Sustantivo de la etiqueta, para exigir que la portada use la MISMA palabra si
   // promete cantidad. "MITO {n}" -> "MITO"; "{n}" (checklist) -> '' (sin sustantivo fijo).
@@ -478,6 +528,9 @@ PORTADA (slide 1) — LA PROMESA:
 - La portada NO lleva "body" (queda null).
 
 SLIDE 2 — ENTRADA DIRECTA AL CONTENIDO:
+- EXCEPCIÓN — formato "CASO DE ARTISTA": el slide 2 es el contexto cuantificado
+  (sin etiqueta), NO el primer factor — ver la instrucción del formato arriba.
+  El resto de esta sección no aplica a ese slide en ese formato.
 - Como la portada ya dijo de qué trata, el slide 2 NO necesita re-presentar el tema:
   entra directo al primer punto real usando la etiqueta estructural del formato de hoy.
 - El "titulo" del slide 2 entra directo al primer punto real (ver ETIQUETAS
