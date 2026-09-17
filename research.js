@@ -212,10 +212,16 @@ async function searchSerperVideos(query, limit = 4) {
 
 // ── Serper: Noticias recientes de la industria ────────────────────────────
 
-async function searchSerperNews(query, limit = 3) {
+// tbs='qdr:w' (última semana) por default para el research diario, que busca
+// tendencias RECIENTES. artist-research.js pasa tbs=null para buscar entrevistas
+// históricas de cualquier fecha — un artículo de 2023 no aparecería si se
+// forzara la ventana de una semana.
+async function searchSerperNews(query, limit = 3, tbs = 'qdr:w') {
   if (!config.serperApiKey) return [];
 
-  const body = JSON.stringify({ q: query, gl: 'us', hl: 'es', num: limit, tbs: 'qdr:w' }); // última semana
+  const params = { q: query, gl: 'us', hl: 'es', num: limit };
+  if (tbs) params.tbs = tbs;
+  const body = JSON.stringify(params);
   let raw;
   try {
     raw = await httpPost('https://google.serper.dev/news', body, {
@@ -354,4 +360,4 @@ if (require.main === module) {
   research().catch(e => { console.error('[research] Error fatal:', e); process.exit(1); });
 }
 
-module.exports = { research };
+module.exports = { research, searchSerperNews };
