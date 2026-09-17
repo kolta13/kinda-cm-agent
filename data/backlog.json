@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T03:42:29.440Z",
+  "updated_at": "2026-09-17T03:48:12.685Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -8725,14 +8725,20 @@
       "source_url": "https://www.tiktok.com/@keeisanchez/video/7679659232978930951",
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Muestra un proceso detallado y práctico de un lanzamiento musical exitoso.",
+      "por_que": "Los artistas independientes buscan guías claras y accionables para sus lanzamientos. La alta tasa de guardado indica que es un contenido de referencia valioso.",
       "status": "pending",
       "discovered_at": "2026-09-17T03:42:29.438Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "2591qy",
@@ -8742,14 +8748,20 @@
       "source_url": "https://www.tiktok.com/@thefeat.app/photo/7675769765213768992",
       "topic_tag": "networking",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Enseña a proponer colaboraciones musicales enfocándose en el beneficio mutuo.",
+      "por_que": "Las colaboraciones son clave para el crecimiento de artistas independientes. El consejo de ofrecer un valor claro y no solo pedir un favor es un enfoque más estratégico y efectivo.",
       "status": "pending",
       "discovered_at": "2026-09-17T03:42:29.439Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "p96x2f",
@@ -8759,14 +8771,20 @@
       "source_url": "https://www.tiktok.com/@elsoly7/video/7677777380118727949",
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9.5,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 10
+      },
+      "angulo": "Estrategias orgánicas y gratuitas para aumentar oyentes en Spotify.",
+      "por_que": "El acceso a estrategias de crecimiento orgánico es fundamental para artistas emergentes con presupuestos limitados. El altísimo engagement valida su interés y utilidad.",
       "status": "pending",
       "discovered_at": "2026-09-17T03:42:29.439Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "xgwzsm",
@@ -8776,14 +8794,20 @@
       "source_url": "https://www.tiktok.com/@dallcomposer/photo/7652874865086696711",
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Identifica y corrige errores comunes en la composición y escritura de letras.",
+      "por_que": "Ayuda a los artistas emergentes a mejorar la calidad de su música, un aspecto fundamental para destacar. El contenido de composición es siempre relevante para creadores.",
       "status": "pending",
       "discovered_at": "2026-09-17T03:42:29.439Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "kjdnya",
@@ -8793,14 +8817,20 @@
       "source_url": "https://www.tiktok.com/@prod.nicolas/photo/7643822882413366546",
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Diferencia entre contenido que genera engagement a largo plazo y el que solo produce vistas efímeras.",
+      "por_que": "Los artistas necesitan entender cómo crear contenido que realmente conecte con su audiencia y fomente una comunidad, no solo métricas superficiales. La tasa de guardado es excepcional.",
       "status": "pending",
       "discovered_at": "2026-09-17T03:42:29.440Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "cd6ajq",
@@ -8810,14 +8840,20 @@
       "source_url": "https://www.tiktok.com/@malopaesto/video/7630963401287552276",
       "topic_tag": "tecnologia",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Recomendaciones de plugins para mezcla vocal, destacando una opción gratuita de alto impacto.",
+      "por_que": "La calidad de la producción es crucial para los artistas independientes. Ofrecer opciones tanto estándar como gratuitas y efectivas es muy valioso para quienes buscan mejorar su sonido sin grandes inversiones.",
       "status": "pending",
       "discovered_at": "2026-09-17T03:42:29.440Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }

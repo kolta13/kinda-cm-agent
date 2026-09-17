@@ -86,7 +86,11 @@ function safeJsonParse(raw) {
 
 async function scoreBatch(ideas) {
   const ideasList = ideas.map((idea, i) =>
-    `${i + 1}. "${idea.title}" — ${(idea.description || '').slice(0, 100)}`
+    // Antes cortaba a 100 caracteres — perdía casi todo el contenido real de
+    // ideas con descripción rica (ej. detalles concretos sacados de un TikTok
+    // de referencia). 400 alcanza para una descripción completa sin inflar
+    // demasiado el prompt cuando hay 20 ideas por batch.
+    `${i + 1}. "${idea.title}" — ${(idea.description || '').slice(0, 400)}`
   ).join('\n');
 
   const prompt = `Eres el editor de contenido de Kinda Club (kindaclub.com), plataforma para la industria musical de latinoamérica.

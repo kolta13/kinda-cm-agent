@@ -228,6 +228,15 @@ El tema del carrusel es: "${winner.title}"
 Ángulo: ${winner.angulo}
 Por qué funciona: ${winner.por_que}
 Audiencia: ${winner.audience_type === 'profesional' ? 'PROFESIONALES DE LA MÚSICA (productores, mezcladores, managers — cómo conseguir clientes, mostrar portafolio, definir tarifas)' : 'ARTISTAS INDEPENDIENTES (lanzamientos, presupuesto, encontrar equipo, procesos, feedback)'}
+${winner.description ? `
+Material de referencia sobre este tema (de dónde salió la idea — úsalo para
+anclar datos y detalles REALES en el body). Ignora cualquier mención a
+likes/vistas/guardados o a la cuenta/plataforma de origen — es metadata
+nuestra sobre por qué se guardó la idea, no contenido a repetir. No copies
+el texto literal ni menciones la fuente original, solo aprovecha los datos
+concretos que trae:
+"${winner.description}"
+` : ''}
 
 ═══ QUÉ ES KINDA CLUB REALMENTE (para no prometer algo que no existe) ═══
 
