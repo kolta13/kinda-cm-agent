@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T03:48:12.685Z",
+  "updated_at": "2026-09-17T03:50:59.494Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -8851,6 +8851,29 @@
       "por_que": "La calidad de la producción es crucial para los artistas independientes. Ofrecer opciones tanto estándar como gratuitas y efectivas es muy valioso para quienes buscan mejorar su sonido sin grandes inversiones.",
       "status": "pending",
       "discovered_at": "2026-09-17T03:42:29.440Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "2mf1d5",
+      "title": "Cómo Kidd Voodoo pasó de 100 mil a 2.5 millones de oyentes mensuales en Spotify en 1 año",
+      "description": "Guión completo aportado por el usuario, caso real de un artista urbano chileno. Kidd Voodoo tiene 5 canciones en el Top 50 de Spotify Chile. 5 factores documentados de su crecimiento en 2023: (1) Estilo distintivo — mezcla su forma de vocalizar del indie rock (viene de su banda anterior, Resonancia Etérea) con melodías pegajosas de reggaetón, diferenciándolo de la escena urbana chilena. (2) Marca visual bien definida — estética consistente en redes con paleta blanco/negro/rojo, comunidad de fans llamada \"Los Sátiros\". (3) TikTok como base de fans — cita textual del artista: \"Hice una base de fans en base al TikTok\" y \"El TikTok es la radio de esta generación\". (4) Constancia de lanzamientos — 25 lanzamientos en Spotify solo en 2023, un promedio de 1 canción cada 2 semanas. (5) Colaboraciones — 23 de esas 25 canciones fueron colaboraciones con otros artistas, exponiéndolo a audiencias distintas.",
+      "source": "manual",
+      "source_url": "",
+      "topic_tag": "marketing",
+      "is_promotional": false,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Análisis detallado de los 5 factores clave (estilo, marca, colaboraciones, TikTok, Spotify for Artists) que impulsaron el crecimiento masivo de Kidd Voodoo en un año.",
+      "por_que": "Este caso de estudio es extremadamente relevante para artistas independientes en LATAM que buscan crecer exponencialmente. Ofrece un camino claro y aplicable, mostrando cómo un artista logró un éxito masivo en un corto período de tiempo.",
+      "status": "pending",
+      "discovered_at": "2026-09-17T03:50:29.016Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"

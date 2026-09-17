@@ -358,17 +358,24 @@ Spotify", "Desconectar la audiencia" — es decir, una lista de errores/cosas qu
 hacer, pero la portada nunca avisó que el post trataba de errores. Si esto se publica,
 el lector siente que le vendieron una cosa y le dieron otra — pérdida de confianza real.
 
-TEST: ¿El "titulo" de un slide de contenido nombra una acción MALA, una omisión o algo
-que NO se debe hacer (empieza con "Ignorar", "No + verbo", "Evitar", "Desconectar",
-"Confundir", "Descuidar", "Subestimar", o similar)? Si la respuesta es sí, solo está
-permitido cuando la portada lo anunció explícitamente como error/mito/problema (ej.
-título con "errores", "mitos" o etiqueta de hoy = "ERROR {n}" con esa promesa). En
-cualquier otro caso, reescribe el título nombrando la ACCIÓN CORRECTA o la decisión en
-juego, no la equivocación.
-Ejemplo MAL: titulo "Ignorar el tráfico externo" (bajo una portada que promete
-"crecimiento real", no "errores").
-Ejemplo BIEN: titulo "El tráfico externo cuenta como señal" (nombra el hecho/acción
-correcta directamente, sin pasar primero por la versión equivocada).
+TEST: ¿El "titulo" de un slide de contenido nombra una acción MALA, una omisión, una
+creencia falsa o algo que NO se debe hacer/creer — ya sea con un verbo negativo
+("Ignorar", "No + verbo", "Evitar", "Desconectar", "Confundir", "Descuidar",
+"Subestimar") O con la forma reductiva de mito ("X es solo Y", "X es solamente Y",
+"X es secundario/a")? Si la respuesta es sí, solo está permitido cuando la portada lo
+anunció explícitamente como error/mito/problema (ej. título con "errores", "mitos" o
+etiqueta de hoy = "ERROR {n}"/"MITO {n}" con esa promesa). En cualquier otro caso,
+reescribe el título nombrando la ACCIÓN o HECHO CORRECTO directamente, no la creencia
+falsa que luego corriges en el body — aunque el FORMATO de hoy sea "MITO VS REALIDAD",
+la portada manda: si ella no prometió mitos, ningún título puede sonar a mito.
+Ejemplo MAL (verbo negativo): titulo "Ignorar el tráfico externo" (bajo una portada que
+promete "crecimiento real", no "errores").
+Ejemplo MAL (forma reductiva, pasó de verdad): titulo "El estilo es solo el género"
+bajo una portada "5 factores del crecimiento de un artista" (no prometió mitos) — el
+lector no sabe si esa frase es lo que Kinda Club piensa o lo que va a refutar.
+Ejemplo BIEN (mismo dato, en positivo): titulo "Un estilo propio te distingue del
+resto" (nombra el hecho/acción correcta directamente, sin pasar primero por la versión
+equivocada).
 El "body" sí puede mencionar brevemente qué hace mal la mayoría como contraste (eso es
 parte de REGLA #1, especificidad) — lo que no puede pasar es que el "titulo" completo
 del slide sea la versión negativa/incorrecta sin que la portada haya anunciado que el
@@ -893,4 +900,4 @@ if (require.main === module) {
   generate().catch(e => { console.error('[generate] Error fatal:', e); process.exit(1); });
 }
 
-module.exports = { generate, selectWinner, getDailyFormat, getDailyCtaMode };
+module.exports = { generate, generateCarousel, selectWinner, getDailyFormat, getDailyCtaMode };

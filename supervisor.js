@@ -130,13 +130,18 @@ const CHECKLIST = `
    generar buzz, luego dirige a tus seguidores a Spotify" (solo describe el
    flujo, no dice por qué funciona).
 
-7. LISTA DE ERRORES DISFRAZADA: dispara SOLO si el "titulo" LITERAL de un slide
-   de contenido EMPIEZA nombrando la acción mala en sí (ej. literalmente empieza
-   con "Ignorar", "Evitar", "Desconectar", "Confundir", "Descuidar", "Subestimar",
-   o la forma "No " + verbo) Y la portada no anunció que el post trata de errores
-   o mitos. Ejemplo real que SÍ violó esto: portada "Conecta Spotify y TikTok
-   para crecimiento real" con slides titulados "Ignorar el tráfico externo", "No
-   dar contexto a Spotify" — el título mismo ES la acción equivocada.
+7. LISTA DE ERRORES/MITOS DISFRAZADA: dispara SOLO si el "titulo" LITERAL de un
+   slide de contenido EMPIEZA nombrando la acción mala o creencia falsa en sí —
+   ya sea con verbo negativo ("Ignorar", "Evitar", "Desconectar", "Confundir",
+   "Descuidar", "Subestimar", "No " + verbo) O con forma reductiva de mito ("X es
+   solo Y", "X es solamente Y", "X es secundario/a") — Y la portada no anunció
+   que el post trata de errores o mitos. Ejemplos reales que SÍ violaron esto:
+   portada "Conecta Spotify y TikTok para crecimiento real" con slides "Ignorar
+   el tráfico externo", "No dar contexto a Spotify"; y portada "5 factores del
+   crecimiento de un artista" (no prometió mitos) con slides "El estilo es solo
+   el género", "La marca es solo estética", "TikTok es solo para viralizar" —
+   aunque el formato asignado ese día fuera MITO VS REALIDAD, la portada manda:
+   si ella no prometió mitos, ningún título puede sonar a mito.
    IMPORTANTE — esto NO aplica si el título nombra un HECHO, una ACCIÓN CORRECTA,
    o una CONSECUENCIA POSITIVA, aunque el "body" mencione de pasada qué hace mal
    la mayoría como contraste. Ejemplo que NO viola esta regla (título en
