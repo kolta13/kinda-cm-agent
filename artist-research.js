@@ -18,12 +18,15 @@
 //     restricción de fecha) para que el humano abra el link y cite a mano.
 //   - Foto candidata de Wikimedia Commons (reusa artist-photo.js tal cual).
 //
+// Selección de artista de Spotify cuando hay varios con nombre parecido:
+// SIEMPRE se listan todos los candidatos con sus seguidores, y se usa el de
+// más seguidores automáticamente, sin pedir confirmación (decisión explícita
+// del usuario, 2026-09-17) — en la práctica el candidato real queda muy por
+// delante de cualquier homónimo (visto en vivo con Kidd Voodoo: 1.3M vs. unos
+// pocos cientos de seguidores). El dossier igual muestra la lista completa
+// por si el humano quiere revisarla.
+//
 // Qué NUNCA hace (a propósito):
-//   - Elegir solo un artista de Spotify cuando hay varios con nombre
-//     parecido — Spotify indexa muchísimos más artistas que Wikimedia
-//     Commons, así que el riesgo de confundir personas es igual o mayor
-//     que el ya documentado en artist-photo.js. Siempre se listan los
-//     candidatos, nunca se auto-selecciona.
 //   - Pedirle a Gemini (o a cualquier IA) que extraiga o redacte una cita
 //     de entrevista. Fabricar una cita atribuida a una persona real es un
 //     riesgo más serio que el de cifras infladas que ya cubre la REGLA #1b
@@ -115,10 +118,10 @@ async function getSpotifyToken() {
   return cachedToken.access_token;
 }
 
-// Busca artistas por nombre. Devuelve TODOS los candidatos relevantes, nunca
-// elige uno solo — Spotify indexa muchísimos artistas con nombres iguales o
-// parecidos, mismo riesgo de identidad que ya se documentó en artist-photo.js
-// (ahí encontramos una foto real de OTRA persona llamada igual).
+// Busca artistas por nombre. Devuelve TODOS los candidatos (Spotify indexa
+// muchos artistas con nombres iguales o parecidos) para que el dossier los
+// muestre — buildDossier() usa automáticamente el de más seguidores, ver
+// nota al inicio del archivo.
 async function findSpotifyArtist(name, token) {
   const url = `https://api.spotify.com/v1/search?q=${encodeURIComponent(name)}&type=artist&limit=5`;
   const raw = await httpsGetAuth(url, token);
@@ -335,12 +338,16 @@ function printDossier(d) {
     console.log('  Sin resultados.');
   } else {
     d.spotify_candidates.forEach((c, i) => {
-      console.log(`  ${i + 1}. ${c.name} — ${c.followers?.toLocaleString('es-CL') ?? '?'} seguidores, géneros: [${c.genres.join(', ') || '?'}]`);
+      const usado = d.discography?.usedCandidateId === c.id ? ' ← usado' : '';
+      console.log(`  ${i + 1}. ${c.name} — ${c.followers?.toLocaleString('es-CL') ?? '?'} seguidores, géneros: [${c.genres.join(', ') || '?'}]${usado}`);
       console.log(`     ${c.spotifyUrl}`);
     });
-    if (d.spotify_candidates.length > 1) {
-      console.log('  ⚠ Hay más de un artista con este nombre — confirma manualmente cuál es antes de usar los datos de abajo.');
-    }
+    // Decisión explícita del usuario (2026-09-17): usar siempre el candidato
+    // con más seguidores, sin pedir confirmación manual — a diferencia de la
+    // foto de Wikimedia Commons (sin señal de desempate como "seguidores" y
+    // donde ya se confirmó en vivo que el nombre solo trae a la persona
+    // equivocada), acá el conteo de seguidores es una señal fuerte: en la
+    // práctica el candidato real queda muy por delante de cualquier homónimo.
   }
 
   if (d.discography) {
