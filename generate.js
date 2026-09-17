@@ -873,6 +873,7 @@ async function generate() {
     winner_score: winner.score_total,
     backlog_id:   winnerId,
     topic_tag:    winner.topic_tag || 'general', // para el badge de la portada en render.js
+    artist_name:  winner.artist_name || null,    // render.js intenta foto real del artista si viene
     // Se guardan para el ciclo de aprendizaje: son las dos variables que el
     // sistema controla y rota, así que son las que se pueden correlacionar
     // contra el rendimiento del post. Sin esto el análisis no puede responder

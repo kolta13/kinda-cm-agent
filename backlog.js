@@ -125,6 +125,11 @@ function addIdeas(newIdeas) {
       description:  idea.description || '',
       source:       idea.source || 'unknown',
       source_url:   idea.url    || '',
+      // Nombre del artista real cuando la idea es un caso de estudio sobre una
+      // persona específica (ej. "Kidd Voodoo") — si está presente, render.js
+      // intenta traer su foto de Wikimedia Commons (única fuente con licencia
+      // de reuso verificada que encontramos) en vez de foto genérica de stock.
+      artist_name:  idea.artist_name || null,
       topic_tag:    idea.topic_tag || detectTopic(idea.title, idea.description),
       // Ideas cuyo TEMA es promocionar Kinda Club (las cargadas a mano para el
       // lanzamiento). No sirven en días de CTA blando: el post no podría vender
