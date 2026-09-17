@@ -587,4 +587,4 @@ if (require.main === module) {
   main().catch(e => { console.error('[artist-research] Error:', e.message); process.exit(1); });
 }
 
-module.exports = { buildDossier };
+module.exports = { buildDossier, getSpotifyToken, findSpotifyArtist, getListenerHistory };
