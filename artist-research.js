@@ -65,6 +65,20 @@ function httpsPostForm(hostname, reqPath, body, headers = {}) {
   });
 }
 
+function httpsGetPlain(url) {
+  return new Promise((resolve, reject) => {
+    const parsed = new URL(url);
+    https.get({
+      hostname: parsed.hostname, path: parsed.pathname + parsed.search,
+      headers: { 'User-Agent': 'Mozilla/5.0 (KindaCMAgent research tool)' }, timeout: 15000,
+    }, (res) => {
+      const chunks = [];
+      res.on('data', c => chunks.push(c));
+      res.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
+    }).on('error', reject).on('timeout', function () { this.destroy(); reject(new Error('Timeout')); });
+  });
+}
+
 function httpsGetAuth(url, token) {
   return new Promise((resolve, reject) => {
     const parsed = new URL(url);
@@ -180,6 +194,68 @@ async function getArtistReleasesForYear(artistId, year, token, market) {
   };
 }
 
+// ── kworb.net: historial de charts (gratis, sin login, desde 2014) ──────
+// Datos comunitarios no oficiales — de acceso público hace más de una década
+// y ampliamente usados para investigación (ver hallazgos del 2026-09-17: no
+// hay ninguna fuente gratuita de historial de crecimiento oficial de Spotify;
+// esta es la más completa y verificable que se encontró). Se usa el ID de
+// Spotify que YA se resolvió arriba, no un nombre nuevo — no agrega ningún
+// riesgo de identidad adicional al ya cubierto por findSpotifyArtist().
+// Cualquier cifra de acá debería poder cruzarse con otra fuente antes de
+// publicarse, como cualquier dato de REGLA #1b.
+
+function stripTags(s) { return s.replace(/<[^>]+>/g, '').trim(); }
+
+function parseKworbTable(html) {
+  const theadMatch = html.match(/<thead>([\s\S]*?)<\/thead>/);
+  const tbodyMatch = html.match(/<tbody>([\s\S]*?)<\/tbody>/);
+  if (!theadMatch || !tbodyMatch) return null;
+  const headers = [...theadMatch[1].matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(m => stripTags(m[1]));
+  const rows = [...tbodyMatch[1].matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map(rowMatch =>
+    [...rowMatch[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(m => stripTags(m[1]))
+  );
+  return { headers, rows };
+}
+
+async function getKworbChartHistory(spotifyArtistId, year, market) {
+  const url = `https://kworb.net/spotify/artist/${spotifyArtistId}.html`;
+  let html;
+  try {
+    html = await httpsGetPlain(url);
+  } catch (e) {
+    return { available: false, note: `kworb.net no respondió: ${e.message}` };
+  }
+  if (!html.includes('<table')) {
+    return { available: false, note: 'Sin historial de charts en kworb.net para este artista (o no existe la página).' };
+  }
+
+  const table = parseKworbTable(html);
+  if (!table) return { available: false, note: 'No se pudo interpretar la tabla de kworb.net.' };
+
+  const idxDate   = table.headers.indexOf('Peak Date');
+  const idxTitle  = table.headers.indexOf('Title');
+  const idxGlobal = table.headers.indexOf('Global');
+  const idxMarket = table.headers.indexOf(market);
+
+  if (idxMarket === -1) {
+    return { available: true, chartedInMarket: false, sourceUrl: url,
+      note: `El artista no tiene historial de chart registrado en el mercado "${market}" según kworb.net.` };
+  }
+
+  const yearStr = String(year);
+  const entriesInYear = table.rows
+    .map(r => ({ peakDate: r[idxDate], title: r[idxTitle], globalPeak: r[idxGlobal], marketPeak: r[idxMarket] }))
+    .filter(e => e.peakDate && e.peakDate.startsWith(yearStr) && e.marketPeak && e.marketPeak !== '--');
+
+  return {
+    available: true,
+    chartedInMarket: true,
+    sourceUrl: url,
+    entriesInYear,
+    top50CountInYear: entriesInYear.filter(e => Number(e.marketPeak) <= 50).length,
+  };
+}
+
 // ── Dossier ──────────────────────────────────────────────────────────────
 
 async function buildDossier(artistName, year, market = 'CL') {
@@ -191,6 +267,7 @@ async function buildDossier(artistName, year, market = 'CL') {
     spotify_candidates: [],
     spotify_error: null,
     discography: null,
+    chart_history: null,
     news_candidates: [],
     photo_candidate: null,
   };
@@ -205,6 +282,14 @@ async function buildDossier(artistName, year, market = 'CL') {
       dossier.discography = await getArtistReleasesForYear(best.id, year, token, market);
       dossier.discography.usedCandidateId = best.id;
       dossier.discography.usedCandidateName = best.name;
+
+      // kworb.net usa el MISMO id de Spotify que ya se resolvió arriba — no
+      // agrega ningún riesgo de identidad nuevo.
+      try {
+        dossier.chart_history = await getKworbChartHistory(best.id, year, market);
+      } catch (e) {
+        dossier.chart_history = { available: false, note: `kworb.net falló: ${e.message}` };
+      }
     }
   } catch (e) {
     dossier.spotify_error = e.message;
@@ -274,6 +359,22 @@ function printDossier(d) {
     }
     if (d.discography.yearOnlyPrecisionCount > 0) {
       console.log(`  ⚠ ${d.discography.yearOnlyPrecisionCount} lanzamiento(s) con fecha de precisión "solo año" — no se puede confirmar el mes exacto.`);
+    }
+  }
+
+  if (d.chart_history) {
+    console.log(`\n── HISTORIAL DE CHARTS ${d.year}, mercado ${d.market} (kworb.net, dato comunitario no oficial) ──`);
+    if (!d.chart_history.available) {
+      console.log(`  ⚠ ${d.chart_history.note}`);
+    } else if (!d.chart_history.chartedInMarket) {
+      console.log(`  ${d.chart_history.note}`);
+    } else if (d.chart_history.entriesInYear.length === 0) {
+      console.log(`  Sin canciones con peak en ${d.market} durante ${d.year}.`);
+    } else {
+      console.log(`  Canciones que entraron al Top 50 de ${d.market} en ${d.year}: ${d.chart_history.top50CountInYear}`);
+      d.chart_history.entriesInYear.forEach(e => console.log(`    - "${e.title}" — peak #${e.marketPeak} en ${d.market} (${e.peakDate})`));
+      console.log(`  Fuente: ${d.chart_history.sourceUrl}`);
+      console.log('  ⚠ Dato comunitario no oficial — cruzar con otra fuente antes de citarlo como cifra dura.');
     }
   }
 
