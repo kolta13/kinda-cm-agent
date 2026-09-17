@@ -68,12 +68,16 @@ function httpsPostForm(hostname, reqPath, body, headers = {}) {
   });
 }
 
+// Timeout de 25s (no 15s): archive.org sirviendo la página archivada real
+// (no la lista de la CDX API) puede tardar bastante más que kworb.net —
+// visto en vivo, la lista CDX responde en ~3.6s pero una página individual
+// a veces se demora más y tira timeout con 15s.
 function httpsGetPlain(url) {
   return new Promise((resolve, reject) => {
     const parsed = new URL(url);
     https.get({
       hostname: parsed.hostname, path: parsed.pathname + parsed.search,
-      headers: { 'User-Agent': 'Mozilla/5.0 (KindaCMAgent research tool)' }, timeout: 15000,
+      headers: { 'User-Agent': 'Mozilla/5.0 (KindaCMAgent research tool)' }, timeout: 25000,
     }, (res) => {
       const chunks = [];
       res.on('data', c => chunks.push(c));
@@ -256,13 +260,19 @@ async function getListenerHistory(spotifyArtistId, year) {
   const to = `${year + 1}0201`;
   const cdxUrl = `https://web.archive.org/cdx/search/cdx?url=open.spotify.com/artist/${spotifyArtistId}&output=json&from=${from}&to=${to}&filter=statuscode:200&collapse=timestamp:6`;
 
+  // Un reintento simple: archive.org a veces tarda/da timeout de forma
+  // esporádica en la primera consulta y responde bien a la segunda (visto
+  // en vivo — la misma consulta falló una vez y funcionó en <4s la próxima).
   let snapshots;
-  try {
-    const raw = await httpsGetPlain(cdxUrl);
-    const rows = JSON.parse(raw);
-    snapshots = rows.slice(1).map(r => r[1]); // saltar la fila de encabezados
-  } catch (e) {
-    return { available: false, note: `Internet Archive no respondió: ${e.message}` };
+  for (let intento = 1; intento <= 2; intento++) {
+    try {
+      const raw = await httpsGetPlain(cdxUrl);
+      const rows = JSON.parse(raw);
+      snapshots = rows.slice(1).map(r => r[1]); // saltar la fila de encabezados
+      break;
+    } catch (e) {
+      if (intento === 2) return { available: false, note: `Internet Archive no respondió: ${e.message}` };
+    }
   }
 
   if (snapshots.length === 0) {
