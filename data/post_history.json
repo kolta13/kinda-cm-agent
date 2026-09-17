@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T21:45:30.374Z",
+  "updated_at": "2026-09-17T15:54:59.171Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1543,6 +1543,170 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-16/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-16/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-16/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-09-17T15:54:43.492Z",
+      "week": "2026-09-17",
+      "tema": "Cómo Kidd Voodoo pasó de 100 mil a 2.5 millones de oyentes mensuales en Spotify en 1 año",
+      "topic_tag": "marketing",
+      "audience_type": "artista",
+      "formato": null,
+      "cta_mode": null,
+      "backlog_id": "2mf1d5",
+      "winner_score": 9,
+      "post_id": "17884944525623211",
+      "caption": "De 100 mil a 2.5 millones de oyentes mensuales en un año. Así lo hizo Kidd Voodoo 👇\n\n#MusicaLatina #ArtistaIndependiente #SpotifyChile #KindaClub\n\n📷 Foto: Kalai Ramu / Wikimedia Commons (CC BY-SA 4.0)",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ArtistaIndependiente",
+        "#SpotifyChile",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "5 factores del crecimiento de Kidd Voodoo en 2023",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": null,
+          "titulo": "Un salto que puso a Chile atento",
+          "body": "En 2023 pasó de 100 mil a 2.5 millones de oyentes mensuales en Spotify y ubicó 5 canciones en el Top 50 de Spotify Chile — el año que lo sacó del underground."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 1",
+          "titulo": "Un sonido que mezcla dos mundos",
+          "body": "Fusiona la vocalización del indie rock (de su banda anterior, Resonancia Etérea) con melodías pegajosas de reggaetón — un sonido que lo distingue en la escena urbana chilena."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 2",
+          "titulo": "Una identidad visual que se reconoce al toque",
+          "body": "Paleta blanco, negro y rojo consistente en cada publicación, más una comunidad de fans con nombre propio ('Los Sátiros') que refuerza la pertenencia."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 3",
+          "titulo": "TikTok como la puerta de entrada",
+          "body": "Según el propio artista, 'TikTok es la radio de esta generación' — ahí construyó la base de fans que después migró a escuchar en Spotify."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 4",
+          "titulo": "Una cadencia de lanzamiento que no se detiene",
+          "body": "25 canciones lanzadas en 2023, en promedio una cada 2 semanas — cada lanzamiento es una nueva oportunidad de entrar al algoritmo de descubrimiento."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 5",
+          "titulo": "Colaborar para llegar a públicos nuevos",
+          "body": "23 de esas 25 canciones fueron colaboraciones, exponiendo su música a la audiencia de cada artista invitado — no solo la propia."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Guarda este análisis para tu próxima estrategia de lanzamiento",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-07.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-08.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-09-17T15:54:59.170Z",
+      "week": "2026-09-17",
+      "tema": "Cómo Kidd Voodoo pasó de 100 mil a 2.5 millones de oyentes mensuales en Spotify en 1 año",
+      "topic_tag": "marketing",
+      "audience_type": "artista",
+      "formato": null,
+      "cta_mode": null,
+      "backlog_id": "2mf1d5",
+      "winner_score": 9,
+      "post_id": "p_inbox_url~v2.7686532879123515408",
+      "caption": "De 100 mil a 2.5 millones de oyentes mensuales en un año. Así lo hizo Kidd Voodoo 👇\n\n#MusicaLatina #ArtistaIndependiente #SpotifyChile #KindaClub\n\n📷 Foto: Kalai Ramu / Wikimedia Commons (CC BY-SA 4.0)",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ArtistaIndependiente",
+        "#SpotifyChile",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "5 factores del crecimiento de Kidd Voodoo en 2023",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": null,
+          "titulo": "Un salto que puso a Chile atento",
+          "body": "En 2023 pasó de 100 mil a 2.5 millones de oyentes mensuales en Spotify y ubicó 5 canciones en el Top 50 de Spotify Chile — el año que lo sacó del underground."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 1",
+          "titulo": "Un sonido que mezcla dos mundos",
+          "body": "Fusiona la vocalización del indie rock (de su banda anterior, Resonancia Etérea) con melodías pegajosas de reggaetón — un sonido que lo distingue en la escena urbana chilena."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 2",
+          "titulo": "Una identidad visual que se reconoce al toque",
+          "body": "Paleta blanco, negro y rojo consistente en cada publicación, más una comunidad de fans con nombre propio ('Los Sátiros') que refuerza la pertenencia."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 3",
+          "titulo": "TikTok como la puerta de entrada",
+          "body": "Según el propio artista, 'TikTok es la radio de esta generación' — ahí construyó la base de fans que después migró a escuchar en Spotify."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 4",
+          "titulo": "Una cadencia de lanzamiento que no se detiene",
+          "body": "25 canciones lanzadas en 2023, en promedio una cada 2 semanas — cada lanzamiento es una nueva oportunidad de entrar al algoritmo de descubrimiento."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 5",
+          "titulo": "Colaborar para llegar a públicos nuevos",
+          "body": "23 de esas 25 canciones fueron colaboraciones, exponiendo su música a la audiencia de cada artista invitado — no solo la propia."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Guarda este análisis para tu próxima estrategia de lanzamiento",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-07.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-08.jpg"
       ],
       "metrics": null
     }
