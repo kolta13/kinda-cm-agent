@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T15:54:59.171Z",
+  "updated_at": "2026-09-19T21:05:22.498Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1707,6 +1707,142 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-06.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-07.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-08.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-09-19T21:05:15.366Z",
+      "week": "2026-09-19",
+      "tema": "La profesionalización del artista independiente empieza aquí",
+      "topic_tag": "networking",
+      "audience_type": "artista",
+      "formato": "DESGLOSE DE UN NÚMERO",
+      "cta_mode": "directo",
+      "backlog_id": "4dibhp",
+      "winner_score": 9.5,
+      "post_id": "17960774568209538",
+      "caption": "La profesionalización de un artista independiente no es un mito, es un proceso. Kindaclub te da las herramientas para que empieces hoy 👇\n\n#MusicaIndependiente #ProduccionMusical #Kindaclub",
+      "hashtags": [
+        "#MusicaIndependiente",
+        "#ProduccionMusical",
+        "#NetworkingMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Tu ecosistema para sonar y operar profesionalmente",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Encuentra tu equipo profesional",
+          "body": "Productores, managers, mezcladores. El catálogo de Kindaclub te conecta con los perfiles que necesitas para llevar tu sonido y tu carrera al siguiente nivel."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Presenta tus proyectos musicales",
+          "body": "Sube tus demos y lanzamientos. Muestra tu portafolio y procesos creativos. Aquí, tu música habla por sí sola ante la industria."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Postula tus canciones a playlists",
+          "body": "El sistema de pitch te permite enviar tu música a curadores. Cumple los plazos y requisitos de envío para maximizar tus oportunidades de aparecer."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Conecta con otros artistas y profesionales",
+          "body": "Usa el muro comunitario y la mensajería directa. Comparte feedback, busca colaboradores o resuelve dudas con tu red de colegas."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Crea tu perfil profesional en Kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-09-19T21:05:22.498Z",
+      "week": "2026-09-19",
+      "tema": "La profesionalización del artista independiente empieza aquí",
+      "topic_tag": "networking",
+      "audience_type": "artista",
+      "formato": "DESGLOSE DE UN NÚMERO",
+      "cta_mode": "directo",
+      "backlog_id": "4dibhp",
+      "winner_score": 9.5,
+      "post_id": "p_inbox_url~v2.7687354920231733266",
+      "caption": "La profesionalización de un artista independiente no es un mito, es un proceso. Kindaclub te da las herramientas para que empieces hoy 👇\n\n#MusicaIndependiente #ProduccionMusical #Kindaclub",
+      "hashtags": [
+        "#MusicaIndependiente",
+        "#ProduccionMusical",
+        "#NetworkingMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Tu ecosistema para sonar y operar profesionalmente",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Encuentra tu equipo profesional",
+          "body": "Productores, managers, mezcladores. El catálogo de Kindaclub te conecta con los perfiles que necesitas para llevar tu sonido y tu carrera al siguiente nivel."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Presenta tus proyectos musicales",
+          "body": "Sube tus demos y lanzamientos. Muestra tu portafolio y procesos creativos. Aquí, tu música habla por sí sola ante la industria."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Postula tus canciones a playlists",
+          "body": "El sistema de pitch te permite enviar tu música a curadores. Cumple los plazos y requisitos de envío para maximizar tus oportunidades de aparecer."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Conecta con otros artistas y profesionales",
+          "body": "Usa el muro comunitario y la mensajería directa. Comparte feedback, busca colaboradores o resuelve dudas con tu red de colegas."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Crea tu perfil profesional en Kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-06.jpg"
       ],
       "metrics": null
     }
