@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T21:05:22.498Z",
+  "updated_at": "2026-09-20T21:05:51.991Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1843,6 +1843,142 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-09-20T21:05:44.817Z",
+      "week": "2026-09-20",
+      "tema": "Así es como grabamos un videoclip sin presupuesto.🎤✨️💯📷",
+      "topic_tag": "video_viral",
+      "audience_type": "artista",
+      "formato": "ANTES Y DESPUÉS",
+      "cta_mode": "blando",
+      "backlog_id": "4gwzot",
+      "winner_score": 9,
+      "post_id": "18100997390529884",
+      "caption": "Grabar un videoclip sin presupuesto no es misión imposible. Aquí te mostramos cómo lo hicimos con lo mínimo 👇\n\n#Musicos #VideoclipIndependiente #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#Musicos",
+        "#VideoclipIndependiente",
+        "#ProduccionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Videoclip profesional con recursos mínimos: nuestro método",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "El equipo: menos es más",
+          "body": "Olvídate de equipos de 5 cámaras. Concéntrense en 1 o 2 lentes versátiles y aprovechen la luz natural. Un trípode y un buen micrófono lavalier marcan la diferencia."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Locación: la calle habla",
+          "body": "No necesitas estudios caros. Busca espacios urbanos con carácter: fachadas interesantes, callejones con grafiti o incluso tu propio hogar. La clave es la composición y la atmósfera."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Iluminación: juega con el sol",
+          "body": "Las luces profesionales son caras. Usa la luz del día a tu favor. Filma al amanecer o atardecer para luz dorada. Rebotes con cartulina blanca o negra controlan sombras."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Edición: post-producción creativa",
+          "body": "Software de edición gratuito o de bajo costo es suficiente. Enfócate en el ritmo, transiciones dinámicas y la corrección de color. La creatividad en post-producción salva cualquier limitación técnica."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "¿Listo para tu próximo clip? Guarda esto",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-09-20T21:05:51.991Z",
+      "week": "2026-09-20",
+      "tema": "Así es como grabamos un videoclip sin presupuesto.🎤✨️💯📷",
+      "topic_tag": "video_viral",
+      "audience_type": "artista",
+      "formato": "ANTES Y DESPUÉS",
+      "cta_mode": "blando",
+      "backlog_id": "4gwzot",
+      "winner_score": 9,
+      "post_id": "p_inbox_url~v2.7687726335099258900",
+      "caption": "Grabar un videoclip sin presupuesto no es misión imposible. Aquí te mostramos cómo lo hicimos con lo mínimo 👇\n\n#Musicos #VideoclipIndependiente #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#Musicos",
+        "#VideoclipIndependiente",
+        "#ProduccionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Videoclip profesional con recursos mínimos: nuestro método",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "El equipo: menos es más",
+          "body": "Olvídate de equipos de 5 cámaras. Concéntrense en 1 o 2 lentes versátiles y aprovechen la luz natural. Un trípode y un buen micrófono lavalier marcan la diferencia."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Locación: la calle habla",
+          "body": "No necesitas estudios caros. Busca espacios urbanos con carácter: fachadas interesantes, callejones con grafiti o incluso tu propio hogar. La clave es la composición y la atmósfera."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Iluminación: juega con el sol",
+          "body": "Las luces profesionales son caras. Usa la luz del día a tu favor. Filma al amanecer o atardecer para luz dorada. Rebotes con cartulina blanca o negra controlan sombras."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Edición: post-producción creativa",
+          "body": "Software de edición gratuito o de bajo costo es suficiente. Enfócate en el ritmo, transiciones dinámicas y la corrección de color. La creatividad en post-producción salva cualquier limitación técnica."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "¿Listo para tu próximo clip? Guarda esto",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-06.jpg"
       ],
       "metrics": null
     }
