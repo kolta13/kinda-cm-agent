@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T21:05:51.991Z",
+  "updated_at": "2026-09-21T22:17:07.605Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1979,6 +1979,156 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-20/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-09-21T22:17:01.391Z",
+      "week": "2026-09-21",
+      "tema": "Cómo llegar a miles de oyentes en Spotify sin gastar dinero",
+      "topic_tag": "distribucion",
+      "audience_type": "artista",
+      "formato": "CHECKLIST DE VERIFICACIÓN",
+      "cta_mode": "blando",
+      "backlog_id": "p96x2f",
+      "winner_score": 9.5,
+      "post_id": "18125488681881559",
+      "caption": "Miles de oyentes reales sin pagar publicidad 👇\n\n#MusicaLatina #SpotifyParaArtistas #CrecimientoMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#SpotifyParaArtistas",
+        "#CrecimientoMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Miles de oyentes reales sin pagar publicidad",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Optimiza tu perfil de artista",
+          "body": "Tu perfil es tu carta de presentación. Asegúrate de tener una biografía clara, fotos de alta calidad y enlaces a tus redes sociales activas. Esto da señales de profesionalismo a Spotify."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Pitch a playlists editoriales",
+          "body": "Usa la pestaña de pitch en Spotify for Artists al menos 7 días antes del lanzamiento. Detalla el género, el mood y la historia de la canción. Un buen pitch es clave para la curaduría editorial."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Genera tráfico externo cualificado",
+          "body": "Comparte tu música en redes sociales activas. Cada stream que llega a Spotify desde un link externo es una señal de descubrimiento activo, valorada por el algoritmo."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Fomenta la interacción en tus redes",
+          "body": "Crea contenido alrededor de tu música. Pregunta a tu audiencia qué canciones quieren escuchar en vivo o qué opinan de tus lanzamientos. El engagement externo influye en la visibilidad interna."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "5",
+          "titulo": "Colabora con otros artistas",
+          "body": "Las colaboraciones amplían tu alcance a nuevas audiencias. Busca artistas con públicos similares, pero no idénticos. Un lanzamiento conjunto puede ser un gran impulso orgánico."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Guarda este post para tu próximo lanzamiento 👇",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-09-21T22:17:07.605Z",
+      "week": "2026-09-21",
+      "tema": "Cómo llegar a miles de oyentes en Spotify sin gastar dinero",
+      "topic_tag": "distribucion",
+      "audience_type": "artista",
+      "formato": "CHECKLIST DE VERIFICACIÓN",
+      "cta_mode": "blando",
+      "backlog_id": "p96x2f",
+      "winner_score": 9.5,
+      "post_id": "p_inbox_url~v2.7688115823827224596",
+      "caption": "Miles de oyentes reales sin pagar publicidad 👇\n\n#MusicaLatina #SpotifyParaArtistas #CrecimientoMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#SpotifyParaArtistas",
+        "#CrecimientoMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Miles de oyentes reales sin pagar publicidad",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Optimiza tu perfil de artista",
+          "body": "Tu perfil es tu carta de presentación. Asegúrate de tener una biografía clara, fotos de alta calidad y enlaces a tus redes sociales activas. Esto da señales de profesionalismo a Spotify."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Pitch a playlists editoriales",
+          "body": "Usa la pestaña de pitch en Spotify for Artists al menos 7 días antes del lanzamiento. Detalla el género, el mood y la historia de la canción. Un buen pitch es clave para la curaduría editorial."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Genera tráfico externo cualificado",
+          "body": "Comparte tu música en redes sociales activas. Cada stream que llega a Spotify desde un link externo es una señal de descubrimiento activo, valorada por el algoritmo."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Fomenta la interacción en tus redes",
+          "body": "Crea contenido alrededor de tu música. Pregunta a tu audiencia qué canciones quieren escuchar en vivo o qué opinan de tus lanzamientos. El engagement externo influye en la visibilidad interna."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "5",
+          "titulo": "Colabora con otros artistas",
+          "body": "Las colaboraciones amplían tu alcance a nuevas audiencias. Busca artistas con públicos similares, pero no idénticos. Un lanzamiento conjunto puede ser un gran impulso orgánico."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Guarda este post para tu próximo lanzamiento 👇",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-07.jpg"
       ],
       "metrics": null
     }
