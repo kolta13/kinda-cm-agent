@@ -271,7 +271,7 @@ async function getListenerHistory(spotifyArtistId, year) {
       snapshots = rows.slice(1).map(r => r[1]); // saltar la fila de encabezados
       break;
     } catch (e) {
-      if (intento === 2) return { available: false, note: `Internet Archive no respondió: ${e.message}` };
+      if (intento === 2) return { available: false, temporal: true, note: `Internet Archive no respondió: ${e.message}` };
     }
   }
 
@@ -587,4 +587,4 @@ if (require.main === module) {
   main().catch(e => { console.error('[artist-research] Error:', e.message); process.exit(1); });
 }
 
-module.exports = { buildDossier, getSpotifyToken, findSpotifyArtist, getListenerHistory };
+module.exports = { buildDossier, getSpotifyToken, findSpotifyArtist, getListenerHistory, getArtistReleasesForYear };
