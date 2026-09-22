@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T22:17:01.386Z",
+  "updated_at": "2026-09-22T04:26:17.853Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -9146,14 +9146,20 @@
       "artist_photo_credit": null,
       "topic_tag": "monetizacion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Explica las licencias de sincronización y cómo pueden ser accesibles para artistas emergentes.",
+      "por_que": "Educa a los artistas sobre una fuente potencial de ingresos y visibilidad, desmitificando que es solo para grandes nombres.",
       "status": "pending",
       "discovered_at": "2026-09-19T21:03:18.770Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "33kzsl",
@@ -9166,14 +9172,20 @@
       "artist_photo_credit": null,
       "topic_tag": "video_viral",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Desafía la idea de que se necesita un gran presupuesto para crear videoclips impactantes.",
+      "por_que": "Aborda una preocupación común entre artistas independientes: la producción audiovisual con recursos limitados.",
       "status": "pending",
       "discovered_at": "2026-09-19T21:03:18.771Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "yhjpwd",
@@ -9186,14 +9198,20 @@
       "artist_photo_credit": null,
       "topic_tag": "video_viral",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Ofrece un método práctico y rápido para crear videoclips musicales con bajo presupuesto.",
+      "por_que": "Proporciona soluciones concretas y accesibles para que los artistas puedan mejorar su imagen visual sin grandes inversiones.",
       "status": "pending",
       "discovered_at": "2026-09-19T21:03:18.771Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "ifoj0i",
@@ -9232,14 +9250,20 @@
       "artist_photo_credit": null,
       "topic_tag": "video_viral",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Comparte verdades de la industria musical que nadie dice, ofreciendo consejos prácticos para artistas independientes.",
+      "por_que": "El contenido directo y honesto sobre la industria genera confianza y engagement, abordando aspectos que a menudo se ocultan.",
       "status": "pending",
       "discovered_at": "2026-09-19T21:03:18.771Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "38ni6i",
@@ -9252,14 +9276,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.2,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Enfatiza la responsabilidad del artista independiente en la gestión financiera y toma de decisiones estratégicas.",
+      "por_que": "Empodera al artista al recordarle su rol de líder de proyecto y la importancia de la claridad financiera, comparando con figuras conocidas.",
       "status": "pending",
       "discovered_at": "2026-09-19T21:03:18.771Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "ch04e1",
@@ -9324,14 +9354,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 5,
+        "aplicabilidad": 7
+      },
+      "angulo": "Invitación abierta para artistas emergentes y productores a compartir su música e historia con una revista.",
+      "por_que": "Ofrece una oportunidad de visibilidad y difusión para artistas emergentes, aunque el engagement directo puede ser limitado a quienes aplican.",
       "status": "pending",
       "discovered_at": "2026-09-20T21:04:19.067Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "qw7fbw",
@@ -9370,14 +9406,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.2,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Identifica el error común de los artistas emergentes de priorizar complacer a otros sobre su propia visión.",
+      "por_que": "Aborda un error fundamental en la autogestión y desarrollo de identidad artística, muy común en etapas tempranas.",
       "status": "pending",
       "discovered_at": "2026-09-20T21:04:19.068Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "26mihk",
@@ -9390,14 +9432,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.2,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Señala el error recurrente de los artistas emergentes de intentar agradar a todo el mundo, descuidando su autenticidad.",
+      "por_que": "Similar al punto 8, este contenido resalta la importancia de la autenticidad y la visión propia para el crecimiento artístico sostenible.",
       "status": "pending",
       "discovered_at": "2026-09-20T21:04:19.068Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "33hg38",
@@ -9488,14 +9536,20 @@
       "artist_photo_credit": null,
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Analiza la duración de los contratos musicales como un factor clave que puede limitar las oportunidades futuras del artista.",
+      "por_que": "Ofrece una perspectiva profesional sobre la importancia de las cláusulas contractuales y su impacto a largo plazo en la carrera de un artista.",
       "status": "pending",
       "discovered_at": "2026-09-21T22:15:25.073Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "mucv4x",
@@ -9534,14 +9588,20 @@
       "artist_photo_credit": null,
       "topic_tag": "networking",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Destaca la importancia de entender las cláusulas contractuales en la industria musical, que pueden tener más valor que adelantos o regalías.",
+      "por_que": "Advierte a los profesionales y artistas sobre la complejidad y el impacto a largo plazo de los contratos, ofreciendo conocimiento valioso.",
       "status": "pending",
       "discovered_at": "2026-09-21T22:15:25.073Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "s778zk",
@@ -9554,14 +9614,20 @@
       "artist_photo_credit": null,
       "topic_tag": "video_viral",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.8,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 8
+      },
+      "angulo": "Explora el balance entre la libertad creativa y el riesgo financiero de ser un artista independiente sin sello discográfico.",
+      "por_que": "Aborda una decisión crucial para artistas emergentes en Latinoamérica, ofreciendo una perspectiva equilibrada sobre la independencia.",
       "status": "pending",
       "discovered_at": "2026-09-21T22:15:25.074Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "v82yjf",
@@ -9637,6 +9703,32 @@
       "por_que": "Similar al punto 18, es un dato de consumo de contenido, no una guía o consejo para el desarrollo artístico o profesional.",
       "status": "pending",
       "discovered_at": "2026-09-21T22:15:25.074Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "3avafr",
+      "title": "Cómo Kuina pasó de 7.900 a 59.400 oyentes mensuales en Spotify",
+      "description": "Caso real de crecimiento de una artista chilena underground, verificado con datos de Spotify y prensa real. Kuina (de Lautaro, Región de la Araucanía, se instaló en Santiago hace 4 años) creció de 7.900 a 59.400 oyentes mensuales en Spotify entre noviembre de 2023 y marzo de 2024 (x7.5), según capturas históricas de archive.org — la ventana es corta (143 días), así que el crecimiento real del período completo podría ser mayor. Su tema de quiebre real fue 'KARTIER' (con Viangogh), lanzado en 2023. Apodada 'la niña terrible del trap chileno' por La Cuarta. No tiene historial en kworb.net (nunca entró al Top 200) — su crecimiento es de audiencia y prensa, no de posicionamiento en charts, coherente con un perfil underground. Cita real disponible (verificar texto exacto antes de usar): 'Quiero cambiar el mainstream' (La Cuarta). Colaboradores reales 2023: Viangogh (KARTIER, TOI ENOJÁ, KALAFKEN), Saitoape (temuko).",
+      "source": "manual",
+      "source_url": "",
+      "artist_name": "Kuina",
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "marketing",
+      "is_promotional": false,
+      "score_total": 9.5,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 10,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estudio de caso detallado del crecimiento exponencial de una artista underground chilena en Spotify, con datos verificables.",
+      "por_que": "Ofrece una hoja de ruta aspiracional y práctica basada en resultados reales, demostrando que el crecimiento es posible para artistas independientes en LATAM.",
+      "status": "pending",
+      "discovered_at": "2026-09-22T04:25:57.950Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"

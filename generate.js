@@ -671,6 +671,7 @@ Responde SOLO con JSON válido:
   const clean    = neutralizeSpanish(carousel);
   stripTitlePeriods(clean);
   normalizeEtiquetaWord(clean, etiquetaNoun);
+  if (winner.artist_name) fixFactorCountInPortada(clean);
   normalizeAudienceType(clean);
   warnFirstPerson(clean);
   warnUnverifiableStats(clean);
@@ -764,6 +765,23 @@ function normalizeEtiquetaWord(carousel, etiquetaNoun) {
     const match = s.etiqueta.match(/\d+/);
     if (match) s.etiqueta = match[0];
   });
+}
+
+// CASO DE ARTISTA: la portada promete "N factores" pero Gemini a veces no
+// escribe esa misma cantidad de slides "FACTOR n" (pasó de verdad con Kuina:
+// portada decía "7 factores", el carrusel solo traía 5). normalizeEtiquetaWord
+// ya valida que la PALABRA calce con la promesa, pero no el NÚMERO — esto
+// corrige el número en el titulo de la portada para que sea el real, en vez
+// de pedirle a Gemini que lo intente de nuevo (más rápido y siempre exacto).
+function fixFactorCountInPortada(carousel) {
+  const portada = carousel.slides.find(s => s.tipo === 'portada');
+  if (!portada || typeof portada.titulo !== 'string') return;
+  const factorCount = carousel.slides.filter(s => typeof s.etiqueta === 'string' && /^FACTOR\s/i.test(s.etiqueta)).length;
+  if (factorCount === 0) return;
+  const match = portada.titulo.match(/\d+/);
+  if (match && Number(match[0]) !== factorCount) {
+    portada.titulo = portada.titulo.replace(/\d+/, String(factorCount));
+  }
 }
 
 // Quita el punto final de los títulos de slide. En display de 82-108px un punto
