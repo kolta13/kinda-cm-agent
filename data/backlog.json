@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T21:40:41.886Z",
+  "updated_at": "2026-09-23T21:48:45.974Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -9796,14 +9796,20 @@
       "artist_photo_credit": null,
       "topic_tag": "networking",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 4.5,
+      "scores": {
+        "relevancia": 3,
+        "engagement": 5,
+        "diferenciador": 4,
+        "aplicabilidad": 6
+      },
+      "angulo": "Análisis de tendencias y colaboraciones en lanzamientos de artistas consolidados para inspirar a emergentes.",
+      "por_que": "Si bien es un artista consolidado, el análisis de sus colaboraciones y géneros puede ofrecer ideas a artistas independientes sobre diversificación y fusiones musicales.",
       "status": "pending",
       "discovered_at": "2026-09-22T21:40:23.153Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "1eiur",
@@ -9842,14 +9848,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 9,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Humor sobre las situaciones comunes y a veces absurdas que enfrentan los artistas independientes en su día a día.",
+      "por_que": "El contenido de humor y relatable genera alto engagement y comunidad entre artistas que se sienten identificados con las experiencias compartidas.",
       "status": "pending",
       "discovered_at": "2026-09-22T21:40:23.154Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "8qlyyg",
@@ -9862,14 +9874,20 @@
       "artist_photo_credit": null,
       "topic_tag": "noticias",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 6.75,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 5,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Análisis de las nuevas estrategias de inversión de grandes plataformas tecnológicas en espacios físicos para la música.",
+      "por_que": "Para profesionales de la industria, entender las inversiones de gigantes como Apple en infraestructura musical puede revelar nuevas oportunidades de negocio o alianzas.",
       "status": "pending",
       "discovered_at": "2026-09-22T21:40:23.154Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "7xsr3",
@@ -9896,6 +9914,188 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "profesional"
+    },
+    {
+      "id": "2u6gd5",
+      "title": "Rumbo al concierto: cómo armar un concierto desde cero",
+      "description": "Qué verás en este episodio - Planificación: elección de fecha, recinto y objetivos del concierto. - Producción: selección de equipo de sonido y luces, montaje ...",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/@iluigividal/video/7682932578218724628",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 8.75,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía paso a paso para artistas independientes sobre la planificación y producción integral de sus propios conciertos.",
+      "por_que": "Muchos artistas emergentes necesitan organizar sus propios shows para ganar experiencia y conectar con su público. Esta guía les proporciona el conocimiento práctico necesario.",
+      "status": "pending",
+      "discovered_at": "2026-09-23T21:48:29.456Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "xdk4rb",
+      "title": "Cómo cobrar más por un show: una banda aumenta su valor ...",
+      "description": "Cómo cobrar más por un show: una banda aumenta su valor cuando puede demostrar convocatoria, venta de entradas, cumplimiento y resultados; no solamente...",
+      "source": "google",
+      "source_url": "https://www.facebook.com/jmproductionscl/videos/c%C3%B3mo-cobrar-m%C3%A1s-por-un-show-una-banda-aumenta-su-valor-cuando-puede-demostrar-co/1553615366309543/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategias para que los artistas independientes demuestren su valor y justifiquen tarifas más altas por sus presentaciones en vivo.",
+      "por_que": "Los artistas necesitan aprender a monetizar sus shows de manera efectiva. Este contenido aborda cómo construir un caso de negocio sólido para aumentar sus ingresos.",
+      "status": "pending",
+      "discovered_at": "2026-09-23T21:48:29.457Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "cdi2xs",
+      "title": "Cuánto cobran los artistas en eventos gubernamentales #nohaypelo",
+      "description": "El artista que se autodenomina Residente cobrará $2.185.000.000 y el resto se irá en la producción del evento. Todo esto en medio de una crisis fiscal. Y ...",
+      "source": "google",
+      "source_url": "https://www.facebook.com/pepegarzareal/posts/cu%C3%A1nto-cobran-los-artistas-en-eventos-gubernamentales-nohaypelo/1590769109078263/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 7.25,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 6,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Análisis crítico de las tarifas de artistas en eventos públicos y la percepción de su valor en el mercado.",
+      "por_que": "Este tema genera debate y puede ser de interés para profesionales que negocian contratos o para artistas que buscan entender el mercado de eventos masivos y gubernamentales.",
+      "status": "pending",
+      "discovered_at": "2026-09-23T21:48:29.457Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "xfsoxe",
+      "title": "Cómo cobrar lo justo por tu trabajo musical: guía para músicos",
+      "description": "Q: ¿Cuánto se cobra en fiestas de pueblo? A: En fiestas de pueblo, se puede cobrar significativamente más que en fiestas particulares, alcanzando cifras de ...",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/@leomartoficial/video/7672160061313043719",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía práctica y realista sobre cómo los músicos independientes pueden establecer tarifas justas para sus presentaciones y servicios.",
+      "por_que": "Es fundamental que los artistas conozcan su valor y sepan cómo negociar. Este contenido les empodera para obtener una compensación adecuada por su trabajo.",
+      "status": "pending",
+      "discovered_at": "2026-09-23T21:48:29.457Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "ck5256",
+      "title": "Una de las oportunidades más grandes que he tenido en ...",
+      "description": "3. **Relevancia constante**: Los artistas pueden mantener su relevancia al crear contenido regular en TikTok, interactuando con los fans y compartiendo snippets ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.facebook.com/markomusicaenface/posts/una-de-las-oportunidades-m%C3%A1s-grandes-que-he-tenido-en-mi-carrera-dentro-de-las-r/1627821052044709/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": 7.75,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "La importancia de la constancia en la creación de contenido y la interacción con fans en plataformas como TikTok para mantener la relevancia.",
+      "por_que": "Los artistas emergentes necesitan entender que la relevancia se construye con el tiempo y la interacción constante. Este contenido les da una estrategia clara para lograrlo.",
+      "status": "pending",
+      "discovered_at": "2026-09-23T21:48:29.457Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "wc96yq",
+      "title": "No dependas solo del streaming # ...",
+      "description": "probaron canciones antes de producirlas, y entendieron que Instagram y TikTok funcionan como canales de distribución, como en cualquier negocio. La mayoría sube ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/Dceub5SjN35/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 9.25,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Diversificar las fuentes de ingresos y canales de distribución más allá del streaming, utilizando redes sociales como herramientas de negocio.",
+      "por_que": "El streaming no es la única fuente de ingresos. Este contenido enseña a los artistas a usar plataformas como Instagram y TikTok para monetizar y distribuir su música de manera efectiva.",
+      "status": "pending",
+      "discovered_at": "2026-09-23T21:48:29.457Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "3qth8y",
+      "title": "El mito más grande de la industria musical. \"Tienes que hacer ...",
+      "description": "Para crecer y vivir de la música no necesitas traicionarte, necesitas una estrategia de marketing para artistas real: ▫️Saber definir tu público objetivo ▫️ ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DdEau8Cxs5_/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "marketing",
+      "is_promotional": false,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Desmitificación de la idea de que para triunfar en la música hay que 'traicionarse', promoviendo estrategias de marketing auténticas.",
+      "por_que": "Muchos artistas creen erróneamente que deben cambiar su esencia para tener éxito. Este contenido les muestra cómo construir una carrera sólida con una estrategia de marketing alineada a su identidad.",
+      "status": "pending",
+      "discovered_at": "2026-09-23T21:48:29.457Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }
