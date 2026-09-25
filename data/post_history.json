@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T22:17:07.605Z",
+  "updated_at": "2026-09-25T21:52:04.017Z",
   "posts": [
     {
       "platform": "instagram",
@@ -2129,6 +2129,74 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-06.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-09-25T21:52:04.017Z",
+      "week": "2026-09-25",
+      "tema": "El ecosistema definitivo para la música independiente en LATAM",
+      "topic_tag": "networking",
+      "audience_type": "artista",
+      "formato": "DESGLOSE DE UN NÚMERO",
+      "cta_mode": "directo",
+      "backlog_id": "5ukp4s",
+      "winner_score": 9.5,
+      "post_id": "18026938919859143",
+      "caption": "La música independiente en LATAM tiene un nuevo centro. Encuentra equipo, haz crecer tu red y lanza tus proyectos. 👇\n\n#MusicaLatina #ArtistasIndependientes #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ArtistasIndependientes",
+        "#ProduccionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Kindaclub: tu centro de operaciones musicales en LATAM",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Catálogo de profesionales",
+          "body": "Busca productores, managers o mezcladores. Perfiles con portafolio y contacto directo para armar tu equipo."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Perfil de artista/profesional",
+          "body": "Crea tu espacio. Muestra tu trabajo, proyectos y conecta con otros músicos y la industria."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Postulación a playlists",
+          "body": "Envía tus canciones a curadores. Un proceso directo para que tu música llegue a más oídos."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Muro comunitario",
+          "body": "Comparte novedades, busca colaboraciones y contacta a otros creativos. La red que necesitas está aquí."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Sube tu proyecto y conecta en kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-06.jpg"
       ],
       "metrics": null
     }
