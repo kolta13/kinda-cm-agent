@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T21:52:04.014Z",
+  "updated_at": "2026-09-26T21:36:13.513Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -10616,6 +10616,66 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
+    },
+    {
+      "id": "v71pzt",
+      "title": "El mejor día para lanzar música en Spotify",
+      "description": "7+ días antes del lanzamiento: confirma la entrega y el mínimo del pitch Como mínimo, presenta el pitch y entrega la música 7 días antes del lanzamiento. Esto ...",
+      "source": "google",
+      "source_url": "https://dynamoi.com/es/learn/spotify-algorithm/the-best-day-to-release-music-on-spotify-data-study",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-09-26T21:35:57.749Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "pgeite",
+      "title": "Discovery Mode",
+      "description": "Si eres un artista independiente, no es nada fácil saber cómo usar el dinero para promocionar tu música. · Discovery Mode ayuda a presentar la música de nuestro ...",
+      "source": "google",
+      "source_url": "https://artists.spotify.com/es/en/discovery-mode",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "general",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-09-26T21:35:57.750Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "4oh6zs",
+      "title": "Hay #artistaemergente que no tienen idea como se maneja la ...",
+      "description": "Según él, hay quienes creen que al pagar por promoción de un influencer, una canción se puede hacer viral. Sin embargo, los datos sugieren lo contrario. Se ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@elandreoften/video/7689586776918215956",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-09-26T21:35:57.750Z",
+      "published_at": null,
+      "post_id": null
     }
   ]
 }
