@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T21:39:00.792Z",
+  "updated_at": "2026-09-28T23:31:29.837Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -10688,14 +10688,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Explica el rol de las distribuidoras musicales para acceder a playlists editoriales de Spotify.",
+      "por_que": "Es una de las preguntas más frecuentes y relevantes para artistas independientes. Aclarar el proceso a través de distribuidoras es muy útil y aplicable.",
       "status": "pending",
       "discovered_at": "2026-09-27T21:38:41.321Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "8gn9cw",
@@ -10780,14 +10786,20 @@
       "artist_photo_credit": null,
       "topic_tag": "shows",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Estudio de caso sobre cómo una gira puede llevar a un artista a la ruina económica.",
+      "por_que": "Sirve como advertencia y lección para artistas independientes sobre la planificación financiera de giras. Aunque es un caso específico, la lección es valiosa.",
       "status": "pending",
       "discovered_at": "2026-09-27T21:38:41.323Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "lo7a38",
@@ -10872,14 +10884,106 @@
       "artist_photo_credit": null,
       "topic_tag": "marketing",
       "is_promotional": false,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Presentación de una estrategia de marketing musical para hacer 'break' a un artista.",
+      "por_que": "Dirigido a profesionales de la música que buscan nuevas estrategias para promocionar artistas. La relevancia es moderada, pero el ángulo de 'última estrategia' puede generar interés.",
+      "status": "pending",
+      "discovered_at": "2026-09-27T21:38:41.323Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "profesional"
+    },
+    {
+      "id": "ph8ca",
+      "title": "Así puedes ganar dinero con tu música",
+      "description": "Si escribiste la letra o la melodía, también puedes ganar dinero como compositor o compositora. Para cobrar esas regalías, tienes que correctamente la canción y ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DbowaIYNbRH/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
       "score_total": null,
       "scores": null,
       "angulo": null,
       "por_que": null,
       "status": "pending",
-      "discovered_at": "2026-09-27T21:38:41.323Z",
+      "discovered_at": "2026-09-28T23:31:09.894Z",
       "published_at": null,
       "post_id": null
+    },
+    {
+      "id": "ut42f2",
+      "title": "Informe sobre el mercado musical de América Latina",
+      "description": "Universal Music Group (UMG) es una fuerza dominante en el mercado musical latinoamericano, aprovechando su extenso catálogo de artistas y su red de distribución ...The persistent issue of music piracy and unauthorized distribution, which undermines revenue generation for artists and record labels, is a major restraint ...",
+      "source": "google",
+      "source_url": "https://translate.google.com/translate?u=https://www.marketdataforecast.com/market-reports/latin-america-music-market&hl=es&sl=en&tl=es&client=srp",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-09-28T23:31:09.894Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "mg8yd7",
+      "title": "somos tecnología, estrategia y creatividad al servicio de ...",
+      "description": "30 años impulsando la música en Latinoamérica ✨ Desde que el internet era solo una promesa en 1995, en FaroLatino apostamos por el talento digital.",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DWfFmVEjxvd/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "general",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-09-28T23:31:09.895Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "fpl3yw",
+      "title": "Una estrategia de lanzamientos te puede permitir focalizar en ...",
+      "description": "41 me gusta,Vídeo de TikTok de Cristian | Marketing Musical (@cristianpoow): «Una estrategia de lanzamientos te puede permitir focalizar en determinadas ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@cristianpoow/video/7689117525195492629",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Cómo una estrategia de lanzamientos bien definida ayuda a enfocar esfuerzos y recursos.",
+      "por_que": "La planificación estratégica de lanzamientos es clave para artistas independientes. Este contenido ofrece una perspectiva práctica sobre cómo optimizar sus lanzamientos.",
+      "status": "pending",
+      "discovered_at": "2026-09-28T23:31:09.895Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }
