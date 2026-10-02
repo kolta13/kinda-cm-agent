@@ -205,7 +205,11 @@ const CASO_DE_ARTISTA_FORMATO = {
   instruccion: `Estructura OBLIGATORIA, en este orden exacto — el slide de contexto
 NO es opcional, sáltatelo y el post pierde el "por qué importa" antes de leer
 los factores:
-1. Portada (slide 1): promete "N factores/claves del crecimiento de X en [año]".
+1. Portada (slide 1): promete "N factores/claves del crecimiento de X" — NO agregues
+   "en Spotify"/"en [plataforma]" al título si el slide de contexto (numero 2) ya va a
+   dar la cifra completa con la plataforma incluida; es redundante y alarga el título
+   sin necesidad. El kicker para este formato es fijo: "CASO DE ARTISTA" — nunca
+   nombres la plataforma ahí tampoco.
 2. SLIDE DE CONTEXTO (numero 2, campo "tipo" = EXACTAMENTE el string "contenido"
    — nunca "contexto" ni ningún otro valor, aunque describamos su función como
    "de contexto" acá; etiqueta: null — este slide SIEMPRE existe, no es un factor):
@@ -377,6 +381,24 @@ inventar un número. Es mejor decir menos que decir algo falso.
 - MAL:  "Licenciar genera un 30% más que vender el máster."
 - BIEN: "Licenciar mantiene el máster a tu nombre; venderlo lo entrega de forma definitiva."
 
+CRÍTICO — no confundas "colaboración" con "producción": un crédito de PRODUCTOR en un
+tema no es una "colaboración estratégica" que cruza audiencias — el productor no aporta
+sus propios oyentes/seguidores al lanzamiento, solo trabajo técnico/creativo detrás de
+cámara. Antes de describir un nombre asociado a un lanzamiento como "colaboración" que
+"amplifica alcance" o "abre audiencias", confirma que es un ARTISTA FEATURED (aparece
+cantando/rapeando, tiene su propia base de oyentes que se cruza). Si es productor,
+compositor o ingeniero de sonido, va en el factor de "equipo", nunca en el de
+"colaboraciones" — son mecanismos de crecimiento distintos y no intercambiables.
+
+CRÍTICO — nunca nombres una fuente de datos interna en el copy público (kworb.net,
+kworb, Wayback Machine, archive.org, Internet Archive, Serper, o cualquier herramienta
+que uses para investigar). Esos nombres son jerga técnica que el público no reconoce y
+rompen la lectura. Tradúcelos siempre a lenguaje llano:
+- MAL:  "Kuina no figura en Kworb.net"
+- BIEN: "Kuina no aparece en los rankings principales de Spotify"
+- MAL:  "según datos de Wayback Machine"
+- BIEN: "según el historial público de oyentes mensuales de Spotify"
+
 VERBOS PROHIBIDOS como acción principal — son huecos y no dicen nada:
 "investiga", "busca", "define tus objetivos", "prepara", "sé claro", "conoce", "organiza", "planifica", "asegúrate de entender", "ten en cuenta".
 Solo se permiten si van seguidos de QUÉ exactamente y CON QUÉ criterio.
@@ -472,10 +494,14 @@ PORTADA (slide 1) — LA PROMESA:
   que es justo lo que el contenido entrega).
 - Estructura obligatoria de la portada, dos partes:
   1. "kicker": la categoría específica, 2-4 palabras, en mayúsculas. Es el sello de sección.
-     Ejemplos buenos: "SPOTIFY 101", "SPOTIFY x META ADS", "ARTISTA EMERGENTE",
-     "ARTISTAS INDEPENDIENTES", "CONTRATOS 101", "MEZCLA Y MASTER".
+     Ejemplos buenos: "SPOTIFY BÁSICO", "SPOTIFY x META ADS", "ARTISTA EMERGENTE",
+     "ARTISTAS INDEPENDIENTES", "CONTRATOS DESDE CERO", "MEZCLA Y MASTER".
      Debe nombrar la plataforma o el subtema real, NO una categoría genérica como
      "MARKETING" o "DISTRIBUCIÓN" a secas.
+     NUNCA uses la convención "NOMBRE 101" (ej. "SPOTIFY 101", "CONTRATOS 101") — es
+     jerga de cursos en inglés que el público hispanohablante no reconoce como "nivel
+     básico/introducción". Usa una palabra en español que comunique lo mismo:
+     "BÁSICO", "DESDE CERO", "PASO A PASO".
   2. "titulo": la promesa concreta de lo que el carrusel entrega. 5 a 9 palabras,
      nunca más. Un título largo ocupa toda la portada y pierde impacto visual.
      Si el tema original es una frase larga, RESÚMELO — no lo copies.
@@ -509,6 +535,13 @@ PORTADA (slide 1) — LA PROMESA:
   numeral) en vez de forzar un sustantivo que no calce.`
     : `Como la etiqueta de hoy es solo el número (sin sustantivo propio), puedes prometer
   cantidad con cualquier sustantivo que calce con el tema (ej. "5 cosas que revisar antes de firmar"), siempre que el número coincida con la cantidad real de slides de contenido.`}
+- LÍMITE DURO: máximo 8 slides de contenido, sin excepción — Instagram rechaza
+  carruseles de más de 10 fotos en total (portada + contenido + cta), así que 8 de
+  contenido es el techo real. Si el tema original sugiere más unidades (ej. "20 pasos",
+  "15 errores"), NO los uses todos: elige los 5-8 más importantes y que el título
+  refleje ese número real, nunca el original. Ejemplo MAL: título "20 pasos para
+  profesionalizarte" con 20 slides — Instagram rechaza la publicación completa.
+  Ejemplo BIEN: título "7 pasos clave para profesionalizarte" con 7 slides reales.
 - PROHIBIDO: intriga sin promesa ("Tu demo llegó y nadie la escuchó", "El 90% lo hace al
   revés"). Suena a clickbait y no dice qué se lleva el lector. Tampoco frases sueltas sin
   sustantivo del tema.
@@ -633,7 +666,7 @@ Responde SOLO con JSON válido:
     {
       "numero": 1,
       "tipo": "portada",
-      "kicker": "SPOTIFY 101",
+      "kicker": "SPOTIFY BÁSICO",
       "titulo": "Promesa concreta de lo que entrega el carrusel, 6-12 palabras",
       "subtitulo": null,
       "body": null
@@ -670,6 +703,7 @@ Responde SOLO con JSON válido:
   const carousel = safeJsonParse(raw);
   const clean    = neutralizeSpanish(carousel);
   stripTitlePeriods(clean);
+  capContentSlides(clean);
   normalizeEtiquetaWord(clean, etiquetaNoun);
   if (winner.artist_name) fixFactorCountInPortada(clean);
   normalizeAudienceType(clean);
@@ -765,6 +799,37 @@ function normalizeEtiquetaWord(carousel, etiquetaNoun) {
     const match = s.etiqueta.match(/\d+/);
     if (match) s.etiqueta = match[0];
   });
+}
+
+// Límite real y duro: Instagram rechaza cualquier carrusel de más de 10 fotos
+// en total (portada + contenido + cta). Pasó de verdad el 2026-10-01: un tema
+// sugería "20 pasos", Gemini generó 22 slides, Meta rechazó toda la
+// publicación con "too many attachments to qualify as a carousel" y el ciclo
+// del día se perdió entero — pasó varios días seguidos con distintos temas.
+// El prompt ya pide máximo 8 slides de contenido, pero confiar solo en eso no
+// alcanza (un LLM puede ignorarlo). Esta es la red de seguridad en código:
+// si igual se pasa, se recorta ANTES de renderizar/publicar, nunca después.
+const MAX_CONTENT_SLIDES = 8;
+
+function capContentSlides(carousel, maxContent = MAX_CONTENT_SLIDES) {
+  const portada    = carousel.slides.find(s => s.tipo === 'portada');
+  const cta        = carousel.slides.find(s => s.tipo === 'cta');
+  const contenidos = carousel.slides.filter(s => s.tipo === 'contenido');
+  if (contenidos.length <= maxContent) return;
+
+  console.warn(`[generate] ⚠ ${contenidos.length} slides de contenido exceden el máximo de ${maxContent} (límite real de Instagram) — se recortan antes de publicar.`);
+  const recortados = contenidos.slice(0, maxContent);
+
+  // Si la portada prometía una cantidad (ej. "20 pasos"), ajustarla al número
+  // real que va a quedar — mismo patrón que fixFactorCountInPortada de abajo.
+  if (portada && typeof portada.titulo === 'string') {
+    const match = portada.titulo.match(/\d+/);
+    if (match) portada.titulo = portada.titulo.replace(/\d+/, String(recortados.length));
+  }
+
+  const nuevos = [portada, ...recortados, cta].filter(Boolean);
+  nuevos.forEach((s, i) => { s.numero = i + 1; });
+  carousel.slides = nuevos;
 }
 
 // CASO DE ARTISTA: la portada promete "N factores" pero Gemini a veces no
@@ -936,9 +1001,15 @@ async function generate() {
     // red), la idea es inocente: dejarla pending para reintentarla el próximo
     // ciclo. Bug real detectado el 2026-09-13: una idea con score 9.25 (la mejor
     // del día) se perdió para siempre porque Gemini estaba con demanda alta.
+    // 2026-10-01: mismo bug de fondo, nueva forma — "quota exceeded" / "rate
+    // limit" / 429 también es transitorio (se resuelve con el tiempo, sea
+    // límite por minuto o por día — Gemini sugiere "retry in Ns" pero eso no
+    // garantiza nada sobre cuánto hay que esperar en la práctica) y una idea
+    // de score 8.5 se descartó para siempre por eso. Se suma a la lista.
     const msg = (err.message || '').toLowerCase();
     const esFalloTransitorio = msg.includes('high demand') || msg.includes('timeout')
-      || msg.includes('econnreset') || msg.includes('503') || msg.includes('overloaded');
+      || msg.includes('econnreset') || msg.includes('503') || msg.includes('overloaded')
+      || msg.includes('quota') || msg.includes('rate limit') || msg.includes('429');
     if (esFalloTransitorio) {
       console.error(`[generate] Fallo transitorio generando "${winner.title}" — se deja pending para reintentar: ${err.message}`);
     } else {

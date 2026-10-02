@@ -157,12 +157,19 @@ function resolvePrivacyLevel(creatorInfo) {
 // El borrador llega como notificación a la bandeja de la app de TikTok de la
 // cuenta que autorizó (@kindaclub). Ahí TikTok muestra su propio flujo de
 // publicación con el consentimiento incluido. Solo requiere el scope video.upload.
-async function initPhotoPost(accessToken, imageUrls, caption) {
+async function initPhotoPost(accessToken, imageUrls, caption, tema) {
   console.log(`[tiktok] Subiendo ${imageUrls.length} fotos como borrador...`);
 
   // En posts de FOTO, TikTok separa "title" (corto, ~90 chars) de "description"
   // (el caption largo) — a diferencia de video, donde solo existe "title".
-  const title       = caption.split('\n')[0].slice(0, 90);
+  // El título NO se saca truncando el caption — eso siempre deja el mismo
+  // texto (cortado) al inicio de la descripción, que se lee como duplicado.
+  // Se usa "tema" (redacción corta y distinta, pensada para otro propósito)
+  // como título; si por algún motivo no existe, ahí sí se recurre a un
+  // truncado en límite de palabra del caption como último recurso.
+  const title = tema && tema.length <= 90
+    ? tema
+    : (tema || caption.split('\n')[0]).slice(0, 90).replace(/\s+\S*$/, '').trim();
   const description = caption.slice(0, 2200);
 
   const res = await httpsPost(
@@ -264,7 +271,7 @@ async function publishTikTok() {
   saveNewRefreshToken(refresh_token);
 
   // 2. Subir como borrador (ver initPhotoPost: Direct Post no aplica a este flujo)
-  const { publishId, modo } = await initPhotoPost(access_token, imageUrls, caption);
+  const { publishId, modo } = await initPhotoPost(access_token, imageUrls, caption, carouselData.carousel?.tema);
 
   // 3. Esperar confirmación (estado terminal esperado: SEND_TO_USER_INBOX)
   const postId = await waitForPublish(access_token, publishId);

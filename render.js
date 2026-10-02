@@ -173,7 +173,7 @@ function saveUsedPhotoIds(usedSet, newIds) {
 // backlog.js/artist-photo.js), reemplaza la foto de portada (índice 0) por la
 // foto real del artista en vez de la búsqueda genérica de Pexels. Nunca se
 // busca ni se decide sola en este paso — solo usa lo que ya vino confirmado.
-async function fetchSlideImages(slideTexts, artistPhotoUrl) {
+async function fetchSlideImages(slideTexts, artistPhotoUrl, extraArtistPhotos) {
   if (!config.pexelsApiKey) return [];
 
   const usedIds  = loadUsedPhotoIds();
@@ -255,12 +255,34 @@ async function fetchSlideImages(slideTexts, artistPhotoUrl) {
   // para no competir con el fallback genérico de arriba si la descarga falla.
   if (artistPhotoUrl) {
     try {
-      const buf = await httpGet(artistPhotoUrl, {});
+      // artist_photo_url puede ser una URL remota o una ruta local (ej. foto ya
+      // descargada a mano y confirmada, sin CDN público detrás).
+      const isRemote = /^https?:\/\//i.test(artistPhotoUrl);
+      const buf = isRemote ? await httpGet(artistPhotoUrl, {}) : fs.readFileSync(artistPhotoUrl);
       images[0] = 'data:image/jpeg;base64,' + buf.toString('base64');
       console.log('[render] ✓ Portada: foto real del artista (confirmada previamente)');
     } catch (e) {
       console.warn('[render] No se pudo descargar la foto del artista, usando fallback genérico:', e.message);
     }
+  }
+
+  // Igual que la portada, pero para las slides de CONTENIDO (nunca el CTA, que
+  // cierra con la marca de Kinda Club, no con la artista). Requiere confirmación
+  // humana previa igual que artistPhotoUrl — nunca se decide en este paso.
+  if (Array.isArray(extraArtistPhotos) && extraArtistPhotos.length > 0) {
+    const contentStart = 1;              // 0 es portada
+    const contentEnd   = images.length - 1; // último índice es el CTA
+    for (let i = contentStart; i < contentEnd; i++) {
+      const src = extraArtistPhotos[(i - contentStart) % extraArtistPhotos.length];
+      try {
+        const isRemote = /^https?:\/\//i.test(src);
+        const buf = isRemote ? await httpGet(src, {}) : fs.readFileSync(src);
+        images[i] = 'data:image/jpeg;base64,' + buf.toString('base64');
+      } catch (e) {
+        console.warn(`[render] No se pudo cargar foto real para slide ${i + 1}, usando fallback genérico:`, e.message);
+      }
+    }
+    console.log('[render] ✓ Slides de contenido: fotos reales de la artista (confirmadas previamente)');
   }
 
   // Si alguna query específica no trajo resultado, usar la primera imagen exitosa como fallback
@@ -392,7 +414,7 @@ async function renderSlides(carousel, week, data = {}) {
     ...slideData.contenidos.map(c => ({ titulo: c.titulo, body: c.body })),
     { titulo: slideData.cta.titulo, body: slideData.cta.body },
   ];
-  const coverImages = await fetchSlideImages(slideTextsInOrder, data.artist_photo_url);
+  const coverImages = await fetchSlideImages(slideTextsInOrder, data.artist_photo_url, data.artist_photo_urls_extra);
 
   console.log('[render] Iniciando Puppeteer...');
   const browser = await puppeteer.launch({

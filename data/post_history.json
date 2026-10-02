@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T21:52:04.017Z",
+  "updated_at": "2026-09-23T02:34:25.156Z",
   "posts": [
     {
       "platform": "instagram",
@@ -1708,7 +1708,15 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-07.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-17-4/slide-08.jpg"
       ],
-      "metrics": null
+      "metrics": {
+        "fuente": "manual",
+        "medido_el": "2026-09-23T02:34:24.965Z",
+        "views": 442,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
     },
     {
       "platform": "instagram",
@@ -1844,7 +1852,15 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-19/slide-06.jpg"
       ],
-      "metrics": null
+      "metrics": {
+        "fuente": "manual",
+        "medido_el": "2026-09-23T02:34:25.032Z",
+        "views": 292,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
     },
     {
       "platform": "instagram",
@@ -2130,75 +2146,323 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-06.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-09-21/slide-07.jpg"
       ],
-      "metrics": null
+      "metrics": {
+        "fuente": "manual",
+        "medido_el": "2026-09-23T02:34:25.094Z",
+        "views": 307,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
     },
     {
       "platform": "instagram",
       "status": "published",
-      "published_at": "2026-09-25T21:52:04.017Z",
-      "week": "2026-09-25",
-      "tema": "El ecosistema definitivo para la música independiente en LATAM",
-      "topic_tag": "networking",
+      "published_at": "2026-09-23T01:54:58.235Z",
+      "week": "2026-09-22",
+      "tema": "Cómo Kuina pasó de 7.900 a 59.400 oyentes mensuales en Spotify",
+      "topic_tag": "marketing",
       "audience_type": "artista",
-      "formato": "DESGLOSE DE UN NÚMERO",
-      "cta_mode": "directo",
-      "backlog_id": "5ukp4s",
+      "formato": null,
+      "cta_mode": null,
+      "backlog_id": "3avafr",
       "winner_score": 9.5,
-      "post_id": "18026938919859143",
-      "caption": "La música independiente en LATAM tiene un nuevo centro. Encuentra equipo, haz crecer tu red y lanza tus proyectos. 👇\n\n#MusicaLatina #ArtistasIndependientes #ProduccionMusical #KindaClub",
+      "post_id": "17922455193426240",
+      "caption": "Kuina escaló de 7.900 a 59.400 oyentes mensuales en Spotify en solo 143 días. Esto no fue magia, fue estrategia. 👇\n\n#MusicaLatina #SpotifyParaArtistas #UndergroundChile #KindaClub\n\n📷 Foto: @bunnyambitionboi (Instagram)",
       "hashtags": [
         "#MusicaLatina",
-        "#ArtistasIndependientes",
-        "#ProduccionMusical",
+        "#SpotifyParaArtistas",
+        "#UndergroundChile",
         "#KindaClub"
       ],
       "slides": [
         {
           "tipo": "portada",
           "etiqueta": null,
-          "titulo": "Kindaclub: tu centro de operaciones musicales en LATAM",
+          "titulo": "4 factores clave del crecimiento de Kuina",
           "body": null
         },
         {
           "tipo": "contenido",
-          "etiqueta": "1",
-          "titulo": "Catálogo de profesionales",
-          "body": "Busca productores, managers o mezcladores. Perfiles con portafolio y contacto directo para armar tu equipo."
+          "etiqueta": null,
+          "titulo": "De 7.900 a 59.400 oyentes mensuales en Spotify",
+          "body": "Kuina escaló de 7.900 a 59.400 oyentes mensuales entre noviembre de 2023 y marzo de 2024. Un crecimiento de 7.5x en 143 días."
         },
         {
           "tipo": "contenido",
-          "etiqueta": "2",
-          "titulo": "Perfil de artista/profesional",
-          "body": "Crea tu espacio. Muestra tu trabajo, proyectos y conecta con otros músicos y la industria."
+          "etiqueta": "FACTOR 1",
+          "titulo": "Un sonido que rompe el mainstream",
+          "body": "Apodada 'la niña terrible del trap chileno', Kuina redefine el género. Su propuesta resuena en la escena underground y llama la atención de prensa."
         },
         {
           "tipo": "contenido",
-          "etiqueta": "3",
-          "titulo": "Postulación a playlists",
-          "body": "Envía tus canciones a curadores. Un proceso directo para que tu música llegue a más oídos."
+          "etiqueta": "FACTOR 2",
+          "titulo": "Equipo que potencia tu visión",
+          "body": "Detrás de 'KARTIER' está Viangogh como productor, y 'temuko' sumó a Saitoape en el mismo rol en 2023. Un productor que entiende tu sonido es tan clave como cualquier feature con otro artista."
         },
         {
           "tipo": "contenido",
-          "etiqueta": "4",
-          "titulo": "Muro comunitario",
-          "body": "Comparte novedades, busca colaboraciones y contacta a otros creativos. La red que necesitas está aquí."
+          "etiqueta": "FACTOR 3",
+          "titulo": "Visión clara: 'Quiero cambiar el mainstream'",
+          "body": "La ambición de Kuina, citada por La Cuarta, va más allá de lo local. Esta visión inspira y alinea su equipo y estrategia de crecimiento."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 4",
+          "titulo": "TikTok como el detonante real",
+          "body": "Su manager le sugirió subir 'Toi Enojá' a TikTok. Kuina contó a La Cuarta que ahí 'fue el detonante': le subieron los seguidores rápido y la empezó a conocer gente en la calle y otros artistas."
         },
         {
           "tipo": "cta",
           "etiqueta": null,
-          "titulo": "Sube tu proyecto y conecta en kindaclub.com",
+          "titulo": "Busca profesionales para tu proyecto en Kinda Club",
           "body": null
         }
       ],
       "image_urls": [
-        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-01.jpg",
-        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-02.jpg",
-        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-03.jpg",
-        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-04.jpg",
-        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-05.jpg",
-        "https://kindagrowth.cl/asistente/output/semana-2026-09-25/slide-06.jpg"
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-07.jpg"
       ],
       "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-09-23T02:00:18.507Z",
+      "week": "2026-09-22",
+      "tema": "Cómo Kuina pasó de 7.900 a 59.400 oyentes mensuales en Spotify",
+      "topic_tag": "marketing",
+      "audience_type": "artista",
+      "formato": null,
+      "cta_mode": null,
+      "backlog_id": "3avafr",
+      "winner_score": 9.5,
+      "post_id": "p_inbox_url~v2.7688544676093184016",
+      "caption": "Kuina escaló de 7.900 a 59.400 oyentes mensuales en Spotify en solo 143 días. Esto no fue magia, fue estrategia. 👇\n\n#MusicaLatina #SpotifyParaArtistas #UndergroundChile #KindaClub\n\n📷 Foto: @bunnyambitionboi (Instagram)",
+      "hashtags": [
+        "#MusicaLatina",
+        "#SpotifyParaArtistas",
+        "#UndergroundChile",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "4 factores clave del crecimiento de Kuina",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": null,
+          "titulo": "De 7.900 a 59.400 oyentes mensuales en Spotify",
+          "body": "Kuina escaló de 7.900 a 59.400 oyentes mensuales entre noviembre de 2023 y marzo de 2024. Un crecimiento de 7.5x en 143 días."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 1",
+          "titulo": "Un sonido que rompe el mainstream",
+          "body": "Apodada 'la niña terrible del trap chileno', Kuina redefine el género. Su propuesta resuena en la escena underground y llama la atención de prensa."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 2",
+          "titulo": "Equipo que potencia tu visión",
+          "body": "Detrás de 'KARTIER' está Viangogh como productor, y 'temuko' sumó a Saitoape en el mismo rol en 2023. Un productor que entiende tu sonido es tan clave como cualquier feature con otro artista."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 3",
+          "titulo": "Visión clara: 'Quiero cambiar el mainstream'",
+          "body": "La ambición de Kuina, citada por La Cuarta, va más allá de lo local. Esta visión inspira y alinea su equipo y estrategia de crecimiento."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 4",
+          "titulo": "TikTok como el detonante real",
+          "body": "Su manager le sugirió subir 'Toi Enojá' a TikTok. Kuina contó a La Cuarta que ahí 'fue el detonante': le subieron los seguidores rápido y la empezó a conocer gente en la calle y otros artistas."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca profesionales para tu proyecto en Kinda Club",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-09-23T02:15:30.941Z",
+      "week": "2026-09-22",
+      "tema": "Cómo Kuina pasó de 7.900 a 59.400 oyentes mensuales en Spotify",
+      "topic_tag": "marketing",
+      "audience_type": "artista",
+      "formato": null,
+      "cta_mode": null,
+      "backlog_id": "3avafr",
+      "winner_score": 9.5,
+      "post_id": "p_inbox_url~v2.7688548234893150209",
+      "caption": "Kuina escaló de 7.900 a 59.400 oyentes mensuales en Spotify en solo 143 días. Esto no fue magia, fue estrategia. 👇\n\n#MusicaLatina #SpotifyParaArtistas #UndergroundChile #KindaClub\n\n📷 Foto: @bunnyambitionboi (Instagram)",
+      "hashtags": [
+        "#MusicaLatina",
+        "#SpotifyParaArtistas",
+        "#UndergroundChile",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "4 factores clave del crecimiento de Kuina",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": null,
+          "titulo": "De 7.900 a 59.400 oyentes mensuales en Spotify",
+          "body": "Kuina escaló de 7.900 a 59.400 oyentes mensuales entre noviembre de 2023 y marzo de 2024. Un crecimiento de 7.5x en 143 días."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 1",
+          "titulo": "Un sonido que rompe el mainstream",
+          "body": "Apodada 'la niña terrible del trap chileno', Kuina redefine el género. Su propuesta resuena en la escena underground y llama la atención de prensa."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 2",
+          "titulo": "Equipo que potencia tu visión",
+          "body": "Detrás de 'KARTIER' está Viangogh como productor, y 'temuko' sumó a Saitoape en el mismo rol en 2023. Un productor que entiende tu sonido es tan clave como cualquier feature con otro artista."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 3",
+          "titulo": "Visión clara: 'Quiero cambiar el mainstream'",
+          "body": "La ambición de Kuina, citada por La Cuarta, va más allá de lo local. Esta visión inspira y alinea su equipo y estrategia de crecimiento."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 4",
+          "titulo": "TikTok como el detonante real",
+          "body": "Su manager le sugirió subir 'Toi Enojá' a TikTok. Kuina contó a La Cuarta que ahí 'fue el detonante': le subieron los seguidores rápido y la empezó a conocer gente en la calle y otros artistas."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca profesionales para tu proyecto en Kinda Club",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-09-23T02:18:04.361Z",
+      "week": "2026-09-22",
+      "tema": "Cómo Kuina pasó de 7.900 a 59.400 oyentes mensuales en Spotify",
+      "topic_tag": "marketing",
+      "audience_type": "artista",
+      "formato": null,
+      "cta_mode": null,
+      "backlog_id": "3avafr",
+      "winner_score": 9.5,
+      "post_id": "p_inbox_url~v2.7688548525252233233",
+      "caption": "Kuina escaló de 7.900 a 59.400 oyentes mensuales en Spotify en solo 143 días. Esto no fue magia, fue estrategia. 👇\n\n#MusicaLatina #SpotifyParaArtistas #UndergroundChile #KindaClub\n\n📷 Foto: @bunnyambitionboi (Instagram)",
+      "hashtags": [
+        "#MusicaLatina",
+        "#SpotifyParaArtistas",
+        "#UndergroundChile",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "4 factores clave del crecimiento de Kuina",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": null,
+          "titulo": "De 7.900 a 59.400 oyentes mensuales en Spotify",
+          "body": "Kuina escaló de 7.900 a 59.400 oyentes mensuales entre noviembre de 2023 y marzo de 2024. Un crecimiento de 7.5x en 143 días."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 1",
+          "titulo": "Un sonido que rompe el mainstream",
+          "body": "Apodada 'la niña terrible del trap chileno', Kuina redefine el género. Su propuesta resuena en la escena underground y llama la atención de prensa."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 2",
+          "titulo": "Equipo que potencia tu visión",
+          "body": "Detrás de 'KARTIER' está Viangogh como productor, y 'temuko' sumó a Saitoape en el mismo rol en 2023. Un productor que entiende tu sonido es tan clave como cualquier feature con otro artista."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 3",
+          "titulo": "Visión clara: 'Quiero cambiar el mainstream'",
+          "body": "La ambición de Kuina, citada por La Cuarta, va más allá de lo local. Esta visión inspira y alinea su equipo y estrategia de crecimiento."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "FACTOR 4",
+          "titulo": "TikTok como el detonante real",
+          "body": "Su manager le sugirió subir 'Toi Enojá' a TikTok. Kuina contó a La Cuarta que ahí 'fue el detonante': le subieron los seguidores rápido y la empezó a conocer gente en la calle y otros artistas."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca profesionales para tu proyecto en Kinda Club",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-09-22-8/slide-07.jpg"
+      ],
+      "metrics": {
+        "fuente": "manual",
+        "medido_el": "2026-09-23T02:34:25.155Z",
+        "views": 5,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
     }
   ]
 }
