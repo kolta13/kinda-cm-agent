@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T02:04:28.215Z",
+  "updated_at": "2026-10-02T22:36:26.983Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -4548,10 +4548,10 @@
       },
       "angulo": "Hoja de ruta detallada para emprendedores que desean establecer y hacer crecer una agencia de eventos rentable.",
       "por_que": "Aborda directamente las necesidades de los profesionales que buscan profesionalizar o iniciar su negocio en la industria de eventos.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-08-29T03:27:41.015Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-10-02T22:36:26.983Z",
+      "post_id": "18069376784756950",
       "audience_type": "profesional",
       "skipped_at": "2026-10-02T01:52:15.125Z",
       "skipped_reason": "Gemini error: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\nPlease retry in 45.218004255s."
@@ -9926,14 +9926,20 @@
       "artist_photo_credit": null,
       "topic_tag": "noticias",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 4,
+      "scores": {
+        "relevancia": 3,
+        "engagement": 4,
+        "diferenciador": 3,
+        "aplicabilidad": 5
+      },
+      "angulo": "Lista de ganadores de los Premios MTV a los Videos Musicales 2026.",
+      "por_que": "Información aspiracional pero poco aplicable directamente para artistas emergentes; más relevante para profesionales de la industria o fans.",
       "status": "pending",
       "discovered_at": "2026-10-02T01:49:42.685Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "o62w76",
@@ -9946,14 +9952,20 @@
       "artist_photo_credit": null,
       "topic_tag": "noticias",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 8,
+        "aplicabilidad": 7
+      },
+      "angulo": "Análisis legal y de negocio sobre el conflicto entre Suno AI y GEMA, y su impacto en los derechos de autor y la IA musical.",
+      "por_que": "Aborda un tema de vanguardia que está redefiniendo la industria, crucial para profesionales que trabajan con tecnología y derechos de autor.",
       "status": "pending",
       "discovered_at": "2026-10-02T01:49:42.685Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "tykpo3",
@@ -9966,14 +9978,20 @@
       "artist_photo_credit": null,
       "topic_tag": "noticias",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 6,
+        "aplicabilidad": 6
+      },
+      "angulo": "Análisis de la venta millonaria del catálogo musical de Sia, explorando su valor y las motivaciones detrás.",
+      "por_que": "Ofrece una perspectiva sobre la monetización de catálogos musicales, relevante para profesionales que asesoran artistas o gestionan derechos.",
       "status": "pending",
       "discovered_at": "2026-10-02T01:49:42.685Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "mxg0ro",
@@ -10072,6 +10090,26 @@
       "por_que": null,
       "status": "pending",
       "discovered_at": "2026-10-02T02:04:28.215Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "h2f75o",
+      "title": "¿Y si el problema de tu música no fuera la música? Hay ...",
+      "description": "... viral y empezar a construir una carrera que pueda ... Estás cometiendo un error clave: estás enseñando tu música, pero no estás mostrando tu mundo.",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DdAI47fCU35/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "video_viral",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-10-02T22:34:36.940Z",
       "published_at": null,
       "post_id": null
     }

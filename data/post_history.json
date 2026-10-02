@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T02:34:25.156Z",
+  "updated_at": "2026-10-02T22:36:33.859Z",
   "posts": [
     {
       "platform": "instagram",
@@ -2463,6 +2463,184 @@
         "shares": null,
         "saves": null
       }
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-10-02T22:36:26.987Z",
+      "week": "2026-10-02",
+      "tema": "20 pasos probados para crear una agencia de eventos",
+      "topic_tag": "shows",
+      "audience_type": "profesional",
+      "formato": "ANTES Y DESPUÉS",
+      "cta_mode": "blando",
+      "backlog_id": "5hw51t",
+      "winner_score": 8.5,
+      "post_id": "18069376784756950",
+      "caption": "Montar una agencia de eventos requiere más que ideas. Aquí te damos la hoja de ruta. 👇\n\n#Eventos #AgenciaDeEventos #Emprendimiento #KindaClub",
+      "hashtags": [
+        "#Eventos",
+        "#AgenciaDeEventos",
+        "#Emprendimiento",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "20 pasos para construir tu agencia de eventos rentable",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Define tu nicho específico",
+          "body": "En lugar de apuntar a todo, enfócate en un tipo de evento o cliente. Esto te permite especializarte, optimizar recursos y atraer al público correcto."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Valida tu modelo de negocio",
+          "body": "Antes de invertir, investiga el mercado. ¿Hay demanda para tu nicho? ¿Quiénes son tus competidores? Asegúrate de que tu propuesta de valor sea sólida."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Planifica tu financiación",
+          "body": "Determina cuánto capital necesitas. Considera ahorros personales, préstamos bancarios, inversores o subvenciones. Un plan financiero claro es crucial para la estabilidad."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Cumple requisitos legales",
+          "body": "Registra tu empresa, obtén licencias y permisos necesarios. Consulta con un asesor legal para entender contratos, seguros y responsabilidades civiles."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "5",
+          "titulo": "Construye tu equipo",
+          "body": "Identifica roles clave y contrata personal con experiencia en logística, marketing y gestión de proveedores. Un buen equipo es tu mayor activo."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "6",
+          "titulo": "Desarrolla tu propuesta de valor",
+          "body": "Define qué te hace único. ¿Es tu enfoque en sostenibilidad, tecnología, o experiencias inmersivas? Comunica claramente los beneficios para tus clientes."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "7",
+          "titulo": "Crea tu portafolio",
+          "body": "Documenta cada evento exitoso con fotos, videos y testimonios. Un portafolio visual y detallado demuestra tu capacidad y estilo a potenciales clientes."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Guarda este carrusel para tu plan de negocios",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-07.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-08.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-09.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-10-02T22:36:33.859Z",
+      "week": "2026-10-02",
+      "tema": "20 pasos probados para crear una agencia de eventos",
+      "topic_tag": "shows",
+      "audience_type": "profesional",
+      "formato": "ANTES Y DESPUÉS",
+      "cta_mode": "blando",
+      "backlog_id": "5hw51t",
+      "winner_score": 8.5,
+      "post_id": "p_inbox_url~v2.7692202686401431558",
+      "caption": "Montar una agencia de eventos requiere más que ideas. Aquí te damos la hoja de ruta. 👇\n\n#Eventos #AgenciaDeEventos #Emprendimiento #KindaClub",
+      "hashtags": [
+        "#Eventos",
+        "#AgenciaDeEventos",
+        "#Emprendimiento",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "20 pasos para construir tu agencia de eventos rentable",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Define tu nicho específico",
+          "body": "En lugar de apuntar a todo, enfócate en un tipo de evento o cliente. Esto te permite especializarte, optimizar recursos y atraer al público correcto."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Valida tu modelo de negocio",
+          "body": "Antes de invertir, investiga el mercado. ¿Hay demanda para tu nicho? ¿Quiénes son tus competidores? Asegúrate de que tu propuesta de valor sea sólida."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Planifica tu financiación",
+          "body": "Determina cuánto capital necesitas. Considera ahorros personales, préstamos bancarios, inversores o subvenciones. Un plan financiero claro es crucial para la estabilidad."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Cumple requisitos legales",
+          "body": "Registra tu empresa, obtén licencias y permisos necesarios. Consulta con un asesor legal para entender contratos, seguros y responsabilidades civiles."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "5",
+          "titulo": "Construye tu equipo",
+          "body": "Identifica roles clave y contrata personal con experiencia en logística, marketing y gestión de proveedores. Un buen equipo es tu mayor activo."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "6",
+          "titulo": "Desarrolla tu propuesta de valor",
+          "body": "Define qué te hace único. ¿Es tu enfoque en sostenibilidad, tecnología, o experiencias inmersivas? Comunica claramente los beneficios para tus clientes."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "7",
+          "titulo": "Crea tu portafolio",
+          "body": "Documenta cada evento exitoso con fotos, videos y testimonios. Un portafolio visual y detallado demuestra tu capacidad y estilo a potenciales clientes."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Guarda este carrusel para tu plan de negocios",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-07.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-08.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-09.jpg"
+      ],
+      "metrics": null
     }
   ]
 }
