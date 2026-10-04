@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T22:36:33.859Z",
+  "updated_at": "2026-10-04T21:59:46.353Z",
   "posts": [
     {
       "platform": "instagram",
@@ -2639,6 +2639,142 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-07.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-08.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-09.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-10-04T21:59:39.908Z",
+      "week": "2026-10-04",
+      "tema": "El ecosistema definitivo para la música independiente en LATAM",
+      "topic_tag": "networking",
+      "audience_type": "artista",
+      "formato": "PASO A PASO",
+      "cta_mode": "directo",
+      "backlog_id": "5ukp4s",
+      "winner_score": 9.5,
+      "post_id": "17910384201556264",
+      "caption": "El panorama independiente en LATAM se mueve rápido. Centraliza tu estrategia. 👇\n\n#MusicaLatina #ArtistasIndependientes #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ArtistasIndependientes",
+        "#ProduccionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Tu puente directo a todo el ecosistema musical independiente",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Encuentra tu equipo profesional",
+          "body": "Accede a un catálogo curado de productores, managers y mezcladores. Filtra por género, experiencia y tarifas de mercado, que suelen ir de USD 80 a 250 por mezcla."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Gestiona tus lanzamientos",
+          "body": "Sube tus proyectos musicales completos, desde demos hasta masters en formato WAV 24bit/48kHz. Prepara todo para la distribución y la promoción."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Postula a playlists editoriales",
+          "body": "Envía tus canciones a curadores. Recuerda que el pitch en plataformas como Spotify requiere envío con al menos 7 días de antelación al lanzamiento oficial."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Conecta con colegas",
+          "body": "Utiliza el muro comunitario para compartir avances, buscar colaboraciones o pedir feedback. La mensajería directa facilita la coordinación."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Crea tu perfil y únete en kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-10-04T21:59:46.353Z",
+      "week": "2026-10-04",
+      "tema": "El ecosistema definitivo para la música independiente en LATAM",
+      "topic_tag": "networking",
+      "audience_type": "artista",
+      "formato": "PASO A PASO",
+      "cta_mode": "directo",
+      "backlog_id": "5ukp4s",
+      "winner_score": 9.5,
+      "post_id": "p_inbox_url~v2.7692935115307993106",
+      "caption": "El panorama independiente en LATAM se mueve rápido. Centraliza tu estrategia. 👇\n\n#MusicaLatina #ArtistasIndependientes #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ArtistasIndependientes",
+        "#ProduccionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Tu puente directo a todo el ecosistema musical independiente",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Encuentra tu equipo profesional",
+          "body": "Accede a un catálogo curado de productores, managers y mezcladores. Filtra por género, experiencia y tarifas de mercado, que suelen ir de USD 80 a 250 por mezcla."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Gestiona tus lanzamientos",
+          "body": "Sube tus proyectos musicales completos, desde demos hasta masters en formato WAV 24bit/48kHz. Prepara todo para la distribución y la promoción."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Postula a playlists editoriales",
+          "body": "Envía tus canciones a curadores. Recuerda que el pitch en plataformas como Spotify requiere envío con al menos 7 días de antelación al lanzamiento oficial."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Conecta con colegas",
+          "body": "Utiliza el muro comunitario para compartir avances, buscar colaboraciones o pedir feedback. La mensajería directa facilita la coordinación."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Crea tu perfil y únete en kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-06.jpg"
       ],
       "metrics": null
     }
