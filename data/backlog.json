@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T02:58:26.943Z",
+  "updated_at": "2026-10-06T22:49:43.086Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -5842,11 +5842,13 @@
       },
       "angulo": "Estrategias proactivas y de construcción de carrera que un artista debe implementar antes de un posible éxito viral, enfocándose en la sostenibilidad a largo plazo.",
       "por_que": "Cambia el enfoque de la viralidad pasiva a la construcción activa de una carrera. Es un ángulo diferenciador que resalta la importancia de la planificación y la estrategia.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-04T23:14:32.930Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-06T22:49:43.086Z",
+      "skipped_reason": "Supervisor rechazó 2 veces: [Regla 1] La portada anuncia '5 errores', pero las etiquetas de los slides de contenido son 'ERROR 1', 'ERROR 2', etc., lo cual es coherente. Sin embargo, la portada debería tener un sustantivo plural que concuerde con la cantidad, como '5 errores' o '5 mitos', y no solo '5 errores que frenan tu carrera antes de la viralidad'. La etiqueta 'ERROR 1' se refiere a un error específico, no a la cantidad total de errores. | [Regla 7] La portada anuncia '5 errores que frenan"
     },
     {
       "id": "h7z5m1",
@@ -7454,11 +7456,13 @@
       },
       "angulo": "Proporcionar un plan de acción concreto y realista para que los artistas independientes puedan crecer y prosperar sin depender de un estudio de grabación tradicional o una discográfica.",
       "por_que": "Aborda directamente el desafío central de muchos artistas independientes: la autosuficiencia. Ofrece estrategias prácticas sobre publicación y crecimiento en el panorama actual.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-11T23:30:26.402Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-06T22:49:24.213Z",
+      "skipped_reason": "Supervisor rechazó 2 veces: [Regla 7] La portada anuncia '4 errores que frenan tu crecimiento sin disquera', pero el contenido se enfoca en errores y no en un plan de acción como prometía el ángulo general."
     },
     {
       "id": "qslnda",
@@ -10803,6 +10807,110 @@
       "por_que": "TikTok es una plataforma crucial para la promoción y descubrimiento de artistas emergentes. Entender sus funcionalidades es clave para aumentar su visibilidad y conectar con nuevas audiencias.",
       "status": "pending",
       "discovered_at": "2026-10-06T00:21:24.839Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "bwpzne",
+      "title": "Cuánto cuesta hacer un concierto como artista ...",
+      "description": "28 me gusta,Vídeo de TikTok de Desiree Medina Cantante (@desireemedina_music): «Cuánto cuesta hacer un concierto como artista independiente?",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/@desireemedina_music/video/7682912047503379733",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Detalla los costos asociados a la organización de un concierto independiente en Latinoamérica.",
+      "por_que": "Los artistas independientes en Latam necesitan entender los costos reales para planificar sus presentaciones y asegurar la rentabilidad. Es información práctica y muy buscada.",
+      "status": "pending",
+      "discovered_at": "2026-10-06T22:48:37.426Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "u2oc00",
+      "title": "¿Cuánto gano un día como cantante en Lima? Ganancias ...",
+      "description": "- 350 soles (≈ 100$): eventos medianos, fiestas privadas o shows nocturnos con mayor demanda. - 450 soles (≈ 130$): contratos más largos o con mejor ...",
+      "source": "google",
+      "source_url": "https://www.tiktok.com/@xanaave/video/7662884462258162965",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Presenta un desglose de las ganancias potenciales diarias para un cantante en Lima, según el tipo de evento.",
+      "por_que": "Ofrece una visión concreta de la monetización para músicos en una ciudad específica de Latam, lo cual es muy relevante para artistas que buscan entender su potencial de ingresos.",
+      "status": "pending",
+      "discovered_at": "2026-10-06T22:48:37.426Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "l63wt0",
+      "title": "El marketing musical te ayuda a visibilizarte y llamar la ...",
+      "description": "... Marketing musical ❌ Catálogo musical ✓original sound - Cristian | Negocios Musicales ... monetizar su música y tener mayor valor en la industria musical.",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@cristianpoow/video/7693248242905042197",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Explica cómo el marketing musical es clave para la visibilidad y atracción de audiencia en la industria musical.",
+      "por_que": "Aunque el concepto es general, enfocado en el 'marketing musical' y no solo 'marketing', tiene aplicabilidad directa para artistas independientes que buscan crecer su base de fans.",
+      "status": "pending",
+      "discovered_at": "2026-10-06T22:48:37.426Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "i356dy",
+      "title": "Cuando organizás comercialmente tu CATÁLOGO MUSICAL ...",
+      "description": "... me gusta,Vídeo de TikTok de Cristian | Negocios Musicales ... MUSICAL, es mucho más fácil monetizar los lanzamientos. #marketingmusical ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@cristianpoow/video/7693163092213091604",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Enfatiza la importancia de organizar comercialmente el catálogo musical para facilitar la monetización de lanzamientos.",
+      "por_que": "Ayuda a los artistas a entender que su catálogo musical es un activo que debe ser gestionado estratégicamente para generar ingresos, conectando la creatividad con el negocio.",
+      "status": "pending",
+      "discovered_at": "2026-10-06T22:48:37.426Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
