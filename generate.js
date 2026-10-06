@@ -952,13 +952,21 @@ function neutralizeSpanish(obj) {
 
 // ── Función principal ─────────────────────────────────────────────────────
 
-async function generate() {
+async function generate({ excludeIds = [] } = {}) {
   // Obtener topics publicados recientemente (últimos 5 días → no repetir)
   const recentTopics = backlog.getRecentTopics(5);
   console.log('[generate] Topics recientes (excluidos):', [...recentTopics].join(', ') || 'ninguno');
 
   // Obtener ideas pendientes del backlog
   let pending = backlog.getPendingIdeas(recentTopics);
+
+  // Ideas ya rechazadas por el supervisor en este mismo ciclo (ver agent.js):
+  // se excluyen para que el segundo intento del día pruebe una idea distinta.
+  if (excludeIds.length > 0) {
+    const excluidas = new Set(excludeIds);
+    pending = pending.filter(p => !excluidas.has(backlog.ideaId(p.title)));
+    if (pending.length === 0) throw new Error('Sin ideas pendientes distintas a las ya rechazadas hoy');
+  }
 
   if (pending.length === 0) {
     // Si el backlog está vacío, intentar leer research_latest como fallback

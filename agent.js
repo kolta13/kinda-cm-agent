@@ -106,25 +106,50 @@ async function run() {
     // Segunda pasada de Gemini enfocada solo en detectar fallas (ver
     // supervisor.js) — confiar en que la generación se autocorrija con el
     // prompt no bastó: en la sesión del 2026-09-14 el generador ignoró
-    // reglas explícitas varias veces seguidas. Si rechaza, se regenera UNA
-    // vez (generate() vuelve a elegir la misma idea ganadora del backlog,
-    // pero con una redacción nueva); si rechaza de nuevo, se aborta el
-    // ciclo sin publicar en vez de arriesgar la cuenta.
+    // reglas explícitas varias veces seguidas.
+    // Por idea: si rechaza, se regenera UNA vez (misma idea, redacción nueva).
+    // Si rechaza de nuevo, esa idea se descarta del backlog (el rechazo es de
+    // contenido: mañana daría lo mismo) y se prueba con la SIGUIENTE mejor
+    // idea, hasta MAX_IDEAS_POR_DIA. Antes (hasta 2026-10-05) se abortaba el
+    // día entero tras la primera idea y ~1 de cada 2 días quedaba sin post.
+    // Nunca se publica nada que el supervisor haya rechazado.
     currentPhase = 'Fase 2.5: Supervisor';
-    log('[agent] Fase 2.5: Supervisor de calidad...');
-    let review = await supervisor.reviewCarousel(generateResult.carousel);
-    if (!review.aprobado) {
-      log(`[agent] ⚠ Supervisor rechazó la primera versión (${review.problemas.length} problema(s)):`);
-      review.problemas.forEach(p => log(`[agent]    - [Regla ${p.regla}] ${p.slide}: ${p.detalle}`));
-      log('[agent] Regenerando una vez...');
-      generateResult = await generate();
-      log(`[agent] ✓ Generate (2do intento): "${generateResult.carousel.tema}"`);
-      review = await supervisor.reviewCarousel(generateResult.carousel);
-      if (!review.aprobado) {
-        log(`[agent] ❌ Supervisor rechazó la segunda versión también:`);
-        review.problemas.forEach(p => log(`[agent]    - [Regla ${p.regla}] ${p.slide}: ${p.detalle}`));
-        throw new Error(`Supervisor rechazó el contenido 2 veces seguidas: ${review.problemas.map(p => `[Regla ${p.regla}] ${p.detalle}`).join(' | ')}`);
+    const MAX_IDEAS_POR_DIA = 2;
+    const rechazadas = [];
+    const resumenProblemas = (r) => r.problemas.map(p => `[Regla ${p.regla}] ${p.detalle}`).join(' | ');
+    let aprobado = false;
+    let ultimoRechazo = '';
+
+    for (let idea = 1; idea <= MAX_IDEAS_POR_DIA && !aprobado; idea++) {
+      if (idea > 1) {
+        log(`[agent] Probando una idea distinta (${idea}/${MAX_IDEAS_POR_DIA})...`);
+        currentPhase = 'Fase 2: Generate';
+        generateResult = await generate({ excludeIds: rechazadas });
+        log(`[agent] ✓ Generate (idea ${idea}): "${generateResult.carousel.tema}" (score ${generateResult.winner_score})`);
+        currentPhase = 'Fase 2.5: Supervisor';
       }
+      log('[agent] Fase 2.5: Supervisor de calidad...');
+      let review = await supervisor.reviewCarousel(generateResult.carousel);
+      if (!review.aprobado) {
+        log(`[agent] ⚠ Supervisor rechazó la primera versión (${review.problemas.length} problema(s)):`);
+        review.problemas.forEach(p => log(`[agent]    - [Regla ${p.regla}] ${p.slide}: ${p.detalle}`));
+        log('[agent] Regenerando una vez...');
+        generateResult = await generate({ excludeIds: rechazadas });
+        log(`[agent] ✓ Generate (2do intento): "${generateResult.carousel.tema}"`);
+        review = await supervisor.reviewCarousel(generateResult.carousel);
+      }
+      if (review.aprobado) { aprobado = true; break; }
+
+      log(`[agent] ❌ Supervisor rechazó la segunda versión también:`);
+      review.problemas.forEach(p => log(`[agent]    - [Regla ${p.regla}] ${p.slide}: ${p.detalle}`));
+      ultimoRechazo = resumenProblemas(review);
+      if (generateResult.backlog_id) {
+        rechazadas.push(generateResult.backlog_id);
+        backlog.markSkipped(generateResult.backlog_id, `Supervisor rechazó 2 veces: ${ultimoRechazo}`.slice(0, 500));
+      }
+    }
+    if (!aprobado) {
+      throw new Error(`Supervisor rechazó ${MAX_IDEAS_POR_DIA} ideas distintas (2 intentos cada una), no se publica nada hoy. Último rechazo: ${ultimoRechazo}`);
     }
     log('[agent] ✓ Supervisor aprobó el contenido.');
 
