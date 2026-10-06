@@ -2466,7 +2466,7 @@
     },
     {
       "platform": "instagram",
-      "status": "published",
+      "status": "deleted",
       "published_at": "2026-10-02T22:36:26.987Z",
       "week": "2026-10-02",
       "tema": "20 pasos probados para crear una agencia de eventos",
@@ -2551,11 +2551,12 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-08.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-09.jpg"
       ],
-      "metrics": null
+      "metrics": null,
+      "deleted_reason": "Fuera de nicho: no es para la industria musical (borrado manualmente 2026-10-05)"
     },
     {
       "platform": "tiktok",
-      "status": "draft_sent",
+      "status": "deleted",
       "published_at": "2026-10-02T22:36:33.859Z",
       "week": "2026-10-02",
       "tema": "20 pasos probados para crear una agencia de eventos",
@@ -2640,7 +2641,8 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-08.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-02/slide-09.jpg"
       ],
-      "metrics": null
+      "metrics": null,
+      "deleted_reason": "Fuera de nicho: no es para la industria musical (borrado manualmente 2026-10-05)"
     },
     {
       "platform": "instagram",
