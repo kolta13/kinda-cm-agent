@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T00:22:04.047Z",
+  "updated_at": "2026-10-06T02:58:26.943Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -4502,11 +4502,13 @@
       },
       "angulo": "Guía práctica y simplificada para profesionales que buscan optimizar la organización de eventos corporativos.",
       "por_que": "Ofrece un proceso claro y estructurado que los profesionales pueden aplicar directamente para mejorar su eficiencia y resultados.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-29T03:27:41.015Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "skipped_at": "2026-10-06T02:58:26.921Z",
+      "skipped_reason": "Fuera de nicho (no es para la industria musical LATAM)"
     },
     {
       "id": "gqr0np",
@@ -5286,11 +5288,13 @@
       },
       "angulo": "Presenta una selección curada de lo mejor de la música latina del año, abarcando diversos géneros y destacando el impacto de eventos globales.",
       "por_que": "Ofrece una visión inspiradora y de referencia para artistas latinos, mostrando el panorama actual y las tendencias. Fomenta el descubrimiento y la conversación sobre la música regional.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-01T23:32:23.646Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-06T02:58:26.934Z",
+      "skipped_reason": "Fuera de nicho (no es para la industria musical LATAM)"
     },
     {
       "id": "5sgxz3",
@@ -7287,11 +7291,13 @@
       },
       "angulo": "Enfocarse en las oportunidades específicas de interpretación para eventos en un mercado internacional clave como Las Vegas, resaltando beneficios tangibles.",
       "por_que": "Aunque no es directamente para artistas independientes, puede ser relevante para profesionales de la música que buscan expandir sus servicios a eventos internacionales o para aquellos que trabajan en la organización de eventos.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-11T23:30:26.401Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "skipped_at": "2026-10-06T02:58:26.943Z",
+      "skipped_reason": "Fuera de nicho (no es para la industria musical LATAM)"
     },
     {
       "id": "m9j2fq",

@@ -99,6 +99,15 @@ Distribución de audiencia objetivo:
 - 80% del contenido: ARTISTAS INDEPENDIENTES (lanzamientos, presupuesto, equipo, procesos, feedback)
 - 20% del contenido: PROFESIONALES DE LA MÚSICA (conseguir clientes, portafolio, tarifas)
 
+FILTRO DE NICHO (el más importante): el contenido es SOLO para quien hace o trabaja
+con música en Latinoamérica (artistas, productores, ingenieros, managers, sellos,
+plataformas de streaming, derechos, lanzamientos, shows de artistas). Si la idea es de
+un rubro vecino o genérico — crear una agencia de eventos, organizar eventos de empresa,
+emprendimiento o negocios en general, marketing para cualquier empresa, ideas de negocio
+sin ángulo musical — su "relevancia" NO puede pasar de 3, aunque esté bien escrita o
+tenga buen potencial de engagement. Pregúntate: ¿un artista o profesional de la música
+lo usaría para su carrera musical? Si la respuesta es "solo si lo adaptara", es 3 o menos.
+
 IMPORTANTE sobre merchandising ("merch"): es un tema real, pero relevante recién
 cuando un artista YA tiene base de fans consolidada — no para un artista emergente
 que recién está lanzando música. Es el segmento más pequeño y tardío del journey
