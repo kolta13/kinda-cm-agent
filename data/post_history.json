@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T21:59:46.353Z",
+  "updated_at": "2026-10-07T23:21:54.962Z",
   "posts": [
     {
       "platform": "instagram",
@@ -2777,6 +2777,156 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-04/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-10-07T23:21:48.908Z",
+      "week": "2026-10-07",
+      "tema": "Cómo seguir siendo artista independiente sin estudio ni disquera",
+      "topic_tag": "marketing",
+      "audience_type": "artista",
+      "formato": "DESGLOSE DE UN NÚMERO",
+      "cta_mode": "directo",
+      "backlog_id": "tmdpt7",
+      "winner_score": 9.5,
+      "post_id": "18118188224286740",
+      "caption": "Crecer como artista independiente hoy requiere un plan claro y ejecución constante. 👇\n\n#MusicaLatina #ProduccionMusical #MarketingMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ProduccionMusical",
+        "#MarketingMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Plan de acción real: crecer sin estudio ni disquera",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Publica con consistencia",
+          "body": "Sube canciones y videos cortos frecuentemente. Esto mantiene tu perfil visible y construye un catálogo sólido para tus plataformas de difusión y redes sociales."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Construye tu equipo",
+          "body": "Busca productores, mezcladores o ingenieros de sonido en catálogos como Kinda Club. Un rango de precio para mezcla profesional en LATAM va de USD 80 a 250 por canción."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Optimiza tus lanzamientos",
+          "body": "Prepara tu pitch para playlists editoriales en Spotify al menos 7 días antes del lanzamiento. Usa la pestaña correspondiente en Spotify for Artists."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Gestiona tu distribución",
+          "body": "Asegúrate de entender las cláusulas de tu acuerdo de distribución. Un contrato mundial a perpetuidad significa que no recuperas el máster nunca."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "5",
+          "titulo": "Crea tu marca personal",
+          "body": "Tu identidad artística no se define solo por el género. Es la textura vocal, los instrumentos y tu enfoque de producción lo que te hace reconocible."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca equipo en Kinda Club",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-10-07T23:21:54.962Z",
+      "week": "2026-10-07",
+      "tema": "Cómo seguir siendo artista independiente sin estudio ni disquera",
+      "topic_tag": "marketing",
+      "audience_type": "artista",
+      "formato": "DESGLOSE DE UN NÚMERO",
+      "cta_mode": "directo",
+      "backlog_id": "tmdpt7",
+      "winner_score": 9.5,
+      "post_id": "p_inbox_url~v2.7694069280735807540",
+      "caption": "Crecer como artista independiente hoy requiere un plan claro y ejecución constante. 👇\n\n#MusicaLatina #ProduccionMusical #MarketingMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ProduccionMusical",
+        "#MarketingMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Plan de acción real: crecer sin estudio ni disquera",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Publica con consistencia",
+          "body": "Sube canciones y videos cortos frecuentemente. Esto mantiene tu perfil visible y construye un catálogo sólido para tus plataformas de difusión y redes sociales."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Construye tu equipo",
+          "body": "Busca productores, mezcladores o ingenieros de sonido en catálogos como Kinda Club. Un rango de precio para mezcla profesional en LATAM va de USD 80 a 250 por canción."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Optimiza tus lanzamientos",
+          "body": "Prepara tu pitch para playlists editoriales en Spotify al menos 7 días antes del lanzamiento. Usa la pestaña correspondiente en Spotify for Artists."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Gestiona tu distribución",
+          "body": "Asegúrate de entender las cláusulas de tu acuerdo de distribución. Un contrato mundial a perpetuidad significa que no recuperas el máster nunca."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "5",
+          "titulo": "Crea tu marca personal",
+          "body": "Tu identidad artística no se define solo por el género. Es la textura vocal, los instrumentos y tu enfoque de producción lo que te hace reconocible."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca equipo en Kinda Club",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-07.jpg"
       ],
       "metrics": null
     }
