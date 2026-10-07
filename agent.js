@@ -108,8 +108,8 @@ async function run() {
     // prompt no bastó: en la sesión del 2026-09-14 el generador ignoró
     // reglas explícitas varias veces seguidas.
     // Por idea: si rechaza, se regenera UNA vez (misma idea, redacción nueva).
-    // Si rechaza de nuevo, esa idea se descarta del backlog (el rechazo es de
-    // contenido: mañana daría lo mismo) y se prueba con la SIGUIENTE mejor
+    // Si rechaza de nuevo, esa idea suma un strike (se descarta al 2do día de
+    // rechazo, porque el supervisor puede fallar) y se prueba con la SIGUIENTE mejor
     // idea, hasta MAX_IDEAS_POR_DIA. Antes (hasta 2026-10-05) se abortaba el
     // día entero tras la primera idea y ~1 de cada 2 días quedaba sin post.
     // Nunca se publica nada que el supervisor haya rechazado.
@@ -145,7 +145,8 @@ async function run() {
       ultimoRechazo = resumenProblemas(review);
       if (generateResult.backlog_id) {
         rechazadas.push(generateResult.backlog_id);
-        backlog.markSkipped(generateResult.backlog_id, `Supervisor rechazó 2 veces: ${ultimoRechazo}`.slice(0, 500));
+        const descartada = backlog.recordSupervisorRejection(generateResult.backlog_id, ultimoRechazo);
+        log(`[agent]    Idea ${descartada ? 'descartada del backlog (2do día de rechazo)' : 'queda pendiente (1er día de rechazo; se descarta si se repite)'}.`);
       }
     }
     if (!aprobado) {

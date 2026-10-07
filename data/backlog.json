@@ -5842,13 +5842,11 @@
       },
       "angulo": "Estrategias proactivas y de construcción de carrera que un artista debe implementar antes de un posible éxito viral, enfocándose en la sostenibilidad a largo plazo.",
       "por_que": "Cambia el enfoque de la viralidad pasiva a la construcción activa de una carrera. Es un ángulo diferenciador que resalta la importancia de la planificación y la estrategia.",
-      "status": "skipped",
+      "status": "pending",
       "discovered_at": "2026-09-04T23:14:32.930Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista",
-      "skipped_at": "2026-10-06T22:49:43.086Z",
-      "skipped_reason": "Supervisor rechazó 2 veces: [Regla 1] La portada anuncia '5 errores', pero las etiquetas de los slides de contenido son 'ERROR 1', 'ERROR 2', etc., lo cual es coherente. Sin embargo, la portada debería tener un sustantivo plural que concuerde con la cantidad, como '5 errores' o '5 mitos', y no solo '5 errores que frenan tu carrera antes de la viralidad'. La etiqueta 'ERROR 1' se refiere a un error específico, no a la cantidad total de errores. | [Regla 7] La portada anuncia '5 errores que frenan"
+      "audience_type": "artista"
     },
     {
       "id": "h7z5m1",
@@ -7456,13 +7454,11 @@
       },
       "angulo": "Proporcionar un plan de acción concreto y realista para que los artistas independientes puedan crecer y prosperar sin depender de un estudio de grabación tradicional o una discográfica.",
       "por_que": "Aborda directamente el desafío central de muchos artistas independientes: la autosuficiencia. Ofrece estrategias prácticas sobre publicación y crecimiento en el panorama actual.",
-      "status": "skipped",
+      "status": "pending",
       "discovered_at": "2026-09-11T23:30:26.402Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista",
-      "skipped_at": "2026-10-06T22:49:24.213Z",
-      "skipped_reason": "Supervisor rechazó 2 veces: [Regla 7] La portada anuncia '4 errores que frenan tu crecimiento sin disquera', pero el contenido se enfoca en errores y no en un plan de acción como prometía el ángulo general."
+      "audience_type": "artista"
     },
     {
       "id": "qslnda",

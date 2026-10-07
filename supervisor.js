@@ -188,12 +188,62 @@ reales de la checklist).`;
 }
 
 // Revisa un carrusel ya generado. Devuelve { aprobado, problemas }.
+// El modelo del supervisor (flash-lite) a veces marca reglas que el propio
+// carrusel cumple — visto el 2026-10-06: Regla 7 "la portada no anunció errores"
+// sobre una portada que decía "5 errores que frenan tu carrera", y Regla 1 con
+// un detalle que decía "lo cual es coherente". Dos ideas top (9.5 y 9.25) se
+// descartaron por eso y se perdió el post del día. Lo que se puede verificar
+// de forma determinística se verifica en código, y si el código comprueba que
+// la regla SÍ se cumple, el rechazo del modelo se descarta (queda en el log).
+const PORTADA_ANUNCIA_ERRORES = /\b(errores?|mitos?|fallas?|equivocaci[oó]n(?:es)?|trampas?)\b/i;
+
+function verificarEnCodigo(carousel) {
+  const slides  = carousel.slides || [];
+  const portada = slides.find(s => s.tipo === 'portada');
+  const titulo  = (portada && portada.titulo) || '';
+  const contenidos = slides.filter(s => s.tipo === 'contenido');
+
+  // Regla 7: si la portada anuncia errores/mitos, la regla no aplica.
+  const portadaAnunciaErrores = PORTADA_ANUNCIA_ERRORES.test(titulo);
+
+  // Regla 1: número y sustantivo de la portada coherentes con los slides.
+  let regla1Ok = false;
+  const etiquetados = contenidos.filter(s => typeof s.etiqueta === 'string' && s.etiqueta.trim());
+  const cantidad = etiquetados.length || contenidos.length;
+  const num = titulo.match(/\d+/);
+  const numOk = !num || Number(num[0]) === cantidad;
+  const noun = etiquetados.length
+    ? etiquetados[0].etiqueta.replace(/\d+/g, '').trim().toLowerCase()
+    : '';
+  const nounOk = !noun || !num || titulo.toLowerCase().includes(noun);
+  regla1Ok = numOk && nounOk;
+
+  return { portadaAnunciaErrores, regla1Ok };
+}
+
+function filtrarFalsosPositivos(carousel, problemas) {
+  const v = verificarEnCodigo(carousel);
+  return problemas.filter(p => {
+    const regla = Number(p.regla);
+    if (regla === 7 && v.portadaAnunciaErrores) {
+      console.log(`[supervisor] Descartado falso positivo (Regla 7): la portada SÍ anuncia errores/mitos — "${String(p.detalle).slice(0, 90)}"`);
+      return false;
+    }
+    if (regla === 1 && v.regla1Ok) {
+      console.log(`[supervisor] Descartado falso positivo (Regla 1): número y sustantivo verificados en código — "${String(p.detalle).slice(0, 90)}"`);
+      return false;
+    }
+    return true;
+  });
+}
+
 async function reviewCarousel(carousel) {
-  const raw    = await callGemini(buildPrompt(carousel));
-  const result = safeJsonParse(raw);
+  const raw      = await callGemini(buildPrompt(carousel));
+  const result   = safeJsonParse(raw);
+  const problemas = filtrarFalsosPositivos(carousel, result.problemas || []);
   return {
-    aprobado:  result.aprobado === true && (result.problemas || []).length === 0,
-    problemas: result.problemas || [],
+    aprobado:  problemas.length === 0,
+    problemas,
   };
 }
 
@@ -216,4 +266,4 @@ if (require.main === module) {
   main().catch(e => { console.error('[supervisor] Error:', e.message); process.exit(1); });
 }
 
-module.exports = { reviewCarousel };
+module.exports = { reviewCarousel, filtrarFalsosPositivos, verificarEnCodigo };

@@ -228,6 +228,27 @@ function markSkipped(id, reason) {
   return !!idea;
 }
 
+// Rechazo del supervisor: no descarta la idea de inmediato (el supervisor es un
+// modelo y puede equivocarse — el 2026-10-06 rechazó las dos mejores ideas por
+// falsos positivos). Se cuenta un "strike" por día de rechazo; recién al llegar
+// a maxStrikes se descarta. Devuelve true si quedó descartada.
+function recordSupervisorRejection(id, reason, maxStrikes = 2) {
+  const backlog = load();
+  const idea    = backlog.ideas.find(i => i.id === id);
+  if (!idea) return false;
+  idea.supervisor_strikes = (idea.supervisor_strikes || 0) + 1;
+  idea.last_supervisor_rejection = reason || null;
+  let skipped = false;
+  if (idea.supervisor_strikes >= maxStrikes) {
+    idea.status         = 'skipped';
+    idea.skipped_at     = new Date().toISOString();
+    idea.skipped_reason = `Supervisor rechazó en ${idea.supervisor_strikes} días distintos: ${reason || ''}`.slice(0, 500);
+    skipped = true;
+  }
+  save(backlog);
+  return skipped;
+}
+
 // Estadísticas del backlog (para logs)
 function stats() {
   const backlog = load();
@@ -236,4 +257,4 @@ function stats() {
   return { total: backlog.ideas.length, pending, published };
 }
 
-module.exports = { addIdeas, getPendingIdeas, getRecentTopics, updateScores, markPublished, markSkipped, ideaId, detectTopic, stats, load };
+module.exports = { addIdeas, getPendingIdeas, getRecentTopics, updateScores, markPublished, markSkipped, recordSupervisorRejection, ideaId, detectTopic, stats, load };
