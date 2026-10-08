@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T23:21:54.962Z",
+  "updated_at": "2026-10-08T23:37:23.603Z",
   "posts": [
     {
       "platform": "instagram",
@@ -2927,6 +2927,142 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-06.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-07/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-10-08T23:37:17.651Z",
+      "week": "2026-10-08",
+      "tema": "Pagar playlists de terceros es una trampa que Spotify no avala",
+      "topic_tag": "distribucion",
+      "audience_type": "artista",
+      "formato": "ANTES Y DESPUÉS",
+      "cta_mode": "blando",
+      "backlog_id": "499df1",
+      "winner_score": 9.25,
+      "post_id": "18130172845685748",
+      "caption": "Pagar por playlists suena tentador, pero no es el camino. Desmontamos el mito 👇\n\n#MusicaLatina #SpotifyTips #PromocionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#SpotifyTips",
+        "#PromocionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Pagar playlists: la trampa que Spotify no avala",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "La mayoría: pagar por posicionamiento",
+          "body": "Pagar por incluir tu canción en playlists de terceros es una práctica común pero engañosa. Spotify no avala ni fomenta estas acciones."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "La alternativa: promoción orgánica y real",
+          "body": "Las plataformas como TikTok e Instagram funcionan como canales de distribución. Generar interés orgánico ahí se traduce en señales valiosas para Spotify."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Mecanismo causal: tráfico externo",
+          "body": "El tráfico que llega a Spotify desde un link de TikTok cuenta como descubrimiento activo. Esto ayuda al algoritmo a recomendar tu música en Discover Weekly."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "El pitch a Spotify for Artists",
+          "body": "Usa la pestaña de pitch en Spotify for Artists. Debes postular tu canción con al menos 7 días de antelación al lanzamiento oficial."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Promociona tu música de forma inteligente",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-10-08T23:37:23.603Z",
+      "week": "2026-10-08",
+      "tema": "Pagar playlists de terceros es una trampa que Spotify no avala",
+      "topic_tag": "distribucion",
+      "audience_type": "artista",
+      "formato": "ANTES Y DESPUÉS",
+      "cta_mode": "blando",
+      "backlog_id": "499df1",
+      "winner_score": 9.25,
+      "post_id": "p_inbox_url~v2.7694444850297030664",
+      "caption": "Pagar por playlists suena tentador, pero no es el camino. Desmontamos el mito 👇\n\n#MusicaLatina #SpotifyTips #PromocionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#SpotifyTips",
+        "#PromocionMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Pagar playlists: la trampa que Spotify no avala",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "La mayoría: pagar por posicionamiento",
+          "body": "Pagar por incluir tu canción en playlists de terceros es una práctica común pero engañosa. Spotify no avala ni fomenta estas acciones."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "La alternativa: promoción orgánica y real",
+          "body": "Las plataformas como TikTok e Instagram funcionan como canales de distribución. Generar interés orgánico ahí se traduce en señales valiosas para Spotify."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Mecanismo causal: tráfico externo",
+          "body": "El tráfico que llega a Spotify desde un link de TikTok cuenta como descubrimiento activo. Esto ayuda al algoritmo a recomendar tu música en Discover Weekly."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "El pitch a Spotify for Artists",
+          "body": "Usa la pestaña de pitch en Spotify for Artists. Debes postular tu canción con al menos 7 días de antelación al lanzamiento oficial."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Promociona tu música de forma inteligente",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-06.jpg"
       ],
       "metrics": null
     }

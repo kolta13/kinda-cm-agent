@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T23:21:48.903Z",
+  "updated_at": "2026-10-08T23:37:17.646Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -5846,7 +5846,9 @@
       "discovered_at": "2026-09-04T23:14:32.930Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "supervisor_strikes": 1,
+      "last_supervisor_rejection": "[Regla 7] La portada promete 'preparar tu carrera para el éxito', pero los títulos de los slides 2, 3 y 5 ('Publicar no es construir', 'No tener un equipo', 'No construir comunidad') suenan a errores o malas prácticas, y la portada no anunció explícitamente que el post trataría sobre errores o mitos."
     },
     {
       "id": "h7z5m1",
@@ -6831,10 +6833,10 @@
       },
       "angulo": "Advertir sobre las prácticas engañosas de pago por playlists y destacar canales de promoción más efectivos y avalados.",
       "por_que": "Es una práctica común y tentadora para artistas independientes en LATAM. Desmontar este mito y ofrecer alternativas es de altísimo valor y aplicabilidad inmediata.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-09-08T23:38:07.919Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-10-08T23:37:17.646Z",
+      "post_id": "18130172845685748",
       "audience_type": "artista"
     },
     {
@@ -10948,14 +10950,20 @@
       "artist_photo_credit": null,
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 4.5,
+      "scores": {
+        "relevancia": 3,
+        "engagement": 6,
+        "diferenciador": 5,
+        "aplicabilidad": 4
+      },
+      "angulo": "Herramientas de IA para la planificación de eventos, con un enfoque genérico.",
+      "por_que": "Aunque la IA es relevante, el contenido se enfoca en planificación de eventos genérica y no específicamente en la industria musical de LATAM, limitando su aplicabilidad directa para artistas y profesionales de la música.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.086Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "y7ngui",
@@ -10968,14 +10976,20 @@
       "artist_photo_credit": null,
       "topic_tag": "shows",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 6,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 5,
+        "diferenciador": 6,
+        "aplicabilidad": 6
+      },
+      "angulo": "Experiencias en producción de espectáculos y eventos, buscando conectar con profesionales del sector.",
+      "por_que": "Ofrece una perspectiva de producción de eventos que puede ser útil para profesionales que buscan expandir sus servicios o entender el mercado de shows en LATAM.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.086Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "jb3a0y",
@@ -10988,14 +11002,20 @@
       "artist_photo_credit": null,
       "topic_tag": "shows",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 5.5,
+      "scores": {
+        "relevancia": 6,
+        "engagement": 5,
+        "diferenciador": 5,
+        "aplicabilidad": 6
+      },
+      "angulo": "Invitación a aprender sobre producción de eventos, promocionando un recurso específico.",
+      "por_que": "Si bien es sobre producción de eventos, su enfoque es más comercial y menos específico para la industria musical, aunque puede atraer a quienes buscan profesionalizar sus eventos.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "2cb6s7",
@@ -11008,14 +11028,20 @@
       "artist_photo_credit": null,
       "topic_tag": "shows",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 6
+      },
+      "angulo": "Desmitifica el merch, presentándolo como accesible y parte del día a día del artista.",
+      "por_que": "Aborda el merchandising de forma práctica y accesible, ideal para artistas emergentes que consideran el merch como una opción para conectar con su audiencia.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "t9wbni",
@@ -11028,14 +11054,20 @@
       "artist_photo_credit": null,
       "topic_tag": "shows",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Guía de plataformas para que músicos independientes vendan su merchandising.",
+      "por_que": "Proporciona herramientas concretas y aplicables para que los artistas independientes puedan monetizar y expandir su marca a través de la venta de productos.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "qlqup4",
@@ -11048,14 +11080,20 @@
       "artist_photo_credit": null,
       "topic_tag": "shows",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Detalla el proceso creativo detrás del diseño de merchandising que conecta emocionalmente con los fans.",
+      "por_que": "Ofrece una visión profunda y personal sobre la creación de merch, enfocándose en la conexión emocional, lo cual es valioso para artistas que buscan construir una marca sólida.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "g2vks7",
@@ -11068,14 +11106,20 @@
       "artist_photo_credit": null,
       "topic_tag": "tecnologia",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Presentación de una herramienta creada para facilitar la generación de enlaces de promoción musical para artistas independientes.",
+      "por_que": "Es una herramienta directa y útil para artistas independientes en LATAM, que simplifica un proceso clave de promoción y lanzamiento de música.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "k0msqa",
@@ -11088,14 +11132,20 @@
       "artist_photo_credit": null,
       "topic_tag": "video_viral",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Explora la fusión de géneros como el trap con instrumentos tradicionales venezolanos, cuestionando el apoyo a artistas locales.",
+      "por_que": "Aborda la escena musical local de Venezuela con un ángulo cultural y de género interesante, generando debate sobre el apoyo a artistas emergentes en la región.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "1e523g",
@@ -11108,14 +11158,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Señala que el mayor error de las bandas no es musical, sino la falta de una estrategia de lanzamiento y promoción efectiva.",
+      "por_que": "Destaca un problema crítico para artistas independientes en LATAM: la desconexión entre la calidad musical y la estrategia de lanzamiento, ofreciendo un ángulo de reflexión aplicable.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "ab7tep",
@@ -11128,14 +11184,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Denuncia el impacto del fraude de bots en las plataformas de streaming y su efecto en el talento real de los artistas independientes.",
+      "por_que": "Es un tema de máxima relevancia para artistas independientes en LATAM, abordando la integridad de las métricas de streaming y la competencia desleal.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "as05d5",
@@ -11148,14 +11210,20 @@
       "artist_photo_credit": null,
       "topic_tag": "monetizacion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Analiza cómo las canciones generadas por IA en plataformas como TikTok afectan la visibilidad y los ingresos de los artistas musicales.",
+      "por_que": "Aborda una amenaza emergente y concreta para los artistas independientes en LATAM, relacionada con la propiedad intelectual y la monetización de su trabajo.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "391x4w",
@@ -11168,14 +11236,20 @@
       "artist_photo_credit": null,
       "topic_tag": "noticias",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Explora cómo las producciones audiovisuales (series, películas) pueden impulsar la carrera y el valor del catálogo musical.",
+      "por_que": "Ofrece una perspectiva sobre la monetización y el alcance de la música a través de la sincronización, relevante para profesionales que buscan expandir oportunidades para sus artistas.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "nucnjh",
@@ -11188,14 +11262,124 @@
       "artist_photo_credit": null,
       "topic_tag": "noticias",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Noticia sobre la acción de Sony Music para eliminar deepfakes de IA de plataformas musicales.",
+      "por_que": "Informa sobre un desarrollo crucial en la protección de derechos de autor y la lucha contra la IA no autorizada, directamente relevante para artistas independientes en LATAM.",
       "status": "pending",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "5ps66r",
+      "title": "Hacer música es una parte. Aprender a presentar, ...",
+      "description": "Rider técnico. Todo lo que necesitás técnicamente para poder armar tu show ... Micrófonos, consolas, monitores, conexiones, instrumentos, o sea, para que mi show ...",
+      "source": "google",
+      "source_url": "https://www.facebook.com/soybelengal/videos/hacer-m%C3%BAsica-es-una-parteaprender-a-presentar-organizar-y-mover-tu-proyecto-tamb/1577715960564031/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "shows",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Enfocado en la importancia del rider técnico y la preparación para shows en vivo, más allá de la composición musical.",
+      "por_que": "Ofrece consejos prácticos y esenciales para artistas que están empezando a tocar en vivo y necesitan profesionalizar sus presentaciones en LATAM.",
+      "status": "pending",
+      "discovered_at": "2026-10-08T23:34:12.879Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "qnl0xe",
+      "title": "Muchos artistas creen que la solución para tocar más ...",
+      "description": "Muchos artistas creen que la solución para tocar más y entrar a festivales es tener un buen booker. Y si bien es cierto que un booker es de gran ayuda, ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DbYjkNIO4fH/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "shows",
+      "is_promotional": false,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Desmitifica la figura del booker, señalando que no es la única solución para conseguir más shows y festivales.",
+      "por_que": "Aborda una creencia común entre artistas emergentes en LATAM y ofrece una perspectiva más amplia sobre cómo conseguir oportunidades de tocar en vivo.",
+      "status": "pending",
+      "discovered_at": "2026-10-08T23:34:12.879Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "ohreiq",
+      "title": "Festivales para artistas emergentes en España: convocatorias ...",
+      "description": "Encontrar festivales para artistas emergentes exige distinguir una convocatoria abierta de una edición ya celebrada. Esta guía revisa oportunidades de 2026, ...",
+      "source": "google",
+      "source_url": "https://groovehubmusic.com/blog/festivales-en-espana-que-aceptan-artistas-emergentes-2026",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "shows",
+      "is_promotional": false,
+      "score_total": 6,
+      "scores": {
+        "relevancia": 5,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Guía de convocatorias para festivales dirigidos a artistas emergentes, con un enfoque en España.",
+      "por_que": "Aunque útil para artistas que buscan oportunidades internacionales, su aplicabilidad directa para el mercado LATAM es limitada, pero puede servir como referencia aspiracional.",
+      "status": "pending",
+      "discovered_at": "2026-10-08T23:34:12.879Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "klfisl",
+      "title": "Cómo conseguir oportunidades #artistaemergente ...",
+      "description": "Los artistas independientes capturan el 38% del mercado global. Pero las herramientas que usaban para serlo ya no son independientes. ¿Tú qué consideras ser ...",
+      "source": "google",
+      "source_url": "https://www.instagram.com/reel/DbE7aHGKhdT/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "tecnologia",
+      "is_promotional": false,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Cuestiona la dependencia de herramientas 'no independientes' para artistas independientes y reflexiona sobre su verdadero significado.",
+      "por_que": "Genera una reflexión importante sobre la independencia en la era digital y cómo los artistas emergentes en LATAM navegan el ecosistema actual.",
+      "status": "pending",
+      "discovered_at": "2026-10-08T23:34:12.879Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }
