@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T23:37:23.603Z",
+  "updated_at": "2026-10-09T22:56:57.709Z",
   "posts": [
     {
       "platform": "instagram",
@@ -3063,6 +3063,156 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-08/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-10-09T22:56:50.787Z",
+      "week": "2026-10-09",
+      "tema": "Cuánto cuesta hacer un concierto como artista independiente",
+      "topic_tag": "monetizacion",
+      "audience_type": "artista",
+      "formato": "CHECKLIST DE VERIFICACIÓN",
+      "cta_mode": "blando",
+      "backlog_id": "tcr0hq",
+      "winner_score": 9.25,
+      "post_id": "18097421486557429",
+      "caption": "Detallar los costos de un concierto independiente es clave para no sorpresas. 👇\n\n#MusicaIndependiente #ProduccionMusical #CostosDeConcierto #KindaClub",
+      "hashtags": [
+        "#MusicaIndependiente",
+        "#ProduccionMusical",
+        "#CostosDeConcierto",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Presupuesto real para tu próximo concierto",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Alquiler de espacio",
+          "body": "Define el tamaño y la ubicación. Un bar puede costar entre $50-$200 USD por noche, mientras un local más grande puede variar entre $300-$1000 USD, dependiendo de días y servicios."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Equipo técnico",
+          "body": "Sonido (PA, monitores, micrófonos) e iluminación. Contratar un técnico de sonido profesional suele costar entre $100-$300 USD por evento. El alquiler del equipo puede ir de $200 a $800 USD."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Promoción y marketing",
+          "body": "Diseño gráfico para flyers/redes y publicidad paga. Considera $50-$200 USD para campañas en redes sociales, más el costo de diseño gráfico ($50-$150 USD)."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Personal de apoyo",
+          "body": "Seguridad (si aplica), personal de barra o boletería. Un guardia puede costar $20-$40 USD por hora. Si necesitas 2, son $160-$320 USD por 4 horas."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "5",
+          "titulo": "Imprevistos y licencias",
+          "body": "Un 10-15% del presupuesto total para emergencias. No olvides licencias de música o permisos locales si son requeridos, que pueden sumar $50-$200 USD."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Revisa este post cuando planifiques tu próximo evento",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-10-09T22:56:57.709Z",
+      "week": "2026-10-09",
+      "tema": "Cuánto cuesta hacer un concierto como artista independiente",
+      "topic_tag": "monetizacion",
+      "audience_type": "artista",
+      "formato": "CHECKLIST DE VERIFICACIÓN",
+      "cta_mode": "blando",
+      "backlog_id": "tcr0hq",
+      "winner_score": 9.25,
+      "post_id": "p_inbox_url~v2.7694805071020525575",
+      "caption": "Detallar los costos de un concierto independiente es clave para no sorpresas. 👇\n\n#MusicaIndependiente #ProduccionMusical #CostosDeConcierto #KindaClub",
+      "hashtags": [
+        "#MusicaIndependiente",
+        "#ProduccionMusical",
+        "#CostosDeConcierto",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Presupuesto real para tu próximo concierto",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Alquiler de espacio",
+          "body": "Define el tamaño y la ubicación. Un bar puede costar entre $50-$200 USD por noche, mientras un local más grande puede variar entre $300-$1000 USD, dependiendo de días y servicios."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Equipo técnico",
+          "body": "Sonido (PA, monitores, micrófonos) e iluminación. Contratar un técnico de sonido profesional suele costar entre $100-$300 USD por evento. El alquiler del equipo puede ir de $200 a $800 USD."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Promoción y marketing",
+          "body": "Diseño gráfico para flyers/redes y publicidad paga. Considera $50-$200 USD para campañas en redes sociales, más el costo de diseño gráfico ($50-$150 USD)."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Personal de apoyo",
+          "body": "Seguridad (si aplica), personal de barra o boletería. Un guardia puede costar $20-$40 USD por hora. Si necesitas 2, son $160-$320 USD por 4 horas."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "5",
+          "titulo": "Imprevistos y licencias",
+          "body": "Un 10-15% del presupuesto total para emergencias. No olvides licencias de música o permisos locales si son requeridos, que pueden sumar $50-$200 USD."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Revisa este post cuando planifiques tu próximo evento",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-07.jpg"
       ],
       "metrics": null
     }
