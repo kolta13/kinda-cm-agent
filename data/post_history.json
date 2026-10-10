@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T22:56:57.709Z",
+  "updated_at": "2026-10-10T22:02:40.279Z",
   "posts": [
     {
       "platform": "instagram",
@@ -3213,6 +3213,142 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-06.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-09/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-10-10T22:02:33.049Z",
+      "week": "2026-10-10",
+      "tema": "Ya no necesitas un sello para armar equipo profesional",
+      "topic_tag": "networking",
+      "audience_type": "artista",
+      "formato": "PASO A PASO",
+      "cta_mode": "directo",
+      "backlog_id": "vcofo7",
+      "winner_score": 9,
+      "post_id": "18015447086749502",
+      "caption": "Ya no necesitas un sello para armar tu equipo profesional. 👇\n\n#MusicaIndependiente #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaIndependiente",
+        "#ProduccionMusical",
+        "#EquipoMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Accede a equipo profesional sin intermediarios",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Identifica tu necesidad real",
+          "body": "Antes de buscar, define qué necesitas: ¿producción, mezcla, mastering, management? Cada rol tiene un enfoque distinto."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Busca perfiles verificados",
+          "body": "En Kindaclub.com encontrarás un catálogo de profesionales con portafolio y experiencia probada. Filtra por especialidad."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Contacta y cotiza",
+          "body": "Una mezcla profesional en LATAM puede costar entre USD 80 y 250 por canción. Pide referencias y compara."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Define el acuerdo",
+          "body": "Asegura que el contrato especifique entregables, plazos y derechos. Un acuerdo claro evita problemas futuros."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca tu equipo profesional en Kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-10-10T22:02:40.279Z",
+      "week": "2026-10-10",
+      "tema": "Ya no necesitas un sello para armar equipo profesional",
+      "topic_tag": "networking",
+      "audience_type": "artista",
+      "formato": "PASO A PASO",
+      "cta_mode": "directo",
+      "backlog_id": "vcofo7",
+      "winner_score": 9,
+      "post_id": "p_inbox_url~v2.7695162853728684052",
+      "caption": "Ya no necesitas un sello para armar tu equipo profesional. 👇\n\n#MusicaIndependiente #ProduccionMusical #KindaClub",
+      "hashtags": [
+        "#MusicaIndependiente",
+        "#ProduccionMusical",
+        "#EquipoMusical",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Accede a equipo profesional sin intermediarios",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Identifica tu necesidad real",
+          "body": "Antes de buscar, define qué necesitas: ¿producción, mezcla, mastering, management? Cada rol tiene un enfoque distinto."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Busca perfiles verificados",
+          "body": "En Kindaclub.com encontrarás un catálogo de profesionales con portafolio y experiencia probada. Filtra por especialidad."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Contacta y cotiza",
+          "body": "Una mezcla profesional en LATAM puede costar entre USD 80 y 250 por canción. Pide referencias y compara."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Define el acuerdo",
+          "body": "Asegura que el contrato especifique entregables, plazos y derechos. Un acuerdo claro evita problemas futuros."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca tu equipo profesional en Kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-10/slide-06.jpg"
       ],
       "metrics": null
     }
