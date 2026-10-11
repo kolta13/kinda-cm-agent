@@ -153,11 +153,25 @@ Responde SOLO con JSON válido:
 
 async function scoreNewIdeas() {
   const bl       = backlog.load();
-  const unscored = bl.ideas.filter(i => i.status === 'pending' && i.score_total === null);
+  const todasSinScore = bl.ideas.filter(i => i.status === 'pending' && i.score_total === null);
 
-  if (unscored.length === 0) {
+  if (todasSinScore.length === 0) {
     console.log('[score] Todas las ideas pendientes ya tienen score.');
     return 0;
+  }
+
+  // Tope por corrida: cada batch es una llamada a Gemini y la cuota gratuita es
+  // chica (20/día en flash-lite). El 2026-10-11 el descubrimiento de TikTok sumó
+  // ~200 ideas de golpe: puntuarlas todas en una corrida (14 batches) se comía
+  // la cuota y tumbaba generate/supervisor ese día. Lo que quede sin puntuar
+  // se toma en las corridas siguientes; las de TikTok van primero mientras dure
+  // el experimento de priorización (ver generate.js).
+  const MAX_BATCHES_POR_CORRIDA = 3;
+  const ordenadas = [...todasSinScore].sort((a, b) =>
+    (b.source === 'tiktok_viral') - (a.source === 'tiktok_viral'));
+  const unscored = ordenadas.slice(0, MAX_BATCHES_POR_CORRIDA * BATCH_SIZE);
+  if (unscored.length < todasSinScore.length) {
+    console.log(`[score] ${todasSinScore.length} ideas sin score: se puntúan ${unscored.length} hoy (tope ${MAX_BATCHES_POR_CORRIDA} batches), el resto en próximas corridas.`);
   }
 
   const batches = Math.ceil(unscored.length / BATCH_SIZE);

@@ -61,6 +61,40 @@ const VIDEO_QUERIES = [
   'crecer en spotify artista sin sello tiktok',
 ];
 
+// Descubrimiento dedicado de TikTok (agregado 2026-10-11). Antes TikTok salía
+// mezclado con YouTube en UNA query diaria de VIDEO_QUERIES (~7 de 10 resultados
+// eran TikTok, 5 por día), y el stock de ideas tiktok_viral era chico. Con
+// `site:tiktok.com` el 100% de los resultados son TikTok, y se corren
+// TIKTOK_QUERIES_POR_DIA queries distintas al día. Los temas cubren los topic
+// del backlog para no sesgar a uno solo.
+const TIKTOK_QUERIES_POR_DIA = 3;
+const TIKTOK_QUERIES = [
+  'consejos para artistas emergentes',
+  'cómo crecer en spotify siendo artista independiente',
+  'cómo monetizar tu música',
+  'errores que cometen los músicos independientes',
+  'cómo lanzar una canción paso a paso',
+  'estrategia de lanzamiento musical',
+  'cómo entrar a playlists de spotify',
+  'contratos musicales qué firmar y qué no',
+  'cómo grabar un videoclip sin presupuesto',
+  'cómo conseguir shows siendo artista emergente',
+  'marketing musical para independientes',
+  'regalías y derechos de autor músicos',
+  'cómo vivir de la música',
+  'cómo conseguir productor musical',
+  'tiktok para músicos cómo hacerse viral',
+  'distribuidora digital música cuál elegir',
+  'sync licensing música cómo vender canciones',
+  'mezcla y master consejos para productores',
+  'cómo armar tu equipo como artista independiente',
+  'cuánto cobrar por un show siendo músico',
+  'inteligencia artificial en la música artistas',
+  'cómo conseguir seguidores reales como músico',
+  'sellos discográficos vs independiente',
+  'cómo promocionar tu música sin dinero',
+];
+
 const NEWS_QUERIES = [
   'industria musical latinoamerica 2025',
   'spotify noticias artistas independientes',
@@ -210,6 +244,39 @@ async function searchSerperVideos(query, limit = 4) {
     }));
 }
 
+// Filtro de calidad para títulos de TikTok: los captions suelen ser un
+// montón de hashtags o una frase suelta sin contenido utilizable como idea.
+function esTituloUtilTikTok(titulo) {
+  const t = (titulo || '').trim();
+  if (t.length < 15) return false;
+  const sinHashtags = t.replace(/#\S+/g, '').replace(/[.…\s]+$/g, '').trim();
+  const palabras = sinHashtags.split(/\s+/).filter(Boolean);
+  return palabras.length >= 4; // al menos 4 palabras que no sean hashtags
+}
+
+async function searchTikTok(query, limit = 10) {
+  if (!config.serperApiKey) return [];
+  const body = JSON.stringify({ q: `site:tiktok.com ${query}`, gl: 'cl', hl: 'es', num: limit, tbs: 'qdr:y' });
+  let raw;
+  try {
+    raw = await httpPost('https://google.serper.dev/videos', body, {
+      'X-API-KEY': config.serperApiKey, 'Content-Type': 'application/json',
+    });
+  } catch (e) { console.warn(`[research] Serper TikTok error "${query}":`, e.message); return []; }
+
+  const data = JSON.parse(raw);
+  if (data.error) { console.warn('[research] Serper TikTok error:', data.error); return []; }
+
+  return (data.videos || [])
+    .filter(v => (v.link || '').includes('tiktok.com') && esTituloUtilTikTok(v.title))
+    .map(v => ({
+      title:       (v.title   || '').trim(),
+      description: (v.snippet || v.channel || '').trim(),
+      url:         v.link,
+      source:      'tiktok_viral',
+    }));
+}
+
 // ── Serper: Noticias recientes de la industria ────────────────────────────
 
 // tbs='qdr:w' (última semana) por default para el research diario, que busca
@@ -314,6 +381,16 @@ async function research() {
   console.log(`  ✓ Videos "${vQuery}" → ${videos.length} resultados`);
   await sleep(300);
 
+  // TikTok dedicado (TIKTOK_QUERIES_POR_DIA queries rotativas, solo site:tiktok.com)
+  const tQueries = getDailyQueries(TIKTOK_QUERIES, TIKTOK_QUERIES_POR_DIA);
+  console.log('[research] TikTok queries:', tQueries);
+  for (const q of tQueries) {
+    const tt = await searchTikTok(q, 10);
+    tt.forEach(addIdea);
+    console.log(`  ✓ TikTok "${q}" → ${tt.length} resultados útiles`);
+    await sleep(300);
+  }
+
   // Noticias recientes (1 query rotativa hoy)
   const nQuery = getDailyQueries(NEWS_QUERIES, 1)[0];
   console.log('[research] Noticias query:', nQuery);
@@ -360,4 +437,4 @@ if (require.main === module) {
   research().catch(e => { console.error('[research] Error fatal:', e); process.exit(1); });
 }
 
-module.exports = { research, searchSerperNews };
+module.exports = { research, searchSerperNews, searchTikTok, TIKTOK_QUERIES };
