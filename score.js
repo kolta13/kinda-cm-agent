@@ -108,6 +108,16 @@ sin ángulo musical — su "relevancia" NO puede pasar de 3, aunque esté bien e
 tenga buen potencial de engagement. Pregúntate: ¿un artista o profesional de la música
 lo usaría para su carrera musical? Si la respuesta es "solo si lo adaptara", es 3 o menos.
 
+FILTRO GEOGRÁFICO: la audiencia principal está en CHILE (el resto de LATAM es
+secundario). Si la idea trata de la ley, el mercado, una noticia, un festival, un
+ranking, un sello o un artista de OTRO país en particular (Perú, México, Argentina,
+Colombia, España, EE.UU., etc.) y no se puede aplicar tal cual a un artista chileno,
+su "relevancia" NO puede pasar de 3. Ejemplo: "Perú fija 3 días para retirar música
+infractora" — una norma peruana, no le sirve a un artista en Chile. SÍ valen las
+ideas que aplican a cualquier país o a toda la región: cómo funcionan Spotify o
+TikTok, contratos y regalías en general, estrategia de lanzamiento, producción,
+marketing. Ante la duda, pregúntate: "¿esto le cambia algo a un artista chileno?".
+
 IMPORTANTE sobre merchandising ("merch"): es un tema real, pero relevante recién
 cuando un artista YA tiene base de fans consolidada — no para un artista emergente
 que recién está lanzando música. Es el segmento más pequeño y tardío del journey

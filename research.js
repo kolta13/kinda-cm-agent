@@ -223,7 +223,7 @@ async function searchSerper(query, limit = 4) {
 async function searchSerperVideos(query, limit = 4) {
   if (!config.serperApiKey) return [];
 
-  const body = JSON.stringify({ q: query, gl: 'us', hl: 'es', num: limit, tbs: 'qdr:m' });
+  const body = JSON.stringify({ q: query, gl: 'cl', hl: 'es', num: limit, tbs: 'qdr:m' });
   let raw;
   try {
     raw = await httpPost('https://google.serper.dev/videos', body, {
@@ -286,7 +286,7 @@ async function searchTikTok(query, limit = 10) {
 async function searchSerperNews(query, limit = 3, tbs = 'qdr:w') {
   if (!config.serperApiKey) return [];
 
-  const params = { q: query, gl: 'us', hl: 'es', num: limit };
+  const params = { q: query, gl: 'cl', hl: 'es', num: limit };
   if (tbs) params.tbs = tbs;
   const body = JSON.stringify(params);
   let raw;

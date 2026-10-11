@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T22:30:39.944Z",
+  "updated_at": "2026-10-11T23:23:22.318Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -1213,12 +1213,14 @@
       },
       "angulo": "Presenta los 10 videos musicales más populares en YouTube Argentina en un momento dado.",
       "por_que": "Puede servir de inspiración o para entender tendencias locales, pero su aplicabilidad directa y diferenciación son limitadas al ser una lista de actualidad.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista",
-      "is_promotional": false
+      "is_promotional": false,
+      "skipped_at": "2026-10-11T23:23:22.108Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "kka1pt",
@@ -2572,12 +2574,14 @@
       },
       "angulo": "Análisis de cómo Spotify México apoya a artistas emergentes a través de iniciativas colaborativas.",
       "por_que": "Las plataformas de streaming son cruciales para los artistas. Entender cómo una plataforma local está impulsando talento es de gran interés y relevancia.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista",
-      "is_promotional": false
+      "is_promotional": false,
+      "skipped_at": "2026-10-11T23:23:22.120Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "491yxo",
@@ -2710,12 +2714,14 @@
       },
       "angulo": "Crítica a la curaduría de playlists de rap en Spotify, cuestionando la inclusión de IA y la falta de representación.",
       "por_que": "Genera debate y conciencia sobre la curaduría de playlists y la influencia de la IA. Aunque específico del rap español, toca temas universales sobre la autenticidad y la representación.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-21T22:18:45.710Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista",
-      "is_promotional": false
+      "is_promotional": false,
+      "skipped_at": "2026-10-11T23:23:22.129Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "ol6j9n",
@@ -4204,12 +4210,14 @@
       },
       "angulo": "Presenta el ranking de los 10 videos musicales más populares en YouTube Argentina, destacando nuevos artistas y canciones.",
       "por_que": "Ofrece una visión del mercado musical en una región clave (Argentina). Puede servir de inspiración o para entender qué está resonando con la audiencia local.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista",
-      "is_promotional": false
+      "is_promotional": false,
+      "skipped_at": "2026-10-11T23:23:22.139Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "o33aq",
@@ -4920,11 +4928,13 @@
       },
       "angulo": "Listado de festivales en España con convocatorias abiertas para artistas emergentes.",
       "por_que": "Si bien es en España, los artistas latinos buscan activamente oportunidades internacionales. Una guía de festivales con convocatorias abiertas es muy útil.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-30T23:47:40.248Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.149Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "ntdb3r",
@@ -6695,11 +6705,13 @@
       },
       "angulo": "Destacar la importancia de las negociaciones de tasas de regalías mecánicas en EE.UU. y su potencial impacto futuro en la industria musical global.",
       "por_que": "Informa a los profesionales de la música sobre un proceso clave que definirá las tasas de regalías en el futuro, con implicaciones directas para sus ingresos y los de sus representados.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-07T23:43:29.684Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "skipped_at": "2026-10-11T23:23:22.158Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "hmiej7",
@@ -6994,11 +7006,13 @@
       },
       "angulo": "Noticias sobre alianzas estratégicas y firmas de artistas en géneros clave de Latinoamérica.",
       "por_que": "Los artistas independientes necesitan estar al tanto de las oportunidades de la industria, como alianzas y firmas, para entender el panorama y sus posibilidades.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-09T23:28:57.918Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.166Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "jusqb",
@@ -7663,11 +7677,13 @@
       },
       "angulo": "Guía detallada y actualizada sobre festivales en España que abren convocatorias a artistas emergentes, explicando sus procesos.",
       "por_que": "Aunque enfocado en España, sirve como modelo para entender cómo funcionan las convocatorias de festivales internacionales, inspirando a artistas LATAM a buscar oportunidades similares en su región o fuera.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-12T23:15:03.715Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.184Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "o1b3qs",
@@ -8238,11 +8254,13 @@
       },
       "angulo": "Noticia sobre la vida personal de una artista de alto perfil y su impacto en su carrera.",
       "por_que": "Contenido de entretenimiento general, poco relevante para la estrategia o crecimiento de artistas independientes.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-14T19:49:34.374Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.192Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "fobs36",
@@ -8261,11 +8279,13 @@
       },
       "angulo": "Detalles de la gira de un artista consolidado y su impacto en el mercado local.",
       "por_que": "Puede ser útil para profesionales que analizan giras de alto perfil y la logística de eventos masivos en Latinoamérica.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-14T19:49:34.374Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "skipped_at": "2026-10-11T23:23:22.201Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "fyfyi9",
@@ -8422,11 +8442,13 @@
       },
       "angulo": "Análisis de cómo Spotify México está apoyando activamente el talento emergente a través de iniciativas como México Canta 2026.",
       "por_que": "Los artistas buscan oportunidades de ser descubiertos y apoyados por las grandes plataformas. Saber qué iniciativas existen les da una hoja de ruta para aprovechar estos apoyos.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-15T21:46:33.522Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.211Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "itsdhy",
@@ -9321,11 +9343,13 @@
       },
       "angulo": "Reporte sobre un evento clave de networking y desarrollo para la industria musical en Venezuela.",
       "por_que": "Relevante para profesionales de la música en Venezuela y aquellos interesados en eventos de la industria, pero menos directo para artistas emergentes globales.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-19T21:03:18.771Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "skipped_at": "2026-10-11T23:23:22.219Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "vi5aq7",
@@ -9711,11 +9735,13 @@
       },
       "angulo": "Reporte de popularidad de videos en YouTube en España.",
       "por_que": "Similar al punto 18, es un dato de consumo de contenido, no una guía o consejo para el desarrollo artístico o profesional.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-21T22:15:25.074Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.232Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "3avafr",
@@ -10196,10 +10222,12 @@
       "scores": null,
       "angulo": null,
       "por_que": null,
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-03T21:47:32.398Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "skipped_at": "2026-10-11T23:23:22.242Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "gr89py",
@@ -10497,11 +10525,13 @@
       },
       "angulo": "Anuncio del nombramiento de Yusim Aladro como nueva directora general de Warner Music México.",
       "por_que": "Noticia relevante para profesionales de la industria en LATAM, informando sobre movimientos clave en grandes sellos discográficos.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-04T21:57:46.722Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "skipped_at": "2026-10-11T23:23:22.251Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "8a6ok6",
@@ -10799,11 +10829,13 @@
       },
       "angulo": "Explorar las tendencias de YouTube en Colombia para que los artistas independientes identifiquen oportunidades de contenido y promoción.",
       "por_que": "Los artistas independientes en Colombia pueden aprender de los videos más populares para entender qué resuena con la audiencia local y cómo potenciar su propia presencia en YouTube.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-06T00:21:24.839Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.261Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "h9zwpa",
@@ -11183,11 +11215,13 @@
       },
       "angulo": "Explora la fusión de géneros como el trap con instrumentos tradicionales venezolanos, cuestionando el apoyo a artistas locales.",
       "por_que": "Aborda la escena musical local de Venezuela con un ángulo cultural y de género interesante, generando debate sobre el apoyo a artistas emergentes en la región.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-07T23:19:46.087Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.270Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "1e523g",
@@ -11391,11 +11425,13 @@
       },
       "angulo": "Guía de convocatorias para festivales dirigidos a artistas emergentes, con un enfoque en España.",
       "por_que": "Aunque útil para artistas que buscan oportunidades internacionales, su aplicabilidad directa para el mercado LATAM es limitada, pero puede servir como referencia aspiracional.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-08T23:34:12.879Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.280Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "klfisl",
@@ -11677,11 +11713,13 @@
       },
       "angulo": "Investigación sobre la influencia del crimen organizado en la industria de conciertos en México.",
       "por_que": "Aunque es un tema de interés periodístico, su aplicabilidad directa para artistas o profesionales de la música que buscan hacer crecer sus carreras es mínima y no se alinea con el enfoque de Kinda Club.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-09T22:54:43.223Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "profesional"
+      "audience_type": "profesional",
+      "skipped_at": "2026-10-11T23:23:22.290Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "4b8w5d",
@@ -11703,11 +11741,13 @@
       },
       "angulo": "Reporte sobre la popularidad del K-pop en México y su presencia en los rankings de iTunes.",
       "por_que": "Si bien muestra una tendencia global, el enfoque en K-pop y su presencia en iTunes México tiene una relevancia limitada para la mayoría de los artistas independientes latinoamericanos que buscan lanzar su propia música.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-09T22:54:43.223Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.300Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "8gn9cw",
@@ -12483,11 +12523,13 @@
       },
       "angulo": "Análisis de errores comunes y conflictos derivados de la informalidad en acuerdos musicales en Colombia.",
       "por_que": "Aunque específico de Colombia, ofrece lecciones sobre acuerdos y formalidad que son relevantes para artistas en toda Latinoamérica.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-11T22:27:07.483Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:23:22.310Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "2f7ab5",
@@ -15102,10 +15144,12 @@
       "scores": null,
       "angulo": null,
       "por_que": null,
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-11T22:27:07.491Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "skipped_at": "2026-10-11T23:23:22.318Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país (audiencia principal Chile)"
     },
     {
       "id": "7okiww",
