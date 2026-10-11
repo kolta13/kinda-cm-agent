@@ -28,7 +28,7 @@ function save(history) {
 // `status`: 'published' (default, quedó público de verdad) | 'draft_sent' (TikTok:
 // solo se mandó el borrador a la bandeja de la app, alguien debe terminarlo a mano
 // — no hay garantía de que ese post exista públicamente todavía).
-function appendPost({ platform, week, tema, topic_tag, audience_type, formato, cta_mode, backlog_id, winner_score, post_id, caption, hashtags, slides, image_urls, status }) {
+function appendPost({ platform, week, tema, topic_tag, audience_type, formato, cta_mode, origen_idea, backlog_id, winner_score, post_id, caption, hashtags, slides, image_urls, status }) {
   const history = load();
   history.posts.push({
     platform:      platform || 'instagram',
@@ -42,6 +42,7 @@ function appendPost({ platform, week, tema, topic_tag, audience_type, formato, c
     // rendimiento correlaciona contra las métricas para sacar aprendizajes.
     formato:       formato || null,
     cta_mode:      cta_mode || null,
+    origen_idea:   origen_idea || null, // origen de la idea (tiktok_viral, google...)
     backlog_id:    backlog_id || null,
     winner_score:  winner_score ?? null,
     post_id,

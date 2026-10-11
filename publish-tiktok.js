@@ -291,6 +291,7 @@ async function publishTikTok() {
     audience_type: carouselData?.carousel?.audience_type,
     formato:       carouselData?.formato,
     cta_mode:      carouselData?.cta_mode,
+    origen_idea:   carouselData?.origen_idea,
     backlog_id:    carouselData?.backlog_id,
     winner_score:  carouselData?.winner_score,
     post_id:       postId,

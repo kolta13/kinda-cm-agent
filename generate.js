@@ -94,6 +94,24 @@ function safeJsonParse(raw) {
 // Las ideas ya vienen puntuadas desde research.js (score.js).
 // Solo ordenamos por score y aplicamos las reglas de ratio.
 
+// Experimento de priorización por fuente (iniciado 2026-10-10 a pedido de Mirko):
+// durante un par de semanas se prioriza contenido de TikTok viral para ver cómo
+// rinde frente al resto. Cada post guarda `fuente` en el histórico (ver
+// history.js) y `node insights.js` lo compara contra las demás fuentes.
+// Vence solo en `hasta`: después vuelve al orden por score. Para extenderlo o
+// cortarlo antes basta editar esta constante.
+const EXPERIMENTO_PRIORIDAD = {
+  fuente:   'tiktok_viral',
+  minScore: 8,            // piso de calidad: no se prioriza basura por ser viral
+  desde:    '2026-10-10',
+  hasta:    '2026-10-24',
+};
+
+function experimentoActivo(hoy = new Date().toISOString().slice(0, 10)) {
+  const e = EXPERIMENTO_PRIORIDAD;
+  return hoy >= e.desde && hoy <= e.hasta ? e : null;
+}
+
 function selectWinner(pending) {
   // Las ideas promocionales (tema = promocionar Kinda Club) solo tienen sentido
   // en días de CTA directo. En un día de CTA blando el carrusel no puede vender,
@@ -113,7 +131,23 @@ function selectWinner(pending) {
   }
 
   // Ordenar por score_total desc; ideas sin score van al final (score 0)
-  const sorted = [...candidatas].sort((a, b) => (b.score_total || 0) - (a.score_total || 0));
+  let sorted = [...candidatas].sort((a, b) => (b.score_total || 0) - (a.score_total || 0));
+
+  // EXPERIMENTO (ver EXPERIMENTO_PRIORIDAD): las ideas de la fuente priorizada
+  // con score suficiente van primero, ordenadas por score entre ellas. El resto
+  // del orden no cambia, así que si no quedan ideas priorizadas elegibles el
+  // comportamiento es el de siempre.
+  const exp = experimentoActivo();
+  if (exp) {
+    const prioritarias = sorted.filter(i => i.source === exp.fuente && (i.score_total || 0) >= exp.minScore);
+    if (prioritarias.length > 0) {
+      const resto = sorted.filter(i => !prioritarias.includes(i));
+      sorted = [...prioritarias, ...resto];
+      console.log(`[generate] 🧪 Experimento "${exp.fuente}" activo hasta ${exp.hasta}: ${prioritarias.length} idea(s) priorizada(s) (score >= ${exp.minScore})`);
+    } else {
+      console.log(`[generate] 🧪 Experimento "${exp.fuente}" activo pero sin ideas elegibles hoy — orden normal`);
+    }
+  }
 
   // Ratio 80/20: si los últimos 5 publicados no tienen ningún "profesional", forzar uno
   //
@@ -1040,6 +1074,9 @@ async function generate({ excludeIds = [] } = {}) {
     week:         today,
     winner_score: winner.score_total,
     backlog_id:   winnerId,
+    // Fuente de la idea (google, tiktok_viral, noticia...) — para comparar
+    // rendimiento por origen en el experimento de priorización.
+    origen_idea:  winner.source || null,
     topic_tag:    winner.topic_tag || 'general', // para el badge de la portada en render.js
     // artist_photo_url: SOLO se usa si ya fue confirmada por un humano al
     // curar la idea (ver backlog.js) — el cron desatendido nunca busca ni

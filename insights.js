@@ -315,7 +315,7 @@ function resumen() {
     return;
   }
 
-  for (const [dim, etiqueta] of [['formato', 'FORMATO'], ['topic_tag', 'TEMA'], ['cta_mode', 'CTA']]) {
+  for (const [dim, etiqueta] of [['formato', 'FORMATO'], ['topic_tag', 'TEMA'], ['cta_mode', 'CTA'], ['origen_idea', 'ORIGEN DE LA IDEA']]) {
     const grupos = analizarPor(dim, { minMuestra: 1 });
     if (grupos.length === 0) continue;
     console.log(`\n=== POR ${etiqueta} ===`);
