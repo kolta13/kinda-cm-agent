@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T22:02:40.279Z",
+  "updated_at": "2026-10-11T22:30:46.888Z",
   "posts": [
     {
       "platform": "instagram",
@@ -3406,6 +3406,130 @@
       ],
       "metrics": null,
       "origen_idea": "manual"
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-10-11T22:30:39.948Z",
+      "week": "2026-10-11",
+      "tema": "Perú fijó un plazo de tres días para la retirada de música. Una cláusula en tu contrato de distribución decide si puedes usarlo.",
+      "topic_tag": "noticias",
+      "audience_type": "profesional",
+      "formato": "MITO VS REALIDAD",
+      "cta_mode": "blando",
+      "origen_idea": "noticia",
+      "backlog_id": "hlfd9l",
+      "winner_score": 8.5,
+      "post_id": "17961369975231591",
+      "caption": "Perú ahora fija un plazo de 3 días para retirar música infractora. Pero, ¿te permite tu contrato aprovecharlo? 👇\n\n#MusicaLatina #DerechoMusical #ContratosMusicais #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#DerechoMusical",
+        "#ContratosMusicais",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Perú limita a 3 días la retirada de música: ¿tu contrato te protege?",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "La ley peruana es automática",
+          "body": "La nueva ley otorga 3 días hábiles para eliminar contenido infractor. Sin embargo, tu contrato de distribución define si puedes solicitar esa retirada o si la plataforma actuará por sí sola."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Tu distribuidora siempre responde",
+          "body": "Cláusulas de territorio y derechos de explotación son clave. Si tu contrato cedió derechos mundiales a perpetuidad, la retirada puede ser compleja o imposible, incluso con la ley peruana."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "El plazo aplica a todos",
+          "body": "El plazo de 3 días hábiles aplica a las plataformas. Tu capacidad de reacción depende de qué dice tu acuerdo de distribución sobre notificaciones y tiempos de respuesta ante infracciones."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Revisa tu contrato: es tu única defensa real",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-11/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-11/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-11/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-11/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-11/slide-05.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-10-11T22:30:46.888Z",
+      "week": "2026-10-11",
+      "tema": "Perú fijó un plazo de tres días para la retirada de música. Una cláusula en tu contrato de distribución decide si puedes usarlo.",
+      "topic_tag": "noticias",
+      "audience_type": "profesional",
+      "formato": "MITO VS REALIDAD",
+      "cta_mode": "blando",
+      "origen_idea": "noticia",
+      "backlog_id": "hlfd9l",
+      "winner_score": 8.5,
+      "post_id": "p_inbox_url~v2.7695541159120504833",
+      "caption": "Perú ahora fija un plazo de 3 días para retirar música infractora. Pero, ¿te permite tu contrato aprovecharlo? 👇\n\n#MusicaLatina #DerechoMusical #ContratosMusicais #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#DerechoMusical",
+        "#ContratosMusicais",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Perú limita a 3 días la retirada de música: ¿tu contrato te protege?",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "La ley peruana es automática",
+          "body": "La nueva ley otorga 3 días hábiles para eliminar contenido infractor. Sin embargo, tu contrato de distribución define si puedes solicitar esa retirada o si la plataforma actuará por sí sola."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Tu distribuidora siempre responde",
+          "body": "Cláusulas de territorio y derechos de explotación son clave. Si tu contrato cedió derechos mundiales a perpetuidad, la retirada puede ser compleja o imposible, incluso con la ley peruana."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "El plazo aplica a todos",
+          "body": "El plazo de 3 días hábiles aplica a las plataformas. Tu capacidad de reacción depende de qué dice tu acuerdo de distribución sobre notificaciones y tiempos de respuesta ante infracciones."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Revisa tu contrato: es tu única defensa real",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-11/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-11/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-11/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-11/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-11/slide-05.jpg"
+      ],
+      "metrics": null
     }
   ]
 }

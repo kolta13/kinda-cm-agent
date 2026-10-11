@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T22:27:07.496Z",
+  "updated_at": "2026-10-11T22:30:39.944Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -7824,10 +7824,10 @@
       },
       "angulo": "Análisis de la nueva regulación en Perú sobre retirada de música y cómo las cláusulas de distribución afectan la capacidad de los artistas para responder.",
       "por_que": "Aborda un tema legal y de distribución específico de LATAM, crucial para artistas y profesionales que distribuyen música en la región. Destaca la importancia de revisar contratos.",
-      "status": "pending",
+      "status": "published",
       "discovered_at": "2026-09-12T23:15:03.716Z",
-      "published_at": null,
-      "post_id": null,
+      "published_at": "2026-10-11T22:30:39.944Z",
+      "post_id": "17961369975231591",
       "audience_type": "profesional"
     },
     {
@@ -10232,14 +10232,20 @@
       "artist_photo_credit": null,
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Enfocado en cómo los estrenos específicos pueden impulsar el crecimiento de la audiencia de un artista.",
+      "por_que": "Los artistas emergentes siempre buscan estrategias concretas para aumentar su alcance. Este contenido ofrece tácticas accionables.",
       "status": "pending",
       "discovered_at": "2026-10-03T21:47:32.398Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "fpl3yw",
@@ -10378,14 +10384,20 @@
       "artist_photo_credit": null,
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Destaca la importancia de la presencia en redes y formatos cortos con contenido constante y dinámico.",
+      "por_que": "La visibilidad en redes es crucial para artistas independientes. El enfoque en formatos cortos y contenido continuo es muy relevante hoy en día.",
       "status": "pending",
       "discovered_at": "2026-10-04T21:57:46.722Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "q6fohp",
@@ -10398,14 +10410,20 @@
       "artist_photo_credit": null,
       "topic_tag": "video_viral",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Comparte una perspectiva honesta y realista sobre los desafíos de ser músico independiente.",
+      "por_que": "Los artistas emergentes a menudo idealizan la carrera musical. Un contenido que muestre la realidad puede generar mucha conexión y confianza.",
       "status": "pending",
       "discovered_at": "2026-10-04T21:57:46.722Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "4oh6zs",
@@ -10418,14 +10436,20 @@
       "artist_photo_credit": null,
       "topic_tag": "video_viral",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Aborda la falta de conocimiento sobre la gestión y profesionalización en la carrera de un artista emergente.",
+      "por_que": "Muchos artistas emergentes carecen de conocimientos básicos de negocio y gestión. Este tipo de contenido les ofrece una guía práctica.",
       "status": "pending",
       "discovered_at": "2026-10-04T21:57:46.722Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "elvv4y",
@@ -10668,14 +10692,20 @@
       "artist_photo_credit": null,
       "topic_tag": "monetizacion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Propone estrategias para monetizar el catálogo musical existente de un artista.",
+      "por_que": "La monetización es una preocupación central para los artistas. Ofrecer métodos claros para aprovechar su catálogo es de alto valor.",
       "status": "pending",
       "discovered_at": "2026-10-06T00:21:24.838Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "rvqsf1",
@@ -10708,14 +10738,20 @@
       "artist_photo_credit": null,
       "topic_tag": "monetizacion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Explica las vías de monetización en TikTok desde la experiencia personal.",
+      "por_que": "TikTok es una plataforma clave para muchos artistas emergentes en Latinoamérica. Entender cómo monetizar allí es fundamental.",
       "status": "pending",
       "discovered_at": "2026-10-06T00:21:24.838Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "1ys1oa",
@@ -10728,14 +10764,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Muestra el proceso detrás de escena del trabajo de un profesional de la música con artistas.",
+      "por_que": "Ofrece una visión del trabajo de profesionales, lo que puede atraer a artistas que buscan servicios y a otros profesionales que buscan compartir experiencias.",
       "status": "pending",
       "discovered_at": "2026-10-06T00:21:24.839Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "ame7d5",
@@ -11938,14 +11980,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Ofrece consejos prácticos para que los artistas emergentes mejoren su presencia y rendimiento en Spotify.",
+      "por_que": "Spotify es la principal plataforma de streaming. Consejos específicos para artistas emergentes en esta plataforma son de altísimo valor y aplicabilidad.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.441Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "kgmyat",
@@ -11958,14 +12006,20 @@
       "artist_photo_credit": null,
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Se enfoca en la creación de contenido que fomente la fidelización de la audiencia a través de historias.",
+      "por_que": "La creación de contenido es vital para artistas emergentes. El énfasis en la fidelización y las historias añade un ángulo valioso.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.481Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "xzbarh",
@@ -11978,14 +12032,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Proporciona consejos integrales sobre contenido y promoción para artistas emergentes.",
+      "por_que": "Aborda aspectos clave para el avance de un artista emergente, combinando la creación de contenido con estrategias de promoción.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.481Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "lzthnu",
@@ -11998,14 +12058,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Anima a los artistas emergentes a superar el miedo al juicio externo y a enfocarse en el movimiento y crecimiento artístico.",
+      "por_que": "Aborda un bloqueo común en artistas emergentes: el miedo a la crítica. Ofrece un mensaje motivacional y práctico para la acción.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.481Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "gk2y3o",
@@ -12018,14 +12084,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 6,
+        "aplicabilidad": 8
+      },
+      "angulo": "Ofrece consejos motivacionales generales para artistas emergentes que buscan perseguir sus sueños creativos.",
+      "por_que": "Aunque genérico, el mensaje de perseguir sueños es siempre relevante para artistas, especialmente los que están comenzando y necesitan impulso.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.481Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "azmth5",
@@ -12038,14 +12110,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Inicia una serie de consejos para artistas emergentes, abordando la tendencia a la sobre-perfección.",
+      "por_que": "La serie promete contenido continuo y aborda un problema común: la parálisis por análisis o búsqueda excesiva de perfección.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "fkh819",
@@ -12058,14 +12136,20 @@
       "artist_photo_credit": null,
       "topic_tag": "shows",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Enfatiza la perseverancia y la importancia de la práctica diaria, grabaciones simples y presentaciones pequeñas.",
+      "por_que": "Ofrece consejos prácticos y realistas para artistas emergentes, enfocándose en la acción y el desarrollo continuo.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "cpwxzb",
@@ -12078,14 +12162,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Presenta consejos esenciales para potenciar la carrera musical y la producción de artistas emergentes.",
+      "por_que": "Un título directo que promete valor para artistas emergentes en aspectos fundamentales de su carrera y producción.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "o8mien",
@@ -12098,14 +12188,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 3,
+      "scores": {
+        "relevancia": 2,
+        "engagement": 3,
+        "diferenciador": 3,
+        "aplicabilidad": 4
+      },
+      "angulo": "Ofrece consejos para artistas emergentes en el contexto del arte y la pintura.",
+      "por_que": "Aunque habla de 'artista emergente', el nicho de 'arte y pintura' no es directamente aplicable a la industria musical latinoamericana, limitando su relevancia.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "utsnl",
@@ -12118,14 +12214,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Advierte a los artistas emergentes sobre falsas promesas y la importancia de tener criterio propio y equipo legal.",
+      "por_que": "Este es un consejo crucial y poco discutido que protege a los artistas emergentes de estafas y malas decisiones profesionales.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "821ddq",
@@ -12138,14 +12240,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Enseña a utilizar Meta Ads para potenciar el crecimiento de artistas en Spotify.",
+      "por_que": "La publicidad digital es una herramienta poderosa para el crecimiento. Enseñar Meta Ads con un enfoque en Spotify es muy práctico para artistas.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "7ygnrx",
@@ -12158,14 +12266,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Informa sobre la iniciativa de Spotify de generar música para sus usuarios.",
+      "por_que": "Este tema es relevante para profesionales de la industria (sellos, distribuidores, artistas) que necesitan entender las tendencias y el futuro de las plataformas.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "profesional"
     },
     {
       "id": "qwx0n4",
@@ -12178,14 +12292,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Presenta un plan ambicioso para artistas independientes que aspiran a alcanzar grandes cifras de oyentes.",
+      "por_que": "Inspira y ofrece una hoja de ruta, aunque sea ambiciosa, para artistas que buscan un crecimiento masivo en su carrera.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "urh2io",
@@ -12198,14 +12318,20 @@
       "artist_photo_credit": null,
       "topic_tag": "video_viral",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategia de contenido enfocada en formatos cortos y reflexivos para músicos en 2026.",
+      "por_que": "Ofrece tácticas concretas y actuales para que los músicos construyan su presencia digital, un pilar fundamental para su carrera.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "s9mh6e",
@@ -12218,14 +12344,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía práctica de marketing musical enfocada en artistas emergentes para optimizar su presencia y colaboraciones.",
+      "por_que": "Aborda directamente las necesidades de los artistas independientes en Latinoamérica, ofreciendo estrategias para destacar en plataformas clave.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "usw8zj",
@@ -12238,14 +12370,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "La importancia del contenido y la superación del miedo a exponerse para aumentar oyentes y contrataciones.",
+      "por_que": "Conecta la creación de contenido directamente con el crecimiento de la carrera musical y la monetización, un tema crucial para artistas.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "s0ztlk",
@@ -12258,14 +12396,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Estrategia de colaboraciones para artistas emergentes en Spotify, enfocada en playlists orgánicas y crecimiento de oyentes.",
+      "por_que": "Ofrece una táctica específica para artistas emergentes que buscan aumentar su visibilidad y oyentes en una plataforma central.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "3kqqz0",
@@ -12278,14 +12422,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 8,
+        "aplicabilidad": 7
+      },
+      "angulo": "Análisis sobre el cambio de rol de Spotify y la importancia de otras plataformas como YouTube para el crecimiento de artistas independientes.",
+      "por_que": "Cuestiona el status quo y ofrece una perspectiva alternativa sobre dónde los artistas pueden enfocar sus esfuerzos de crecimiento.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "mluce6",
@@ -12298,14 +12448,20 @@
       "artist_photo_credit": null,
       "topic_tag": "monetizacion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía para evitar errores comunes al reclamar y gestionar el canal de artista en YouTube.",
+      "por_que": "Aborda un paso técnico crucial para la presencia online de los artistas, con implicaciones directas en monetización y control.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.482Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "ywpnwz",
@@ -12318,14 +12474,20 @@
       "artist_photo_credit": null,
       "topic_tag": "noticias",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 6,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Análisis de errores comunes y conflictos derivados de la informalidad en acuerdos musicales en Colombia.",
+      "por_que": "Aunque específico de Colombia, ofrece lecciones sobre acuerdos y formalidad que son relevantes para artistas en toda Latinoamérica.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.483Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "2f7ab5",
@@ -12338,14 +12500,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 8,
+        "diferenciador": 9,
+        "aplicabilidad": 9
+      },
+      "angulo": "Resolución de dudas legales sobre derechos de autor para músicos, enfocándose en el registro de composiciones y nombres.",
+      "por_que": "Aborda un aspecto legal fundamental y a menudo descuidado por artistas independientes, ofreciendo claridad y protección.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.483Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "oppz8k",
@@ -12358,14 +12526,20 @@
       "artist_photo_credit": null,
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "La importancia de la preparación y la comunicación en shows, vinculándolo al uso del catálogo musical como recurso.",
+      "por_que": "Aunque el título es llamativo, el ángulo parece mezclar preparación para shows con marketing del catálogo, siendo menos directo.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.483Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "c61928",
@@ -12378,14 +12552,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 6,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 6
+      },
+      "angulo": "Análisis de la crítica no constructiva en compositores y la comparación desfavorable de trayectorias.",
+      "por_que": "Aborda un tema psicológico y de dinámica social en la industria, pero con aplicabilidad limitada para el desarrollo profesional directo.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.483Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "3bovj8",
@@ -12398,14 +12578,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 6
+      },
+      "angulo": "Estrategia para descubrir nuevos músicos y cómo los artistas pueden ser descubiertos, con un enfoque de 'truco' o atajo.",
+      "por_que": "El título es intrigante y busca captar la atención, pero el contenido podría ser genérico si no se enfoca en tácticas específicas.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "81eo2x",
@@ -12418,14 +12604,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Recomendación de evaluar el potencial de una canción antes de invertir en publicidad, sugiriendo pasos previos.",
+      "por_que": "Ofrece un consejo financiero y estratégico crucial para artistas independientes, evitando gastos innecesarios en campañas fallidas.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "nrogr8",
@@ -12438,14 +12630,20 @@
       "artist_photo_credit": null,
       "topic_tag": "tecnologia",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 9,
+        "aplicabilidad": 8
+      },
+      "angulo": "Métodos para verificar la autoría de canciones creadas con herramientas de Inteligencia Artificial en el contexto de 2026.",
+      "por_que": "Aborda una preocupación emergente y tecnológica para los artistas, con implicaciones directas en derechos y propiedad intelectual.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "w4bevl",
@@ -12458,14 +12656,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 7
+      },
+      "angulo": "Debate sobre la transición de artista 'under' a uno más establecido, desmitificando la necesidad de un gran catálogo.",
+      "por_que": "Ayuda a los artistas emergentes a entender su etapa de desarrollo y a no sentirse presionados por métricas de éxito prematuras.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "rkxnxg",
@@ -12478,14 +12682,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía paso a paso para la creación y lanzamiento de una canción, desde la idea hasta la definición del 'mood'.",
+      "por_que": "Ofrece un proceso claro y accionable para artistas que están en las etapas iniciales de producción y lanzamiento musical.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "l0uw7g",
@@ -12498,14 +12708,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategia detallada para un lanzamiento musical exitoso, incluyendo personalización de mensajes y distribución.",
+      "por_que": "Proporciona un plan completo y práctico para que los artistas ejecuten lanzamientos profesionales y efectivos.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "nmoo19",
@@ -12518,14 +12734,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategia inicial para lanzar música, enfocada en singles y EPs, y la importancia del feedback previo.",
+      "por_que": "Ofrece un enfoque estructurado para artistas que están dando sus primeros pasos en el lanzamiento de su música.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "q7odpo",
@@ -12538,14 +12760,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Pasos prácticos y preparación de 'assets' básicos para lanzar una canción, incluyendo carátula y descripción.",
+      "por_que": "Detalla los elementos técnicos y creativos necesarios para un lanzamiento, facilitando el proceso para artistas independientes.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "5tr5do",
@@ -12558,14 +12786,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía paso a paso sobre qué hacer antes de subir una canción, con énfasis en contenido para plataformas como TikTok.",
+      "por_que": "Enfoca la promoción pre-lanzamiento en herramientas digitales clave para la visibilidad de artistas emergentes.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "4kcc8k",
@@ -12578,14 +12812,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Plan personal y pasos detallados para lanzar la primera canción de un artista, desde la idea hasta el concepto.",
+      "por_que": "Ofrece una perspectiva realista y un plan de acción concreto para artistas que enfrentan el desafío de su primer lanzamiento.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "c53mel",
@@ -12598,14 +12838,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Enfoque estratégico para maximizar el impacto de un lanzamiento de EP o álbum, analizando la presentación de canciones.",
+      "por_que": "Es fundamental para artistas independientes que buscan optimizar sus lanzamientos. Ofrece pasos concretos para una estrategia integral.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "k0ap6u",
@@ -12618,14 +12864,20 @@
       "artist_photo_credit": null,
       "topic_tag": "general",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía práctica con pasos concretos para lanzar una canción, aplicable tanto con como sin una estrategia predefinida.",
+      "por_que": "Aborda directamente la necesidad de los artistas de lanzar música de manera efectiva, ofreciendo un proceso claro y adaptable.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "r5nkgp",
@@ -12638,14 +12890,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Proceso accesible para crear y lanzar la primera canción, enfatizando la consistencia y la planificación de próximos pasos.",
+      "por_que": "Ideal para artistas emergentes que dan sus primeros pasos. El énfasis en la accesibilidad y la consistencia es clave para quienes inician.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "4smv4h",
@@ -12658,14 +12916,20 @@
       "artist_photo_credit": null,
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Definición de objetivos concretos para lanzamientos musicales, abarcando desde listas de reproducción hasta contratación en conciertos.",
+      "por_que": "Enseña a los artistas a enfocar sus esfuerzos de marketing musical hacia metas medibles, aumentando la efectividad de sus lanzamientos.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "jirn0w",
@@ -12678,14 +12942,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía completa sobre estrategias y preparación para lanzamientos musicales, incluyendo aspectos de producción, mezcla y roles profesionales.",
+      "por_que": "Ofrece una visión general de los componentes clave de un lanzamiento, útil para artistas que buscan entender todo el proceso.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "mboa6s",
@@ -12698,14 +12968,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Aplicación de la regla del 80/20 en estrategias de marketing musical para artistas independientes, priorizando música nueva.",
+      "por_que": "Directamente enfocado en artistas independientes, propone una metodología clara (80/20) para optimizar el tiempo y los recursos en lanzamientos.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "o6h9vk",
@@ -12718,14 +12994,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Desarrollo y aprovechamiento del concepto de una canción para potenciar su comunicación y estrategia de lanzamiento.",
+      "por_que": "Ayuda a los artistas a ir más allá de la música en sí, utilizando el concepto como herramienta de marketing para conectar con la audiencia.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "j9gtk1",
@@ -12738,14 +13020,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Análisis de los componentes y dinámicas clave detrás de los lanzamientos musicales exitosos en la industria.",
+      "por_que": "Proporciona una visión general de lo que funciona, permitiendo a los artistas aprender de casos de éxito y aplicar principios similares.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.484Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "nwcgb6",
@@ -12758,14 +13046,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Consejo práctico para planificar lanzamientos musicales, enfatizando la importancia de no publicar solo el día del lanzamiento.",
+      "por_que": "Ofrece una táctica específica y valiosa (evitar publicar solo el día del lanzamiento) que muchos artistas emergentes podrían pasar por alto.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "qcqjg",
@@ -12778,14 +13072,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Estrategia para sostener y promocionar un track exitoso, destinando el 80% del marketing para maximizar regalías.",
+      "por_que": "Enfocado en la monetización, enseña a los artistas a optimizar sus lanzamientos para generar mayores ingresos a largo plazo.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "oz59os",
@@ -12798,14 +13098,20 @@
       "artist_photo_credit": null,
       "topic_tag": "marketing",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 8
+      },
+      "angulo": "Estrategias de marketing musical de bajo costo, aprovechando recursos gratuitos como redes sociales y colaboraciones.",
+      "por_que": "Ofrece soluciones prácticas y económicas para que los artistas aumenten su visibilidad y atraigan éxito sin grandes presupuestos.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "3czq7o",
@@ -12818,14 +13124,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Combinación de estrategias publicitarias, orgánicas e inteligencia artificial para amplificar el impacto de los lanzamientos musicales.",
+      "por_que": "Presenta un enfoque moderno y multifacético para el marketing musical, integrando herramientas actuales para potenciar el alcance.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "okky92",
@@ -12838,14 +13150,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía para enviar canciones a curadores de playlists de Spotify antes del lanzamiento y aumentar las oportunidades de ser incluido.",
+      "por_que": "Crucial para artistas independientes que buscan visibilidad en la plataforma más importante. Ofrece un paso a paso aplicable.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "c0ajli",
@@ -12858,14 +13176,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 9,
+      "scores": {
+        "relevancia": 10,
+        "engagement": 9,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Técnicas para conseguir inclusión en playlists de Spotify, Amazon Music, YouTube y otras plataformas clave.",
+      "por_que": "Aborda la necesidad de los artistas de estar presentes en múltiples plataformas de streaming, ofreciendo estrategias para aumentar su alcance.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "t7d35c",
@@ -12878,14 +13202,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7,
+      "scores": {
+        "relevancia": 6,
+        "engagement": 7,
+        "diferenciador": 5,
+        "aplicabilidad": 9
+      },
+      "angulo": "Instrucciones detalladas sobre cómo acceder y escuchar listas de reproducción 'Top' en Spotify.",
+      "por_que": "Aunque es aplicable, es un contenido más genérico sobre el uso de Spotify. Su relevancia directa para la carrera musical es menor que otras ideas.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "lfon9",
@@ -12898,14 +13228,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 5,
+        "engagement": 6,
+        "diferenciador": 5,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía básica sobre cómo encontrar, reproducir y guardar listas de reproducción en Spotify.",
+      "por_que": "Contenido muy básico sobre el uso de Spotify, con poca aplicabilidad directa para la estrategia de lanzamiento o carrera de un artista.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "673qqn",
@@ -12918,14 +13254,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 5,
+        "engagement": 6,
+        "diferenciador": 5,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía rápida para gestionar playlists en Spotify, incluyendo cómo encontrar listas de canciones en tendencia.",
+      "por_que": "Similar a las anteriores, es un contenido de uso general de Spotify, no enfocado en las necesidades específicas de un artista independiente.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "b81nm6",
@@ -12938,14 +13280,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 7.5,
+      "scores": {
+        "relevancia": 7,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 7
+      },
+      "angulo": "Trucos y técnicas para encontrar playlists 'ocultas' o menos obvias en Spotify, como 'ruta diaria' y 'shower mix'.",
+      "por_que": "Tiene un ángulo más interesante y diferenciador, y podría ser útil para artistas que buscan nichos o formas creativas de descubrir música.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "2xnyjj",
@@ -12958,14 +13306,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 5,
+        "engagement": 6,
+        "diferenciador": 5,
+        "aplicabilidad": 9
+      },
+      "angulo": "Guía esencial para encontrar canciones y crear playlists funcionales en Spotify.",
+      "por_que": "Contenido muy básico sobre el uso de Spotify, no aporta valor estratégico para la carrera musical de un artista.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "5xm4wb",
@@ -12978,14 +13332,20 @@
       "artist_photo_credit": null,
       "topic_tag": "distribucion",
       "is_promotional": false,
-      "score_total": null,
-      "scores": null,
-      "angulo": null,
-      "por_que": null,
+      "score_total": 5,
+      "scores": {
+        "relevancia": 3,
+        "engagement": 4,
+        "diferenciador": 3,
+        "aplicabilidad": 7
+      },
+      "angulo": "Guía para acceder a playlists específicas creadas por Valoomusica en Spotify.",
+      "por_que": "Este contenido es muy específico de una marca/entidad y no tiene relevancia general para la mayoría de los artistas independientes en Latinoamérica.",
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.485Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "audience_type": "artista"
     },
     {
       "id": "uhhle1",
@@ -16024,6 +16384,166 @@
       "por_que": null,
       "status": "pending",
       "discovered_at": "2026-10-11T22:27:07.496Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "mdtqwf",
+      "title": "ANOTHER WAY TO MONETIZE YOUR MUSIC LEGALLY ...",
+      "description": "Monetizar YouTube, es otra cosa, y depende de todo lo demás que hagas en tu canal. El video estaba dirigido a músicos de verdad o amantes de la música como yo.",
+      "source": "google",
+      "source_url": "https://www.youtube.com/watch?v=JG6HpInJcNM",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-10-11T22:29:18.544Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "b63x7l",
+      "title": "Cómo Crear un Negocio de Música con Inteligencia Artificial",
+      "description": "YouTube no prohíbe la música generada por IA. Los creadores pueden subir y monetizar música con ayuda de IA siempre que cumplan con las políticas de YouTube.",
+      "source": "google",
+      "source_url": "https://www.starvartists.com/blog/negocio-musica-inteligencia-artificial",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-10-11T22:29:18.544Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "ut42f2",
+      "title": "Informe sobre el mercado musical de América Latina",
+      "description": "Universal Music Group (UMG) es una fuerza dominante en el mercado musical latinoamericano, aprovechando su extenso catálogo de artistas y su red de distribución ...The persistent issue of music piracy and unauthorized distribution, which undermines revenue generation for artists and record labels, is a major restraint ...",
+      "source": "google",
+      "source_url": "https://translate.google.com/translate?u=https://www.marketdataforecast.com/market-reports/latin-america-music-market&hl=es&sl=en&tl=es&client=srp",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-10-11T22:29:18.544Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "amfqqo",
+      "title": "10 Verdades Incómodas Sobre Marketing Musical",
+      "description": "Un catálogo robusto y variado es fundamental. 10. La música es un negocio. Debes dominar tareas como registrar, distribuir, administrar, cobrar, negociar, ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@cristianpoow/video/7692602582337932564",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-10-11T22:29:18.544Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "komhxl",
+      "title": "¿Sabías que puedes cobrar por crear contenido de tus artistas ...",
+      "description": "Lo mejor es que puedes registrarte gratis como creador y no necesitas tener miles de seguidores. Si te gusta la música y crear contenido, yo le echaría un ...",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/p/DeKMCYoCJb1/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-10-11T22:29:18.544Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "wnj38d",
+      "title": "No necesitas ser famoso para comenzar a monetizar tu música. ...",
+      "description": "Un artista independiente que quiere crecer de verdad no puede seguir lanzando canciones como si el algoritmo fuera a descubrir mágicamente su valor.",
+      "source": "youtube_viral",
+      "source_url": "https://www.instagram.com/reel/DdcyMLDlVvT/",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "monetizacion",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-10-11T22:29:18.544Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "wyapzm",
+      "title": "Estrategias de Contenido para Músicos: Documenta y Publica",
+      "description": "Keywords: estrategia de contenido para músicos, marketing musical, documentar procesos musicales, algoritmos de TikTok para músicos, lanzar música, contenido ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@cristianpoow/video/7657722452054756628",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-10-11T22:29:18.545Z",
+      "published_at": null,
+      "post_id": null
+    },
+    {
+      "id": "h6knv0",
+      "title": "Checklist de 5 pasos para lanzar tu música con éxito",
+      "description": "Aprende a validar y promocionar tus canciones efectivamente. #Música #Artistas #Lanzamiento ... construir audiencia musical, estrategia de validación para ...",
+      "source": "tiktok_viral",
+      "source_url": "https://www.tiktok.com/@andresfloresparera/video/7592396567898901778",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": null,
+      "scores": null,
+      "angulo": null,
+      "por_que": null,
+      "status": "pending",
+      "discovered_at": "2026-10-11T22:29:18.545Z",
       "published_at": null,
       "post_id": null
     }
