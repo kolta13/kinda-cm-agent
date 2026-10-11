@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T23:23:22.318Z",
+  "updated_at": "2026-10-11T23:24:35.906Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -1029,12 +1029,14 @@
       },
       "angulo": "Destaca el crecimiento del consumo de música latina en EE.UU. y el rol de FaroLatino en su impulso.",
       "por_que": "Ofrece contexto sobre el mercado internacional para la música latina y presenta a un actor clave en la industria, lo que puede inspirar y educar a los artistas.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-17T22:18:40.756Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista",
-      "is_promotional": false
+      "is_promotional": false,
+      "skipped_at": "2026-10-11T23:24:35.827Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país o fuera de nicho (revisión 2026-10-11)"
     },
     {
       "id": "3z87qt",
@@ -3983,12 +3985,14 @@
       },
       "angulo": "Guía completa y gratuita para lanzar música en Spotify utilizando herramientas de IA, accesible desde móvil o PC.",
       "por_que": "Ofrece una solución accesible y gratuita para el lanzamiento de música, un proceso clave. La mención de IA y la guía definitiva la hacen atractiva.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-25T22:21:03.561Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista",
-      "is_promotional": false
+      "is_promotional": false,
+      "skipped_at": "2026-10-11T23:24:35.796Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país o fuera de nicho (revisión 2026-10-11)"
     },
     {
       "id": "h5g3rb",
@@ -6914,11 +6918,13 @@
       },
       "angulo": "Entrevista con un artista emergente exitoso que comparte su experiencia en un medio masivo.",
       "por_que": "Los artistas independientes buscan inspiración y validación en historias de éxito. Ver a Free Cover en un medio importante les muestra el potencial de su carrera.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-09T23:28:57.918Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:24:35.815Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país o fuera de nicho (revisión 2026-10-11)"
     },
     {
       "id": "s78qzn",
@@ -8697,11 +8703,13 @@
       },
       "angulo": "Analiza un caso de éxito específico en TikTok, desglosando cómo un artista utiliza tendencias virales para aumentar su visibilidad.",
       "por_que": "Aunque es un ejemplo concreto, puede servir de inspiración y aprendizaje sobre cómo capitalizar tendencias, pero el enfoque es más de análisis de caso que de estrategia directa.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-09-16T21:44:04.300Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "skipped_at": "2026-10-11T23:24:35.840Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país o fuera de nicho (revisión 2026-10-11)"
     },
     {
       "id": "9jrjtd",
@@ -11008,10 +11016,12 @@
       "scores": null,
       "angulo": null,
       "por_que": null,
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-07T23:19:46.086Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "skipped_at": "2026-10-11T23:24:35.852Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país o fuera de nicho (revisión 2026-10-11)"
     },
     {
       "id": "h607br",
@@ -13724,10 +13734,12 @@
       "scores": null,
       "angulo": null,
       "por_que": null,
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-11T22:27:07.486Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "skipped_at": "2026-10-11T23:24:35.863Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país o fuera de nicho (revisión 2026-10-11)"
     },
     {
       "id": "mccdia",
@@ -13944,10 +13956,12 @@
       "scores": null,
       "angulo": null,
       "por_que": null,
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-11T22:27:07.487Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "skipped_at": "2026-10-11T23:24:35.878Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país o fuera de nicho (revisión 2026-10-11)"
     },
     {
       "id": "3m4ajq",
@@ -14104,10 +14118,12 @@
       "scores": null,
       "angulo": null,
       "por_que": null,
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-11T22:27:07.488Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "skipped_at": "2026-10-11T23:24:35.891Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país o fuera de nicho (revisión 2026-10-11)"
     },
     {
       "id": "dh1wsg",
@@ -14184,10 +14200,12 @@
       "scores": null,
       "angulo": null,
       "por_que": null,
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-11T22:27:07.488Z",
       "published_at": null,
-      "post_id": null
+      "post_id": null,
+      "skipped_at": "2026-10-11T23:24:35.906Z",
+      "skipped_reason": "Fuera de audiencia: específico de otro país o fuera de nicho (revisión 2026-10-11)"
     },
     {
       "id": "kkmdrx",
