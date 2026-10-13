@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T22:30:46.888Z",
+  "updated_at": "2026-10-13T01:00:53.998Z",
   "posts": [
     {
       "platform": "instagram",
@@ -3532,6 +3532,144 @@
       ],
       "metrics": null,
       "deleted_reason": "Fuera de audiencia: noticia de Perú, audiencia principal en Chile (borrado manualmente 2026-10-11)"
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-10-13T01:00:47.845Z",
+      "week": "2026-10-13",
+      "tema": "Preguntas a un Abogado sobre Derechos de Autor para Músicos Independientes",
+      "topic_tag": "general",
+      "audience_type": "artista",
+      "formato": "DESGLOSE DE UN NÚMERO",
+      "cta_mode": "directo",
+      "origen_idea": "tiktok_viral",
+      "backlog_id": "2f7ab5",
+      "winner_score": 9,
+      "post_id": "17974908432144489",
+      "caption": "Muchos músicos independientes descuidan el registro legal de sus obras. Es un paso clave para proteger tu trabajo y asegurar ingresos. 👇\n\n#MusicaLatina #DerechosDeAutor #PropiedadIntelectual #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#DerechosDeAutor",
+        "#PropiedadIntelectual",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Registra tu música: protege tus composiciones y nombres",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Composiciones bajo tu nombre",
+          "body": "Cada canción que creas tiene derechos de autor. Registrarlas formalmente te da control total sobre su uso y te permite reclamar regalías por licencias o streams."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "El nombre de tu proyecto",
+          "body": "Tu nombre artístico o el de tu banda también se protege. Un registro evita que otros usen un nombre similar y confundan a tu audiencia."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Proceso de registro",
+          "body": "El registro se hace ante la entidad de derechos de autor de tu país. Necesitarás presentar la partitura o una grabación y datos de los autores."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Protección vs. Exposición",
+          "body": "Si no registras, otros pueden usar tu música o nombre sin permiso. El registro te da la base legal para actuar ante infracciones."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca un profesional y protege tu obra en kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-10-13T01:00:53.998Z",
+      "week": "2026-10-13",
+      "tema": "Preguntas a un Abogado sobre Derechos de Autor para Músicos Independientes",
+      "topic_tag": "general",
+      "audience_type": "artista",
+      "formato": "DESGLOSE DE UN NÚMERO",
+      "cta_mode": "directo",
+      "origen_idea": "tiktok_viral",
+      "backlog_id": "2f7ab5",
+      "winner_score": 9,
+      "post_id": "p_inbox_url~v2.7695951068807219221",
+      "caption": "Muchos músicos independientes descuidan el registro legal de sus obras. Es un paso clave para proteger tu trabajo y asegurar ingresos. 👇\n\n#MusicaLatina #DerechosDeAutor #PropiedadIntelectual #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#DerechosDeAutor",
+        "#PropiedadIntelectual",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "Registra tu música: protege tus composiciones y nombres",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Composiciones bajo tu nombre",
+          "body": "Cada canción que creas tiene derechos de autor. Registrarlas formalmente te da control total sobre su uso y te permite reclamar regalías por licencias o streams."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "El nombre de tu proyecto",
+          "body": "Tu nombre artístico o el de tu banda también se protege. Un registro evita que otros usen un nombre similar y confundan a tu audiencia."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Proceso de registro",
+          "body": "El registro se hace ante la entidad de derechos de autor de tu país. Necesitarás presentar la partitura o una grabación y datos de los autores."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Protección vs. Exposición",
+          "body": "Si no registras, otros pueden usar tu música o nombre sin permiso. El registro te da la base legal para actuar ante infracciones."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca un profesional y protege tu obra en kindaclub.com",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-06.jpg"
+      ],
+      "metrics": null
     }
   ]
 }
