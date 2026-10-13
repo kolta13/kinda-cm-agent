@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T01:00:53.998Z",
+  "updated_at": "2026-10-13T23:10:03.270Z",
   "posts": [
     {
       "platform": "instagram",
@@ -3668,6 +3668,158 @@
         "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-04.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-05.jpg",
         "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-06.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "instagram",
+      "status": "published",
+      "published_at": "2026-10-13T23:09:56.521Z",
+      "week": "2026-10-13",
+      "tema": "5 cosas que debes saber antes de firmar ese contrato musical",
+      "topic_tag": "video_viral",
+      "audience_type": "artista",
+      "formato": "DESGLOSE DE UN NÚMERO",
+      "cta_mode": "directo",
+      "origen_idea": "tiktok_viral",
+      "backlog_id": "1yvpt4",
+      "winner_score": 9,
+      "post_id": "17907816702329909",
+      "caption": "Firmar un contrato es un paso crucial. Asegúrate de entender cada detalle. 👇\n\n#MusicaLatina #ContratosMusicales #DerechosDeAutor #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ContratosMusicales",
+        "#DerechosDeAutor",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "5 puntos clave antes de firmar tu contrato",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Territorio y Duración",
+          "body": "Contratos a perpetuidad o mundiales limitan tu control futuro. Revisa el alcance geográfico y el tiempo exacto para recuperar tus másteres."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Derechos de Publicación vs. Máster",
+          "body": "Entiende la diferencia. Los derechos de publicación cubren la composición, mientras que los másteres son la grabación en sí. Cada uno tiene implicaciones distintas."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Cláusula de Exclusividad",
+          "body": "Verifica si te impide lanzar música con otros sellos o productores. La exclusividad puede extenderse a composiciones o grabaciones específicas."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Anticipos y Regalías",
+          "body": "Aclara cómo se calculan tus regalías y cuándo se pagan los anticipos. Asegúrate de que los términos sean transparentes y justos para ti."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "5",
+          "titulo": "Control Creativo y Marketing",
+          "body": "Define quién tiene la última palabra en la producción, mezcla y estrategias de marketing. Un contrato debe proteger tu visión artística."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca profesionales en nuestro catálogo y contacta",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-07.jpg"
+      ],
+      "metrics": null
+    },
+    {
+      "platform": "tiktok",
+      "status": "draft_sent",
+      "published_at": "2026-10-13T23:10:03.270Z",
+      "week": "2026-10-13",
+      "tema": "5 cosas que debes saber antes de firmar ese contrato musical",
+      "topic_tag": "video_viral",
+      "audience_type": "artista",
+      "formato": "DESGLOSE DE UN NÚMERO",
+      "cta_mode": "directo",
+      "origen_idea": "tiktok_viral",
+      "backlog_id": "1yvpt4",
+      "winner_score": 9,
+      "post_id": "p_inbox_url~v2.7696293251250194452",
+      "caption": "Firmar un contrato es un paso crucial. Asegúrate de entender cada detalle. 👇\n\n#MusicaLatina #ContratosMusicales #DerechosDeAutor #KindaClub",
+      "hashtags": [
+        "#MusicaLatina",
+        "#ContratosMusicales",
+        "#DerechosDeAutor",
+        "#KindaClub"
+      ],
+      "slides": [
+        {
+          "tipo": "portada",
+          "etiqueta": null,
+          "titulo": "5 puntos clave antes de firmar tu contrato",
+          "body": null
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "1",
+          "titulo": "Territorio y Duración",
+          "body": "Contratos a perpetuidad o mundiales limitan tu control futuro. Revisa el alcance geográfico y el tiempo exacto para recuperar tus másteres."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "2",
+          "titulo": "Derechos de Publicación vs. Máster",
+          "body": "Entiende la diferencia. Los derechos de publicación cubren la composición, mientras que los másteres son la grabación en sí. Cada uno tiene implicaciones distintas."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "3",
+          "titulo": "Cláusula de Exclusividad",
+          "body": "Verifica si te impide lanzar música con otros sellos o productores. La exclusividad puede extenderse a composiciones o grabaciones específicas."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "4",
+          "titulo": "Anticipos y Regalías",
+          "body": "Aclara cómo se calculan tus regalías y cuándo se pagan los anticipos. Asegúrate de que los términos sean transparentes y justos para ti."
+        },
+        {
+          "tipo": "contenido",
+          "etiqueta": "5",
+          "titulo": "Control Creativo y Marketing",
+          "body": "Define quién tiene la última palabra en la producción, mezcla y estrategias de marketing. Un contrato debe proteger tu visión artística."
+        },
+        {
+          "tipo": "cta",
+          "etiqueta": null,
+          "titulo": "Busca profesionales en nuestro catálogo y contacta",
+          "body": null
+        }
+      ],
+      "image_urls": [
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-01.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-02.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-03.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-04.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-05.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-06.jpg",
+        "https://kindagrowth.cl/asistente/output/semana-2026-10-13/slide-07.jpg"
       ],
       "metrics": null
     }
