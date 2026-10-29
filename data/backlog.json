@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T22:52:27.674Z",
+  "updated_at": "2026-10-29T22:59:42.354Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -4015,7 +4015,9 @@
       "published_at": null,
       "post_id": null,
       "is_promotional": false,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "supervisor_strikes": 1,
+      "last_supervisor_rejection": "[Regla 7] El título del slide 2, 'Regalías digitales son pasivas', presenta una afirmación que es falsa y una mala práctica, ya que el cuerpo del slide explica que requieren gestión activa, y la portada no anunció explícitamente que el post trata de errores o mitos. | [Regla 7] El título del slide 3, 'Content ID es solo para sellos', presenta una afirmación que es falsa y una mala práctica, ya que el cuerpo del slide explica que artistas independientes pueden acceder a él, y la portada no anunció explícitamente que el post trata de errores o mitos. | [Regla 7] El título del slide 4, 'Shows en vivo son el único ingreso', presenta una afirmación que es falsa y una mala práctica, ya que el cuerpo del slide explica que se debe diversificar, y la portada no anunció explícitamente que el post trata de errores o mitos. | [Regla 7] El título del slide 5, 'Ventas físicas ya no importan', presenta una afirmación que es falsa y una mala práctica, ya que el cuerpo del slide explica que siguen siendo valiosas, y la portada no anunció explícitamente que el post trata de errores o mitos. | [Regla 7] El título del slide 6, 'Derechos de autor son complicados', presenta una afirmación que es una mala práctica o una percepción negativa, ya que el cuerpo del slide explica que entenderlos es clave, y la portada no anunció explícitamente que el post trata de errores o mitos."
     },
     {
       "id": "3nig51",
@@ -4084,7 +4086,9 @@
       "published_at": null,
       "post_id": null,
       "is_promotional": false,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "supervisor_strikes": 1,
+      "last_supervisor_rejection": "[Regla 7] El título 'Solo los streams generan dinero' presenta una afirmación falsa que el contenido contradice, disfrazando un mito sin anunciarlo en la portada. | [Regla 7] El título 'Los derechos se manejan solos' presenta una afirmación falsa que el contenido contradice, disfrazando un mito sin anunciarlo en la portada. | [Regla 7] El título 'Subir tu música es suficiente' presenta una afirmación falsa que el contenido contradice, disfrazando un mito sin anunciarlo en la portada. | [Regla 7] El título 'El publishing es solo para compositores' presenta una afirmación falsa que el contenido contradice, disfrazando un mito sin anunciarlo en la portada."
     },
     {
       "id": "p7o9j2",
