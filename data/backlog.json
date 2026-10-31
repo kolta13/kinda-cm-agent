@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T22:39:52.689Z",
+  "updated_at": "2026-10-31T21:52:46.564Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -22378,6 +22378,32 @@
       "published_at": null,
       "post_id": null,
       "audience_type": "profesional"
+    },
+    {
+      "id": "gclzio",
+      "title": "Álvaro de Villota, experto en marketing musical explica cómo funciona la industria | #ASLV 7",
+      "description": "Quién gana dinero realmente en la industria musical? ¿Los artistas, las discográficas, las promotoras… o quienes trabajan en la ...",
+      "source": "youtube",
+      "source_url": "https://youtube.com/watch?v=pRqJzhqgFOI",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "marketing",
+      "is_promotional": false,
+      "score_total": 8.5,
+      "scores": {
+        "relevancia": 9,
+        "engagement": 8,
+        "diferenciador": 8,
+        "aplicabilidad": 9
+      },
+      "angulo": "Un experto en marketing musical desglosa quiénes son los verdaderos ganadores económicos en la industria musical, abordando artistas, discográficas y promotoras.",
+      "por_que": "Los artistas independientes necesitan entender las dinámicas financieras de la industria para optimizar sus estrategias y maximizar sus ingresos. Este contenido les ofrece una visión clara de cómo funciona el ecosistema económico.",
+      "status": "pending",
+      "discovered_at": "2026-10-31T21:52:45.570Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
     }
   ]
 }
