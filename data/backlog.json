@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T23:42:28.301Z",
+  "updated_at": "2026-11-04T23:56:40.633Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -4010,14 +4010,16 @@
       },
       "angulo": "Detalla 5 canales de ingresos para monetizar música (regalías, Content ID, ventas, shows, derechos de autor) y advierte sobre errores comunes.",
       "por_que": "Esencial para artistas independientes que necesitan diversificar sus fuentes de ingreso y entender cómo funciona la monetización.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-27T02:49:05.969Z",
       "published_at": null,
       "post_id": null,
       "is_promotional": false,
       "audience_type": "artista",
-      "supervisor_strikes": 1,
-      "last_supervisor_rejection": "[Regla 7] El título del slide 2, 'Regalías digitales son pasivas', presenta una afirmación que es falsa y una mala práctica, ya que el cuerpo del slide explica que requieren gestión activa, y la portada no anunció explícitamente que el post trata de errores o mitos. | [Regla 7] El título del slide 3, 'Content ID es solo para sellos', presenta una afirmación que es falsa y una mala práctica, ya que el cuerpo del slide explica que artistas independientes pueden acceder a él, y la portada no anunció explícitamente que el post trata de errores o mitos. | [Regla 7] El título del slide 4, 'Shows en vivo son el único ingreso', presenta una afirmación que es falsa y una mala práctica, ya que el cuerpo del slide explica que se debe diversificar, y la portada no anunció explícitamente que el post trata de errores o mitos. | [Regla 7] El título del slide 5, 'Ventas físicas ya no importan', presenta una afirmación que es falsa y una mala práctica, ya que el cuerpo del slide explica que siguen siendo valiosas, y la portada no anunció explícitamente que el post trata de errores o mitos. | [Regla 7] El título del slide 6, 'Derechos de autor son complicados', presenta una afirmación que es una mala práctica o una percepción negativa, ya que el cuerpo del slide explica que entenderlos es clave, y la portada no anunció explícitamente que el post trata de errores o mitos."
+      "supervisor_strikes": 2,
+      "last_supervisor_rejection": "[Regla 1] La portada promete '5 formas de cobrar por tu música' y los slides de contenido tienen etiquetas '1', '2', '3', '4', '5', pero el último slide de contenido tiene la etiqueta 'ERROR COMÚN' en lugar de un número que complete la cuenta de 5.",
+      "skipped_at": "2026-11-04T23:56:29.866Z",
+      "skipped_reason": "Supervisor rechazó en 2 días distintos: [Regla 1] La portada promete '5 formas de cobrar por tu música' y los slides de contenido tienen etiquetas '1', '2', '3', '4', '5', pero el último slide de contenido tiene la etiqueta 'ERROR COMÚN' en lugar de un número que complete la cuenta de 5."
     },
     {
       "id": "3nig51",
@@ -4081,14 +4083,16 @@
       },
       "angulo": "Guía para construir un plan de monetización musical enfocado en streaming, publishing y gestión de derechos.",
       "por_que": "Aborda de manera integral los aspectos técnicos y de negocio para maximizar ingresos de la música.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-08-27T02:49:05.970Z",
       "published_at": null,
       "post_id": null,
       "is_promotional": false,
       "audience_type": "artista",
-      "supervisor_strikes": 1,
-      "last_supervisor_rejection": "[Regla 7] El título 'Solo los streams generan dinero' presenta una afirmación falsa que el contenido contradice, disfrazando un mito sin anunciarlo en la portada. | [Regla 7] El título 'Los derechos se manejan solos' presenta una afirmación falsa que el contenido contradice, disfrazando un mito sin anunciarlo en la portada. | [Regla 7] El título 'Subir tu música es suficiente' presenta una afirmación falsa que el contenido contradice, disfrazando un mito sin anunciarlo en la portada. | [Regla 7] El título 'El publishing es solo para compositores' presenta una afirmación falsa que el contenido contradice, disfrazando un mito sin anunciarlo en la portada."
+      "supervisor_strikes": 2,
+      "last_supervisor_rejection": "[Regla 7] La portada anuncia 'Las 5 creencias falsas sobre monetizar tu música', lo cual indica que el contenido tratará sobre mitos o errores, pero la regla 7 se aplica cuando la portada no anuncia explícitamente que el post trata de errores o mitos y los títulos de los slides suenan a mito.",
+      "skipped_at": "2026-11-04T23:56:40.633Z",
+      "skipped_reason": "Supervisor rechazó en 2 días distintos: [Regla 7] La portada anuncia 'Las 5 creencias falsas sobre monetizar tu música', lo cual indica que el contenido tratará sobre mitos o errores, pero la regla 7 se aplica cuando la portada no anuncia explícitamente que el post trata de errores o mitos y los títulos de los slides suenan a mito."
     },
     {
       "id": "p7o9j2",
