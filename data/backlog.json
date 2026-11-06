@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T23:51:03.765Z",
+  "updated_at": "2026-11-06T23:31:38.036Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -22405,6 +22405,32 @@
       "por_que": "Los artistas independientes necesitan entender las dinámicas financieras de la industria para optimizar sus estrategias y maximizar sus ingresos. Este contenido les ofrece una visión clara de cómo funciona el ecosistema económico.",
       "status": "pending",
       "discovered_at": "2026-10-31T21:52:45.570Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "ybalfp",
+      "title": "How I Made $114,000 With Suno AI, DistroKid, Spotify, Itunes | Best Faceless Youtube Strategy",
+      "description": "Our Paid Skool https://www.skool.com/aimusic/about/ Music SEO https://musicalseo.com/ YouTube SEO ...",
+      "source": "youtube",
+      "source_url": "https://youtube.com/watch?v=FDPCb-uhRik",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "distribucion",
+      "is_promotional": false,
+      "score_total": 6.5,
+      "scores": {
+        "relevancia": 5,
+        "engagement": 8,
+        "diferenciador": 6,
+        "aplicabilidad": 7
+      },
+      "angulo": "Estrategia de monetización de música generada por IA y distribuida digitalmente a través de YouTube.",
+      "por_que": "Aunque el título menciona cifras altas, el uso de IA como Suno y estrategias 'faceless' puede ser atractivo para artistas independientes en LATAM buscando nuevas vías de ingreso. Sin embargo, la relevancia directa para el mercado chileno y la aplicabilidad inmediata sin recursos tecnológicos avanzados podría ser limitada.",
+      "status": "pending",
+      "discovered_at": "2026-11-06T23:31:36.972Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
