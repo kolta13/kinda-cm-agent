@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T22:29:47.219Z",
+  "updated_at": "2026-11-10T01:46:43.142Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -10659,7 +10659,9 @@
       "discovered_at": "2026-10-04T21:57:46.722Z",
       "published_at": null,
       "post_id": null,
-      "audience_type": "artista"
+      "audience_type": "artista",
+      "supervisor_strikes": 1,
+      "last_supervisor_rejection": "[Regla 7] El título 'Ceder tus másters es normal' suena a mito o mala práctica, pero la portada no anunció que el post trataría sobre mitos o errores. | [Regla 7] El título 'Un contrato es solo para el lanzamiento' suena a mito o mala práctica, pero la portada no anunció que el post trataría sobre mitos o errores. | [Regla 7] El título 'Todos los contratos son iguales' suena a mito o mala práctica, pero la portada no anunció que el post trataría sobre mitos o errores. | [Regla 7] El título 'No puedes negociar los términos' suena a mito o mala práctica, pero la portada no anunció que el post trataría sobre mitos o errores."
     },
     {
       "id": "j2u9by",
