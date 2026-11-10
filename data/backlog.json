@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T01:46:43.142Z",
+  "updated_at": "2026-11-10T23:44:22.497Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -10655,13 +10655,15 @@
       },
       "angulo": "Advertir sobre cláusulas contractuales peligrosas que pueden perjudicar la carrera de un artista, como ceder másters o derechos.",
       "por_que": "Toca un punto crítico y de alto riesgo para artistas, especialmente emergentes. La advertencia sobre 'congelar tu carrera' y la cesión de derechos es vital y de aplicabilidad inmediata.",
-      "status": "pending",
+      "status": "skipped",
       "discovered_at": "2026-10-04T21:57:46.722Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista",
-      "supervisor_strikes": 1,
-      "last_supervisor_rejection": "[Regla 7] El título 'Ceder tus másters es normal' suena a mito o mala práctica, pero la portada no anunció que el post trataría sobre mitos o errores. | [Regla 7] El título 'Un contrato es solo para el lanzamiento' suena a mito o mala práctica, pero la portada no anunció que el post trataría sobre mitos o errores. | [Regla 7] El título 'Todos los contratos son iguales' suena a mito o mala práctica, pero la portada no anunció que el post trataría sobre mitos o errores. | [Regla 7] El título 'No puedes negociar los términos' suena a mito o mala práctica, pero la portada no anunció que el post trataría sobre mitos o errores."
+      "supervisor_strikes": 2,
+      "last_supervisor_rejection": "[Regla 7] La portada promete advertir sobre cláusulas peligrosas, pero el título del slide 2 \"Ceder el máster es un mal menor\" y el slide 3 \"Los contratos son estándar e inamovibles\" suenan a mitos o malas prácticas que no fueron anunciados explícitamente en la portada.",
+      "skipped_at": "2026-11-10T23:44:22.497Z",
+      "skipped_reason": "Supervisor rechazó en 2 días distintos: [Regla 7] La portada promete advertir sobre cláusulas peligrosas, pero el título del slide 2 \"Ceder el máster es un mal menor\" y el slide 3 \"Los contratos son estándar e inamovibles\" suenan a mitos o malas prácticas que no fueron anunciados explícitamente en la portada."
     },
     {
       "id": "j2u9by",
