@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T00:55:47.145Z",
+  "updated_at": "2026-11-21T00:17:07.608Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -22435,6 +22435,32 @@
       "por_que": "Aunque el título menciona cifras altas, el uso de IA como Suno y estrategias 'faceless' puede ser atractivo para artistas independientes en LATAM buscando nuevas vías de ingreso. Sin embargo, la relevancia directa para el mercado chileno y la aplicabilidad inmediata sin recursos tecnológicos avanzados podría ser limitada.",
       "status": "pending",
       "discovered_at": "2026-11-06T23:31:36.972Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "awfwim",
+      "title": "Just Do This One Thing To Beat 99% Of Artists",
+      "description": "Get my free step-by-step Single Release Plan: https://start.dk-mba.com/singlereleaseplan ⚡ DK-MBA Artist Growth System: ...",
+      "source": "youtube",
+      "source_url": "https://youtube.com/watch?v=oGAzhAsw2Mo",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "tecnologia",
+      "is_promotional": false,
+      "score_total": 7.75,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 8,
+        "diferenciador": 7,
+        "aplicabilidad": 8
+      },
+      "angulo": "Ofrecer un plan de lanzamiento de sencillos paso a paso para destacar entre la mayoría de artistas.",
+      "por_que": "Este contenido se dirige directamente a artistas independientes que buscan mejorar sus lanzamientos. El enfoque en un 'plan' y la promesa de 'superar al 99%' apelan a su deseo de crecimiento y diferenciación en un mercado saturado.",
+      "status": "pending",
+      "discovered_at": "2026-11-21T00:17:06.637Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
