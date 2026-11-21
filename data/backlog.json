@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T00:17:07.608Z",
+  "updated_at": "2026-11-21T23:36:05.425Z",
   "ideas": [
     {
       "id": "2r02zo",
@@ -22461,6 +22461,32 @@
       "por_que": "Este contenido se dirige directamente a artistas independientes que buscan mejorar sus lanzamientos. El enfoque en un 'plan' y la promesa de 'superar al 99%' apelan a su deseo de crecimiento y diferenciación en un mercado saturado.",
       "status": "pending",
       "discovered_at": "2026-11-21T00:17:06.637Z",
+      "published_at": null,
+      "post_id": null,
+      "audience_type": "artista"
+    },
+    {
+      "id": "qb9dtp",
+      "title": "EVERYTHING You Need To Know About Music Marketing",
+      "description": "Most artists don't have a content problem. They have a fan-building problem. In this episode of The Manager's Playbook, Mauricio ...",
+      "source": "youtube",
+      "source_url": "https://youtube.com/watch?v=6CMW75giylg",
+      "artist_name": null,
+      "artist_photo_url": null,
+      "artist_photo_credit": null,
+      "topic_tag": "marketing",
+      "is_promotional": false,
+      "score_total": 7.75,
+      "scores": {
+        "relevancia": 8,
+        "engagement": 7,
+        "diferenciador": 7,
+        "aplicabilidad": 9
+      },
+      "angulo": "Enfocarse en la construcción de una base de fans como el principal desafío del marketing musical, más allá de la simple creación de contenido.",
+      "por_que": "Aborda un problema fundamental para artistas independientes en Latinoamérica: cómo conectar genuinamente con su audiencia y hacerla crecer. El enfoque en 'fan-building' es más específico que el marketing general.",
+      "status": "pending",
+      "discovered_at": "2026-11-21T23:36:04.236Z",
       "published_at": null,
       "post_id": null,
       "audience_type": "artista"
